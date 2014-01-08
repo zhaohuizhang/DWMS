@@ -1,0 +1,2933 @@
+[ 2014-01-04T13:28:08+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001717s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 36 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 36 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 36 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 36 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 36 行.
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.073449s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073602s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001822s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002801s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002008s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009164s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004674s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004809s ]
+
+[ 2014-01-04T13:30:17+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002077s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 36 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 36 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 36 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 36 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 36 行.
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025824s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001075s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001023s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000884s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004634s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001818s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001928s ]
+
+[ 2014-01-04T13:34:14+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 36 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 36 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 36 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 36 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 36 行.
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030259s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001327s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001192s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001247s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005780s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002016s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002174s ]
+
+[ 2014-01-04T13:51:44+08:00 ] 127.0.0.1 /waste/index.php/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.109826s ]
+INFO: [ route_check ] --END-- [ RunTime:0.110023s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002638s ]
+
+[ 2014-01-04T13:51:48+08:00 ] 127.0.0.1 /waste/index.php/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001334s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001476s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+
+[ 2014-01-04T13:51:49+08:00 ] 127.0.0.1 /waste/index.php/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001518s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001741s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001115s ]
+
+[ 2014-01-04T13:51:50+08:00 ] 127.0.0.1 /waste/index.php/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001542s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001716s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+
+[ 2014-01-04T13:52:20+08:00 ] 127.0.0.1 /waste/index.php/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002028s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002179s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002024s ]
+
+[ 2014-01-04T13:52:22+08:00 ] 127.0.0.1 /waste/index.php/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001564s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001744s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+
+[ 2014-01-04T13:52:22+08:00 ] 127.0.0.1 /waste/index.php/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001529s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001708s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+
+[ 2014-01-04T13:52:24+08:00 ] 127.0.0.1 /waste/index.php/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001507s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001684s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+
+[ 2014-01-04T13:53:16+08:00 ] 127.0.0.1 /waste/index.php/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001614s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001796s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+
+[ 2014-01-04T13:53:17+08:00 ] 127.0.0.1 /waste/index.php/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001043s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001162s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+
+[ 2014-01-04T13:53:18+08:00 ] 127.0.0.1 /waste/index.php/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001320s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001444s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+
+[ 2014-01-04T13:53:18+08:00 ] 127.0.0.1 /waste/index.php/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001588s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001784s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+
+[ 2014-01-04T13:53:19+08:00 ] 127.0.0.1 /waste/index.php/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001599s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001788s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+
+[ 2014-01-04T13:57:29+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001469s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 36 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 36 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 36 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 36 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 36 行.
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 44 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 44 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 44 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 44 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 44 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018721s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001770s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001246s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001049s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006570s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001363s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001499s ]
+
+[ 2014-01-04T13:57:29+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002290s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002478s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+
+[ 2014-01-04T14:32:28+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004046s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018467s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001470s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000873s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000722s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004630s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001351s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001444s ]
+
+[ 2014-01-04T14:32:28+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002901s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003114s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001347s ]
+
+[ 2014-01-04T14:32:30+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001629s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001875s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001247s ]
+
+[ 2014-01-04T14:32:30+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001427s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001603s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001314s ]
+
+[ 2014-01-04T14:32:31+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001514s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001703s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+
+[ 2014-01-04T14:32:42+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032012s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001579s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001589s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001723s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006756s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001341s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001442s ]
+
+[ 2014-01-04T14:32:42+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002530s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002739s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001423s ]
+
+[ 2014-01-04T14:32:43+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001717s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001909s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001297s ]
+
+[ 2014-01-04T14:32:44+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001570s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001783s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001594s ]
+
+[ 2014-01-04T14:32:55+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017462s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000631s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000699s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000472s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003240s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001078s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001205s ]
+
+[ 2014-01-04T14:32:56+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001571s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001764s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001300s ]
+
+[ 2014-01-04T14:33:06+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002008s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002200s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001157s ]
+
+[ 2014-01-04T14:33:07+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001456s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001668s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+
+[ 2014-01-04T14:33:19+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001919s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033806s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001223s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001333s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001363s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005983s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001440s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001550s ]
+
+[ 2014-01-04T14:33:19+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002836s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003047s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001940s ]
+
+[ 2014-01-04T14:33:20+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001772s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001986s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001208s ]
+
+[ 2014-01-04T14:33:20+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001530s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001725s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001168s ]
+
+[ 2014-01-04T14:33:21+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001134s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001272s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+
+[ 2014-01-04T14:33:22+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001468s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001644s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+
+[ 2014-01-04T14:33:23+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001463s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001640s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001141s ]
+
+[ 2014-01-04T14:33:23+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001144s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001282s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+
+[ 2014-01-04T14:33:24+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001565s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001782s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001205s ]
+
+[ 2014-01-04T14:33:25+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001751s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001952s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001176s ]
+
+[ 2014-01-04T14:34:01+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 41 行.
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+NOTIC: [8] Use of undefined constant verify - assumed 'verify' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 51 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019519s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001469s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001384s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001125s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005943s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001627s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001762s ]
+
+[ 2014-01-04T14:34:02+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002872s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003072s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002192s ]
+
+[ 2014-01-04T14:34:04+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001580s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001768s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+
+[ 2014-01-04T14:34:04+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001555s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001701s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+
+[ 2014-01-04T14:38:12+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002191s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002378s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001731s ]
+
+[ 2014-01-04T14:38:12+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001934s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002121s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001417s ]
+
+[ 2014-01-04T14:38:13+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002033s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002239s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+
+[ 2014-01-04T14:38:13+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001497s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001721s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001623s ]
+
+[ 2014-01-04T14:38:14+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001566s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001792s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001247s ]
+
+[ 2014-01-04T14:38:14+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001587s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001771s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001407s ]
+
+[ 2014-01-04T14:38:14+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001599s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001811s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+
+[ 2014-01-04T14:38:15+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001125s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001257s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+
+[ 2014-01-04T14:38:15+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001419s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001575s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001221s ]
+
+[ 2014-01-04T14:38:15+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002050s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002332s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+
+[ 2014-01-04T14:38:16+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001162s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001300s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+
+[ 2014-01-04T14:38:16+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001328s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001571s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+
+[ 2014-01-04T14:38:16+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002364s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002627s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+
+[ 2014-01-04T14:38:16+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001610s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001800s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+
+[ 2014-01-04T14:38:16+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001212s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001350s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001404s ]
+
+[ 2014-01-04T14:38:16+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001856s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002057s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+
+[ 2014-01-04T14:38:17+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001583s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001770s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+
+[ 2014-01-04T14:38:17+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001371s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001518s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+
+[ 2014-01-04T14:38:17+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001450s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001620s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+
+[ 2014-01-04T14:38:17+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001479s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001658s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+
+[ 2014-01-04T14:38:17+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002344s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002540s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001139s ]
+
+[ 2014-01-04T14:38:17+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001614s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001800s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001185s ]
+
+[ 2014-01-04T14:38:18+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001720s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001905s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001185s ]
+
+[ 2014-01-04T14:38:18+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001185s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001326s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+
+[ 2014-01-04T14:38:18+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001562s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001760s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001224s ]
+
+[ 2014-01-04T14:38:18+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001139s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001280s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+
+[ 2014-01-04T14:38:18+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001419s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001594s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+
+[ 2014-01-04T14:50:22+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001774s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001895s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001443s ]
+
+[ 2014-01-04T14:50:24+08:00 ] 127.0.0.1 /waste/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001618s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001809s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001593s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029147s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001066s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000882s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001072s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001687s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005112s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001422s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001527s ]
+
+[ 2014-01-04T14:50:25+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001763s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001988s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001270s ]
+
+[ 2014-01-04T14:50:33+08:00 ] 127.0.0.1 /waste/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002414s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002573s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011843s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000675s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000633s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000416s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000766s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002827s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001055s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001181s ]
+
+[ 2014-01-04T14:50:33+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001464s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001640s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
+
+[ 2014-01-04T14:50:37+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018341s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000685s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000601s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000402s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000897s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002907s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001400s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001575s ]
+
+[ 2014-01-04T14:50:38+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002456s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002803s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+
+[ 2014-01-04T14:54:04+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003417s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003584s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+
+[ 2014-01-04T14:58:23+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002288s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002474s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001502s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001476s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001400s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001128s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005938s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001844s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001988s ]
+
+[ 2014-01-04T14:58:23+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002924s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003122s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001952s ]
+
+[ 2014-01-04T14:58:29+08:00 ] 127.0.0.1 /waste/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.008977s ]
+INFO: [ route_check ] --END-- [ RunTime:0.009227s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002375s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [8] Use of undefined constant login - assumed 'login' D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+NOTIC: [2] Division by zero D:\GitLab\waste\App\Runtime\Cache\Admin\d19c3bcb9a5477a0b6531abed443c5f7.php 第 43 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020472s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.021853s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001554s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001241s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.026649s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001941s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002095s ]
+
+[ 2014-01-04T14:58:30+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001530s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001717s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+
+[ 2014-01-04T14:59:47+08:00 ] 127.0.0.1 /waste/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002108s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002282s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001786s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019099s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002153s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001702s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000913s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006265s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001455s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001580s ]
+
+[ 2014-01-04T14:59:48+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001816s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001999s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+
+[ 2014-01-04T15:01:46+08:00 ] 127.0.0.1 /waste/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001622s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001822s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001297s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023327s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000813s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001029s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000628s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003692s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001168s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001307s ]
+
+[ 2014-01-04T15:01:47+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001704s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001906s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001504s ]
+
+[ 2014-01-04T15:01:58+08:00 ] 127.0.0.1 /waste/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002185s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002366s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001897s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021039s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001401s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001502s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001221s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006075s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001807s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001941s ]
+
+[ 2014-01-04T15:01:58+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002606s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002806s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002186s ]
+
+[ 2014-01-04T15:02:03+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001584s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001776s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
+
+[ 2014-01-04T15:02:13+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001985s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018905s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001574s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001241s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000859s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005130s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002007s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002461s ]
+
+[ 2014-01-04T15:02:14+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002288s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002486s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004412s ]
+
+[ 2014-01-04T15:05:29+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002063s ]
+
+[ 2014-01-04T15:05:46+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001960s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017317s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001334s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000904s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001115s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005691s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001837s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001963s ]
+
+[ 2014-01-04T15:05:47+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002805s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002998s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+
+[ 2014-01-04T15:05:52+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001889s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002035s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001635s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.051470s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051648s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001401s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001407s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001161s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005914s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001666s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001782s ]
+
+[ 2014-01-04T15:06:14+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002181s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002368s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014923s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001184s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001277s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001060s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005362s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001263s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001381s ]
+
+[ 2014-01-04T15:07:04+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016092s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000744s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000712s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000453s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003111s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001147s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001293s ]
+
+[ 2014-01-04T15:07:04+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001562s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001759s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+
+[ 2014-01-04T15:07:05+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001549s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001729s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001336s ]
+
+[ 2014-01-04T15:07:08+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001631s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001822s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013191s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000702s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000889s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000434s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003232s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001150s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001295s ]
+
+[ 2014-01-04T15:07:13+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001407s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001582s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+
+[ 2014-01-04T15:07:16+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001791s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002154s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001324s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015190s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000771s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000904s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000718s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003541s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001056s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001185s ]
+
+[ 2014-01-04T15:09:17+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002976s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003168s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001789s ]
+
+[ 2014-01-04T15:09:47+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001859s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016553s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001352s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001171s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001039s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006486s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002411s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003006s ]
+
+[ 2014-01-04T15:09:47+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001534s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001730s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001254s ]
+
+[ 2014-01-04T15:09:51+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001853s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002044s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+
+[ 2014-01-04T15:11:00+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001470s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016132s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001458s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001517s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001288s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001599s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006311s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001282s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001366s ]
+
+[ 2014-01-04T15:11:00+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002357s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002847s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001224s ]
+
+[ 2014-01-04T15:11:04+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002347s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002554s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+
+[ 2014-01-04T15:11:25+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002063s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002227s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
+NOTIC: [8] Undefined index:  code D:\GitLab\waste\App\Lib\Action\Admin\IndexAction.class.php 第 13 行.
+
+[ 2014-01-04T15:11:42+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001539s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018647s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001547s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001203s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000974s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005233s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001157s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001255s ]
+
+[ 2014-01-04T15:11:43+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002450s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002655s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002795s ]
+
+[ 2014-01-04T15:11:46+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001606s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001791s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+NOTIC: [8] Undefined index:  code D:\GitLab\waste\App\Lib\Action\Admin\IndexAction.class.php 第 13 行.
+
+[ 2014-01-04T15:11:55+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015489s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000557s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000490s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000329s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000603s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002236s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000952s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001054s ]
+
+[ 2014-01-04T15:11:55+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002537s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002735s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+
+[ 2014-01-04T15:23:38+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001952s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016238s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016504s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001515s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001456s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001124s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006051s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001809s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002068s ]
+
+[ 2014-01-04T15:23:38+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002761s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002963s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002609s ]
+
+[ 2014-01-04T15:23:42+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001851s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002057s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001142s ]
+
+[ 2014-01-04T15:24:03+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001875s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018820s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001390s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001146s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001290s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001610s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005890s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002641s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002796s ]
+
+[ 2014-01-04T15:24:03+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002253s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002440s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+
+[ 2014-01-04T15:24:06+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001209s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001418s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+NOTIC: [8] Undefined index:  code D:\GitLab\waste\App\Lib\Action\Admin\IndexAction.class.php 第 13 行.
+NOTIC: [8] Undefined index:  code D:\GitLab\waste\App\Lib\Action\Admin\IndexAction.class.php 第 15 行.
+
+[ 2014-01-04T15:25:58+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001386s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014367s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001043s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001847s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001193s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005983s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001842s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001983s ]
+
+[ 2014-01-04T15:25:58+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002438s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002634s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005787s ]
+
+[ 2014-01-04T15:26:02+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001655s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001839s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+NOTIC: [8] Undefined index:  code D:\GitLab\waste\App\Lib\Action\Admin\IndexAction.class.php 第 13 行.
+NOTIC: [8] Undefined index:  code D:\GitLab\waste\App\Lib\Action\Admin\IndexAction.class.php 第 15 行.
+
+[ 2014-01-04T15:26:41+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001795s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018319s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001403s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001396s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002022s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001708s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007029s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001903s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002052s ]
+
+[ 2014-01-04T15:26:41+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002297s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002490s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001157s ]
+
+[ 2014-01-04T15:26:47+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001697s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001893s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001463s ]
+NOTIC: [8] Undefined index:  code D:\GitLab\waste\App\Lib\Action\Admin\IndexAction.class.php 第 13 行.
+NOTIC: [8] Undefined index:  code D:\GitLab\waste\App\Lib\Action\Admin\IndexAction.class.php 第 15 行.
+
+[ 2014-01-04T15:27:29+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001729s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017838s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001449s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001378s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001136s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005511s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001170s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001252s ]
+
+[ 2014-01-04T15:27:30+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002550s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002733s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003800s ]
+
+[ 2014-01-04T15:27:33+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001604s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001831s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001288s ]
+NOTIC: [8] Undefined index:  code D:\GitLab\waste\App\Lib\Action\Admin\IndexAction.class.php 第 13 行.
+NOTIC: [8] Undefined index:  code D:\GitLab\waste\App\Lib\Action\Admin\IndexAction.class.php 第 15 行.
+
+[ 2014-01-04T15:27:38+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017337s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001251s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000637s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000311s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003056s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001823s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001962s ]
+
+[ 2014-01-04T15:27:38+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002346s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002538s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002041s ]
+
+[ 2014-01-04T15:27:39+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify0.524194264318794
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001646s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001849s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+ERR: 非法操作:verify0.524194264318794
+
+[ 2014-01-04T15:27:40+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify0.25175051507540047
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001560s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001789s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001147s ]
+ERR: 非法操作:verify0.25175051507540047
+
+[ 2014-01-04T15:27:57+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014602s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000627s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000447s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000286s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002153s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000757s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000851s ]
+
+[ 2014-01-04T15:27:58+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003255s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003649s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003449s ]
+
+[ 2014-01-04T15:27:58+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/0.33756724558770657
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001644s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001956s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+
+[ 2014-01-04T15:27:59+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/0.17785060848109424
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001661s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001901s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+
+[ 2014-01-04T15:27:59+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/0.8558629888575524
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001678s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001896s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+
+[ 2014-01-04T15:28:02+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001749s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001942s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001275s ]
+NOTIC: [8] Undefined index:  code D:\GitLab\waste\App\Lib\Action\Admin\IndexAction.class.php 第 13 行.
+NOTIC: [8] Undefined index:  code D:\GitLab\waste\App\Lib\Action\Admin\IndexAction.class.php 第 15 行.
+
+[ 2014-01-04T15:31:47+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001811s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017486s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001096s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001296s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001261s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005243s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001780s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001917s ]
+
+[ 2014-01-04T15:31:47+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002422s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002615s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+
+[ 2014-01-04T15:31:54+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005088s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005284s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002215s ]
+
+[ 2014-01-04T15:32:44+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002540s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002751s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002515s ]
+
+[ 2014-01-04T15:32:54+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027383s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001456s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001557s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001335s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006937s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001801s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2014-01-04T15:32:55+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002705s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002897s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001216s ]
+
+[ 2014-01-04T15:32:56+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/0.0768574676476419
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001505s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001679s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+
+[ 2014-01-04T15:33:01+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001526s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001732s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001666s ]
+
+[ 2014-01-04T15:33:19+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001900s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019983s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020476s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002199s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001034s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000711s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005654s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002679s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002844s ]
+
+[ 2014-01-04T15:33:19+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002224s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002428s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001186s ]
+
+[ 2014-01-04T15:33:25+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001699s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001924s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001412s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018942s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001824s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001438s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001238s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006720s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002104s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002279s ]
+
+[ 2014-01-04T15:33:32+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001209s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001348s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+
+[ 2014-01-04T15:38:45+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002294s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002496s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002533s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001988s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'b' ) LIMIT 1   [ RunTime:0.001075s ]
+
+[ 2014-01-04T15:39:00+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003670s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003879s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002423s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002348s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'b' ) LIMIT 1   [ RunTime:0.001604s ]
+
+[ 2014-01-04T15:39:19+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001057s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001173s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001646s ]
+
+[ 2014-01-04T15:39:23+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016349s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001442s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001297s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001111s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005724s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001761s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001897s ]
+
+[ 2014-01-04T15:39:24+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.010866s ]
+INFO: [ route_check ] --END-- [ RunTime:0.011077s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001894s ]
+
+[ 2014-01-04T15:39:44+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001867s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002063s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001517s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001993s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001717s ]
+
+[ 2014-01-04T15:42:18+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001554s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018242s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001923s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002162s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001503s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007256s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001562s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001701s ]
+
+[ 2014-01-04T15:42:18+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002286s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002474s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001201s ]
+
+[ 2014-01-04T15:42:49+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.007976s ]
+INFO: [ route_check ] --END-- [ RunTime:0.008150s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001705s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001562s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001912s ]
+
+[ 2014-01-04T15:42:57+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001938s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021823s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001445s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001400s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001145s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001570s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005993s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002200s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002379s ]
+
+[ 2014-01-04T15:42:58+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002208s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002396s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001794s ]
+
+[ 2014-01-04T15:57:09+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/0.6141349461395293
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002620s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002811s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001995s ]
+
+[ 2014-01-04T16:02:24+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002513s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016191s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001023s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001196s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000959s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004725s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002097s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002232s ]
+
+[ 2014-01-04T16:02:25+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006817s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007013s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001947s ]
+
+[ 2014-01-04T16:02:36+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%884%E6%97%A5%20%E4%B8%8B%E5%8D%884:02:25
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002046s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002227s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+
+[ 2014-01-04T16:02:39+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%884%E6%97%A5%20%E4%B8%8B%E5%8D%884:02:25
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001207s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001343s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+
+[ 2014-01-04T16:02:40+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%884%E6%97%A5%20%E4%B8%8B%E5%8D%884:02:25
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001631s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001814s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001236s ]
+
+[ 2014-01-04T16:03:50+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001140s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001269s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001703s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001612s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018822s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001355s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001334s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001168s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005794s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001774s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001904s ]
+
+[ 2014-01-04T16:03:58+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002966s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003163s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002307s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021398s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001460s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001634s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001406s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001725s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006745s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002034s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002202s ]
+
+[ 2014-01-04T16:04:05+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%884%E6%97%A5%20%E4%B8%8B%E5%8D%884:04:01
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002385s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002567s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002339s ]
+
+[ 2014-01-04T16:04:08+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001559s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001733s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001154s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001744s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000833s ]
+
+[ 2014-01-04T16:04:18+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016104s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001325s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001015s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001165s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001480s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005579s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001366s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001490s ]
+
+[ 2014-01-04T16:04:18+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001697s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001916s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001179s ]
+
+[ 2014-01-04T16:08:18+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001955s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017147s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001097s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001041s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000875s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004635s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002303s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002447s ]
+
+[ 2014-01-04T16:08:18+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002440s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002780s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001928s ]
+
+[ 2014-01-04T16:08:26+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003117s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003324s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001712s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001391s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000982s ]
+
+[ 2014-01-04T16:08:38+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001978s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018051s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001176s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001096s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000724s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000970s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004221s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002023s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002159s ]
+
+[ 2014-01-04T16:08:38+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005714s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005996s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
+
+[ 2014-01-04T16:10:16+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001468s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001634s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001498s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002059s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.002358s ]
+
+[ 2014-01-04T16:10:27+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002330s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020175s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001134s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000898s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000742s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004035s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001284s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001383s ]
+
+[ 2014-01-04T16:10:27+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002879s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003102s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001404s ]
+
+[ 2014-01-04T16:10:54+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001483s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017406s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001228s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001342s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001117s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001744s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005827s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001935s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002081s ]
+
+[ 2014-01-04T16:10:54+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002814s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003029s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001196s ]
+
+[ 2014-01-04T16:11:00+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001575s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001788s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003352s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001016s ]
+
+[ 2014-01-04T16:11:08+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014900s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000789s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000574s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000329s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002613s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000750s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000827s ]
+
+[ 2014-01-04T16:11:08+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002168s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002450s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.017657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017915s ]
+
+[ 2014-01-04T16:11:32+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002408s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002585s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001616s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001497s ]
+
+[ 2014-01-04T16:11:42+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001605s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013582s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000693s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000713s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000465s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000741s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002949s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000736s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2014-01-04T16:11:42+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001815s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002030s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001220s ]
+
+[ 2014-01-04T16:13:19+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002134s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002311s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001899s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001489s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000931s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016965s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000900s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001387s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001071s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005101s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001786s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001951s ]
+
+[ 2014-01-04T16:13:25+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%884%E6%97%A5%20%E4%B8%8B%E5%8D%884:13:22
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001641s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001831s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+
+[ 2014-01-04T16:18:16+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%884%E6%97%A5%20%E4%B8%8B%E5%8D%884:13:22
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002295s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002446s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001296s ]
+
+[ 2014-01-04T16:18:19+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001567s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001761s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001541s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.002912s ]
+
+[ 2014-01-04T16:20:27+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002592s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018459s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001151s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001316s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000889s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005040s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001188s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001265s ]
+
+[ 2014-01-04T16:20:27+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004426s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004630s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003689s ]
+
+[ 2014-01-04T16:20:34+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004029s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004215s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001988s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001790s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001222s ]
+SQL: UPDATE `user` SET `logintime`=1388823634,`loginip`='127.0.0.1' WHERE ( `id` = 0 ) [ RunTime:0.003795s ]
+
+[ 2014-01-04T16:20:45+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001277s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018617s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000946s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000891s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000706s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004055s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001152s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001227s ]
+
+[ 2014-01-04T16:20:45+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002376s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002574s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001483s ]
+
+[ 2014-01-04T16:20:52+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002356s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002547s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001540s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004166s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001949s ]
+SQL: UPDATE `user` SET `logintime`=1388823652,`loginip`='127.0.0.1' WHERE ( `id` = 0 ) [ RunTime:0.003911s ]
+
+[ 2014-01-04T18:19:15+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001590s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001713s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001546s ]
+
+[ 2014-01-04T18:19:19+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001142s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015943s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016100s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001207s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001130s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000880s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002918s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006525s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002314s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002475s ]
+
+[ 2014-01-04T18:19:19+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002215s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002396s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002316s ]
+
+[ 2014-01-04T18:19:28+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001254s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001402s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001700s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001266s ]
+SQL: UPDATE `user` SET `logintime`=1388830768,`loginip`='127.0.0.1' WHERE ( `id` = 0 ) [ RunTime:0.003809s ]
+
+[ 2014-01-04T18:25:29+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001395s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015443s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001295s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001328s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000947s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001013s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004903s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001202s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001281s ]
+
+[ 2014-01-04T18:25:29+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002559s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002729s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+
+[ 2014-01-04T18:25:35+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001306s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001447s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001587s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001194s ]
+SQL: UPDATE `user` SET `logintime`='14-01-04 06:01:35',`loginip`='127.0.0.1' WHERE ( `id` = 0 ) [ RunTime:0.003872s ]
+
+[ 2014-01-04T18:26:12+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001483s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014904s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001250s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001007s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000860s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004618s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001181s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001263s ]
+
+[ 2014-01-04T18:26:12+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001630s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001751s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001141s ]
+
+[ 2014-01-04T18:26:20+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002127s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002315s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001886s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001714s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001130s ]
+SQL: UPDATE `user` SET `logintime`='14-01-04 06:01:20',`loginip`='127.0.0.1' WHERE ( `id` = 0 ) [ RunTime:0.003766s ]
+
+[ 2014-01-04T18:26:59+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014981s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001160s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001122s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000885s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004849s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001590s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001712s ]
+
+[ 2014-01-04T18:26:59+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001889s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002041s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001440s ]
+
+[ 2014-01-04T18:27:05+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001253s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001421s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001940s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.002050s ]
+SQL: UPDATE `user` SET `logintime`='14-01-04 06:01:05',`loginip`='127.0.0.1' WHERE ( `id` = 0 ) [ RunTime:0.003729s ]
+
+[ 2014-01-04T18:27:36+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001149s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011192s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000595s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000482s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000307s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002184s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000719s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2014-01-04T18:27:36+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001962s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002170s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+
+[ 2014-01-04T18:27:41+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%884%E6%97%A5%20%E4%B8%8B%E5%8D%886:27:36
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001135s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001255s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+
+[ 2014-01-04T18:27:44+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001148s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001280s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001825s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001225s ]
+SQL: UPDATE `user` SET `logintime`='2014-01-04 18:01:44',`loginip`='127.0.0.1' WHERE ( `id` = 0 ) [ RunTime:0.003546s ]
+
+[ 2014-01-04T18:28:32+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001891s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014511s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001010s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000873s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000716s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003974s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001509s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001629s ]
+
+[ 2014-01-04T18:28:33+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001612s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001751s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+
+[ 2014-01-04T18:28:39+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001171s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001305s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001712s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.002547s ]
+SQL: UPDATE `user` SET `logintime`='2014-01-04 18:28:39',`loginip`='127.0.0.1' WHERE ( `id` = 0 ) [ RunTime:0.003761s ]
+
+[ 2014-01-04T18:51:07+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001490s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015616s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000985s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000946s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001103s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004559s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001504s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001642s ]
+
+[ 2014-01-04T18:51:08+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001697s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001847s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001466s ]
+
+[ 2014-01-04T18:51:13+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001264s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001402s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002498s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001083s ]
+SQL: UPDATE `user` SET `logintime`='2014-01-04 18:51:13',`loginip`='127.0.0.1' WHERE ( `id` = 0 ) [ RunTime:0.003172s ]
+
+[ 2014-01-04T18:51:13+08:00 ] 127.0.0.1 /waste/index.php/Admin/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001090s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001215s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+
+[ 2014-01-04T18:51:37+08:00 ] 127.0.0.1 /waste/index.php/Admin/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002115s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002273s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001269s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016672s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001778s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001085s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000883s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005806s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001959s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002367s ]
+
+[ 2014-01-04T18:51:43+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014870s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001085s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001040s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000802s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004753s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001200s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001286s ]
+
+[ 2014-01-04T18:51:43+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001621s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001801s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+
+[ 2014-01-04T18:51:50+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001635s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001771s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001920s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001109s ]
+SQL: UPDATE `user` SET `logintime`='2014-01-04 18:51:50',`loginip`='127.0.0.1' WHERE ( `id` = 0 ) [ RunTime:0.003642s ]
+
+[ 2014-01-04T18:51:50+08:00 ] 127.0.0.1 /waste/index.php/Admin/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001050s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001168s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010551s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000515s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000455s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000295s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002044s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000789s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000868s ]
+
+[ 2014-01-04T19:15:05+08:00 ] 127.0.0.1 /waste/index.php/Admin/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001999s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002143s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016900s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001013s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.006261s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000905s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009512s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001190s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001276s ]
+
+[ 2014-01-04T19:15:13+08:00 ] 127.0.0.1 /waste/index.php/Admin/Login/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001609s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001729s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001213s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013629s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000856s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000868s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000719s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001005s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003660s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001162s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001241s ]
+
+[ 2014-01-04T19:15:49+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001362s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014802s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000940s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000916s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000752s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003848s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001210s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001286s ]
+
+[ 2014-01-04T19:15:49+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002191s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002372s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001266s ]
+
+[ 2014-01-04T19:15:55+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001321s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001448s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001503s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001094s ]
+SQL: UPDATE `user` SET `logintime`='2014-01-04 19:15:55',`loginip`='127.0.0.1' WHERE ( `id` = 0 ) [ RunTime:0.003513s ]
+
+[ 2014-01-04T19:15:55+08:00 ] 127.0.0.1 /waste/index.php/Admin/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001214s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001332s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009997s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000525s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000535s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000410s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000984s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002755s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001079s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001396s ]
+
+[ 2014-01-04T19:15:59+08:00 ] 127.0.0.1 /waste/index.php/Admin/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001097s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001221s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009827s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000490s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000499s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000384s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002199s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000778s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2014-01-04T19:16:04+08:00 ] 127.0.0.1 /waste/index.php/Admin/Login/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001154s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001279s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000982s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010973s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000596s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000471s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000289s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002200s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000741s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2014-01-04T19:27:15+08:00 ] 127.0.0.1 /waste/index.php/Admin/Login/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001519s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001639s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+
+[ 2014-01-04T19:27:15+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001133s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001273s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015611s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001308s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001018s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000882s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004682s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001440s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001607s ]
+
+[ 2014-01-04T19:27:15+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001950s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002097s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001458s ]
+
+[ 2014-01-04T19:27:24+08:00 ] 127.0.0.1 /waste/index.php/Admin/Login/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001683s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001825s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001458s ]
+
+[ 2014-01-04T19:27:24+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001041s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001159s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016150s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001108s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001150s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001395s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005082s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001284s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001391s ]
+
+[ 2014-01-04T19:27:24+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001393s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001543s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+
+[ 2014-01-04T19:27:35+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002132s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002280s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001729s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001796s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001262s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.056007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056144s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000944s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001270s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000834s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004407s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001198s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001382s ]
+
+[ 2014-01-04T19:27:42+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001300s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001443s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001585s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000996s ]
+SQL: UPDATE `user` SET `logintime`='2014-01-04 19:27:42',`loginip`='127.0.0.1' WHERE ( `id` = 0 ) [ RunTime:0.006190s ]
+
+[ 2014-01-04T19:27:42+08:00 ] 127.0.0.1 /waste/index.php/Admin/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001203s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001344s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008831s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008953s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001715s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000648s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000316s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003525s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000856s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000953s ]
+

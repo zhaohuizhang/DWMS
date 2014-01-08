@@ -1,0 +1,2380 @@
+[ 2014-01-05T11:23:06+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.019051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019217s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.051640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051845s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002293s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001666s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001311s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007776s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001657s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001737s ]
+
+[ 2014-01-05T11:23:06+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.044832s ]
+INFO: [ route_check ] --END-- [ RunTime:0.044981s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001179s ]
+
+[ 2014-01-05T13:27:31+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.010131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010274s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027525s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027665s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002253s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001776s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001588s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007871s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002835s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002946s ]
+
+[ 2014-01-05T13:27:32+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.034777s ]
+INFO: [ route_check ] --END-- [ RunTime:0.034928s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003308s ]
+
+[ 2014-01-05T13:27:40+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002399s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002589s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001733s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001162s ]
+SQL: UPDATE `user` SET `logintime`='2014-01-05 13:27:40',`loginip`='127.0.0.1' WHERE ( `id` = 0 ) [ RunTime:0.003880s ]
+
+[ 2014-01-05T13:27:40+08:00 ] 127.0.0.1 /waste/index.php/Admin/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001109s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001226s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022333s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000997s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001004s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000922s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005804s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001386s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001468s ]
+
+[ 2014-01-05T13:27:43+08:00 ] 127.0.0.1 /waste/index.php/Admin/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001657s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001837s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009675s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000469s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000499s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000353s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002197s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001967s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002080s ]
+
+[ 2014-01-05T13:39:33+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001630s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016786s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001355s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001263s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001113s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006479s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001567s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001670s ]
+
+[ 2014-01-05T13:39:33+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002580s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002791s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001726s ]
+
+[ 2014-01-05T14:27:44+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002941s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024583s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002260s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002895s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002714s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002906s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011454s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003292s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003484s ]
+
+[ 2014-01-05T14:27:44+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006029s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006293s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.013147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013423s ]
+
+[ 2014-01-05T14:27:53+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005458s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005614s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003506s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001409s ]
+
+[ 2014-01-05T14:27:53+08:00 ] 127.0.0.1 /waste/index.php/Admin/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001386s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001544s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001247s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033324s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001183s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003121s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001257s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007566s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001964s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002113s ]
+
+[ 2014-01-05T14:36:45+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001975s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025915s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001800s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001450s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001081s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006361s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002197s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002349s ]
+
+[ 2014-01-05T14:36:45+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004774s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004985s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+
+[ 2014-01-05T14:36:53+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002188s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002335s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001943s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001863s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001121s ]
+
+[ 2014-01-05T14:36:53+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003759s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004077s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001843s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017271s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001427s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002163s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001283s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.006676s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011883s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002107s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002224s ]
+
+[ 2014-01-05T14:38:53+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002757s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019617s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001489s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001554s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001305s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006307s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001595s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001683s ]
+
+[ 2014-01-05T14:38:53+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002516s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002693s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002699s ]
+
+[ 2014-01-05T14:39:47+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002457s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002643s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001980s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001222s ]
+SQL: UPDATE `user` SET `logintime`='2014-01-05 14:39:47',`loginip`='127.0.0.1' WHERE ( `user_id` = 0 ) [ RunTime:0.004837s ]
+
+[ 2014-01-05T14:39:47+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001876s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002045s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017223s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001601s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001549s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001750s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006980s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003116s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003278s ]
+
+[ 2014-01-05T15:15:57+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001839s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031955s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001440s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001615s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001869s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008572s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002370s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002493s ]
+
+[ 2014-01-05T15:15:58+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003229s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003433s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002792s ]
+
+[ 2014-01-05T15:16:28+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001619s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001783s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002163s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022435s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001263s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001242s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001093s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005596s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003185s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003457s ]
+
+[ 2014-01-05T15:24:32+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002717s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002888s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002296s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019248s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002041s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001854s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001492s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001855s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007648s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002126s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002273s ]
+
+[ 2014-01-05T15:24:34+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/logout.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002972s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003261s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003159s ]
+
+[ 2014-01-05T15:24:34+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002228s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002403s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001981s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019265s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001808s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001547s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001336s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001937s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007064s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003105s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003273s ]
+
+[ 2014-01-05T15:24:34+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003106s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003311s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003847s ]
+
+[ 2014-01-05T15:24:43+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003445s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003672s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001743s ]
+
+[ 2014-01-05T15:24:43+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001192s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001383s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003240s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.140630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140806s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000939s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000847s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000700s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004081s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001762s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001851s ]
+
+[ 2014-01-05T15:24:43+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001393s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001562s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+
+[ 2014-01-05T15:24:52+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001760s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001940s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002433s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001754s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001186s ]
+SQL: UPDATE `user` SET `logintime`='2014-01-05 15:24:52',`loginip`='127.0.0.1' WHERE ( `user_id` = 0 ) [ RunTime:0.004514s ]
+
+[ 2014-01-05T15:24:52+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001259s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001478s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013897s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000884s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000852s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001190s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004936s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002096s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002235s ]
+
+[ 2014-01-05T15:24:55+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/logout.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001247s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001390s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+
+[ 2014-01-05T15:24:55+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001888s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002019s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014803s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000544s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000514s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000341s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002267s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000890s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2014-01-05T15:24:55+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001670s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001864s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001220s ]
+
+[ 2014-01-05T15:24:59+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001771s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001973s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001868s ]
+
+[ 2014-01-05T15:24:59+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001812s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002014s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001264s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014695s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000936s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000886s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000487s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000835s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004427s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001147s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001309s ]
+
+[ 2014-01-05T15:24:59+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001628s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001818s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001153s ]
+
+[ 2014-01-05T15:25:16+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002338s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002513s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002493s ]
+
+[ 2014-01-05T15:25:16+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001648s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001888s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016303s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001313s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001270s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000927s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005101s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001744s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001878s ]
+
+[ 2014-01-05T15:25:17+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001701s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001901s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001275s ]
+
+[ 2014-01-05T15:25:26+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001697s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001894s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001828s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001253s ]
+SQL: UPDATE `user` SET `logintime`='2014-01-05 15:25:26',`loginip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.004237s ]
+
+[ 2014-01-05T15:25:26+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001364s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001543s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012845s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012977s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000786s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000716s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000468s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000948s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003295s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001055s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001180s ]
+
+[ 2014-01-05T15:25:31+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001743s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001946s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001395s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016362s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000729s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001036s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000498s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000773s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003479s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002647s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002822s ]
+
+[ 2014-01-05T15:27:55+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001730s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002016s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001381s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013762s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001941s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001437s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001301s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009321s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003459s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003630s ]
+
+[ 2014-01-05T15:27:58+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001467s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001587s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001781s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013701s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001299s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001012s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000822s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005006s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001487s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001602s ]
+
+[ 2014-01-05T15:28:42+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001741s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001889s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001456s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014027s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001041s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000930s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000712s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000955s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003875s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001124s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001202s ]
+
+[ 2014-01-05T15:28:44+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001030s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012163s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000454s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000675s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000487s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003171s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001822s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001911s ]
+
+[ 2014-01-05T15:28:45+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/logout.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001303s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001664s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+
+[ 2014-01-05T15:28:45+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001178s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001318s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013258s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000623s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000860s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000616s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001913s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004313s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002390s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002499s ]
+
+[ 2014-01-05T15:28:45+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001673s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001876s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+
+[ 2014-01-05T15:28:52+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002109s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002320s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001464s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001937s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.001248s ]
+SQL: UPDATE `user` SET `logintime`='2014-01-05 15:28:52',`loginip`='127.0.0.1' WHERE ( `user_id` = 0 ) [ RunTime:0.003484s ]
+
+[ 2014-01-05T15:28:53+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001419s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001555s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026243s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001518s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001474s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001414s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001956s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006710s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002340s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002490s ]
+
+[ 2014-01-05T15:30:02+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001286s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001415s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001595s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015763s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001429s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.005877s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001316s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012472s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003811s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003926s ]
+
+[ 2014-01-05T15:30:10+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/logout.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002401s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002624s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001303s ]
+
+[ 2014-01-05T15:30:10+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001230s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001394s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015530s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001682s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002059s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000925s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001734s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006785s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003086s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003231s ]
+
+[ 2014-01-05T15:30:10+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001739s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001951s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001530s ]
+
+[ 2014-01-05T15:30:17+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001390s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001537s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001724s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.002399s ]
+SQL: UPDATE `user` SET `logintime`='2014-01-05 15:30:17',`loginip`='127.0.0.1' WHERE ( `user_id` = 0 ) [ RunTime:0.003662s ]
+
+[ 2014-01-05T16:01:03+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001378s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016588s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002144s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001637s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001885s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007482s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001270s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001365s ]
+
+[ 2014-01-05T16:01:03+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002268s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002466s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005324s ]
+
+[ 2014-01-05T16:02:17+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001854s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019012s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001572s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001337s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001089s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005622s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001537s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001618s ]
+
+[ 2014-01-05T16:02:17+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002219s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002420s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001472s ]
+
+[ 2014-01-05T16:06:58+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002351s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018453s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001564s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001690s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001513s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001711s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006832s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001819s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001925s ]
+
+[ 2014-01-05T16:06:58+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003341s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003564s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003976s ]
+
+[ 2014-01-05T16:09:58+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001702s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017351s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001300s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001239s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001261s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005595s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001544s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001625s ]
+
+[ 2014-01-05T16:09:58+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002754s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002964s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001510s ]
+
+[ 2014-01-05T16:10:08+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001404s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020151s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001919s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001785s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001535s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001497s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007070s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001711s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001813s ]
+
+[ 2014-01-05T16:10:09+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002437s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002641s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001735s ]
+
+[ 2014-01-05T16:10:10+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017858s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002173s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001536s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001152s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006896s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002367s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002505s ]
+
+[ 2014-01-05T16:10:11+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001809s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001981s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002991s ]
+
+[ 2014-01-05T16:10:19+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002490s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017639s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017795s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001505s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001777s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001090s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005989s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001514s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001592s ]
+
+[ 2014-01-05T16:10:19+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002016s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002159s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002375s ]
+
+[ 2014-01-05T16:14:31+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001843s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019587s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001960s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001911s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001632s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001633s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007561s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001881s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002002s ]
+
+[ 2014-01-05T16:14:31+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002487s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002758s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001484s ]
+
+[ 2014-01-05T16:16:38+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002370s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019378s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019537s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002815s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002059s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001891s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008815s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002141s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002271s ]
+
+[ 2014-01-05T16:16:38+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002359s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002557s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001992s ]
+
+[ 2014-01-05T16:17:39+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003162s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019407s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002014s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002102s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001997s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008969s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004972s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005139s ]
+
+[ 2014-01-05T16:17:39+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002102s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002317s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001661s ]
+
+[ 2014-01-05T16:18:29+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003032s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018183s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018425s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002396s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001992s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001645s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001813s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008295s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001680s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001769s ]
+
+[ 2014-01-05T16:18:29+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001712s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001874s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001575s ]
+
+[ 2014-01-05T16:18:46+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001885s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014379s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001431s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001419s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001330s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006032s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002263s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002366s ]
+
+[ 2014-01-05T16:18:46+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002748s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002988s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002305s ]
+
+[ 2014-01-05T16:19:19+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002633s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022196s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001268s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001338s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001333s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001729s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005960s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001854s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001973s ]
+
+[ 2014-01-05T16:19:19+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002860s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003069s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002064s ]
+
+[ 2014-01-05T16:19:59+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001650s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019452s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001352s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001224s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001072s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005198s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002649s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002758s ]
+
+[ 2014-01-05T16:20:00+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001684s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001830s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001531s ]
+
+[ 2014-01-05T17:03:18+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002318s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019606s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001924s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001907s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001288s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007047s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001576s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001654s ]
+
+[ 2014-01-05T17:03:18+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003178s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003372s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002257s ]
+
+[ 2014-01-05T19:05:29+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002007s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023396s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001962s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001511s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001408s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001842s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007130s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001546s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001625s ]
+
+[ 2014-01-05T19:05:29+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003701s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003932s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003162s ]
+
+[ 2014-01-05T19:05:38+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001566s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001689s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001686s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001578s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001248s ]
+SQL: UPDATE `user` SET `logintime`='2014-01-05 19:05:38',`loginip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003727s ]
+
+[ 2014-01-05T19:05:38+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001505s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001638s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018230s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001469s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002158s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001336s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006795s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001621s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001828s ]
+
+[ 2014-01-05T19:06:11+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001302s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001432s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015997s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001323s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001837s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001107s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005920s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001583s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001672s ]
+
+[ 2014-01-05T19:06:26+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001931s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002143s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001260s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041901s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001162s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000858s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000696s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003908s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001133s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001209s ]
+
+[ 2014-01-05T19:11:27+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002362s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002512s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001825s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016489s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001372s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001242s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001077s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005244s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001513s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001595s ]
+
+[ 2014-01-05T19:22:38+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001884s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002052s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002560s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: username D:\GitLab\waste\App\Runtime\Cache\Home\8308407b1d5bef0171920cab2bb43a8f.php 第 24 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014016s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001298s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001493s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001185s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005750s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001740s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001882s ]
+
+[ 2014-01-05T19:22:55+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002224s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002423s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002962s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: user D:\GitLab\waste\App\Runtime\Cache\Home\8308407b1d5bef0171920cab2bb43a8f.php 第 24 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028245s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028397s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001747s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001967s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003024s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011649s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004494s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004657s ]
+
+[ 2014-01-05T19:24:58+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002783s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003092s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001811s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: user D:\GitLab\waste\App\Runtime\Cache\Home\8308407b1d5bef0171920cab2bb43a8f.php 第 24 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015823s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001286s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001965s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001851s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007478s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002343s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002489s ]
+
+[ 2014-01-05T19:25:11+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002170s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014644s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001478s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001894s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001083s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006269s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001714s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001847s ]
+
+[ 2014-01-05T19:25:11+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002253s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002448s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002040s ]
+
+[ 2014-01-05T19:25:19+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001359s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001527s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001659s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001182s ]
+SQL: UPDATE `user` SET `logintime`='2014-01-05 19:25:19',`loginip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003620s ]
+
+[ 2014-01-05T19:25:19+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001100s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001228s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: user D:\GitLab\waste\App\Runtime\Cache\Home\8308407b1d5bef0171920cab2bb43a8f.php 第 24 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014714s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000983s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000942s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001085s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004607s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001422s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001528s ]
+
+[ 2014-01-05T19:29:17+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001646s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001796s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001372s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: username D:\GitLab\waste\App\Runtime\Cache\Home\8308407b1d5bef0171920cab2bb43a8f.php 第 24 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013691s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001069s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000996s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000808s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004707s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001707s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001842s ]
+
+[ 2014-01-05T19:31:35+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002029s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002202s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001828s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: username D:\GitLab\waste\App\Runtime\Cache\Home\8308407b1d5bef0171920cab2bb43a8f.php 第 24 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016861s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001123s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000907s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000700s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001873s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004884s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001845s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001947s ]
+
+[ 2014-01-05T19:34:26+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001491s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001619s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: username D:\GitLab\waste\App\Runtime\Cache\Home\8308407b1d5bef0171920cab2bb43a8f.php 第 24 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014957s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001376s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001038s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000830s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004648s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001407s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001523s ]
+
+[ 2014-01-05T19:37:42+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001897s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002029s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002194s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: username D:\GitLab\waste\App\Runtime\Cache\Home\8308407b1d5bef0171920cab2bb43a8f.php 第 24 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016449s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001919s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001929s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001678s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002711s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008614s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001829s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001945s ]
+
+[ 2014-01-05T19:39:18+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002313s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002482s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001451s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant user - assumed 'user' D:\GitLab\waste\App\Runtime\Cache\Home\8308407b1d5bef0171920cab2bb43a8f.php 第 24 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014585s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001322s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001320s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001101s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006304s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002530s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002683s ]
+
+[ 2014-01-05T19:52:25+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001439s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001558s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015267s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001079s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001135s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000700s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000967s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004171s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001141s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001220s ]
+
+[ 2014-01-05T19:53:54+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004065s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004215s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014088s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014217s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000973s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000985s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000819s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004588s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001805s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001914s ]
+
+[ 2014-01-05T19:55:00+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002076s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002207s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001550s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015808s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001485s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001564s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001454s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006188s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001533s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001611s ]
+
+[ 2014-01-05T20:08:57+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002002s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016755s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001467s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001406s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001264s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006113s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001960s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002180s ]
+
+[ 2014-01-05T20:08:57+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002301s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002492s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+
+[ 2014-01-05T20:12:08+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001445s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014834s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001094s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001204s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001065s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005181s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001660s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001741s ]
+
+[ 2014-01-05T20:12:08+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002839s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003053s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002282s ]
+
+[ 2014-01-05T20:15:32+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001813s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022451s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002648s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002426s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001945s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010968s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.005557s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005680s ]
+
+[ 2014-01-05T20:15:33+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002261s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002457s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001889s ]
+
+[ 2014-01-05T20:15:38+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%885%E6%97%A5%20%E4%B8%8B%E5%8D%888:15:38
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002030s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002181s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+
+[ 2014-01-05T20:15:42+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%885%E6%97%A5%20%E4%B8%8B%E5%8D%888:15:42
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001476s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001616s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+
+[ 2014-01-05T20:15:43+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%885%E6%97%A5%20%E4%B8%8B%E5%8D%888:15:43
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001413s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001562s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+
+[ 2014-01-05T20:18:36+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%885%E6%97%A5%20%E4%B8%8B%E5%8D%888:18:36
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001672s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001821s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001860s ]
+
+[ 2014-01-05T20:18:37+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%885%E6%97%A5%20%E4%B8%8B%E5%8D%888:18:37
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001535s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001685s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+
+[ 2014-01-05T20:18:37+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%885%E6%97%A5%20%E4%B8%8B%E5%8D%888:18:37
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001303s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001421s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+
+[ 2014-01-05T20:18:40+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002057s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002260s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001292s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001727s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001151s ]
+SQL: UPDATE `user` SET `logintime`='2014-01-05 20:18:40',`loginip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003816s ]
+
+[ 2014-01-05T20:18:41+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001287s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001452s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017215s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000994s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000877s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000724s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004191s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002258s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002391s ]
+
+[ 2014-01-05T20:19:29+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001702s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001861s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003484s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014982s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001074s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001027s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001142s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004811s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001142s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001220s ]
+
+[ 2014-01-05T20:21:05+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002584s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002765s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002347s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017986s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002635s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002352s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002003s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001763s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009225s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001629s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001710s ]
+
+[ 2014-01-05T20:23:34+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001820s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001974s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001828s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016612s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001031s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001417s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001506s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005988s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001585s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001678s ]
+
+[ 2014-01-05T20:31:22+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003318s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003475s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005634s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022712s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002508s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002239s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003105s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011157s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003390s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003526s ]
+
+[ 2014-01-05T20:34:34+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001593s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001739s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001860s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024784s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001055s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001031s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001367s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006074s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002355s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002485s ]
+
+[ 2014-01-05T20:35:54+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002225s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002532s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002049s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014943s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015087s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001101s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000902s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000868s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005039s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001336s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001436s ]
+
+[ 2014-01-05T20:35:58+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015845s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016058s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000812s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000769s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000708s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003337s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001029s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001173s ]
+
+[ 2014-01-05T20:35:59+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002181s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002370s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001996s ]
+
+[ 2014-01-05T20:36:06+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001865s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001982s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001520s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001623s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001185s ]
+SQL: UPDATE `user` SET `logintime`='2014-01-05 20:36:06',`loginip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003329s ]
+
+[ 2014-01-05T20:36:06+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.012699s ]
+INFO: [ route_check ] --END-- [ RunTime:0.012884s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002331s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016080s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001271s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001236s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001580s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005841s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001792s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001917s ]
+
+[ 2014-01-05T20:36:25+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001638s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001781s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001839s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.042160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042293s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001799s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001482s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001265s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006175s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003021s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003180s ]
+
+[ 2014-01-05T20:37:38+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002144s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002313s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002348s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021105s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001453s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001327s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001469s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001669s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006328s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001819s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001963s ]
+
+[ 2014-01-05T20:37:42+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015692s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000858s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000796s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000555s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003813s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001236s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001381s ]
+
+[ 2014-01-05T20:37:42+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001675s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001882s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001297s ]
+
+[ 2014-01-05T20:37:48+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002401s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002629s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004302s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001701s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001273s ]
+SQL: UPDATE `user` SET `logintime`='2014-01-05 20:37:48',`loginip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.004081s ]
+
+[ 2014-01-05T20:37:48+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002084s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002300s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002428s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022051s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002431s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002206s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002105s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009589s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002691s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002849s ]
+
+[ 2014-01-05T20:38:44+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001793s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002493s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018232s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001419s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001471s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001281s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006087s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001883s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2014-01-05T20:38:59+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003111s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003282s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002199s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019052s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001583s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002098s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001802s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001949s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007852s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002154s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002292s ]
+
+[ 2014-01-05T20:41:40+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002869s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003037s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001440s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015724s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001098s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000874s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000699s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000950s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003867s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001194s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001566s ]
+
+[ 2014-01-05T20:41:41+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001035s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002527s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013609s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000492s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000494s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000311s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000818s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002374s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001058s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001189s ]
+
+[ 2014-01-05T20:41:48+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001866s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002008s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001344s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012405s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001163s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001083s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000853s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004518s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001381s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001486s ]
+
+[ 2014-01-05T20:42:07+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004885s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005119s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001494s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037751s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001569s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001979s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001508s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006711s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001684s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001765s ]
+
+[ 2014-01-05T20:42:26+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002292s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002480s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002414s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023349s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002817s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002008s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001936s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001793s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008982s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001682s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001775s ]
+
+[ 2014-01-05T20:49:45+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002174s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002369s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001408s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017098s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001147s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001732s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001250s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006087s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001477s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001594s ]
+
+[ 2014-01-05T20:50:20+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001600s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001741s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003450s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019264s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001444s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001246s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001323s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005587s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001511s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001589s ]
+
+[ 2014-01-05T20:50:24+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001800s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001972s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001529s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019880s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001856s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001437s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001260s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001742s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006652s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001932s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002055s ]
+
+[ 2014-01-05T21:26:57+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002255s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015741s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001086s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001004s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000824s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004350s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001369s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001472s ]
+
+[ 2014-01-05T21:26:58+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001972s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002158s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002445s ]
+

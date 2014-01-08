@@ -1,0 +1,2562 @@
+[ 2014-01-07T12:51:26+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002993s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.071629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071776s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001763s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001538s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001977s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008123s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001940s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002023s ]
+
+[ 2014-01-07T12:51:26+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.145369s ]
+INFO: [ route_check ] --END-- [ RunTime:0.145577s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002384s ]
+
+[ 2014-01-07T13:00:58+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014047s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001057s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000999s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001098s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001484s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004973s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001915s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002061s ]
+
+[ 2014-01-07T13:00:58+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002358s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002554s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003171s ]
+
+[ 2014-01-07T13:01:49+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001499s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001622s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001154s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001858s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001236s ]
+SQL: UPDATE `user` SET `logintime`='2014-01-07 13:01:49',`loginip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003633s ]
+
+[ 2014-01-07T13:01:49+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001084s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001273s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.098512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098632s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000924s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000870s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000722s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004059s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001141s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001218s ]
+
+[ 2014-01-07T13:02:09+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/production.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002244s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002424s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001430s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.054997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055116s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000874s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000846s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000693s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000956s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003581s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001124s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001198s ]
+
+[ 2014-01-07T13:03:01+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/logout.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001526s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001749s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001681s ]
+
+[ 2014-01-07T13:03:01+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001023s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001138s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001178s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015252s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001079s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001008s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001065s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004892s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001545s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001705s ]
+
+[ 2014-01-07T13:03:01+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001614s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001804s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+
+[ 2014-01-07T13:03:06+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001036s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001149s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+
+[ 2014-01-07T13:03:06+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001704s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001891s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014796s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000574s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000518s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000403s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002396s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000722s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2014-01-07T13:03:06+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001041s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001158s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+
+[ 2014-01-07T13:03:14+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003043s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003283s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001568s ]
+
+[ 2014-01-07T13:03:14+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001534s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001739s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001203s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019221s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001455s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001275s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001110s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005908s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002167s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002349s ]
+
+[ 2014-01-07T13:03:14+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001748s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001939s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001942s ]
+
+[ 2014-01-07T13:04:07+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001051s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001171s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+
+[ 2014-01-07T13:04:13+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001182s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001326s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011628s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000584s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000597s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000390s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002417s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000870s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000959s ]
+
+[ 2014-01-07T13:04:13+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001222s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001380s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+
+[ 2014-01-07T13:04:36+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001138s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001284s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+
+[ 2014-01-07T13:04:36+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001372s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001552s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016509s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000886s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000725s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000423s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003047s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001069s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001207s ]
+
+[ 2014-01-07T13:04:37+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001230s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001400s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+
+[ 2014-01-07T13:05:45+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001975s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002152s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001481s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001873s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001097s ]
+SQL: UPDATE `user` SET `logintime`='2014-01-07 13:05:45',`loginip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003848s ]
+
+[ 2014-01-07T13:05:45+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001184s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001324s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015575s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000955s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001298s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000878s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004516s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001321s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001420s ]
+
+[ 2014-01-07T13:05:52+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/transport.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001441s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001556s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.045579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045723s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001673s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001396s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001274s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006377s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001593s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001703s ]
+
+[ 2014-01-07T13:06:26+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002335s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002520s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001304s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.047037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047169s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000913s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000859s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000699s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004096s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001737s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001860s ]
+
+[ 2014-01-07T13:12:20+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001875s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002069s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001398s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014099s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001096s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001207s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000824s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000995s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004414s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001135s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001211s ]
+
+[ 2014-01-07T13:12:25+08:00 ] 127.0.0.1 /waste/index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001008s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010618s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000912s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000674s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000476s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000834s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003284s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001114s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001239s ]
+
+[ 2014-01-07T13:12:25+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001340s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001487s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+
+[ 2014-01-07T13:12:32+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001520s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001688s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001683s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001161s ]
+SQL: UPDATE `user` SET `logintime`='2014-01-07 13:12:32',`loginip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003955s ]
+
+[ 2014-01-07T13:12:32+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001146s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001264s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014219s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000570s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000529s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000335s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000587s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002275s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001045s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001131s ]
+
+[ 2014-01-07T13:12:42+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/reception.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001287s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001437s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.044844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044954s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000417s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001094s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000568s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000767s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003177s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001086s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001218s ]
+
+[ 2014-01-07T13:13:00+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001465s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001635s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001416s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011880s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000421s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000434s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000768s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000813s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002710s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001028s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001144s ]
+
+[ 2014-01-07T13:15:37+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002579s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002756s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001444s ]
+
+[ 2014-01-07T13:15:37+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001657s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001850s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016105s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000918s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000985s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001183s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005267s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002251s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002388s ]
+
+[ 2014-01-07T13:15:37+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001145s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001308s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+
+[ 2014-01-07T13:15:45+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001515s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001694s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001778s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001497s ]
+SQL: UPDATE `user` SET `logintime`='2014-01-07 13:15:45',`loginip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003727s ]
+
+[ 2014-01-07T13:15:45+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001244s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001376s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011939s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000450s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000444s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000277s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003764s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000973s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001072s ]
+
+[ 2014-01-07T13:15:52+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/production.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001488s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001733s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\GitLab\waste\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012488s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000423s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000439s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000283s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001899s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000747s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000822s ]
+
+[ 2014-01-07T13:15:57+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001315s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001461s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001168s ]
+
+[ 2014-01-07T13:15:57+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001463s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001635s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012305s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000445s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000431s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000284s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001909s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000723s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2014-01-07T13:15:57+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001603s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001782s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+
+[ 2014-01-07T14:20:30+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001391s ]
+
+[ 2014-01-07T14:21:00+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.073651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073817s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001497s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002406s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000873s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006222s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001944s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002106s ]
+
+[ 2014-01-07T14:21:00+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002965s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003174s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001963s ]
+
+[ 2014-01-07T14:21:08+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001562s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001701s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001348s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001724s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001033s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 14:21:08',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003480s ]
+
+[ 2014-01-07T14:21:08+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001020s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001134s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015228s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001031s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001014s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000845s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004790s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001756s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001861s ]
+
+[ 2014-01-07T14:21:36+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/logout.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001272s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001402s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001825s ]
+SQL: UPDATE `user` SET `last_login_time`='2014-01-07 13:44:23',`last_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.004142s ]
+
+[ 2014-01-07T14:21:36+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001175s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001301s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015141s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000563s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000520s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000468s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002522s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000885s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000986s ]
+
+[ 2014-01-07T14:21:36+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001198s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001336s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+
+[ 2014-01-07T14:24:46+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001576s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001735s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002810s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001628s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.002107s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 14:24:46',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003500s ]
+
+[ 2014-01-07T14:24:47+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001414s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001582s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001275s ]
+
+[ 2014-01-07T14:24:47+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001473s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001655s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014767s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001015s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000929s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000729s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002705s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005664s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001962s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002273s ]
+
+[ 2014-01-07T14:24:47+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001600s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001787s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001264s ]
+
+[ 2014-01-07T14:25:15+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001031s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001689s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001301s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 14:25:15',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003618s ]
+
+[ 2014-01-07T14:27:31+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002628s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017543s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001236s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001447s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000931s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005120s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001312s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001395s ]
+
+[ 2014-01-07T14:27:31+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002225s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002405s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+
+[ 2014-01-07T14:27:38+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002468s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002687s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002438s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001861s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001466s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 14:27:38',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.004371s ]
+
+[ 2014-01-07T14:27:53+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001435s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001547s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001363s ]
+
+[ 2014-01-07T14:28:02+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002072s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024165s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001791s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001529s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001192s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001624s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006672s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001973s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002192s ]
+
+[ 2014-01-07T14:28:02+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002455s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002661s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001264s ]
+
+[ 2014-01-07T14:28:09+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001549s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001735s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001790s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001367s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 14:28:09',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003571s ]
+
+[ 2014-01-07T14:28:09+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001032s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+
+[ 2014-01-07T14:28:09+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001026s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001137s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013555s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000963s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000852s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001180s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004379s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001424s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001529s ]
+
+[ 2014-01-07T14:28:09+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001556s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001756s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001304s ]
+
+[ 2014-01-07T14:28:43+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001583s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001766s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+
+[ 2014-01-07T14:28:43+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002538s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002738s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016260s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000683s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000636s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000498s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000956s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003132s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001245s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001879s ]
+
+[ 2014-01-07T14:28:43+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001591s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001782s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+
+[ 2014-01-07T14:28:52+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001650s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001840s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001776s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001319s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 14:28:52',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.004135s ]
+
+[ 2014-01-07T14:28:52+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001104s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001224s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+
+[ 2014-01-07T14:28:52+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001666s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001832s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014096s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000666s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000635s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000419s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000909s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002959s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001954s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002075s ]
+
+[ 2014-01-07T14:28:52+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001591s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001765s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+
+[ 2014-01-07T14:30:26+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001731s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002047s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001695s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001894s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.002707s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 14:30:26',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003381s ]
+
+[ 2014-01-07T14:30:26+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002441s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002595s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+
+[ 2014-01-07T14:30:26+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001457s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001627s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017009s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001335s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000874s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000703s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004125s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001706s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001811s ]
+
+[ 2014-01-07T14:30:26+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001718s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001910s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
+
+[ 2014-01-07T14:32:50+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002140s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002325s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001890s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001770s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001242s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 14:32:50',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003587s ]
+
+[ 2014-01-07T14:32:50+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001112s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001330s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+
+[ 2014-01-07T14:32:50+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001565s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001767s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001335s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016665s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001072s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001026s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000871s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004424s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001326s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001485s ]
+
+[ 2014-01-07T14:32:50+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001504s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001687s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001277s ]
+
+[ 2014-01-07T14:34:24+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001186s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001328s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002165s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001435s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 14:34:24',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.004373s ]
+
+[ 2014-01-07T14:34:24+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001399s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001528s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+
+[ 2014-01-07T14:34:24+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001165s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001297s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013114s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000793s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000770s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000462s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003151s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000940s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001080s ]
+
+[ 2014-01-07T14:34:24+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001485s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001663s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001141s ]
+
+[ 2014-01-07T14:34:36+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%887%E6%97%A5%20%E4%B8%8B%E5%8D%882:34:36
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001191s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001331s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001875s ]
+
+[ 2014-01-07T14:34:38+08:00 ] 127.0.0.1 /waste/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%887%E6%97%A5%20%E4%B8%8B%E5%8D%882:34:38
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001099s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001222s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+
+[ 2014-01-07T14:34:41+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001211s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001347s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001940s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001152s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 14:34:41',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003418s ]
+
+[ 2014-01-07T14:34:41+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001248s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001388s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+
+[ 2014-01-07T14:34:41+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001624s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001851s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011703s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000453s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000439s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000284s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001950s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000805s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000897s ]
+
+[ 2014-01-07T14:34:41+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001252s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001402s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+
+[ 2014-01-07T14:34:53+08:00 ] 127.0.0.1 /waste/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001931s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018582s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001527s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001328s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001095s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005816s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001631s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001754s ]
+
+[ 2014-01-07T14:34:54+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002666s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002881s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001667s ]
+
+[ 2014-01-07T14:35:03+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001546s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001679s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001380s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001680s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001162s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 14:35:03',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003334s ]
+
+[ 2014-01-07T14:35:03+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001052s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001171s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+
+[ 2014-01-07T14:35:03+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001106s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001224s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020263s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000945s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000865s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000717s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005491s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001874s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2014-01-07T14:35:03+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001657s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001852s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001257s ]
+
+[ 2014-01-07T14:36:01+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001393s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001540s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002132s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001216s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 14:36:01',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003692s ]
+
+[ 2014-01-07T14:36:01+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001185s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001324s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+
+[ 2014-01-07T14:36:01+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001749s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001957s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001239s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011607s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000705s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000656s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000422s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000772s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002912s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001155s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001272s ]
+
+[ 2014-01-07T14:36:01+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001747s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001937s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001217s ]
+
+[ 2014-01-07T14:36:21+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001791s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001989s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004424s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001636s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 14:36:21',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003460s ]
+
+[ 2014-01-07T14:36:21+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001188s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001332s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+
+[ 2014-01-07T14:36:21+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001021s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001293s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012442s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000643s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000508s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000353s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000587s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002400s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001109s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001246s ]
+
+[ 2014-01-07T14:36:21+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001377s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001529s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001316s ]
+
+[ 2014-01-07T14:36:35+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001331s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001463s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001994s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001389s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 14:36:35',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003470s ]
+
+[ 2014-01-07T14:37:28+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005655s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005842s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001962s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001744s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001285s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 14:37:28',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003450s ]
+
+[ 2014-01-07T14:37:52+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001858s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002033s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001636s ]
+
+[ 2014-01-07T14:37:52+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001204s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001364s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016855s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001168s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001179s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001176s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005548s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001421s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001528s ]
+
+[ 2014-01-07T14:37:52+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001046s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+
+[ 2014-01-07T14:38:24+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001604s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001733s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002125s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002088s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001744s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 14:38:24',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003485s ]
+
+[ 2014-01-07T14:38:24+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001358s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001499s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+
+[ 2014-01-07T14:38:24+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001199s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001341s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026994s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001584s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001338s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001162s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005899s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001926s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002031s ]
+
+[ 2014-01-07T14:38:24+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001206s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001347s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+
+[ 2014-01-07T14:40:08+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001852s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002075s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001778s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.011333s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 14:40:08',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.004593s ]
+
+[ 2014-01-07T14:40:08+08:00 ] 127.0.0.1 /waste/index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001032s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001471s ]
+
+[ 2014-01-07T14:40:08+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001031s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015075s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000624s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000530s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000348s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002368s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000857s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000959s ]
+
+[ 2014-01-07T14:40:08+08:00 ] 127.0.0.1 /waste/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001711s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001839s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001978s ]
+
+[ 2014-01-07T14:48:58+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001789s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025749s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001381s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001284s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000820s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004800s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001283s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001367s ]
+
+[ 2014-01-07T14:48:59+08:00 ] 127.0.0.1 /index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002573s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002762s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002204s ]
+
+[ 2014-01-07T14:49:07+08:00 ] 127.0.0.1 /index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002640s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002873s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001453s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001952s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.002047s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 14:49:07',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003717s ]
+
+[ 2014-01-07T14:49:07+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001567s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001763s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+
+[ 2014-01-07T14:49:07+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001202s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001339s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028947s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001440s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001174s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000768s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001016s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004672s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001691s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001819s ]
+
+[ 2014-01-07T14:49:08+08:00 ] 127.0.0.1 /index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001563s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001748s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+
+[ 2014-01-07T14:54:06+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005912s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026158s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001733s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001599s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001376s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001877s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007275s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002067s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002223s ]
+
+[ 2014-01-07T14:54:15+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001516s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023035s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000773s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000744s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000495s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000873s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003300s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001796s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002022s ]
+
+[ 2014-01-07T14:54:16+08:00 ] 127.0.0.1 /index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002600s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002815s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002422s ]
+
+[ 2014-01-07T14:54:27+08:00 ] 127.0.0.1 /index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001972s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002120s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001417s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001610s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001238s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 14:54:27',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.004234s ]
+
+[ 2014-01-07T14:54:27+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001104s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001225s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+
+[ 2014-01-07T14:54:27+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001636s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001834s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022435s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001274s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001038s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000768s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001065s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004386s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001329s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001414s ]
+
+[ 2014-01-07T14:54:27+08:00 ] 127.0.0.1 /index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001302s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001478s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+
+[ 2014-01-07T14:54:42+08:00 ] 127.0.0.1 /index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001444s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001628s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001701s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001924s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 14:54:42',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003394s ]
+
+[ 2014-01-07T14:54:43+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001232s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001376s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001557s ]
+
+[ 2014-01-07T14:54:43+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001025s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001142s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015364s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000835s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000880s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001009s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000916s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004128s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001291s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001449s ]
+
+[ 2014-01-07T14:54:43+08:00 ] 127.0.0.1 /index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001176s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001309s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001277s ]
+
+[ 2014-01-07T14:56:08+08:00 ] 127.0.0.1 /index.php/Home/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001220s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001363s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+
+[ 2014-01-07T14:56:08+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001163s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001301s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012964s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000555s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000598s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000354s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002367s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000820s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000906s ]
+
+[ 2014-01-07T14:56:09+08:00 ] 127.0.0.1 /index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001619s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001804s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+
+[ 2014-01-07T14:59:04+08:00 ] 127.0.0.1 /index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%887%E6%97%A5%20%E4%B8%8B%E5%8D%882:59:04
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002119s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002351s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001469s ]
+
+[ 2014-01-07T14:59:07+08:00 ] 127.0.0.1 /index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001207s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001342s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001840s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001168s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 14:59:07',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003580s ]
+
+[ 2014-01-07T14:59:07+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001031s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+
+[ 2014-01-07T14:59:07+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001010s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001120s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017934s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001165s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001167s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000765s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004961s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001353s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001468s ]
+
+[ 2014-01-07T14:59:07+08:00 ] 127.0.0.1 /index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001633s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001825s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+
+[ 2014-01-07T15:02:17+08:00 ] 127.0.0.1 /index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002041s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002229s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001499s ]
+
+[ 2014-01-07T15:02:37+08:00 ] 127.0.0.1 /index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001573s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001763s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001830s ]
+
+[ 2014-01-07T15:02:48+08:00 ] 127.0.0.1 /index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001583s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001711s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001651s ]
+
+[ 2014-01-07T15:03:00+08:00 ] 127.0.0.1 /index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002032s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002206s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002114s ]
+
+[ 2014-01-07T15:04:22+08:00 ] 127.0.0.1 /index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001911s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002065s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001481s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001848s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001319s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 15:04:22',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003359s ]
+
+[ 2014-01-07T15:04:35+08:00 ] 127.0.0.1 /index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001082s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001527s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001197s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 15:04:35',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003428s ]
+
+[ 2014-01-07T15:05:08+08:00 ] 127.0.0.1 /index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001912s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002096s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001715s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001176s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 15:05:08',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003545s ]
+
+[ 2014-01-07T15:05:08+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001273s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001403s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+
+[ 2014-01-07T15:05:09+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001022s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001137s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028391s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001628s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001811s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001348s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001660s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006907s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001898s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002026s ]
+
+[ 2014-01-07T15:05:09+08:00 ] 127.0.0.1 /index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003091s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003875s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002137s ]
+
+[ 2014-01-07T15:05:52+08:00 ] 127.0.0.1 /index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002130s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002303s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001493s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001645s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001312s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 15:05:52',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.004203s ]
+
+[ 2014-01-07T15:05:52+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001575s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001748s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001291s ]
+
+[ 2014-01-07T15:05:52+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001041s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001157s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026655s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000963s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000914s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000763s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003890s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001787s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001899s ]
+
+[ 2014-01-07T15:05:52+08:00 ] 127.0.0.1 /index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001646s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001964s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+
+[ 2014-01-07T15:06:01+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001703s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001852s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002102s ]
+
+[ 2014-01-07T15:06:01+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002396s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002558s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001298s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014185s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000697s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000576s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000408s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000943s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002926s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000881s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000988s ]
+
+[ 2014-01-07T15:06:01+08:00 ] 127.0.0.1 /index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001528s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001710s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001269s ]
+
+[ 2014-01-07T15:06:49+08:00 ] 127.0.0.1 /index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001337s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001488s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001777s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.002615s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 15:06:49',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003518s ]
+
+[ 2014-01-07T15:06:49+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001136s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001269s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+
+[ 2014-01-07T15:06:49+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001095s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001219s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012514s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000490s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000441s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000291s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000738s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002186s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000891s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2014-01-07T15:06:49+08:00 ] 127.0.0.1 /index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001065s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001184s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+
+[ 2014-01-07T15:08:54+08:00 ] 127.0.0.1 /index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001767s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001904s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001649s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002282s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001349s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 15:08:54',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003367s ]
+
+[ 2014-01-07T15:08:55+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001059s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001176s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016880s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001057s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000923s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000758s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003976s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001190s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001266s ]
+
+[ 2014-01-07T15:10:25+08:00 ] 127.0.0.1 /index.php/Home/Login/production.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002044s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002220s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001479s ]
+
+[ 2014-01-07T15:10:25+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001046s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001165s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014817s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001022s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001178s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001533s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005346s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001430s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001543s ]
+
+[ 2014-01-07T15:10:25+08:00 ] 127.0.0.1 /index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001456s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001618s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+
+[ 2014-01-07T15:10:29+08:00 ] 127.0.0.1 /index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%887%E6%97%A5%20%E4%B8%8B%E5%8D%883:10:29
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001158s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001281s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+
+[ 2014-01-07T15:10:32+08:00 ] 127.0.0.1 /index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001581s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001773s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001216s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001992s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001407s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 15:10:32',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003604s ]
+
+[ 2014-01-07T15:10:32+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001208s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001346s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015237s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000511s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000475s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000317s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002096s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000771s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2014-01-07T15:10:36+08:00 ] 127.0.0.1 /index.php/Home/Login/logout.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001356s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001494s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000982s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001686s ]
+SQL: UPDATE `user` SET `last_login_time`='2014-01-07 15:08:54',`last_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003717s ]
+
+[ 2014-01-07T15:10:36+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003402s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003554s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011578s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001072s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001294s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000549s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000922s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004247s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001207s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001372s ]
+
+[ 2014-01-07T15:10:36+08:00 ] 127.0.0.1 /index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001402s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001550s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+
+[ 2014-01-07T15:11:15+08:00 ] 127.0.0.1 /index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001738s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001882s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001800s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001292s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 15:11:15',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003299s ]
+
+[ 2014-01-07T15:11:16+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002211s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002338s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017341s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000553s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000528s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000352s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000599s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002290s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000853s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000955s ]
+
+[ 2014-01-07T15:11:18+08:00 ] 127.0.0.1 /index.php/Home/Login/logout.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001182s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001322s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001735s ]
+SQL: UPDATE `user` SET `last_login_time`='2014-01-07 15:10:32',`last_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.003760s ]
+
+[ 2014-01-07T15:11:18+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001230s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001379s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011684s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000697s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000667s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000422s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000754s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002881s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001059s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001188s ]
+
+[ 2014-01-07T15:11:18+08:00 ] 127.0.0.1 /index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001900s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002095s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+
+[ 2014-01-07T20:46:04+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002552s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025101s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001551s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001448s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001937s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001719s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006888s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002433s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002549s ]
+
+[ 2014-01-07T20:46:04+08:00 ] 127.0.0.1 /index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.042428s ]
+INFO: [ route_check ] --END-- [ RunTime:0.042645s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002388s ]
+
+[ 2014-01-07T21:26:27+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002194s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017107s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001480s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001504s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001424s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001703s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006559s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001254s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001339s ]
+
+[ 2014-01-07T21:26:27+08:00 ] 127.0.0.1 /index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002558s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002780s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002031s ]
+
+[ 2014-01-07T21:29:25+08:00 ] 127.0.0.1 /index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002289s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002464s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001490s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001766s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'city' ) LIMIT 1   [ RunTime:0.001235s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-07 21:29:25',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 3 ) [ RunTime:0.003816s ]
+
+[ 2014-01-07T21:29:25+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001195s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001334s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028987s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001102s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001042s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000910s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001681s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005027s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002026s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002194s ]
+
+[ 2014-01-07T21:34:14+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003147s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003326s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002024s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018397s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001250s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001476s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001173s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001517s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005785s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001502s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001646s ]
+
+[ 2014-01-07T21:37:29+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001777s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001927s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026055s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001026s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001551s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001569s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008047s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001455s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001562s ]
+
+[ 2014-01-07T21:40:13+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001653s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001791s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001633s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017905s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018062s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001174s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001082s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000906s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004622s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001554s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001661s ]
+
+[ 2014-01-07T21:41:25+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002424s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002628s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002222s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020630s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001320s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001456s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001121s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005863s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002851s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003069s ]
+
+[ 2014-01-07T21:41:57+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001543s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001734s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001218s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014123s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000598s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000558s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000362s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002388s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000879s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2014-01-07T21:42:09+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001903s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002070s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001425s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017410s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000998s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001372s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000959s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004736s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001386s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001493s ]
+
+[ 2014-01-07T21:44:11+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002220s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002407s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001805s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021634s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001181s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001109s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000941s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001753s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005295s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001462s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001567s ]
+
+[ 2014-01-07T21:55:49+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002451s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002666s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002108s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019342s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001174s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001104s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000922s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005109s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001442s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001557s ]
+
+[ 2014-01-07T21:57:36+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003761s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003919s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001495s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019176s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001199s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001019s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000891s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004533s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001502s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001606s ]
+
+[ 2014-01-07T22:02:18+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001738s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001884s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001492s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016921s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001148s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001117s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000910s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004534s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001670s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001767s ]
+
+[ 2014-01-07T22:02:46+08:00 ] 127.0.0.1 /index.php/Home/Login/city.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001801s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001945s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001934s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020377s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001536s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001494s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001479s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006079s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002279s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002397s ]
+
+[ 2014-01-07T22:04:36+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001644s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014433s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000932s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000924s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001493s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005050s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001418s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001521s ]
+
+[ 2014-01-07T22:04:36+08:00 ] 127.0.0.1 /index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002585s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002781s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001360s ]
+
