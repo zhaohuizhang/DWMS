@@ -13,19 +13,16 @@
 
     <!-- Bootstrap core CSS -->
     <link href="__PUBLIC__/css/bootstrap.css" rel="stylesheet">
+    <!-- My CSS -->
+    <link href="__PUBLIC__/css/layout.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/color.css" rel="stylesheet">
 
-    <script type="text/javascript" src="__PUBLIC__/js/jquery-2.0.3.min.js"></script>
 </head>
-
 <body>
-    lalalala这是国家级的country
-    <br/>
-    <a href="{:U('Home/Login/logout')}">退出登录</a>
+    <include file="./Home/Common/header.html" />
+    {__CONTENT__}
+    <include file="./Home/Common/footer.html" />
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-	<script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js"></script>
 </body>
 
 </html>

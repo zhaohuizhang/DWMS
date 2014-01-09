@@ -13,7 +13,10 @@ class LoginAction extends CommonAction{
 
 	public function country() {
 		if ( session( 'user_type' ) == 1 ) {
-			$this->display();
+			layout('./Common/frame');
+			$this->display('./Content/content_country_index');
+
+			//$this->display();
 		}else {
 			$this->redirect( 'Home/Index/index' );
 		}
