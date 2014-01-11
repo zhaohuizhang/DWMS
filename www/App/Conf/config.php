@@ -14,6 +14,7 @@ return array(
 	'DB_NAME'   => 'dwms',  // 数据库名
 	'DB_PREFIX' => '',  // 数据库表前缀
 
+	'SHOW_PAGE_TRACE' =>true, // 显示页面Trace信息
 	//点语法默认解析
 	//'TMPL_VAR_IDENTIFY' => 'array',
 	//模板路径，重定义控制器名称和方法模板名称的分隔符
