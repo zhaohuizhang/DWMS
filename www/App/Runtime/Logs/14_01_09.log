@@ -1,0 +1,1383 @@
+[ 2014-01-09T20:35:33+08:00 ] 127.0.0.1 /www/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006537s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000211s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000204s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000115s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000913s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000363s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2014-01-09T20:35:33+08:00 ] 127.0.0.1 /www/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000633s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+
+[ 2014-01-09T20:35:35+08:00 ] 127.0.0.1 /www/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006011s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000208s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000201s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000111s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000901s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000356s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2014-01-09T20:35:35+08:00 ] 127.0.0.1 /www/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000562s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+
+[ 2014-01-09T20:35:37+08:00 ] 127.0.0.1 /www/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007467s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000204s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000199s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000112s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000897s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000352s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2014-01-09T20:35:37+08:00 ] 127.0.0.1 /www/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000579s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+
+[ 2014-01-09T20:35:39+08:00 ] 127.0.0.1 /www/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%889%E6%97%A5%20%E4%B8%8B%E5%8D%888:35:39
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000524s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+
+[ 2014-01-09T20:35:40+08:00 ] 127.0.0.1 /www/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%889%E6%97%A5%20%E4%B8%8B%E5%8D%888:35:40
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000615s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+
+[ 2014-01-09T20:35:43+08:00 ] 127.0.0.1 /www/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%889%E6%97%A5%20%E4%B8%8B%E5%8D%888:35:43
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000557s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+
+[ 2014-01-09T20:35:44+08:00 ] 127.0.0.1 /www/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%889%E6%97%A5%20%E4%B8%8B%E5%8D%888:35:44
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000551s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+
+[ 2014-01-09T20:35:44+08:00 ] 127.0.0.1 /www/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%889%E6%97%A5%20%E4%B8%8B%E5%8D%888:35:44
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000561s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+
+[ 2014-01-09T20:35:44+08:00 ] 127.0.0.1 /www/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%889%E6%97%A5%20%E4%B8%8B%E5%8D%888:35:44
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000478s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+
+[ 2014-01-09T20:35:44+08:00 ] 127.0.0.1 /www/index.php/Admin/Index/verify/2014%E5%B9%B41%E6%9C%889%E6%97%A5%20%E4%B8%8B%E5%8D%888:35:44
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000504s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+
+[ 2014-01-09T20:35:58+08:00 ] 127.0.0.1 /www/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006338s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000197s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000204s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000111s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000883s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000358s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2014-01-09T20:35:58+08:00 ] 127.0.0.1 /www/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000824s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+
+[ 2014-01-09T20:35:58+08:00 ] 127.0.0.1 /www/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005189s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000197s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000193s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000110s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000876s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000356s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2014-01-09T20:35:58+08:00 ] 127.0.0.1 /www/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000801s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
+
+[ 2014-01-09T20:35:59+08:00 ] 127.0.0.1 /www/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001452s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006542s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000239s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000207s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000113s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000941s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000368s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2014-01-09T20:35:59+08:00 ] 127.0.0.1 /www/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000781s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+
+[ 2014-01-09T20:36:00+08:00 ] 127.0.0.1 /www/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005419s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000205s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000203s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000112s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000898s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000372s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000419s ]
+
+[ 2014-01-09T20:36:00+08:00 ] 127.0.0.1 /www/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000649s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+
+[ 2014-01-09T20:36:00+08:00 ] 127.0.0.1 /www/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006731s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000228s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000204s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000137s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000954s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000360s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2014-01-09T20:36:00+08:00 ] 127.0.0.1 /www/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000607s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+
+[ 2014-01-09T20:36:00+08:00 ] 127.0.0.1 /www/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006164s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000217s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000197s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000110s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000900s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000354s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000397s ]
+
+[ 2014-01-09T20:36:00+08:00 ] 127.0.0.1 /www/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000961s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+
+[ 2014-01-09T20:36:00+08:00 ] 127.0.0.1 /www/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001527s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006334s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000235s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000208s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000115s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000943s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000370s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2014-01-09T20:36:01+08:00 ] 127.0.0.1 /www/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001632s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001987s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+
+[ 2014-01-09T20:36:01+08:00 ] 127.0.0.1 /www/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005919s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000227s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000197s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000172s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001048s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000430s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2014-01-09T20:36:01+08:00 ] 127.0.0.1 /www/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000779s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+
+[ 2014-01-09T20:36:01+08:00 ] 127.0.0.1 /www/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006317s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000367s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000204s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000135s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001207s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000539s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2014-01-09T20:36:01+08:00 ] 127.0.0.1 /www/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000756s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+
+[ 2014-01-09T20:36:20+08:00 ] 127.0.0.1 /www/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005926s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000196s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000192s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000107s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000868s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000354s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000397s ]
+
+[ 2014-01-09T20:36:20+08:00 ] 127.0.0.1 /www/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000529s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+
+[ 2014-01-09T20:37:02+08:00 ] 127.0.0.1 /www/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000928s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001075s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+
+[ 2014-01-09T20:37:20+08:00 ] 127.0.0.1 /www/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005065s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000189s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000193s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000109s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000857s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000348s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2014-01-09T20:37:20+08:00 ] 127.0.0.1 /www/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000797s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+
+[ 2014-01-09T20:38:16+08:00 ] 127.0.0.1 /www/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001196s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005867s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000208s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000218s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000113s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000924s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000361s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2014-01-09T20:38:16+08:00 ] 127.0.0.1 /www/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000920s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001079s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+
+[ 2014-01-09T20:44:42+08:00 ] 127.0.0.1 /www/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006934s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000374s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000332s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000191s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001575s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000657s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2014-01-09T20:44:42+08:00 ] 127.0.0.1 /www/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000506s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+
+[ 2014-01-09T20:44:53+08:00 ] 127.0.0.1 /www/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000602s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002736s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'country' ) LIMIT 1   [ RunTime:0.003112s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-09 20:44:53',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.006669s ]
+
+[ 2014-01-09T20:44:53+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000484s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Home/Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(./Home/Common/footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006074s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000235s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000260s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000168s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001187s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000541s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2014-01-09T20:46:06+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000594s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Tpl/Home/Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(./Tpl/Home/Common/footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008371s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000216s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000205s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000120s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000942s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000359s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2014-01-09T20:46:07+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000523s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Tpl/Home/Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(./Tpl/Home/Common/footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006088s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006171s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000199s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000198s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000172s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001077s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000543s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2014-01-09T20:46:07+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000604s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Tpl/Home/Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(./Tpl/Home/Common/footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006617s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000543s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000395s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000199s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001598s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000362s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2014-01-09T20:46:07+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000485s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Tpl/Home/Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(./Tpl/Home/Common/footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008349s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000324s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000319s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000180s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001426s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000479s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2014-01-09T20:46:08+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000862s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001086s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Tpl/Home/Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(./Tpl/Home/Common/footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006221s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000194s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000196s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000113s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000861s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000360s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2014-01-09T20:46:08+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000803s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000948s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Tpl/Home/Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(./Tpl/Home/Common/footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006261s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000203s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000202s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000118s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000902s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000399s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000445s ]
+
+[ 2014-01-09T20:46:08+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000579s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Tpl/Home/Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(./Tpl/Home/Common/footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006415s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000230s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000211s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000122s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000935s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000367s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2014-01-09T20:46:08+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000506s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Tpl/Home/Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(./Tpl/Home/Common/footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005684s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000444s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000385s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000191s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001593s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000405s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000453s ]
+
+[ 2014-01-09T20:46:09+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Tpl/Home/Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(./Tpl/Home/Common/footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006770s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000217s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000203s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000112s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000899s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000359s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2014-01-09T20:47:38+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000658s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../../Tpl/Home/Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005636s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000193s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000235s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000117s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000912s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000381s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000441s ]
+
+[ 2014-01-09T20:47:40+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000613s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../../Tpl/Home/Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005915s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005976s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000192s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000199s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000116s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000877s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000354s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2014-01-09T20:47:40+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000620s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../../Tpl/Home/Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006802s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000211s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000204s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000119s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000907s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000361s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2014-01-09T20:47:40+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001529s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001744s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../../Tpl/Home/Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007983s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000197s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000198s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000111s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000867s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000363s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2014-01-09T20:47:41+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001122s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001275s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../../Tpl/Home/Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009465s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000195s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000199s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000123s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000885s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000380s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000423s ]
+
+[ 2014-01-09T20:47:41+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000497s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../../Tpl/Home/Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005507s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000188s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000192s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000110s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000848s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000348s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2014-01-09T20:47:57+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000494s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005635s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000221s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000402s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000209s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000484s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001563s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000818s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000936s ]
+
+[ 2014-01-09T20:47:58+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000675s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005613s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000192s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000197s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000111s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000857s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000352s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2014-01-09T20:51:08+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000586s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./App/Tpl/./Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006341s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000212s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000202s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000119s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000906s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000361s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2014-01-09T20:51:09+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000656s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./App/Tpl/./Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006225s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000206s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000201s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000118s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000896s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000357s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2014-01-09T20:51:09+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000760s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./App/Tpl/./Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008532s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000301s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000291s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000162s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001294s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000546s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2014-01-09T20:51:09+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000499s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./App/Tpl/./Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005900s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006023s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000380s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000297s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000167s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001326s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000382s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2014-01-09T20:51:09+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000603s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./App/Tpl/./Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006036s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000238s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000206s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000120s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000939s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000372s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2014-01-09T20:51:10+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000485s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./App/Tpl/./Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007743s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000204s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000197s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000112s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000892s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000371s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2014-01-09T20:51:10+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000497s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./App/Tpl/./Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007983s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000217s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000202s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000114s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000899s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000388s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2014-01-09T20:51:25+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001015s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001233s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./App/Tpl/./Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006369s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000217s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000204s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000115s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000906s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000361s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2014-01-09T20:51:36+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000511s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./App/Tpl/../Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005882s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000225s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000208s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000168s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001145s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000491s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2014-01-09T20:51:37+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000578s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./App/Tpl/../Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005825s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000190s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000197s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000112s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000859s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000351s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2014-01-09T20:51:38+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000676s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./App/Tpl/../Common/header.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+NOTIC: [2] file_get_contents(footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005666s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000185s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000193s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000108s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000841s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000346s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000421s ]
+
+[ 2014-01-09T20:52:08+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000511s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008305s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000216s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000205s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000112s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000898s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000363s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2014-01-09T20:52:10+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000862s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(footer.html): failed to open stream: No such file or directory /home/nihiue/git/newserver/DWMS/www/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 695 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007308s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000238s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000217s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000162s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001226s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000518s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2014-01-09T20:52:42+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000484s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006854s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000265s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000206s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000168s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001020s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000363s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2014-01-09T20:52:51+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000499s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007238s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000236s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000209s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000113s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000933s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000367s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000424s ]
+
+[ 2014-01-09T20:55:13+08:00 ] 127.0.0.1 /www/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005813s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000376s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000318s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000153s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001338s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000362s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2014-01-09T20:55:13+08:00 ] 127.0.0.1 /www/index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000857s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+
+[ 2014-01-09T20:55:17+08:00 ] 127.0.0.1 /www/index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000485s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003176s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'country' ) LIMIT 1   [ RunTime:0.002222s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-09 20:55:17',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.006940s ]
+
+[ 2014-01-09T20:55:17+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000479s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005918s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000186s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000193s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000106s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000837s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000349s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2014-01-09T20:56:47+08:00 ] 127.0.0.1 /www/index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000547s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006295s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000244s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000312s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000191s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000624s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001627s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000926s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001059s ]
+
+[ 2014-01-09T22:18:08+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001421s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029320s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001342s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001161s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000916s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004780s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001263s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001345s ]
+
+[ 2014-01-09T22:18:08+08:00 ] 127.0.0.1 /index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002547s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002875s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002540s ]
+
+[ 2014-01-09T22:18:17+08:00 ] 127.0.0.1 /index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002008s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002180s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001511s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002105s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'country' ) LIMIT 1   [ RunTime:0.001762s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-09 22:18:17',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.005489s ]
+
+[ 2014-01-09T22:18:18+08:00 ] 127.0.0.1 /index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001202s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001338s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027320s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000985s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000940s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000781s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003976s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001842s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001961s ]
+
+[ 2014-01-09T22:21:39+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001936s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027142s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001524s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001153s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001058s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005543s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001841s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001949s ]
+
+[ 2014-01-09T22:21:39+08:00 ] 127.0.0.1 /index.php/Home/Index/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002643s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002849s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001310s ]
+
+[ 2014-01-09T22:21:46+08:00 ] 127.0.0.1 /index.php/Home/Index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001792s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001937s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001739s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002581s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'country' ) LIMIT 1   [ RunTime:0.001629s ]
+SQL: UPDATE `user` SET `current_login_time`='2014-01-09 22:21:46',`current_login_ip`='127.0.0.1' WHERE ( `user_id` = 1 ) [ RunTime:0.005153s ]
+
+[ 2014-01-09T22:21:46+08:00 ] 127.0.0.1 /index.php/Home/Login/country.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001167s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001299s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001132s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018329s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000983s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000934s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000796s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001674s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004657s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002237s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002401s ]
+
