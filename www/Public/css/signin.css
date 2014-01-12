@@ -1,40 +1,59 @@
 body {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #EEE;
+    background-color: #EEE;
+}
+#login-panel{    
+     margin-top:15%;
+     padding-bottom:20px;
 }
 
+.blank-div
+{
+    height: 20px
+}
 .form-signin {
-  max-width: 300px;
-  padding: 15px;
-  margin: 0 auto;
+    position: relative;
+    font-size: 20px;
+    font-weight: normal;
+    height: auto;
+    width: auto;
+    max-width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    vertical-align:middle;
+    z-index: 2;
 }
-.form-signin .form-signin-heading,
-.form-signin .checkbox {
-  margin-bottom: 10px;
-}
-.form-signin .checkbox {
-  font-weight: normal;
-}
-.form-signin .form-control {
-  position: relative;
-  font-size: 16px;
-  height: auto;
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.form-signin .form-control:focus {
-  z-index: 2;
+.form-signin-heading {
+    margin-bottom: 10px;
 }
 .form-signin input[type="username"] {
-  margin-bottom: -1px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-style: groove;
+    border-color:
 }
 .form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-style: groove;
+    border-color:
+}
+.form-signin input[type="code"] {
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 5px;
+    border-style: groove;
+    border-color:
+}
+#login {
+    font-size: 20px;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+#register {
+    font-size: 20px;
 }

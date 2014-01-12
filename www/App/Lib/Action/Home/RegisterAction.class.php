@@ -3,7 +3,7 @@
  *
  */
 class RegisterAction extends Action{
-	public function first(){
+	public function index(){
 		$this->display();
 	}
 }

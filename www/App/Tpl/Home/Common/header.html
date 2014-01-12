@@ -1,12 +1,25 @@
- <div class="container">
-        <div id="webpage_title">
-            <img id="logo" src="__PUBLIC__/image/aqshbj_logo_64.png" alt="logo" />
-            <h2 id="title">安庆市危险废物管理信息系统</h2>
+
+     <div class="panel panel-default">
+        <div class="panel-body">
+             <div id="header_button_container" style="float:right;padding-top:20px"> </div>
+             <div id="webpage_title">  
+                      <img id="logo" src="__PUBLIC__/image/header_logo.jpg" alt="logo" style="margin-right:20px"/>
+             
+                <h2 id="title">危险废物管理信息系统</h2>
+            </div>
+            <div id="">
+                <p id="welcome">欢迎您，{$Think.session.username|default="先生"}</p>
+                <a id="password" href=#>修改密码</a>
+                <a id="logout" href="{:U('Home/Login/logout')}">退出登录</a>
+                <div id="datetime"></div>
+            </div>
         </div>
-        <div id="">
-            <p id="welcome">欢迎您，{$Think.session.username|default="先生"}</p>
-            <a id="password" href=#>修改密码</a>
-            <a id="logout" href="{:U('Home/Login/logout')}">退出登录</a>
-            <div id="datetime"></div>
-        </div>
-        <div>
+    </div>
+
+
+ <script type="text/javascript" src="__PUBLIC__/js/jquery-2.0.3.min.js"></script>
+ <script type="text/javascript" src="__PUBLIC__/js/jquery.dataTables.min.js"></script>
+        <!-- Bootstrap core JavaScript-->
+<script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js"></script>   
+<script type="text/javascript" src="__PUBLIC__/js/highcharts.js"></script>
+       

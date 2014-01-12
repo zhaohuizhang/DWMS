@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-color: #F2F2F2;
+	margin-top: 0px;
+}
+
+body,td,th {
+	font-size: 13px;
+	color: #666666;
+	/* line-height: 30px;*/
+}
+
+a:link {
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+}
+
+a:visited {
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+}
+
+a:hover {
+	font-size: 12px;
+	color: #666666;
+	text-decoration: none;
+}
+
+a:active {
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+}
+
+.red {
+	color: #FF0000
+}
+
+.tip {
+	font-size: 12px
+}
+
+.field {
+	color: #000000;
+	font-size: 13px;
+}
+
+.font_error {
+	font-size: 12px;
+	color: #ff0000;
+}
+.add{line-height:20px;height:atuo;border-top:#999999 solid 1px;float:left;width:666px; }
+
+.font_true {
+	font-size: 12px;
+	color: #56B429;
+}
+.verror , #companyForm label.error, label.error {
+	color: #ff0000;
+	float:right;
+	margin-right:10px;
+	cursor: hand;
+}
+.aaabbb {
+	line-height: 24px;
+	float: left;
+	width: 200px;
+	text-align: left;
+}
+
+.input{
+ padding:0px 3px;
+ border:1px solid #d1d1d1;
+ height:18px;
+ line-height:18px;
+ font-size:12px;
+ color:#999;
+}
