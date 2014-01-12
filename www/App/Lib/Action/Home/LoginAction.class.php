@@ -18,13 +18,13 @@ class LoginAction extends CommonAction{
 				case 'homepage':
 						layout( './Common/frame' );
 						$this->display( './Public/html/Content/Government/homepage/country_index.html' );
-					break;			
+					break;
 				default:
 					$this->error('404');
 					break;
 			}
 
-		
+
 		}else {
 			$this->redirect( 'Home/Index/index' );
 		}
@@ -54,7 +54,7 @@ class LoginAction extends CommonAction{
 		}
 	}
 
-	public function production($id='production_index') {
+	public function production($id="production_index") {
 		if ( session( 'user_type' ) == 5 ) {
 			switch ($id) {
 				case 'production_index':
@@ -62,7 +62,6 @@ class LoginAction extends CommonAction{
 					$this->display( './Public/html/Content/Production/homepage/production_index.html' );
 					break;
 				case 'basic_sidebar':
-
 					layout( './Common/frame' );
 					$this->display( './Public/html/Content/Production/basic/basic_sidebar.html' );
 					break;
@@ -79,7 +78,7 @@ class LoginAction extends CommonAction{
 					$this->ajaxReturn($tmp_content);
 					break;
 				default:
-					$this->error('页面不存在');
+					$this->error("页面不存在！");
 					break;
 			}
 
