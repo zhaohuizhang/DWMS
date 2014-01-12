@@ -11,10 +11,20 @@ class LoginAction extends CommonAction{
 		}
 	}
 
-	public function country() {
+	public function country($id="homepage") {
+
 		if ( session( 'user_type' ) == 1 ) {
-			layout( './Common/frame' );
-			$this->display( './Public/html/Content/Government/homepage/country_index.html' );
+			switch ($id) {
+				case 'homepage':
+						layout( './Common/frame' );
+						$this->display( './Public/html/Content/Government/homepage/country_index.html' );
+					break;			
+				default:
+					$this->error('404');
+					break;
+			}
+
+		
 		}else {
 			$this->redirect( 'Home/Index/index' );
 		}
