@@ -46,9 +46,13 @@ class LoginAction extends CommonAction{
 
 	public function production() {
 		if ( session( 'user_type' ) == 5 ) {
+
 			$production_unit = M('production_unit')->where(array('user_id' => session('user_id')))->find();
+			$this->unit = $production_unit;
+
 			layout( './Common/frame' );
-			$this->display( './Public/html/Content/Production/homepage/production_index.html' );
+			/*$this->display( './Public/html/Content/Production/homepage/production_index.html' );*/
+			$this->display('./Public/html/Content/Production/basic/basic_information.html');
 		}else {
 			$this->redirect( 'Home/Index/index' );
 		}
