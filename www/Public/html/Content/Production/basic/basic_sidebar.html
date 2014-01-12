@@ -2,55 +2,71 @@
 <script type="text/javascript">
 DWMS_page_config.pageid = 1;
 </script>
+
 <script type="text/javascript">
-
-function do_ajax(ajaxurl){
-    $("#content_page").html("Loading...");    
-    $.ajax({ 
-    url:ajaxurl,
-    dataType:"Json",
-    success:function(data)
-        { 
-        $("#content_page").html(data);          
+function do_ajax(ajaxURL) {
+    $("#content_page").html("Loading...");
+    $.ajax({
+        url: ajaxURL,
+        dataType: "Json",
+        success: function(data) {
+            $("#content_page").html(data);
         },
-    error:function(XMLHttpRequest, textStatus, errorThrown)
-         {       
-            alert("Ajax_Content_Load_Error: "+errorThrown);
-         }
-     });
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+            alert("Ajax_Content_Load_Error: " + errorThrown);
+        }
+    });
 }
-
+function change(mode){
+    $("#sidebar_content").children().removeClass('active');
+    switch(mode){
+        case 'basic_information':
+            $("#basic_information").addClass('active');
+            break;
+        case 'change_information':
+            $("#change_information").addClass('active');
+            break;
+        default:
+            break;
+    }
+}
 </script>
-<div>
-    <div class="panel panel-primary" id="sidebar">
-        <div class="panel-group" id="accordion">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse_1">
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="panel panel-primary" id="sidebar">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse_1">
           企业基本信息
         </a>
-                    </h4>
-                </div>
-                <div id="collapse_1" class="panel-collapse collapse in">
-                    <div class="panel-body">
-                        <ul class="nav nav-pills nav-stacked">
-                            <li class="active"><a onclick="do_ajax()">企业基本信息</a>
-                            </li>
-                            <li><a href="#">基本信息变更</a>
-                            </li>
-                            <li><a href="#">自行处置设备信息</a>
-                            </li>
-                            <li><a href="#">存储场所</a>
-                            </li>
-                        </ul>
+                                </h4>
+                            </div>
+                            <div id="collapse_1" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <ul class="nav nav-pills nav-stacked" id="sidebar_content">
+                                        <li class="active" id="basic_information"><a onclick="change('basic_information');do_ajax('basic_information')">企业基本信息</a>
+                                        </li>
+                                        <li id="change_information"><a onclick="change('change_information');do_ajax('change_information')">基本信息变更</a>
+                                        </li>
+                                        <li><a href="#">自行处置设备信息</a>
+                                        </li>
+                                        <li><a href="#">存储场所</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
+            <div class="col-md-9">
+                <div id="content_page">
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<div id="content_page">
-
 </div>

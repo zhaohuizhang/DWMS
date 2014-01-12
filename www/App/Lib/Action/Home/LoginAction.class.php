@@ -44,15 +44,15 @@ class LoginAction extends CommonAction{
 		}
 	}
 
-	public function production($id='homepage') {
+	public function production($id='production_index') {
 		if ( session( 'user_type' ) == 5 ) {
 			switch ($id) {
-				case 'homepage':
+				case 'production_index':
 					layout( './Common/frame' );
 					$this->display( './Public/html/Content/Production/homepage/production_index.html' );
 					break;
 				case 'basic_sidebar':
-					
+
 					layout( './Common/frame' );
 					$this->display( './Public/html/Content/Production/basic/basic_sidebar.html' );
 					break;
@@ -62,16 +62,17 @@ class LoginAction extends CommonAction{
 					$tmp_content=$this->fetch( './Public/html/Content/Production/basic/basic_information.html' );
 					$this->ajaxReturn($tmp_content);
 					break;
+				case 'change_information':
+					$production_unit = M('production_unit')->where(array('user_id' => session('user_id')))->find();
+					$this->unit = $production_unit;
+					$tmp_content=$this->fetch( './Public/html/Content/Production/basic/change_information.html' );
+					$this->ajaxReturn($tmp_content);
+					break;
 				default:
-					$this->error('404');
+					$this->error('页面不存在');
 					break;
 			}
 
-			
-
-			
-			
-			//$this->display('./Public/html/Content/Production/basic/basic_information.html');
 		}else {
 			$this->redirect( 'Home/Index/index' );
 		}
