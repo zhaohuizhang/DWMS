@@ -1,6 +1,15 @@
 body {
     background-color: #EEE;
 }
+#login-panel{    
+     margin-top:150px;
+     padding-bottom:20px;
+}
+
+.blank-div
+{
+    height: 20px
+}
 .form-signin {
     position: relative;
     font-size: 20px;
@@ -46,5 +55,5 @@ body {
     margin-left: auto;
 }
 #register {
-    font-size: 16px;
+    font-size: 20px;
 }
