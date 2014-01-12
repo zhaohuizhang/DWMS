@@ -6,13 +6,7 @@ function menu_generator()
 	newHtml+=""
 	for (idx in DWMS_page_config.menu)
 	{
-		/*
-	
-  
- 
-  <li><a href="#">...</a></li>
 
-		*/
 		if(DWMS_page_config.menu[idx].id==DWMS_page_config.pageid)
 		{
 			newHtml+="<li class=\"active\"><a href=\"#\">"+DWMS_page_config.menu[idx].name+"</a></li>";
