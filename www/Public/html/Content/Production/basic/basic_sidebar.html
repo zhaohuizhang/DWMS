@@ -1,3 +1,26 @@
+<include file="./Public/html/Content/Production/production_config.html" />
+<script type="text/javascript">
+DWMS_page_config.pageid = 1;
+</script>
+<script type="text/javascript">
+
+function do_ajax(){
+    $("#content_page").html("Loading...");    
+    $.ajax({ 
+    url:"basic_information.html",
+    dataType:"Json",
+    success:function(data)
+        { 
+        $("#content_page").html(data);          
+        },
+    error:function(XMLHttpRequest, textStatus, errorThrown)
+         {       
+            alert("Json_Content_Load_Error: "+errorThrown);
+         }
+     });
+}
+
+</script>
 <div>
     <div class="panel panel-primary" id="sidebar">
         <div class="panel-group" id="accordion">
@@ -12,7 +35,7 @@
                 <div id="collapse_1" class="panel-collapse collapse in">
                     <div class="panel-body">
                         <ul class="nav nav-pills nav-stacked">
-                            <li class="active"><a href="#">企业基本信息</a>
+                            <li class="active"><a onclick="do_ajax()">企业基本信息</a>
                             </li>
                             <li><a href="#">基本信息变更</a>
                             </li>
