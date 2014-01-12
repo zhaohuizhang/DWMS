@@ -13,12 +13,8 @@ class LoginAction extends CommonAction{
 
 	public function country() {
 		if ( session( 'user_type' ) == 1 ) {
-			layout('./Common/frame');
-
-			$this->display('./Public/html/Content/Government/homepage/country_index.html');
-
-
-			//$this->display();
+			layout( './Common/frame' );
+			$this->display( './Public/html/Content/Government/homepage/country_index.html' );
 		}else {
 			$this->redirect( 'Home/Index/index' );
 		}
@@ -50,7 +46,8 @@ class LoginAction extends CommonAction{
 
 	public function production() {
 		if ( session( 'user_type' ) == 5 ) {
-			$this->display();
+			layout( './Common/frame' );
+			$this->display( './Public/html/Content/Production/homepage/production_index.html' );
 		}else {
 			$this->redirect( 'Home/Index/index' );
 		}
