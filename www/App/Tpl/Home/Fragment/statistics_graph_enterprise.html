@@ -1,4 +1,11 @@
-option = {
+
+<div id="statistics_graph_enterprise">
+</div>
+                  
+
+<script type="text/javascript">
+
+                  option = {
     tooltip : {
         trigger: 'item',
         formatter: "{a} <br/>{b} : {c} ({d}%)"
@@ -57,19 +64,7 @@ option = {
         }
     ]
 };
-var ecConfig = require('echarts/config');
-myChart.on(ecConfig.EVENT.PIE_SELECTED, function(param){
-    var selected = param.selected;
-    var serie;
-    var str = '当前选择： ';
-    for (var idx in selected) {
-        serie = option.series[idx];
-        for (var i = 0, l = serie.data.length; i < l; i++) {
-            if (selected[idx][i]) {
-                str += '【系列' + idx + '】' + serie.name + ' : ' + 
-                       '【数据' + i + '】' + serie.data[i].name + ' ';
-            }
-        }
-    }
-    document.getElementById('statistics_graph_enterprise').innerHTML = str;
-})
+
+    var myChart = echarts.init(document.getElementById("statistics_graph_enterprise"));
+ myChart.setOption(option);
+</script>
