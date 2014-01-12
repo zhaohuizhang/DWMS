@@ -72,15 +72,15 @@
     <!-- Bootstrap core JavaScript -->
     <!-- My JavaScript-->
     <script type="text/javascript">
-    var verifyURL = "{:U('Admin/Index/verify/', '', '')}";
+    var verifyURL = "{:U('Home/Index/verify/', '', '')}";
     </script>
     <script type="text/javascript" src="__PUBLIC__/js/login.js"></script>
     <script type="text/javascript" src="__PUBLIC__/js/webpage.js"></script>
     <script type="text/javascript" src="__PUBLIC__/js/register.js"></script>
-    <script>
+    <script type="text/javascript">
     $(document).ready(function() {
         $('#register').click(function() {
-            $.post("{:U('Home/Register/first/')}");
+            window.location = "{:U('Home/Register/index/', '', '')}";
         });
     });
     </script>
