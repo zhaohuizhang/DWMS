@@ -4,10 +4,10 @@ DWMS_page_config.pageid = 1;
 </script>
 <script type="text/javascript">
 
-function do_ajax(){
+function do_ajax(ajaxurl){
     $("#content_page").html("Loading...");    
     $.ajax({ 
-    url:"basic_information.html",
+    url:ajaxurl,
     dataType:"Json",
     success:function(data)
         { 
@@ -15,7 +15,7 @@ function do_ajax(){
         },
     error:function(XMLHttpRequest, textStatus, errorThrown)
          {       
-            alert("Json_Content_Load_Error: "+errorThrown);
+            alert("Ajax_Content_Load_Error: "+errorThrown);
          }
      });
 }
