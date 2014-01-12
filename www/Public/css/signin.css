@@ -1,11 +1,10 @@
 body {
     background-color: #EEE;
 }
+
 #login-panel{
-     margin-top: 15%;
-     margin-right: auto;
-     margin-bottom: auto;
-     margin-left: auto;
+     margin-top:15%;
+     padding-bottom:20px;
 }
 
 .blank-div
