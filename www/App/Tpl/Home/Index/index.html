@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0038)http://v3.bootcss.com/examples/signin/ -->
+
 <html lang="zh-cn">
 
 <head>
@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="__PUBLIC__/image/favicon.png">
 
-    <title>安庆市危废管理系统</title>
+    <title>危险废物管理信息系统</title>
 
     <!-- Bootstrap core CSS -->
     <link href="__PUBLIC__/css/bootstrap.css" rel="stylesheet">
@@ -31,37 +31,37 @@
 
 <body>
     <div class="container">
+        <div class="jumbotron">
+            <form class="form-signin" role="form" action="{:U('Home/Index/login/')}" method="post" id="login">
 
-        <form class="form-signin" role="form" action="{:U('Home/Index/login/')}" method="post" id="login">
+                <h2 class="form-signin-heading">危险废物管理信息系统</h2>
 
-            <h2 class="form-signin-heading">安庆市危废管理系统</h2>
+                <input type="username" name="username" class="form-control" placeholder="用户名" required="" autofocus="" />
+                <input type="password" name="password" class="form-control" placeholder="密码" required="" />
+                <input type="code" name="code" class="form-control" placeholder="验证码" required="" />
 
-            <input type="username" name="username" class="form-control" placeholder="用户名" required="" autofocus="" />
-            <input type="password" name="password" class="form-control" placeholder="密码" required="" />
-            <input type="code" name="code" class="form-control" placeholder="验证码" required="" />
+                <img src="{:U('Home/Index/verify/')}" id="code" />
+                <a href="javascript:void(change_code());">看不清</a>
 
-            <img src="{:U('Home/Index/verify/')}" id="code" />
-            <a href="javascript:void(change_code());">看不清</a>
-
-            <!-- <label class="checkbox">
+                <!-- <label class="checkbox">
                 <input type="checkbox" value="remember-me">记住密码
             </label> -->
 
-            <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
-            <button class="btn btn-lg btn-default btn-block" type="button" id="register">注册</button>
+                <button class="btn btn-lg btn-primary btn-block" type="submit" id="login">登录</button>
+                <button class="btn btn-lg btn-default btn-block" type="button" id="register">注册</button>
 
-        </form>
+            </form>
 
-        <footer class="bs-footer" role="contentinfo">
-            <div class="text-center padder clearfix">
-                <p>
-                    <small>&copy; 2014, 安庆市环境保护局&nbsp;&nbsp;&nbsp;&nbsp;版权所有.
-                    </small>
-                </p>
-            </div>
+            <footer class="bs-footer" role="contentinfo">
+                <div class="text-center padder clearfix">
+                    <p>
+                        <small>&copy; 2014, 安庆市环境保护局&nbsp;&nbsp;&nbsp;&nbsp;版权所有.
+                        </small>
+                    </p>
+                </div>
 
-        </footer>
-
+            </footer>
+        </div>
     </div>
     <!-- /container -->
 
