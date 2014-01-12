@@ -44,15 +44,34 @@ class LoginAction extends CommonAction{
 		}
 	}
 
-	public function production() {
+	public function production($id='homepage') {
 		if ( session( 'user_type' ) == 5 ) {
+			switch ($id) {
+				case 'homepage':
+					layout( './Common/frame' );
+					$this->display( './Public/html/Content/Production/homepage/production_index.html' );
+					break;
+				case 'basic_sidebar':
+					
+					layout( './Common/frame' );
+					$this->display( './Public/html/Content/Production/basic/basic_sidebar.html' );
+					break;
+				case 'basic_information':
+				    $production_unit = M('production_unit')->where(array('user_id' => session('user_id')))->find();
+					$this->unit = $production_unit;
+					$tmp_content=$this->fetch( './Public/html/Content/Production/basic/basic_information.html' );
+					$this->ajaxReturn($tmp_content);
+					break;
+				default:
+					$this->error('404');
+					break;
+			}
 
-			$production_unit = M('production_unit')->where(array('user_id' => session('user_id')))->find();
-			$this->unit = $production_unit;
+			
 
-			layout( './Common/frame' );
-			/*$this->display( './Public/html/Content/Production/homepage/production_index.html' );*/
-			$this->display('./Public/html/Content/Production/basic/basic_information.html');
+			
+			
+			//$this->display('./Public/html/Content/Production/basic/basic_information.html');
 		}else {
 			$this->redirect( 'Home/Index/index' );
 		}
