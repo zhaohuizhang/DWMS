@@ -25,6 +25,14 @@ DWMS_page_config.pageid = 1;
     </div>
 </div>
 <script type="text/javascript">
+function trans(st)
+{
+    var num=parseFloat(st);
+    var i=parseInt(num/100);
+    num=num-i*100;
+
+    return(num/60+i);
+}
 function setmap()
 {
   var windowHeight=$(window).height();
@@ -67,17 +75,27 @@ marker.addEventListener("click", function(){
         url: "country?id=ajax",
         dataType: "json",
         success: function(data) {
-            var testdata=data;
+            // testdata=data;
+           // alert(data);
             var pointArray = new Array();
-
+            var idx;
+            var lat,lng;
+            for(idx in data)
+            {
+            
+                lat=trans(data[idx].latitude);
+                lng=trans(data[idx].longitude);
+                pointArray.push(new BMap.Point(lng, lat));
+                console.log("lat:"+lat+" lng:"+lng);
+            }
            // pointArray.push(new BMap.Point(116.399, 39.910));
-            /*
+            
             
 var polyline = new BMap.Polyline(pointArray,    
  {strokeColor:"blue", strokeWeight:6, strokeOpacity:0.5}    
 );    
 map.addOverlay(polyline); 
-*/
+
             
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
