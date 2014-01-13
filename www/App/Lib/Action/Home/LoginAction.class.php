@@ -11,16 +11,70 @@ class LoginAction extends CommonAction{
 		}
 	}
 
-	public function country( $id="homepage" ) {
-
+	public function country( $id="country_index" ) {
 		if ( session( 'user_type' ) == 1 ) {
 			switch ( $id ) {
-			case 'homepage':
+				// 国家首页
+			case 'country_index':
 				layout( './Common/frame' );
 				$this->display( './Public/html/Content/Government/homepage/country_index.html' );
 				break;
+
+				// 转移地图展示 侧边栏
+			case 'GIS_sidebar':
+				layout( './Common/frame' );
+				$this->display( './Public/html/Content/Government/GIS/GIS_sidebar.html' );
+				break;
+				// 转移地图展示
+			case 'transfer_display':
+				$tmp_content=$this->fetch( './Public/html/Content/Government/GIS/transfer_display.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+
+				// 危废产生单位 侧边栏
+			case 'production_sidebar':
+				layout( './Common/frame' );
+				$this->display( './Public/html/Content/Government/production/production_sidebar.html' );
+				break;
+				// 危废产生单位企业基本信息
+			case 'production_basic_information':
+				$tmp_content=$this->fetch( './Public/html/Content/Government/production/basic_information.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+				// 危废产生单位危险废物台账
+			case 'production_waste_account':
+				$tmp_content=$this->fetch( './Public/html/Content/Government/production/waste_account.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+				// 危废产生单位RFID手持端绑定
+			case 'production_rfid_hand_equipment':
+				$tmp_content=$this->fetch( './Public/html/Content/Government/production/rfid_hand_equipment.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+
+				// 危废运输单位 侧边栏
+			case 'transport_sidebar':
+				layout( './Common/frame' );
+				$this->display( './Public/html/Content/Government/transport/transport_sidebar.html' );
+				break;
+				// 危废运输单位企业基本信息
+			case 'transport_basic_information':
+				$tmp_content=$this->fetch( './Public/html/Content/Government/transport/basic_information.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+				// 危废运输单位运输车辆管理
+			case 'transport_vehicle_management':
+				$tmp_content=$this->fetch( './Public/html/Content/Government/transport/vehicle_management.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+				// 危废运输单位GPS监控信息
+			case 'transport_gps_monitor_information':
+				$tmp_content=$this->fetch( './Public/html/Content/Government/transport/gps_monitor_information.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+
 			default:
-				$this->error( '404' );
+				$this->error( '页面不存在' );
 				break;
 			}
 		}else {
@@ -60,25 +114,38 @@ class LoginAction extends CommonAction{
 				layout( './Common/frame' );
 				$this->display( './Public/html/Content/Production/homepage/production_index.html' );
 				break;
+				// 企业基本信息 侧边栏
 			case 'basic_sidebar':
 				layout( './Common/frame' );
 				$this->display( './Public/html/Content/Production/basic/basic_sidebar.html' );
 				break;
+				// 企业基本信息
 			case 'basic_information':
 				$production_unit = M( 'production_unit' )->where( array( 'user_id' => session( 'user_id' ) ) )->find();
 				$this->unit = $production_unit;
 				$tmp_content=$this->fetch( './Public/html/Content/Production/basic/basic_information.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
+				// 基本信息变更
 			case 'change_information':
 				$production_unit = M( 'production_unit' )->where( array( 'user_id' => session( 'user_id' ) ) )->find();
 				$this->unit = $production_unit;
 				$tmp_content=$this->fetch( './Public/html/Content/Production/basic/change_information.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
+				// 危废库存管理 侧边栏
 			case 'warehouse_sidebar':
 				layout( './Common/frame' );
 				$this->display( './Public/html/Content/Production/warehouse/warehouse_sidebar.html' );
+				break;
+				// 危废入库管理
+			case 'storage_input_management':
+				break;
+				// 危废在库查询
+			case 'storage_query':
+				break;
+				// 危废出库管理
+			case 'storage_output_management':
 				break;
 			default:
 				$this->error( "页面不存在！" );
