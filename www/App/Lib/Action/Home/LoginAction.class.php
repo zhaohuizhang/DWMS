@@ -25,11 +25,14 @@ class LoginAction extends CommonAction{
 				layout( './Common/frame' );
 				$this->display( './Public/html/Content/Government/GIS/GIS_sidebar.html' );
 				break;
-				// 转移地图展示
+			case 'ajax':
+				$GIS_data = M('gps_308033501795')->field('longitude,latitude')->find();
+				$this->ajaxReturn($GIS_data, 'JSON');
+			/*	// 转移地图展示
 			case 'transfer_display':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/GIS/transfer_display.html' );
 				$this->ajaxReturn( $tmp_content );
-				break;
+				break;*/
 
 				// 危废产生单位 侧边栏
 			case 'production_sidebar':
@@ -70,6 +73,48 @@ class LoginAction extends CommonAction{
 				// 危废运输单位GPS监控信息
 			case 'transport_gps_monitor_information':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/transport/gps_monitor_information.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+
+				// 危废处置单位 侧边栏
+			case 'disposal_sidebar':
+				layout( './Common/frame' );
+				$this->display( './Public/html/Content/Government/disposal/disposal_sidebar.html' );
+				break;
+				// 危废处置单位企业基本信息
+			case 'disposal_basic_information':
+				$tmp_content=$this->fetch( './Public/html/Content/Government/disposal/basic_information.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+				// 危废处置单位危废接受台账
+			case 'disposal_waste_reception_account':
+				$tmp_content=$this->fetch( './Public/html/Content/Government/disposal/waste_reception_account.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+				// 危废处置单位企业基本信息
+			case 'disposal_rfid_hand_equipment':
+				$tmp_content=$this->fetch( './Public/html/Content/Government/disposal/rfid_hand_equipment.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+
+			// 危废转移 侧边栏
+			case 'transfer_sidebar':
+				layout( './Common/frame' );
+				$this->display( './Public/html/Content/Government/transfer/transfer_sidebar.html' );
+				break;
+				// 危废转移 转移联单管理
+			case 'transfer_manifest_management':
+				$tmp_content=$this->fetch( './Public/html/Content/Government/transfer/transfer_manifest_management.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+				// 危废转移 转移备案管理
+			case 'transfer_record_management':
+				$tmp_content=$this->fetch( './Public/html/Content/Government/transfer/transfer_record_management.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+				// 危废转移 转移统计分析
+			case 'transfer_statistic_analysis':
+				$tmp_content=$this->fetch( './Public/html/Content/Government/transfer/transfer_statistic_analysis.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
 
