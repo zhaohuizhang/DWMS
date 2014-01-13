@@ -11,20 +11,20 @@ class LoginAction extends CommonAction{
 		}
 	}
 
-	public function country($id="homepage") {
+	public function country( $id="homepage" ) {
 
 		if ( session( 'user_type' ) == 1 ) {
-			switch ($id) {
-				case 'homepage':
-						layout( './Common/frame' );
-						$this->display( './Public/html/Content/Government/homepage/country_index.html' );
-					break;			
-				default:
-					$this->error('404');
-					break;
+			switch ( $id ) {
+			case 'homepage':
+				layout( './Common/frame' );
+				$this->display( './Public/html/Content/Government/homepage/country_index.html' );
+				break;
+			default:
+				$this->error( '404' );
+				break;
 			}
 
-		
+
 		}else {
 			$this->redirect( 'Home/Index/index' );
 		}
@@ -54,34 +54,35 @@ class LoginAction extends CommonAction{
 		}
 	}
 
-	public function production($id='homepage') {
+	public function production( $id="production_index" ) {
 		if ( session( 'user_type' ) == 5 ) {
-			switch ($id) {
-				case 'homepage':
-					layout( './Common/frame' );
-					$this->display( './Public/html/Content/Production/homepage/production_index.html' );
-					break;
-				case 'basic_sidebar':
-					
-					layout( './Common/frame' );
-					$this->display( './Public/html/Content/Production/basic/basic_sidebar.html' );
-					break;
-				case 'basic_information':
-				    $production_unit = M('production_unit')->where(array('user_id' => session('user_id')))->find();
-					$this->unit = $production_unit;
-					$tmp_content=$this->fetch( './Public/html/Content/Production/basic/basic_information.html' );
-					$this->ajaxReturn($tmp_content);
-					break;
-				default:
-					$this->error('404');
-					break;
+			switch ( $id ) {
+			// 首页
+			case 'production_index':
+				layout( './Common/frame' );
+				$this->display( './Public/html/Content/Production/homepage/production_index.html' );
+				break;
+			case 'basic_sidebar':
+				layout( './Common/frame' );
+				$this->display( './Public/html/Content/Production/basic/basic_sidebar.html' );
+				break;
+			case 'basic_information':
+				$production_unit = M( 'production_unit' )->where( array( 'user_id' => session( 'user_id' ) ) )->find();
+				$this->unit = $production_unit;
+				$tmp_content=$this->fetch( './Public/html/Content/Production/basic/basic_information.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+			case 'change_information':
+				$production_unit = M( 'production_unit' )->where( array( 'user_id' => session( 'user_id' ) ) )->find();
+				$this->unit = $production_unit;
+				$tmp_content=$this->fetch( './Public/html/Content/Production/basic/change_information.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+			default:
+				$this->error( "页面不存在！" );
+				break;
 			}
 
-			
-
-			
-			
-			//$this->display('./Public/html/Content/Production/basic/basic_information.html');
 		}else {
 			$this->redirect( 'Home/Index/index' );
 		}
