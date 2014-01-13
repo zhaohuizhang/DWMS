@@ -8,23 +8,27 @@ function do_ajax(ajaxURL) {
     $("#content_page").html("Loading...");
     $.ajax({
         url: ajaxURL,
-        dataType: "Json",
+        dataType: "json",
         success: function(data) {
             $("#content_page").html(data);
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
+            alert("XMLHttpRequest.status:" + XMLHttpRequest.status);
+            alert("XMLHttpRequest.readyState:" + XMLHttpRequest.readyState);
+            alert("textStatus:" + textStatus);
             alert("Ajax_Content_Load_Error: " + errorThrown);
         }
     });
 }
 
-function change(mode){
-    $("#sidebar_content").children().removeClass('active');
-    switch(mode){
+function change(mode) {
+    switch (mode) {
         case 'basic_information':
+            $("#sidebar_content").children().removeClass('active');
             $("#basic_information").addClass('active');
             break;
         case 'change_information':
+            $("#sidebar_content").children().removeClass('active');
             $("#change_information").addClass('active');
             break;
         default:
@@ -49,9 +53,9 @@ function change(mode){
                             <div id="collapse_1" class="panel-collapse collapse in">
                                 <div class="panel-body">
                                     <ul class="nav nav-pills nav-stacked" id="sidebar_content">
-                                        <li class="active" id="basic_information"><a onclick="change('basic_information');do_ajax('basic_information')">企业基本信息</a>
+                                        <li class="active" id="basic_information"><a onclick="change('basic_information'); do_ajax('basic_information')">企业基本信息</a>
                                         </li>
-                                        <li id="change_information"><a onclick="change('change_information');do_ajax('change_information')">基本信息变更</a>
+                                        <li id="change_information"><a onclick="change('change_information'); do_ajax('change_information')">基本信息变更</a>
                                         </li>
                                         <li><a href="#">自行处置设备信息</a>
                                         </li>

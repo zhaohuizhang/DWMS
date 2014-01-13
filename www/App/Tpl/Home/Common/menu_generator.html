@@ -1,29 +1,17 @@
 <script type="text/javascript">
-function menu_generator()
-{
-	var idx;
-	var newHtml="<ul class=\"nav nav-pills\">";
-	newHtml+=""
-	for (idx in DWMS_page_config.menu)
-	{
-		/*
-	
-  
- 
-  <li><a href="#">...</a></li>
-
-		*/
-		if(DWMS_page_config.menu[idx].id==DWMS_page_config.pageid)
-		{
-			newHtml+="<li class=\"active\"><a href=\"#\">"+DWMS_page_config.menu[idx].name+"</a></li>";
-		}
-		else
-		{
-			newHtml+="<li><a href=\""+DWMS_page_config.menu[idx].url+"\">"+DWMS_page_config.menu[idx].name+"</a></li>";
-		}
-	}
-	newHtml+="</ul>";
-	$("#header_button_container").append(newHtml);
+function menu_generator() {
+    var idx;
+    var newHtml = "<ul class=\"nav nav-pills\">";
+    newHtml += ""
+    for (idx in DWMS_page_config.menu) {
+        if (DWMS_page_config.menu[idx].id == DWMS_page_config.pageid) {
+            newHtml += "<li class=\"active\"><a href=\"#\">" + DWMS_page_config.menu[idx].name + "</a></li>";
+        } else {
+            newHtml += "<li><a href=\"" + DWMS_page_config.menu[idx].url + "\">" + DWMS_page_config.menu[idx].name + "</a></li>";
+        }
+    }
+    newHtml += "</ul>";
+    $("#header_button_container").append(newHtml);
 }
 menu_generator();
 </script>
