@@ -23,8 +23,6 @@ class LoginAction extends CommonAction{
 				$this->error( '404' );
 				break;
 			}
-
-
 		}else {
 			$this->redirect( 'Home/Index/index' );
 		}
@@ -57,7 +55,7 @@ class LoginAction extends CommonAction{
 	public function production( $id="production_index" ) {
 		if ( session( 'user_type' ) == 5 ) {
 			switch ( $id ) {
-			// 首页
+				// 首页
 			case 'production_index':
 				layout( './Common/frame' );
 				$this->display( './Public/html/Content/Production/homepage/production_index.html' );
@@ -77,6 +75,10 @@ class LoginAction extends CommonAction{
 				$this->unit = $production_unit;
 				$tmp_content=$this->fetch( './Public/html/Content/Production/basic/change_information.html' );
 				$this->ajaxReturn( $tmp_content );
+				break;
+			case 'warehouse_sidebar':
+				layout( './Common/frame' );
+				$this->display( './Public/html/Content/Production/warehouse/warehouse_sidebar.html' );
 				break;
 			default:
 				$this->error( "页面不存在！" );

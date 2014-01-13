@@ -1,5 +1,10 @@
 <script type="text/javascript">
 function menu_generator() {
+     if(typeof(DWMS_page_config) == 'undefined')
+    {
+        console.log("Error:var DWMS_page_config Not Found.");
+        return;
+    }
     var idx;
     var newHtml = "<ul class=\"nav nav-pills\">";
     newHtml += ""
