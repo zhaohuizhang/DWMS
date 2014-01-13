@@ -7,6 +7,7 @@ DWMS_page_config.pageid = 1;
 function do_ajax(ajaxURL) {
     $("#content_page").html("Loading...");
     $.ajax({
+        type: "get",
         url: ajaxURL,
         dataType: "json",
         success: function(data) {
@@ -53,9 +54,9 @@ function change(mode) {
                             <div id="collapse_1" class="panel-collapse collapse in">
                                 <div class="panel-body">
                                     <ul class="nav nav-pills nav-stacked" id="sidebar_content">
-                                        <li class="active" id="basic_information"><a onclick="change('basic_information'); do_ajax('basic_information')">企业基本信息</a>
+                                        <li class="active" id="basic_information"><a onclick="change('basic_information'); do_ajax('production?id=basic_information')">企业基本信息</a>
                                         </li>
-                                        <li id="change_information"><a onclick="change('change_information'); do_ajax('change_information')">基本信息变更</a>
+                                        <li id="change_information"><a onclick="change('change_information'); do_ajax('production?id=change_information')">基本信息变更</a>
                                         </li>
                                         <li><a href="#">自行处置设备信息</a>
                                         </li>

@@ -57,6 +57,7 @@ class LoginAction extends CommonAction{
 	public function production( $id="production_index" ) {
 		if ( session( 'user_type' ) == 5 ) {
 			switch ( $id ) {
+			// 首页
 			case 'production_index':
 				layout( './Common/frame' );
 				$this->display( './Public/html/Content/Production/homepage/production_index.html' );
