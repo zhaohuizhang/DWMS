@@ -12,6 +12,69 @@ class SelectSocketServer
 	private static $timeout = 60;
 	private static $maxconns = 1024;
 	private static $connections = array();
+	
+	function getMap($long,$lat){
+		$url = 'http://api.map.baidu.com/ag/coord/convert';
+		$method = 'get';
+		//echo $long.'  '.$lat;
+		$arrayList = array('from'=>'0','to'=>'4');
+		$arrayList['x'] = $long;
+		$arrayList['y'] = $lat;
+		$json_string = httpRequest($url,$method,$arrayList);
+			// if(ini_get("magic_quotes_gpc")=="1")
+			 // {
+			  // $json_string=stripslashes($json_string);
+			  // }
+			$json_data = json_decode($json_string);
+			$blong = 0.0;
+			$blat = 0.0;
+			if(($json_data->error)==0){
+				$blong = base64_decode($json_data->x);
+				$blat = base64_decode($json_data->y);
+			}
+			//echo $blong.','.$blat;
+			return $blong.','.$blat;
+		}
+	function httpRequest($url,$method,$params=array()){
+			if(trim($url)==''||!in_array($method,array('get','post'))||!is_array($params)){
+				//echo 'false';
+				return false;
+			}
+			//echo 'right';
+			$curl=curl_init();
+			curl_setopt($curl,CURLOPT_RETURNTRANSFER,1);
+			curl_setopt($curl,CURLOPT_HEADER,0 ) ;
+			switch($method){
+				case 'get':
+					$str='?';
+					foreach($params as $k=>$v){
+						$str.=$k.'='.$v.'&';
+					}
+					$str=substr($str,0,-1);
+					$url.=$str;
+					//echo $url;
+					curl_setopt($curl,CURLOPT_URL,$url);
+				break;
+				case 'post':
+					curl_setopt($curl,CURLOPT_URL,$url);
+					curl_setopt($curl,CURLOPT_POST,1 );
+					curl_setopt($curl,CURLOPT_POSTFIELDS,$params);
+				break;
+				default:
+					$res='';
+				break;
+			}
+
+			if(!isset($res)){
+				$res=curl_exec($curl);
+			}
+			curl_close($curl);
+			//echo $result;
+			return $res;
+			
+		} 
+	
+	
 	function InsertDB($line){
 		if(strpos($line,"#")>3){
 			$con = mysql_connect('10.50.6.70', 'root', 'root1234');
@@ -27,15 +90,19 @@ class SelectSocketServer
 			$heigh = 0.0;
 			$time = date("Y-m-d H:i:s");
 			$id = substr($line,0,strpos($line,"#"));
+			$blong = 0.0;
+			$blat = 0.0;
 			if((bool)strpos($line,"A")){
 				$latitude =  substr($line,strpos($line,"N")+2,strpos($line,"E")-strpos($line,"N")-3);
 				$longitude = substr($line,strpos($line,"E")+2,strpos($line,"V")-strpos($line,"E")-3);
 				$speed = substr($line,strpos($line,"V")+2,strpos($line,"H")-strpos($line,"V")-3);
 				$heigh = substr($line,strpos($line,"H")+2,strlen($line)-strpos($line,"H")-5);
 				$status = 0;
+				$rest = getMap($longitude,$latitude);
+				list($blong,$blat)= split(',',$rest);
 			}
 			$tableName = trim("gps_".$id);
-			$sql = "INSERT INTO $tableName (datetime,longitude,latitude,height,speed,status) VALUES ('$time','$longitude','$latitude','$heigh','$speed','$status')";
+			$sql = "INSERT INTO $tableName (datetime,longitude,latitude,bmap_longitude,bmap_latitude,height,speed,status) VALUES ('$time','$longitude','$latitude','$blong','$blat','$heigh','$speed','$status')";
 			if(!mysql_query($sql,$con)){
 			{
 			  die('Error: ' . mysql_error());
@@ -113,8 +180,7 @@ class SelectSocketServer
 					}
 					if ($line) {
 						echo "Client $i >>" . $line . "\n";
-
-						//self::InsertDB($line);
+						self::InsertDB($line);
 						//$this->bar();
 					}
 				}
