@@ -5,13 +5,13 @@
 
             <h2 id="title">危险废物管理信息系统</h2>
         </div>
-        <div id="">
-            <p id="welcome">欢迎您，{$Think.session.username|default="先生"}</p>
-            <a id="password" href=#>修改密码</a>
-            <a id="logout" href="{:U('Home/Login/logout')}">退出登录</a>
-            <div id="datetime"></div>
+        <div id="" style="float:left">
+            <p id="welcome"><span class="glyphicon glyphicon-user"> 欢迎您，{$Think.session.username|default="先生"}</span></p>
+            <a id="password" href=#><span class="glyphicon glyphicon-edit"></span> 修改密码</a>
+            <a id="logout" href="{:U('Home/Login/logout')}"> <span class="glyphicon glyphicon-log-out"></span> 退出登录</a><br/>            
         </div>
-        <div id="header_button_container" style="float:right;margin-top:-30px"></div>
+        <div id="datetime"></div>
+        <div id="header_button_container" style="padding-left:100px;padding-top:15px;clear:both"></div>
     </div>
 </div>
 

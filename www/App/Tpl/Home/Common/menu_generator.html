@@ -10,9 +10,9 @@ function menu_generator() {
     newHtml += ""
     for (idx in DWMS_page_config.menu) {
         if (DWMS_page_config.menu[idx].id == DWMS_page_config.pageid) {
-            newHtml += "<li class=\"active\"><a href=\"#\">" + DWMS_page_config.menu[idx].name + "</a></li>";
+            newHtml += "<li class=\"active\"><a href=\"#\">" +"<span class=\"glyphicon glyphicon-stop\"></span> "+ DWMS_page_config.menu[idx].name + "</a></li>";
         } else {
-            newHtml += "<li><a href=\"" + DWMS_page_config.menu[idx].url + "\">" + DWMS_page_config.menu[idx].name+ "</a></li>";
+            newHtml += "<li><a href=\"" + DWMS_page_config.menu[idx].url + "\">"+"<span class=\"glyphicon glyphicon-stop\"></span> " + DWMS_page_config.menu[idx].name+ "</a></li>";
         }
     }
     newHtml += "</ul>";

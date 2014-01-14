@@ -47,7 +47,7 @@
     padding-left: 0px;
 }
  #welcome {
-    float:left;
+    /*float:right;*/
     margin-top: 0px;
     margin-right: 5px;
     margin-bottom: 0px;
@@ -63,7 +63,7 @@
     padding-left: 0px;
 }
 #password {
-    float:left;
+   /* float:right;*/
     margin-top: 0px;
     margin-right: 5px;
     margin-bottom: 0px;
@@ -79,7 +79,7 @@
     padding-left: 0px;
 }
 #logout {
-    /*float:left;*/
+    /* float:right;*/
     margin-top: 0px;
     margin-right: 5px;
     margin-bottom: 0px;
@@ -95,7 +95,7 @@
     padding-left: 0px;
 }
 #datetime {
-    /*float:left;*/
+   float:right;
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
