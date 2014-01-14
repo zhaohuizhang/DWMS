@@ -1,0 +1,50 @@
+<include file="./Public/html/Content/Government/country_config.html" />
+<script type="text/javascript">
+DWMS_page_config.pageid = 5;
+DWMS_sidebar_config = {
+    "sidebar_groups": [{
+        "sidebar_group_id": 0,
+        "sidebar_group_title": "危废转移",
+        "sidebar_group_content": [{
+            "id": 0,
+            "name": "转移联单管理",
+            "url": "country?id=transfer_manifest_management"
+        }, {
+            "id": 1,
+            "name": "转移备案管理",
+            "url": "country?id=transfer_record_management"
+        }, {
+            "id": 2,
+            "name": "转移统计分析",
+            "url": "country?id=transfer_statistic_analysis"
+        }, {
+            "id": 3,
+            "name": "test_3",
+            "url": "#"
+        }]
+    }, {
+        "sidebar_group_id": 1,
+        "sidebar_group_title": "testgroup",
+        "sidebar_group_content": [{
+            "id": 0,
+            "name": "test_1",
+            "url": "#"
+        }, {
+            "id": 1,
+            "name": "test_2",
+            "url": "#"
+        }]
+    }]
+}
+</script>
+<div class="row">
+    <div class="col-md-3">
+        <div class="panel panel-primary" id="sidebar_div">
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div id="content_page">
+        </div>
+    </div>
+</div>
+<include file="Common/sidebar_generator" />

@@ -1,0 +1,50 @@
+<include file="./Public/html/Content/Government/country_config.html" />
+<script type="text/javascript">
+DWMS_page_config.pageid = 4;
+DWMS_sidebar_config = {
+    "sidebar_groups": [{
+        "sidebar_group_id": 0,
+        "sidebar_group_title": "危废处置单位",
+        "sidebar_group_content": [{
+            "id": 0,
+            "name": "企业基本信息",
+            "url": "country?id=disposal_basic_information"
+        }, {
+            "id": 1,
+            "name": "危废接受台账",
+            "url": "country?id=disposal_waste_reception_account"
+        }, {
+            "id": 2,
+            "name": "RFID手持端绑定",
+            "url": "country?id=disposal_rfid_hand_equipment"
+        }, {
+            "id": 3,
+            "name": "test_3",
+            "url": "#"
+        }]
+    }, {
+        "sidebar_group_id": 1,
+        "sidebar_group_title": "testgroup",
+        "sidebar_group_content": [{
+            "id": 0,
+            "name": "test_1",
+            "url": "#"
+        }, {
+            "id": 1,
+            "name": "test_2",
+            "url": "#"
+        }]
+    }]
+}
+</script>
+<div class="row">
+    <div class="col-md-3">
+        <div class="panel panel-primary" id="sidebar_div">
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div id="content_page">
+        </div>
+    </div>
+</div>
+<include file="Common/sidebar_generator" />
