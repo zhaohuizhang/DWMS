@@ -1,16 +1,18 @@
 <div class="panel panel-default" style="margin-top:20px">
     <div class="panel-body">
         <div id="webpage_title">
-            <img id="logo" src="__PUBLIC__/image/header_logo.jpg" alt="logo" style="margin-right:30px;" />
+             <div id="datetime"></div>
+            <img id="logo" src="__PUBLIC__/image/header_logo.jpg" alt="logo" style="margin-right:30px;width:130px;height:130px" />
 
             <h2 id="title">危险废物管理信息系统</h2>
         </div>
+
         <div id="" style="float:left">
             <p id="welcome"><span class="glyphicon glyphicon-user"></span>  欢迎您，{$Think.session.username|default="先生"} <a id="password" href=#><span class="glyphicon glyphicon-edit"></span> 修改密码</a>
             <a id="logout" href="{:U('Home/Login/logout')}"> <span class="glyphicon glyphicon-log-out"></span> 退出登录</a></p>
           <br/>            
         </div>
-        <div id="datetime"></div>
+      
         <div id="header_button_container" style="float:left;padding-top:0px;"></div>
     </div>
 </div>
