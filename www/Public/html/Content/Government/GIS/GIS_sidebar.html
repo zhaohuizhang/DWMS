@@ -219,13 +219,14 @@ function setmap() {
                 strokeOpacity: 0.8
             });
             mapCtr.addOverlay(polyline);
+            $(".anchorBL").hide()
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
             console.log("Error:Ajax_Content_Load" + errorThrown);
         }
     });
 
-    //$(".anchorBL").hide()
+    
 }
 setmap();
 </script>
