@@ -65,7 +65,7 @@ class SelectSocketServer
 			{
 				if (in_array($socket, $readfds)) {
 					$newconn = socket_accept($socket);
-					$i = (int) ((bool)$newconn);
+					$i = (int) $newconn;
 					$reject = '';
 					if (count(self::$connections) >= self::$maxconns) {
 						$reject = "Server full, Try again later.\n";
@@ -114,7 +114,7 @@ class SelectSocketServer
 					if ($line) {
 						echo "Client $i >>" . $line . "\n";
 
-						self::InsertDB($line);
+						//self::InsertDB($line);
 						//$this->bar();
 					}
 				}
