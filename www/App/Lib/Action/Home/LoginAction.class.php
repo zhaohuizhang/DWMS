@@ -26,9 +26,9 @@ class LoginAction extends CommonAction{
 				$this->display( './Public/html/Content/Government/GIS/GIS_sidebar.html' );
 				break;
 			case 'ajax':
-				$GIS_data = M( 'gps_308033501795' )->field('longitude,latitude')->where('longitude > 0')->select();
-				$this->ajaxReturn($GIS_data, 'JSON');
-			/*	// 转移地图展示
+				$GIS_data = M( 'gps_308033501795' )->field( 'bmap_longitude, bmap_latitude' )->where( 'longitude > 0' )->select();
+				$this->ajaxReturn( $GIS_data, 'JSON' );
+				/*	// 转移地图展示
 			case 'transfer_display':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/GIS/transfer_display.html' );
 				$this->ajaxReturn( $tmp_content );
@@ -97,7 +97,7 @@ class LoginAction extends CommonAction{
 				$this->ajaxReturn( $tmp_content );
 				break;
 
-			// 危废转移 侧边栏
+				// 危废转移 侧边栏
 			case 'transfer_sidebar':
 				layout( './Common/frame' );
 				$this->display( './Public/html/Content/Government/transfer/transfer_sidebar.html' );
