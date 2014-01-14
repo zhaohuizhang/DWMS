@@ -192,7 +192,7 @@ marker.addEventListener("click", function(){
         url: "country?id=ajax",
         dataType: "json",
         success: function(data) {
-            // testdata=data;
+           testdata=data;
            // alert(data);
             var pointArray = new Array();
             var idx;
@@ -200,8 +200,8 @@ marker.addEventListener("click", function(){
 
             for(idx in data)
             {            
-                lat=trans(data[idx].latitude);
-                lng=trans(data[idx].longitude);
+                lat=data[idx].bmap_latitude;
+                lng=data[idx].bmap_longitude;
                 pointArray.push(new BMap.Point(lng, lat));
                // console.log("lat:"+lat+" lng:"+lng);
             }
