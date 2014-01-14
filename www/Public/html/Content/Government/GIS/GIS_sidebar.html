@@ -154,7 +154,7 @@ function() {
     }
   ).hover(
      function() {
-        
+
     },
     function() {
         $(this).removeClass("active");
@@ -201,7 +201,7 @@ function setmap() {
 
     $.ajax({
         type: "get",
-        url: "country?id=ajax",
+        url: "country?id=bmap_ajax",
         dataType: "json",
         success: function(data) {
 
@@ -231,7 +231,7 @@ function setmap() {
         }
     });
 
-    
+
 }
 setmap();
 </script>
