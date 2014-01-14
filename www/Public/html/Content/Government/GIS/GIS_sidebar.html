@@ -15,7 +15,6 @@ function switchControllor() {
         //$("#switch-icon").removeClass("glyphicon-chevron-right").addClass("glyphicon-chevron-left");
         $("#map-col").removeClass("col-md-12").addClass("col-md-9");
         $("#map-controllor").fadeIn("normal");
-
     }
 }
 </script>
@@ -136,8 +135,6 @@ function switchControllor() {
                 </ul>
             </div>
         </div>
-
-
     </div>
     <div class="col-md-9" id="map-col">
 
@@ -158,14 +155,6 @@ $('.sidebar_list').children().hover(
         $(this).removeClass("active");
     });
 
-function trans(st) {
-    var num = parseFloat(st);
-    var i = parseInt(num / 100);
-    num = num - i * 100;
-
-    return (num / 60 + i);
-}
-
 function setmap() {
     var windowHeight = $(window).height();
     $("#map_container").css("height", "" + windowHeight - 200 + "px");
@@ -177,46 +166,48 @@ function setmap() {
 
     mapCtr.addControl(new BMap.NavigationControl());
 
-    /*
-var myIcon = new BMap.Icon("http://stacky.takau.net/think/DWMS/www/Public/image/header_logo.jpg", new BMap.Size(90, 90), {
-// 指定定位位置。
-// 当标注显示在地图上时，其所指向的地理位置距离图标左上
-// 角各偏移10像素和25像素。您可以看到在本例中该位置即是
-   // 图标中央下端的尖角位置。
-   offset: new BMap.Size(45, 45),
-   // 设置图片偏移。
-   // 当您需要从一幅较大的图片中截取某部分作为标注图标时，您
-   // 需要指定大图的偏移位置，此做法与css sprites技术类似。
-   imageOffset: new BMap.Size(0, 0)   // 设置图片偏移
- });
-// 创建标注对象并添加到地图
-var marker = new BMap.Marker(point, {icon: myIcon});
-map.addOverlay(marker);
-marker.addEventListener("click", function(){
-         var opts = {
-         width : 250,     // 信息窗口宽度
-         height: 100,     // 信息窗口高度
-         title : "药药且可闹"  // 信息窗口标题
+
+    /*var myIcon = new BMap.Icon("http://stacky.takau.net/think/DWMS/www/Public/image/header_logo.jpg", new BMap.Size(90, 90), {
+        // 指定定位位置。
+        // 当标注显示在地图上时，其所指向的地理位置距离图标左上
+        // 角各偏移10像素和25像素。您可以看到在本例中该位置即是
+        // 图标中央下端的尖角位置。
+        offset: new BMap.Size(45, 45),
+        // 设置图片偏移。
+        // 当您需要从一幅较大的图片中截取某部分作为标注图标时，您
+        // 需要指定大图的偏移位置，此做法与css sprites技术类似。
+        imageOffset: new BMap.Size(0, 0) // 设置图片偏移
+    });
+    // 创建标注对象并添加到地图
+    var marker = new BMap.Marker(point, {
+        icon: myIcon
+    });
+    map.addOverlay(marker);
+    marker.addEventListener("click", function() {
+        var opts = {
+            width: 250, // 信息窗口宽度
+            height: 100, // 信息窗口高度
+            title: "药药且可闹" // 信息窗口标题
         }
-        var infoWindow = new BMap.InfoWindow("煎饼果子来一套", opts);  // 创建信息窗口对象
-        map.openInfoWindow(infoWindow, marker.getPosition());      // 打开信息窗口
-});
-*/
+        var infoWindow = new BMap.InfoWindow("煎饼果子来一套", opts); // 创建信息窗口对象
+        map.openInfoWindow(infoWindow, marker.getPosition()); // 打开信息窗口
+    });*/
+
 
     $.ajax({
         type: "get",
         url: "country?id=ajax",
         dataType: "json",
         success: function(data) {
-            // testdata=data;
-            // alert(data);
+
             var pointArray = new Array();
             var idx;
             var lat, lng;
 
             for (idx in data) {
-                lat = trans(data[idx].latitude);
-                lng = trans(data[idx].longitude);
+                lat = data[idx].bmap_latitude;
+                lng = data[idx].bmap_longitude;
+
                 pointArray.push(new BMap.Point(lng, lat));
                 // console.log("lat:"+lat+" lng:"+lng);
             }
@@ -228,7 +219,6 @@ marker.addEventListener("click", function(){
                 strokeOpacity: 0.8
             });
             mapCtr.addOverlay(polyline);
-
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
             console.log("Error:Ajax_Content_Load" + errorThrown);
