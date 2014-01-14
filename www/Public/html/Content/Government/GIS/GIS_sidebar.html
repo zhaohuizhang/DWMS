@@ -7,15 +7,105 @@ DWMS_page_config.pageid = 1;
 </script>
 <div class="row">
     <div class="col-md-3">
-        <div class="panel panel-primary" id="sidebar_div">
+           <div class="panel panel-primary sidebar_div">
+              <div class="panel panel-heading" style="margin-bottom:1px"> <h3 class="panel-title">数据选项</h3></div>
+              <div class="panel panel-body" style="margin-bottom:1px">
+                  <ul class="nav nav-pills nav-stacked sidebar_list">
+                    <li>          
+                    <a class="dropdown-toggle" data-toggle="dropdown">数据来源<span class="badge pull-right">交通图</span></a>
+                     <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">交通图</a></li>                        
+                      </ul> 
+                    </li> 
+                    <li>          
+                    <a class="dropdown-toggle" data-toggle="dropdown">查看模式<span class="badge pull-right">图标</span></a>
+                     <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">交通图</a></li>
+                          <li class="divider"></li>
+                        <li><a href="#">卫星图</a></li>
+                          <li class="divider"></li>
+                        <li><a href="#">混合</a></li>
+                      </ul> 
+                    </li> 
+                     <li>          
+                    <a class="dropdown-toggle" data-toggle="dropdown">查看模式<span class="badge pull-right">图标</span></a>
+                     <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">交通图</a></li>
+                          <li class="divider"></li>
+                        <li><a href="#">卫星图</a></li>
+                          <li class="divider"></li>
+                        <li><a href="#">混合</a></li>
+                      </ul> 
+                    </li> 
+                  </ul>    
+              </div>   
         </div>
+
+        <div class="panel panel-primary sidebar_div">
+          <div class="panel panel-heading" style="margin-bottom:1px"> <h3 class="panel-title">地图选项</h3></div>
+          <div class="panel panel-body" style="margin-bottom:1px">
+              <ul class="nav nav-pills nav-stacked sidebar_list">
+                <li>          
+                <a class="dropdown-toggle" data-toggle="dropdown">地图类型<span class="badge pull-right">交通图</span></a>
+                 <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">交通图</a></li>
+                      <li class="divider"></li>
+                    <li><a href="#">卫星图</a></li>
+                      <li class="divider"></li>
+                    <li><a href="#">混合</a></li>
+                  </ul> 
+                </li> 
+                <li>          
+                <a class="dropdown-toggle" data-toggle="dropdown">查看模式<span class="badge pull-right">图标</span></a>
+                 <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">交通图</a></li>
+                      <li class="divider"></li>
+                    <li><a href="#">卫星图</a></li>
+                      <li class="divider"></li>
+                    <li><a href="#">混合</a></li>
+                  </ul> 
+                </li> 
+              </ul>    
+          </div>   
     </div>
+
+     <div class="panel panel-primary sidebar_div">
+          <div class="panel panel-heading" style="margin-bottom:1px"> <h3 class="panel-title">地图选项</h3></div>
+          <div class="panel panel-body" style="margin-bottom:1px">
+              <ul class="nav nav-pills nav-stacked sidebar_list">
+                <li>          
+                <a class="dropdown-toggle" data-toggle="dropdown">地图类型<span class="badge pull-right">交通图</span></a>
+                 <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">交通图</a></li>
+                      <li class="divider"></li>
+                    <li><a href="#">卫星图</a></li>
+                      <li class="divider"></li>
+                    <li><a href="#">混合</a></li>
+                  </ul> 
+                </li> 
+                <li>          
+                <a class="dropdown-toggle" data-toggle="dropdown">查看模式<span class="badge pull-right">图标</span></a>
+                 <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">交通图</a></li>
+                      <li class="divider"></li>
+                    <li><a href="#">卫星图</a></li>
+                      <li class="divider"></li>
+                    <li><a href="#">混合</a></li>
+                  </ul> 
+                </li> 
+              </ul>    
+          </div>   
+    </div>
+
+
+</div>
     <div class="col-md-9">
      
 <div class="panel panel-primary">
-          <div class="panel-body">   
+  <div class="panel panel-heading" style="margin-bottom:1px"> <h3 class="panel-title">地 图</h3></div>
+         
            <div id="map_container"  style="width:auto"></div>
-          </div>
+         
 </div>
 
 
@@ -25,6 +115,13 @@ DWMS_page_config.pageid = 1;
     </div>
 </div>
 <script type="text/javascript">
+$('.sidebar_list').children().hover(
+function(){
+  $(this).addClass("active");
+},
+function(){
+  $(this).removeClass("active");
+});
 function trans(st)
 {
     var num=parseFloat(st);
@@ -38,12 +135,12 @@ function setmap()
   var windowHeight=$(window).height();
   $("#map_container").css("height",""+windowHeight-200+"px");
 //DWMS_page_config.pageid = 0;
-map = new BMap.Map("map_container");            // 创建Map实例
-var point = new BMap.Point(116.404, 39.915);    // 创建点坐标
-map.centerAndZoom(point,15);                     // 初始化地图,设置中心o点坐标和地图级别。
-map.enableScrollWheelZoom();
+mapCtr = new BMap.Map("map_container");            // 创建Map实例
 
-map.addControl(new BMap.NavigationControl());   
+mapCtr.centerAndZoom("上海",15);                     // 初始化地图,设置中心o点坐标和地图级别。
+mapCtr.enableScrollWheelZoom();
+
+mapCtr.addControl(new BMap.NavigationControl());   
 
 /*
 var myIcon = new BMap.Icon("http://stacky.takau.net/think/DWMS/www/Public/image/header_logo.jpg", new BMap.Size(90, 90), {    
@@ -70,6 +167,7 @@ marker.addEventListener("click", function(){
         map.openInfoWindow(infoWindow, marker.getPosition());      // 打开信息窗口     
 });   
 */
+
  $.ajax({
         type: "get",
         url: "country?id=ajax",
@@ -80,21 +178,20 @@ marker.addEventListener("click", function(){
             var pointArray = new Array();
             var idx;
             var lat,lng;
+
             for(idx in data)
-            {
-            
+            {            
                 lat=trans(data[idx].latitude);
                 lng=trans(data[idx].longitude);
                 pointArray.push(new BMap.Point(lng, lat));
                 console.log("lat:"+lat+" lng:"+lng);
             }
            // pointArray.push(new BMap.Point(116.399, 39.910));
-            
-            
+mapCtr.centerAndZoom(pointArray[0],12);          
 var polyline = new BMap.Polyline(pointArray,    
- {strokeColor:"blue", strokeWeight:6, strokeOpacity:0.5}    
+ {strokeColor:"blue", strokeWeight:6, strokeOpacity:0.8}    
 );    
-map.addOverlay(polyline); 
+mapCtr.addOverlay(polyline); 
 
             
         },
