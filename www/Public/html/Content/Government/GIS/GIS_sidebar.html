@@ -5,6 +5,7 @@
 DWMS_page_config.pageid = 1;
 
 </script>
+
 <div class="row">
     <div class="col-md-3">
            <div class="panel panel-primary sidebar_div">
@@ -184,7 +185,7 @@ marker.addEventListener("click", function(){
                 lat=trans(data[idx].latitude);
                 lng=trans(data[idx].longitude);
                 pointArray.push(new BMap.Point(lng, lat));
-                console.log("lat:"+lat+" lng:"+lng);
+               // console.log("lat:"+lat+" lng:"+lng);
             }
            // pointArray.push(new BMap.Point(116.399, 39.910));
 mapCtr.centerAndZoom(pointArray[0],12);          
