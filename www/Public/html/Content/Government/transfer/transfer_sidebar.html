@@ -4,35 +4,43 @@ DWMS_page_config.pageid = 5;
 DWMS_sidebar_config = {
     "sidebar_groups": [{
         "sidebar_group_id": 0,
-        "sidebar_group_title": "危废转移",
+        "sidebar_group_title": "转移备案管理",
         "sidebar_group_content": [{
             "id": 0,
-            "name": "转移联单管理",
-            "url": "country?id=transfer_manifest_management"
-        }, {
-            "id": 1,
-            "name": "转移备案管理",
-            "url": "country?id=transfer_record_management"
-        }, {
-            "id": 2,
-            "name": "转移统计分析",
-            "url": "country?id=transfer_statistic_analysis"
-        }, {
-            "id": 3,
-            "name": "test_3",
-            "url": "#"
+            "name": "转移备案",
+            "url": "country?id=transfer_record"
         }]
     }, {
         "sidebar_group_id": 1,
-        "sidebar_group_title": "testgroup",
+        "sidebar_group_title": "危废联单管理",
         "sidebar_group_content": [{
             "id": 0,
-            "name": "test_1",
-            "url": "#"
+            "name": "生产单位转移联单",
+            "url": "country?id=production_transfer_manifest"
         }, {
             "id": 1,
-            "name": "test_2",
-            "url": "#"
+            "name": "运输单位转移联单",
+            "url": "country?id=transport_transfer_manifest"
+        }, {
+            "id": 2,
+            "name": "接受单位转移联单",
+            "url": "country?id=reception_transfer_manifest"
+        }]
+    }, {
+        "sidebar_group_id": 2,
+        "sidebar_group_title": "统计分析",
+        "sidebar_group_content": [{
+            "id": 0,
+            "name": "转移去向统计",
+            "url": "country?id=transfer_direction_statistic"
+        },{
+            "id": 1,
+            "name": "转移联单统计",
+            "url": "country?id=transfer_manifest_statistic"
+        },{
+            "id": 2,
+            "name": "转移专题定制",
+            "url": "country?id=transfer_topic_customize"
         }]
     }]
 }
