@@ -26,7 +26,7 @@ class LoginAction extends CommonAction{
 				$this->display( './Public/html/Content/Government/GIS/GIS_sidebar.html' );
 				break;
 			case 'ajax':
-				$GIS_data = M('gps_308033501795')->field('longitude,latitude')->find();
+				$GIS_data = M( 'gps_308033501795' )->field('longitude,latitude')->where('longitude > 0')->select();
 				$this->ajaxReturn($GIS_data, 'JSON');
 			/*	// 转移地图展示
 			case 'transfer_display':

@@ -32,6 +32,22 @@ function sidebar_generator() {
     var newHtml = "<div class=\"panel-group\" id=\"accordion\">";
     var tmpid = "";
     for (grp_idx in DWMS_sidebar_config.sidebar_groups) {
+        newHtml += "<div class=\"panel panel-info\"><div class=\"panel-heading\" data-toggle=\"collapse\" data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapse_" + grp_idx + "\"><h4 class=\"panel-title\">" + DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_title + "</h4></div><div id=\"collapse_" + grp_idx + "\" class=\"panel-collapse collapse in\"><div class=\"list-group DWMS-sidebar-content\">";
+
+        for (itm_idx in DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_content) {
+            tmpid = "sidebarItem_" + grp_idx + "_" + itm_idx;
+            newHtml += "<a id=\""+tmpid+"\" class=\"list-group-item\" onclick=\"refresh_sidebar(\'" + tmpid + "\'); do_ajax(\'" + DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_content[itm_idx].url + "\')\">" + DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_content[itm_idx].name + "</a>"
+        }
+
+        newHtml += "</div></div></div>";
+
+    }
+    newHtml += "</div>";
+    /*
+     var grp_idx, itm_idx;
+    var newHtml = "<div class=\"panel-group\" id=\"accordion\">";
+    var tmpid = "";
+    for (grp_idx in DWMS_sidebar_config.sidebar_groups) {
         newHtml += "<div class=\"panel panel-info\"><div class=\"panel-heading\" data-toggle=\"collapse\" data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapse_" + grp_idx + "\"><h4 class=\"panel-title\">" + DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_title + "</h4></div><div id=\"collapse_" + grp_idx + "\" class=\"panel-collapse collapse in\"><div class=\"panel-body\"><ul class=\"nav nav-pills nav-stacked DWMS-sidebar-content\">";
 
         for (itm_idx in DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_content) {
@@ -43,7 +59,8 @@ function sidebar_generator() {
 
     }
     newHtml += "</div>";
-    // console.log(newHtml);
+    */
+   //  console.log(newHtml);
     $("#sidebar_div").html(newHtml);
 }
 
