@@ -14,7 +14,9 @@ class LoginAction extends CommonAction{
 	public function country() {
 		if ( session( 'user_type' ) == 1 ) {
 			layout('./Common/frame');
-			$this->display('./Content/Government/country_index');
+
+			$this->display('./Public/html/Content/Government/homepage/country_index.html');
+
 
 			//$this->display();
 		}else {

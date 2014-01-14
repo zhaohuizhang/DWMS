@@ -1,0 +1,20 @@
+<script type="text/javascript">
+function menu_generator()
+{
+	var idx;
+	var newHtml="";
+	for (idx in DWMS_page_config.menu)
+	{
+		if(DWMS_page_config.menu[idx].id==DWMS_page_config.pageid)
+		{
+			newHtml+="<a href=\"#\" class=\"btn btn-primary active\" role=\"button\">"+DWMS_page_config.menu[idx].name+"</a>";
+		}
+		else
+		{
+			newHtml+="<a href=\""+DWMS_page_config.menu[idx].url+"\" class=\"btn btn-default\" role=\"button\">"+DWMS_page_config.menu[idx].name+"</a>"
+		}
+	}
+	$("#header_button_container").append(newHtml);
+}
+menu_generator();
+</script>
