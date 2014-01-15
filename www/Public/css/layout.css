@@ -1,5 +1,4 @@
-body {
-    
+body {    
     background-position:center;    
     background-repeat: no-repeat;
     background-attachment:fixed
@@ -24,57 +23,34 @@ body {
 #welcome {
     /*float:right;*/
     margin-top: 10px;
-    margin-right: 5px;
+    margin-right: 5px;  
    
-   
+}
+#content-container-panel
+{
+    min-height:500px;
 }
 #password {
     /* float:right;*/
-    margin-top: 0px;
+   
     margin-right: 5px;
-    margin-bottom: 0px;
+   
     margin-left: 5px;
     border-style: none;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+    
 }
 #logout {
     /* float:right;*/
-    margin-top: 0px;
+   
     margin-right: 5px;
     margin-bottom: 0px;
     margin-left: 5px;
     border-style: none;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+   
 }
 #datetime {
     float:right;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    border-style: none;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+   
 }
 
 #header_button_container {
