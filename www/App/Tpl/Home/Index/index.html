@@ -31,54 +31,54 @@
 
 <body>
     <div class="container" style="width:60%;">
-      <div class="panel panel-primary" id="login-panel">
-        <div class="panel-heading">
-          <h3 class="panel-title"> </h3>
-        </div>
-        <div class="panel-body" style="">   
-  
-            <form class="form-signin" role="form" action="{:U('Home/Index/login/')}" method="post" id="login">
-                <div class="blank-div"></div>
-                <h2 class="form-signin-heading">危险废物管理信息系统</h2>
-                 <div class="blank-div"></div>
+        <div class="panel panel-primary" id="login-panel">
+            <div class="panel-heading">
+                <h3 class="panel-title"></h3>
+            </div>
+            <div class="panel-body" style="">
 
-                <input type="username" name="username" class="form-control" placeholder="用户名" required="" autofocus="" />
-                <input type="password" name="password" class="form-control" placeholder="密码" required="" />
+                <form class="form-signin" role="form" action="{:U('Home/Index/login/')}" method="post" id="login">
+                    <div class="blank-div"></div>
+                    <h2 class="form-signin-heading">危险废物管理信息系统</h2>
+                    <div class="blank-div"></div>
 
-                <div class="blank-div"></div>
-                <div class="row">
-                      <div class="col-xs-6">
-                        <input type="code" name="code" class="form-control" placeholder="验证码" required=""/>
-                      </div>
-                      <div class="col-xs-2">
-                          <img src="{:U('Home/Index/verify/')}" id="code" />
-                      </div>
-                      <div class="col-xs-4">
-                           <a href="javascript:void(change_code());">看不清</a>
-                      </div>
-                </div>
-                <!-- <label class="checkbox">
+                    <input type="username" name="username" class="form-control" placeholder="用户名" required="" autofocus="" />
+                    <input type="password" name="password" class="form-control" placeholder="密码" required="" />
+
+                    <div class="blank-div"></div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <input type="code" name="code" class="form-control" placeholder="验证码" required="" />
+                        </div>
+                        <div class="col-xs-2">
+                            <img src="{:U('Home/Index/verify/')}" id="code" />
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="javascript:void(change_code());">看不清</a>
+                        </div>
+                    </div>
+                    <!-- <label class="checkbox">
                 <input type="checkbox" value="remember-me">记住密码
             </label> -->
-                <div class="blank-div"></div>
-                <button class="btn btn-lg btn-primary btn-block" type="submit" id="login">登录</button>
-                
-                <button class="btn btn-lg btn-default btn-block" type="button" id="register">注册</button>
-               
-            </form>
-     
-            <footer class="bs-footer" role="contentinfo">
-                <div class="text-center padder clearfix">
-                     <div class="blank-div"></div>
-                    <p>
-                        <small>&copy; 2014, 安庆市环境保护局&nbsp;&nbsp;&nbsp;&nbsp;版权所有.
-                        </small>
-                    </p>
-                </div>
+                    <div class="blank-div"></div>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" id="login">登录</button>
 
-            </footer>
-         </div>
-      </div>
+                    <button class="btn btn-lg btn-default btn-block" type="button" id="register">注册</button>
+
+                </form>
+
+                <footer class="bs-footer" role="contentinfo">
+                    <div class="text-center padder clearfix">
+                        <div class="blank-div"></div>
+                        <p>
+                            <small>&copy; 2014, 安庆市环境保护局&nbsp;&nbsp;&nbsp;&nbsp;版权所有.
+                            </small>
+                        </p>
+                    </div>
+
+                </footer>
+            </div>
+        </div>
     </div>
     <!-- /container -->
 

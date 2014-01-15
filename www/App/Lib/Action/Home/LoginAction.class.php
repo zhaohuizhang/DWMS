@@ -287,44 +287,85 @@ class LoginAction extends CommonAction{
 	public function production( $id="production_index" ) {
 		if ( session( 'user_type' ) == 5 ) {
 			switch ( $id ) {
-				// 首页
+				// -------- 生产企业->首页 --------
 			case 'production_index':
 				layout( './Common/frame' );
 				$this->display( './Public/html/Content/Production/homepage/production_index.html' );
 				break;
-				// 企业基本信息 侧边栏
+
+				// -------- 企业基本信息->侧边栏 --------
 			case 'basic_sidebar':
 				layout( './Common/frame' );
 				$this->display( './Public/html/Content/Production/basic/basic_sidebar.html' );
 				break;
-				// 企业基本信息
-			case 'basic_information':
+				// 企业基本信息->企业基本信息
+			case 'production_basic_information':
 				$production_unit = M( 'production_unit' )->where( array( 'user_id' => session( 'user_id' ) ) )->find();
 				$this->unit = $production_unit;
-				$tmp_content=$this->fetch( './Public/html/Content/Production/basic/basic_information.html' );
+				$tmp_content=$this->fetch( './Public/html/Content/Production/basic/production_basic_information.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-				// 基本信息变更
-			case 'change_information':
+				// 企业基本信息->基本信息变更
+			case 'production_change_information':
 				$production_unit = M( 'production_unit' )->where( array( 'user_id' => session( 'user_id' ) ) )->find();
 				$this->unit = $production_unit;
-				$tmp_content=$this->fetch( './Public/html/Content/Production/basic/change_information.html' );
+				$tmp_content=$this->fetch( './Public/html/Content/Production/basic/production_change_information.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-				// 危废库存管理 侧边栏
+
+				// -------- 危废库存->侧边栏 --------
 			case 'warehouse_sidebar':
 				layout( './Common/frame' );
 				$this->display( './Public/html/Content/Production/warehouse/warehouse_sidebar.html' );
 				break;
-				// 危废入库管理
+				// 危废库存->危废入库管理
 			case 'storage_input_management':
+				$tmp_content=$this->fetch( './Public/html/Content/Production/warehouse/storage_input_management.html' );
+				$this->ajaxReturn( $tmp_content );
 				break;
-				// 危废在库查询
+				// 危废库存->危废在库查询
 			case 'storage_query':
+				$tmp_content=$this->fetch( './Public/html/Content/Production/warehouse/storage_query.html' );
+				$this->ajaxReturn( $tmp_content );
 				break;
-				// 危废出库管理
+				// 危废库存->危废出库管理
 			case 'storage_output_management':
+				$tmp_content=$this->fetch( './Public/html/Content/Production/warehouse/storage_output_management.html' );
+				$this->ajaxReturn( $tmp_content );
 				break;
+
+			// -------- 转移备案->侧边栏 --------
+			case 'record_sidebar':
+				layout( './Common/frame' );
+				$this->display( './Public/html/Content/Production/record/record_sidebar.html' );
+				break;
+			// 转移备案->转移备案申请
+			case 'transfer_record_request':
+				$tmp_content=$this->fetch( './Public/html/Content/Production/record/transfer_record_request.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+			// 转移备案->转移备案查询
+			case 'transfer_record_query':
+				$tmp_content=$this->fetch( './Public/html/Content/Production/record/transfer_record_query.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+
+			// -------- 转移联单->侧边栏 --------
+			case 'manifest_sidebar':
+				layout( './Common/frame' );
+				$this->display( './Public/html/Content/Production/manifest/manifest_sidebar.html' );
+				break;
+			// 转移联单->转移联单申请
+			case 'transfer_manifest_request':
+				$tmp_content=$this->fetch( './Public/html/Content/Production/manifest/transfer_manifest_request.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+			// 转移联单->转移联单查询
+			case 'transfer_manifest_query':
+				$tmp_content=$this->fetch( './Public/html/Content/Production/manifest/transfer_manifest_query.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+
 			default:
 				$this->error( "页面不存在！" );
 				break;

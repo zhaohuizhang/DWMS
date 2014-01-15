@@ -32,7 +32,7 @@ function sidebar_generator() {
         return;
     }
 
-   /* var grp_idx, itm_idx;
+    /* var grp_idx, itm_idx;
     var newHtml = "<div class=\"panel-group\" id=\"accordion\">"+"<div class=\"panel panel-primary\">";
 
     var tmpid = "";
@@ -48,34 +48,31 @@ function sidebar_generator() {
 
     }
     newHtml += "</div></div>";*/
-    
-     var grp_idx, itm_idx;
+
+    var grp_idx, itm_idx;
     var newHtml = "<div class=\"panel-group\" id=\"accordion\">";
     var tmpid = "";
     for (grp_idx in DWMS_sidebar_config.sidebar_groups) {
-        if(grp_idx==0)
-        { newHtml += "<div class=\"panel panel-primary\"><div class=\"panel-heading\" data-toggle=\"collapse\" data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapse_" + grp_idx + "\"><h4 class=\"panel-title\"><span class=\"glyphicon glyphicon-th-list\"> " + DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_title + " </h4></div><div id=\"collapse_" + grp_idx + "\" class=\"panel-collapse collapse in\" ><div class=\"panel-body\" ><ul class=\"nav nav-pills nav-stacked DWMS-sidebar-content\">";
-        }
-        else
-        {
+        if (grp_idx == 0) {
+            newHtml += "<div class=\"panel panel-primary\"><div class=\"panel-heading\" data-toggle=\"collapse\" data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapse_" + grp_idx + "\"><h4 class=\"panel-title\"><span class=\"glyphicon glyphicon-th-list\"> " + DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_title + " </h4></div><div id=\"collapse_" + grp_idx + "\" class=\"panel-collapse collapse in\" ><div class=\"panel-body\" ><ul class=\"nav nav-pills nav-stacked DWMS-sidebar-content\">";
+        } else {
             newHtml += "<div class=\"panel panel-primary\"><div class=\"panel-heading\" data-toggle=\"collapse\" data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapse_" + grp_idx + "\"><h4 class=\"panel-title\"><span class=\"glyphicon glyphicon-th-list\"> " + DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_title + "</h4></div><div id=\"collapse_" + grp_idx + "\" class=\"panel-collapse collapse\" ><div class=\"panel-body\" ><ul class=\"nav nav-pills nav-stacked DWMS-sidebar-content\">";
         }
-       
+
 
         for (itm_idx in DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_content) {
             tmpid = "sidebarItem_" + grp_idx + "_" + itm_idx;
-            newHtml += "<li id=\"" + tmpid + "\"><a onclick=\"refresh_sidebar(\'" + tmpid + "\'); do_ajax(\'" + DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_content[itm_idx].url + "\')\">" +"<span class=\"glyphicon glyphicon-file\"></span> "+ DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_content[itm_idx].name + "</a></li>"
+            newHtml += "<li id=\"" + tmpid + "\"><a onclick=\"refresh_sidebar(\'" + tmpid + "\'); do_ajax(\'" + DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_content[itm_idx].url + "\')\">" + "<span class=\"glyphicon glyphicon-file\"></span> " + DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_content[itm_idx].name + "</a></li>"
         }
 
         newHtml += "</ul></div></div></div>";
 
     }
     newHtml += "</div>";
-    
-     console.log(newHtml);
+
+    console.log(newHtml);
     $("#sidebar_div").html(newHtml);
 }
 
 sidebar_generator();
-
 </script>

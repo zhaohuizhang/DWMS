@@ -7,11 +7,16 @@
         </div>
 
         <div id="" style="float:left">
-            <p id="welcome"><span class="glyphicon glyphicon-user"></span>  欢迎您，{$Think.session.username|default="先生"} <a id="password" href=#><span class="glyphicon glyphicon-edit"></span> 修改密码</a>
-            <a id="logout" href="{:U('Home/Login/logout')}"> <span class="glyphicon glyphicon-log-out"></span> 退出登录</a></p>
-          <br/>            
+            <p id="welcome">
+                <span class="glyphicon glyphicon-user"></span>欢迎您，{$Think.session.username|default="先生"}
+                <a id="password" href=#>
+                    <span class="glyphicon glyphicon-edit"></span>修改密码</a>
+                <a id="logout" href="{:U('Home/Login/logout')}">
+                    <span class="glyphicon glyphicon-log-out"></span>退出登录</a>
+            </p>
+            <br/>
         </div>
-      
+
         <div id="header_button_container" style="float:left"></div>
     </div>
 </div>

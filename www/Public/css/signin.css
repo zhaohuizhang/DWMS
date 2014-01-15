@@ -1,14 +1,11 @@
 body {
     background-color: #EEE;
 }
-
-#login-panel{
-     margin-top:15%;
-     padding-bottom:20px;
+#login-panel {
+    margin-top:15%;
+    padding-bottom:20px;
 }
-
-.blank-div
-{
+.blank-div {
     height: 20px
 }
 .form-signin {

@@ -46,7 +46,7 @@
     padding-bottom: 0px;
     padding-left: 0px;
 }
- #welcome {
+#welcome {
     /*float:right;*/
     margin-top: 0px;
     margin-right: 5px;
@@ -63,7 +63,7 @@
     padding-left: 0px;
 }
 #password {
-   /* float:right;*/
+    /* float:right;*/
     margin-top: 0px;
     margin-right: 5px;
     margin-bottom: 0px;
@@ -95,7 +95,7 @@
     padding-left: 0px;
 }
 #datetime {
-   float:right;
+    float:right;
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
