@@ -18,7 +18,8 @@
 
     <!-- Custom styles for this template -->
     <link href="__PUBLIC__/css/signin.css" rel="stylesheet">
-
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js"></script>
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -58,9 +59,37 @@
             </label> -->
                     <div class="blank-div"></div>                    
                     <button class="btn btn-lg btn-primary btn-block" type="submit" id="login">登 录</button> 
-                    <button class="btn btn-lg btn-default btn-block" type="button" id="register">注 册</button>
-                </form>
 
+                    <button type="button" class="btn btn-default btn-lg btn-block" id="register" data-toggle="modal" data-target="#myModal">注 册</button>  
+                 
+                     </form>
+                     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="padding-top:15%">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title" id="myModalLabel"><b>请选择要注册的角色:</b></h4>
+                              </div>
+                                  <div class="modal-body"><big>                                
+                                           
+                                            <div class="radio" onclick="regOpt=0;"><label>
+                                                <input type="radio" name="optionsRadios">生产单位
+                                            </label></div>
+                                            <div class="radio" onclick="regOpt=1;"><label>
+                                                <input type="radio" name="optionsRadios">运输单位
+                                            </label></div>
+                                            <div class="radio" onclick="regOpt=2;"><label>
+                                                <input type="radio" name="optionsRadios">接受单位
+                                            </label></div>
+                                 </big> 
+                             </div>
+                                <div class="modal-footer">                                 
+                                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                <button type="button" class="btn btn-primary" onclick="do_reg()">去注册</button>
+                              </div>
+                            </div><!-- /.modal-content -->
+                          </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
                 <footer class="bs-footer" role="contentinfo">
                     <div class="text-center padder clearfix txt-shadow">
                         <div class="blank-div"></div>
@@ -78,21 +107,26 @@
 
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- jQuery core JavaScript -->
-    <script type="text/javascript" src="__PUBLIC__/js/jquery-2.0.3.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
+   
     <!-- My JavaScript-->
     <script type="text/javascript">
     var verifyURL = "{:U('Home/Index/verify/', '', '')}";
     </script>
     <script type="text/javascript" src="__PUBLIC__/js/login.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/js/webpage.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/js/register.js"></script>
+   
     <script type="text/javascript">
-    $(document).ready(function() {
-        $('#register').click(function() {
-            window.location = "{:U('Home/Register/index/', '', '')}";
-        });
-    });
+ regOpt=-1;
+ function do_reg()
+ {
+    var reglist=["./index.php/Home/Register?id=production","./index.php/Home/Register?id=transport","./index.php/Home/Register?id=reception"];
+    if(regOpt<0)
+    {
+       alert("请选择角色");;
+    }
+   
+    location.href=reglist[regOpt];
+    
+ }
     </script>
 </body>
 
