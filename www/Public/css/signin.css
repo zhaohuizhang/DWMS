@@ -10,6 +10,7 @@ body {
 .blank-div {
     height: 20px
 }
+
 .form-signin {
     position: relative;
     font-size: 20px;
@@ -56,4 +57,10 @@ body {
 }
 #register {
     font-size: 20px;
+}
+
+.txt-shadow
+{
+    color:#333;
+    text-shadow: 1px 1px 3px #777777;
 }
