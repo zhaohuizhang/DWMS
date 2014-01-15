@@ -1,0 +1,42 @@
+<include file="./Public/html/Content/City/city_config.html" />
+<script type="text/javascript">
+DWMS_page_config.pageid = 3;
+DWMS_sidebar_config = {
+    "sidebar_groups": [{
+        "sidebar_group_id": 0,
+        "sidebar_group_title": "企业基本信息",
+        "sidebar_group_content": [{
+            "id": 0,
+            "name": "企业基本信息",
+            "url": "city?id=transport_basic_information"
+        }]
+    }, {
+        "sidebar_group_id": 1,
+        "sidebar_group_title": "运输车辆管理",
+        "sidebar_group_content": [{
+            "id": 0,
+            "name": "运输车辆管理",
+            "url": "city?id=transport_vehicle_management"
+        }]
+    }, {
+        "sidebar_group_id": 2,
+        "sidebar_group_title": "GPS监控信息",
+        "sidebar_group_content": [{
+            "id": 0,
+            "name": "GPS监控信息",
+            "url": "city?id=transport_gps_monitor_information"
+        }]
+    }]
+}
+</script>
+<div class="row">
+    <div class="col-md-3">
+        <div class="panel panel-primary" id="sidebar_div">
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div id="content_page">
+        </div>
+    </div>
+</div>
+<include file="Common/sidebar_generator" />
