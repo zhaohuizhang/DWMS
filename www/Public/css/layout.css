@@ -1,67 +1,53 @@
 #webpage_title {
     /*float:left;margin-top: 10px;*/
-      text-shadow: 1px 1px 4px #777777; 
+    text-shadow: 1px 1px 4px #777777;
 }
 a {
-   text-shadow:none;
+    text-shadow: none;
 }
-
-
 #logo {
-    width:130px;
-    height:130px;
-    float:left;   
-    margin-top:15px;
-    margin-right:20px;   
+    width: 130px;
+    height: 130px;
+    float: left;
+    margin-top: 15px;
+    margin-right: 20px;
 }
 #title {
     /*float:left;*/
-    margin-top:25px;
-    border-style: none;    
-    color:#444;
+    margin-top: 25px;
+    border-style: none;
+    color: #444;
 }
 #welcome {
     /*float:right;*/
     margin-top: 10px;
-    margin-right: 5px;  
-   
+    margin-right: 5px;
 }
-#content-container-panel
-{
-    min-height:500px;
+#content-container-panel {
+    min-height: 500px;
 }
 #password {
     /* float:right;*/
-   
     margin-right: 5px;
-   
     margin-left: 5px;
     border-style: none;
-    
 }
 #logout {
     /* float:right;*/
-   
     margin-right: 5px;
     margin-bottom: 0px;
     margin-left: 5px;
     border-style: none;
-   
 }
 #datetime {
-    float:right;
-   
+    float: right;
 }
-
 #header_button_container {
-    
     margin-top: 20px;
-   
 }
-#footer-content
-{
- text-align:center;
- margin-bottom:0px;
- text-shadow: 1px 1px 3px #777777;
- color:#333;
+#footer-content {
+    text-align: center;
+    margin-bottom: 0px;
+    text-shadow: 1px 1px 3px #777777;
+    color:#333;
 }
