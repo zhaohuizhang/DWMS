@@ -1,13 +1,8 @@
-body {    
-    
-}
-
 #webpage_title {
     /*float:left;margin-top: 10px;*/
       text-shadow: 1px 1px 4px #777777; 
 }
-a
-{
+a {
    text-shadow:none;
 }
 
@@ -22,8 +17,7 @@ a
 #title {
     /*float:left;*/
     margin-top:25px;
-    border-style: none;
-    
+    border-style: none;    
     color:#444;
 }
 #welcome {
