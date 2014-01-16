@@ -11,12 +11,12 @@ function sidebar_generator() {
     var tmpid = "";
     for (grp_idx in DWMS_sidebar_config.sidebar_groups) {
 
-        newHtml += '<div class="panel panel-primary"><div class="panel-heading" data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse_' 
-                + grp_idx 
+        newHtml += '<div class="panel panel-primary"><div class="panel-heading"><a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" style="color:white" href="#collapse_' 
+                + grp_idx
                 + '"><h4 class="panel-title"><span class="glyphicon glyphicon-th-list"> ' 
-                + DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_title 
-                + ' </h4></div><div id="collapse_' 
-                + grp_idx;
+                + DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_title
+                + ' </h4></a></div><div id="collapse_' 
+                + grp_idx; 
 
         if (grp_idx == 0) {         
             newHtml+= '" class="panel-collapse collapse in" ><div class="panel-body" ><ul class="nav nav-pills nav-stacked DWMS-sidebar-content">';
@@ -30,11 +30,11 @@ function sidebar_generator() {
             tmpid = "sidebarItem_" + grp_idx + "_" + itm_idx;
             newHtml += '<li id="' 
                     + tmpid 
-                    + '"><a onclick="refresh_sidebar(\'' 
+                    + '"><a href="#" onclick="refresh_sidebar(\'' 
                     + tmpid 
                     + '\'); fetch_page(\'' 
-                    + DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_content[itm_idx].url 
-                    + '\')"><span class="glyphicon glyphicon-file"></span> ' 
+                    + DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_content[itm_idx].url
+                    + '\')"><span class="glyphicon glyphicon-book"></span> ' 
                     + DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_content[itm_idx].name 
                     + '</a></li>'
         }
