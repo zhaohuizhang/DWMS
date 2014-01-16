@@ -26,5 +26,19 @@ switch ($id) {
 
 		
 	}
+
+
+	public function do_reg($id=0){
+		
+switch ($id) {				
+			
+
+			default:
+				$this->show("lalal");
+				break;
+			}
+
+		
+	}
 }
 ?>
