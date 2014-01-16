@@ -73,14 +73,11 @@ function switchControllor() {
                     <li>
                         <a class="dropdown-toggle" data-toggle="dropdown">地图类型<span class="badge pull-right">交通图</span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">交通图</a>
+                            <li><a onclick="mapCtr.setMapType(BMAP_NORMAL_MAP)">交通图</a>
                             </li>
                             <li class="divider"></li>
-                            <li><a href="#">卫星图</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li><a href="#">混合</a>
-                            </li>
+                            <li><a onclick="mapCtr.setMapType(BMAP_HYBRID_MAP)">卫星图</a>
+                            </li>                           
                         </ul>
                     </li>
                     <li>
@@ -169,8 +166,11 @@ function setmap() {
     mapCtr.centerAndZoom("上海", 15); // 初始化地图,设置中心o点坐标和地图级别。
     mapCtr.enableScrollWheelZoom();
 
-    mapCtr.addControl(new BMap.NavigationControl());
+   
 
+ mapCtr.addControl(new BMap.NavigationControl());    
+ mapCtr.addControl(new BMap.ScaleControl());    
+ mapCtr.addControl(new BMap.OverviewMapControl({isOpen:true, anchor: BMAP_ANCHOR_TOP_RIGHT}));    
 
     /*var myIcon = new BMap.Icon("http://stacky.takau.net/think/DWMS/www/Public/image/header_logo.jpg", new BMap.Size(90, 90), {
         // 指定定位位置。
@@ -230,6 +230,7 @@ function setmap() {
             console.log("Error:Ajax_Content_Load" + errorThrown);
         }
     });
+
 
 
 }
