@@ -9,11 +9,11 @@ function menu_generator() {
     for (idx in DWMS_page_config.menu) {
 
         if (DWMS_page_config.menu[idx].id == DWMS_page_config.pageid) {
-            newHtml+= '<li class="active"><a><span class="glyphicon glyphicon-folder-open"></span> ' 
+            newHtml += '<li class="active"><a><span class="glyphicon glyphicon-folder-open"></span> ' 
                     + DWMS_page_config.menu[idx].name 
                     + '</a></li>';
         } else {
-            newHtml+= '<li><a href="'
+            newHtml  += '<li><a href="'
                      + DWMS_page_config.menu[idx].url 
                      + '"><span class="glyphicon glyphicon-folder-close"></span> ' 
                      + DWMS_page_config.menu[idx].name 
@@ -21,7 +21,7 @@ function menu_generator() {
         }
     }
     newHtml += "</ul>";
-    $("#header_button_container").append(newHtml);
+    $("#header_button_container").html(newHtml);
 }
 menu_generator();
 </script>
