@@ -1,112 +1,53 @@
 #webpage_title {
-    /*float:left;*/
-    margin-top: 10px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    border-style: none;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+    /*float:left;margin-top: 10px;*/
+    text-shadow: 1px 1px 4px #777777;
+}
+a {
+    text-shadow: none;
 }
 #logo {
-    float:left;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    border-style: none;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+    width: 130px;
+    height: 130px;
+    float: left;
+    margin-top: 15px;
+    margin-right: 20px;
 }
 #title {
     /*float:left;*/
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
+    margin-top: 25px;
     border-style: none;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+    color: #444;
 }
- #welcome {
-    float:left;
-    margin-top: 0px;
+#welcome {
+    /*float:right;*/
+    margin-top: 10px;
     margin-right: 5px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    border-style: none;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+}
+#content-container-panel {
+    min-height: 500px;
 }
 #password {
-    float:left;
-    margin-top: 0px;
+    /* float:right;*/
     margin-right: 5px;
-    margin-bottom: 0px;
     margin-left: 5px;
     border-style: none;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
 }
 #logout {
-    /*float:left;*/
-    margin-top: 0px;
+    /* float:right;*/
     margin-right: 5px;
     margin-bottom: 0px;
     margin-left: 5px;
     border-style: none;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
 }
 #datetime {
-    /*float:left;*/
-    margin-top: 0px;
-    margin-right: 0px;
+    float: right;
+}
+#header_button_container {
+    margin-top: 20px;
+}
+#footer-content {
+    text-align: center;
     margin-bottom: 0px;
-    margin-left: 0px;
-    border-style: none;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+    text-shadow: 1px 1px 3px #777777;
+    color:#333;
 }

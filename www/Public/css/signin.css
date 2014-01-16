@@ -1,16 +1,16 @@
 body {
-    background-color: #EEE;
+   
+    background-color:#78B7D8;
+    
 }
-
-#login-panel{
-     margin-top:15%;
-     padding-bottom:20px;
+#login-panel {
+    margin-top:15%;
+    padding-bottom:20px;
 }
-
-.blank-div
-{
+.blank-div {
     height: 20px
 }
+
 .form-signin {
     position: relative;
     font-size: 20px;
@@ -57,4 +57,10 @@ body {
 }
 #register {
     font-size: 20px;
+}
+
+.txt-shadow
+{
+    color:#333;
+    text-shadow: 1px 1px 3px #777777;
 }
