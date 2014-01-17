@@ -1,5 +1,4 @@
-﻿<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<?php
+﻿<?php
 function getRfidWasteName(){
 	$con = mysql_connect("10.50.6.70","root","root1234");
 	if (!$con)

@@ -1,5 +1,4 @@
-﻿<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<?php
+﻿<?php
 date_default_timezone_set("PRC");
 function wasteIn(){
 	$con = mysql_connect("10.50.6.70","root","root1234");
@@ -33,7 +32,7 @@ function wasteIn(){
 		  $userId = $row['ownership_id'];
 		  }
 	
-	$result1 = mysql_query("SELECT receiving_unit_id FROM receiving_unit WHERE user_id='".$userId."'");
+	$result1 = mysql_query("SELECT reception_unit_id FROM reception_unit WHERE user_id='".$userId."'");
 
 	if(!mysql_num_rows($result1)){
 				$error->code = 2;
@@ -45,9 +44,9 @@ function wasteIn(){
 
 	while($row = mysql_fetch_array($result1))
 	{
-	  $receivingId = $row['receiving_unit_id'];
+	  $receivingId = $row['reception_unit_id'];
 	}
-	$receivingUnit = "receiving_unit_".$receivingId;
+	$receivingUnit = "reception_unit_".$receivingId;
 	
 	$key = 0;
 	foreach($rfidList as $rfidobj){
@@ -85,22 +84,23 @@ function wasteIn(){
 				}
 				$time = date("Y-m-d H:i:s");
 				$sql3 = "UPDATE rfid SET update_date_time = '$time',status = 2 WHERE rfid_id = '$rfid'";
-				$sql4 = "INSERT INTO $receivingUnit (rfid_id, waste_id, receive_date_time,android_num,$column) VALUES ('$rfid', '$wasteId', '$time','$imei','$total')";
-				//echo $sql4;
 				if (!mysql_query($sql3,$con))
 				{
 					$error[$key]->code = 3;
 					$error[$key]->des = urlencode('更新RFID数据库失败');
 					$error[$key]->rfid = $rfid;
 					$key++;
+				}else{
+					$sql4 = "INSERT INTO $receivingUnit (rfid_id, waste_id, receive_date_time,android_num,$column) VALUES ('$rfid', '$wasteId', '$time','$imei','$total')";
+					if (!mysql_query($sql4,$con))
+					{
+						$error[$key]->code = 13;
+						$error[$key]->des = urlencode('更新仓库数据失败');
+						$error[$key]->rfid = $rfid;
+						$key++;
+					}
 				}
-				if (!mysql_query($sql4,$con))
-				{
-					$error[$key]->code = 13;
-					$error[$key]->des = urlencode('更新仓库数据失败');
-					$error[$key]->rfid = $rfid;
-					$key++;
-				}
+				
 			}
 		}
 	}
