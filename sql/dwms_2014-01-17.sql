@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : 202.120.58.120_3306
+Source Server         : 10.50.6.70_3306
 Source Server Version : 50534
-Source Host           : 202.120.58.120:3306
+Source Host           : 10.50.6.70:3306
 Source Database       : dwms
 
 Target Server Type    : MYSQL
 Target Server Version : 50534
 File Encoding         : 65001
 
-Date: 2014-01-17 14:28:16
+Date: 2014-01-17 18:14:52
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -5118,10 +5118,12 @@ INSERT INTO `gps_308033501795` VALUES ('1490', '2014-01-14 16:35:47', '0', '0', 
 DROP TABLE IF EXISTS `manifest`;
 CREATE TABLE `manifest` (
   `manifest_id` int(11) NOT NULL AUTO_INCREMENT,
+  `manifest_add_time` datetime DEFAULT NULL,
+  `manifest_modify_time` datetime DEFAULT NULL,
   `manifest_num` varchar(255) DEFAULT NULL,
   `production_unit_id` int(11) DEFAULT NULL,
   `transport_unit_id` int(11) DEFAULT NULL,
-  `receiving_unit_id` int(11) DEFAULT NULL,
+  `reception_unit_id` int(11) DEFAULT NULL,
   `waste_id` int(11) DEFAULT NULL,
   `waste_weight` varchar(255) DEFAULT NULL,
   `waste_package` varchar(255) DEFAULT NULL,
@@ -5146,26 +5148,26 @@ CREATE TABLE `manifest` (
   `transport_start_point_2` varchar(255) DEFAULT NULL,
   `transport_pass_by_2` varchar(255) DEFAULT NULL,
   `transport_destination_2` varchar(255) DEFAULT NULL,
-  `receiving_unit_license_num` varchar(255) DEFAULT NULL,
+  `reception_unit_license_num` varchar(255) DEFAULT NULL,
   `receiver_name` varchar(255) DEFAULT NULL,
   `receiver_num` varchar(255) DEFAULT NULL,
   `receive_date` date DEFAULT NULL,
   `waste_disposal_method` varchar(255) DEFAULT NULL,
-  `receiving_unit_principal_name` varchar(255) DEFAULT NULL,
-  `receiving_unit_audit_date` date DEFAULT NULL,
+  `reception_unit_principal_name` varchar(255) DEFAULT NULL,
+  `reception_unit_audit_date` date DEFAULT NULL,
   `manifest_status` tinyint(4) DEFAULT NULL,
   `manifest_record_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`manifest_id`),
   KEY `fk_production_unit_id` (`production_unit_id`),
   KEY `fk_transport_unit_id` (`transport_unit_id`),
-  KEY `fk_receiving_unit` (`receiving_unit_id`),
   KEY `fk_waste_id` (`waste_id`),
   KEY `fk_vehicle_id_1` (`vehicle_id_1`),
   KEY `fk_vehicle_id_2` (`vehicle_id_2`),
   KEY `fk_record_id` (`manifest_record_id`),
-  CONSTRAINT `fk_record_id` FOREIGN KEY (`manifest_record_id`) REFERENCES `record` (`record_id`),
+  KEY `fk_reception_unit_id` (`reception_unit_id`),
+  CONSTRAINT `fk_reception_unit_id` FOREIGN KEY (`reception_unit_id`) REFERENCES `reception_unit` (`reception_unit_id`),
   CONSTRAINT `fk_production_unit_id` FOREIGN KEY (`production_unit_id`) REFERENCES `production_unit` (`production_unit_id`),
-  CONSTRAINT `fk_receiving_unit` FOREIGN KEY (`receiving_unit_id`) REFERENCES `receiving_unit` (`receiving_unit_id`),
+  CONSTRAINT `fk_record_id` FOREIGN KEY (`manifest_record_id`) REFERENCES `record` (`record_id`),
   CONSTRAINT `fk_transport_unit_id` FOREIGN KEY (`transport_unit_id`) REFERENCES `transport_unit` (`transport_unit_id`),
   CONSTRAINT `fk_vehicle_id_1` FOREIGN KEY (`vehicle_id_1`) REFERENCES `vehicle` (`vehicle_id`),
   CONSTRAINT `fk_vehicle_id_2` FOREIGN KEY (`vehicle_id_2`) REFERENCES `vehicle` (`vehicle_id`),
@@ -5210,12 +5212,15 @@ CREATE TABLE `production_unit` (
   PRIMARY KEY (`production_unit_id`),
   KEY `fk_user_id_production` (`user_id`),
   CONSTRAINT `fk_user_id_production` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of production_unit
 -- ----------------------------
 INSERT INTO `production_unit` VALUES ('1', '6', '生产单位', 'production', '0000', '13900000000', '安徽省安庆市', '246000', '安徽省安庆市', '安庆市', '246000', '', '化工', '安庆市街道', 'admin注册', 'admin企业', '张斌', '13800000000', '0000', '张斌', '18800000000', '54740000', 'admin@admin', '0', '0', '799,803,810');
+INSERT INTO `production_unit` VALUES ('3', '9', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+INSERT INTO `production_unit` VALUES ('4', '10', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', '', '', '', null, 'this this for test', null, 'this this for test', null, 'this this for test', '', '', '23333333', '23333333', '');
+INSERT INTO `production_unit` VALUES ('5', '11', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', '', '', '', null, 'this this for test', null, 'this this for test', null, 'this this for test', '', '', '23333333', '23333333', '');
 
 -- ----------------------------
 -- Table structure for `production_unit_1`
@@ -5232,7 +5237,7 @@ CREATE TABLE `production_unit_1` (
   PRIMARY KEY (`id`),
   KEY `fk_waste_id_production` (`waste_id`),
   CONSTRAINT `fk_waste_id_production` FOREIGN KEY (`waste_id`) REFERENCES `waste` (`waste_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of production_unit_1
@@ -5248,56 +5253,63 @@ INSERT INTO `production_unit_1` VALUES ('22', '14398279', '799', '40', '2014-01-
 INSERT INTO `production_unit_1` VALUES ('23', '14398279', '799', '50', '2014-01-15 14:28:40', null, '359857011003928');
 INSERT INTO `production_unit_1` VALUES ('24', '14398279', '799', '50', '2014-01-15 14:29:49', null, '359857011003928');
 INSERT INTO `production_unit_1` VALUES ('25', '14398279', '799', '50', '2014-01-15 14:32:08', null, '359857011003928');
+INSERT INTO `production_unit_1` VALUES ('39', 'E004010070DB66C8', '803', null, '2014-01-17 17:42:19', null, '359857011003928');
+INSERT INTO `production_unit_1` VALUES ('40', 'E00401005D746EBC', '799', null, '2014-01-17 17:42:19', null, '359857011003928');
+INSERT INTO `production_unit_1` VALUES ('41', 'E00401005D746EBC', '799', '50', '2014-01-17 17:44:17', null, '359857011003928');
+INSERT INTO `production_unit_1` VALUES ('42', 'E00401005D746EBC', '799', '2', '2014-01-17 17:44:32', null, '359857011003928');
+INSERT INTO `production_unit_1` VALUES ('43', 'E00401005D746EBC', '799', '50', '2014-01-17 17:47:45', null, '359857011003928');
+INSERT INTO `production_unit_1` VALUES ('44', 'E00401007FDC33F0', '803', null, '2014-01-17 18:01:08', null, '359857011003928');
 
 -- ----------------------------
--- Table structure for `receiving_unit`
+-- Table structure for `reception_unit`
 -- ----------------------------
-DROP TABLE IF EXISTS `receiving_unit`;
-CREATE TABLE `receiving_unit` (
-  `receiving_unit_id` int(11) NOT NULL AUTO_INCREMENT,
+DROP TABLE IF EXISTS `reception_unit`;
+CREATE TABLE `reception_unit` (
+  `reception_unit_id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) DEFAULT NULL,
-  `receiving_unit_name` varchar(255) DEFAULT NULL,
-  `receiving_unit_username` varchar(255) DEFAULT NULL,
-  `receiving_unit_code` varchar(255) DEFAULT NULL,
-  `receiving_unit_phone` varchar(255) DEFAULT NULL,
-  `receiving_unit_address` varchar(255) DEFAULT NULL,
-  `receiving_unit_postcode` varchar(255) DEFAULT NULL,
-  `receiving_unit_county` varchar(255) DEFAULT NULL,
-  `receiving_unit_county_code` varchar(255) DEFAULT NULL,
-  `receiving_unit_jurisdiction` varchar(255) DEFAULT NULL,
-  `receiving_unit_trade` varchar(255) DEFAULT NULL,
-  `receiving_unit_street` varchar(255) DEFAULT NULL,
-  `receiving_unit_registration_type` varchar(255) DEFAULT NULL,
-  `receiving_unit_enterprise_scale` varchar(255) DEFAULT NULL,
-  `receiving_unit_license_num` varchar(255) DEFAULT NULL,
+  `reception_unit_name` varchar(255) DEFAULT NULL,
+  `reception_unit_username` varchar(255) DEFAULT NULL,
+  `reception_unit_code` varchar(255) DEFAULT NULL,
+  `reception_unit_phone` varchar(255) DEFAULT NULL,
+  `reception_unit_address` varchar(255) DEFAULT NULL,
+  `reception_unit_postcode` varchar(255) DEFAULT NULL,
+  `reception_unit_county` varchar(255) DEFAULT NULL,
+  `reception_unit_county_code` varchar(255) DEFAULT NULL,
+  `reception_unit_jurisdiction` varchar(255) DEFAULT NULL,
+  `reception_unit_trade` varchar(255) DEFAULT NULL,
+  `reception_unit_street` varchar(255) DEFAULT NULL,
+  `reception_unit_registration_type` varchar(255) DEFAULT NULL,
+  `reception_unit_enterprise_scale` varchar(255) DEFAULT NULL,
+  `reception_unit_license_num` varchar(255) DEFAULT NULL,
   `receiving_unit_reference_num` varchar(255) DEFAULT NULL,
   `license_issuing_authority` varchar(255) DEFAULT NULL,
   `license_issuing_date` date DEFAULT NULL,
   `license_expiry_date` date DEFAULT NULL,
-  `receiving_unit_contacts_name` varchar(255) DEFAULT NULL,
-  `receiving_unit_contacts_phone` varchar(255) DEFAULT NULL,
-  `receiving_unit_legal_person_code` varchar(255) DEFAULT NULL,
-  `receiving_unit_legal_person_name` varchar(255) DEFAULT NULL,
-  `receiving_unit_legal_person_phone` varchar(255) DEFAULT NULL,
-  `receiving_unit_fax` varchar(255) DEFAULT NULL,
-  `receiving_unit_email` varchar(255) DEFAULT NULL,
-  `receiving_unit_longitude` double DEFAULT NULL,
-  `receiving_unit_latitude` double DEFAULT NULL,
-  PRIMARY KEY (`receiving_unit_id`),
-  KEY `fk_user_id_receiving` (`user_id`),
-  CONSTRAINT `fk_user_id_receiving` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+  `reception_unit_contacts_name` varchar(255) DEFAULT NULL,
+  `reception_unit_contacts_phone` varchar(255) DEFAULT NULL,
+  `reception_unit_legal_person_code` varchar(255) DEFAULT NULL,
+  `reception_unit_legal_person_name` varchar(255) DEFAULT NULL,
+  `reception_unit_legal_person_phone` varchar(255) DEFAULT NULL,
+  `reception_unit_fax` varchar(255) DEFAULT NULL,
+  `reception_unit_email` varchar(255) DEFAULT NULL,
+  `reception_unit_longitude` double DEFAULT NULL,
+  `reception_unit_latitude` double DEFAULT NULL,
+  PRIMARY KEY (`reception_unit_id`),
+  KEY `fk_user_id_reception` (`user_id`) USING BTREE,
+  CONSTRAINT `fk_user_id_reception` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of receiving_unit
+-- Records of reception_unit
 -- ----------------------------
-INSERT INTO `receiving_unit` VALUES ('1', '8', '接受单位', 'reception', '0000', '13900000000', '安徽省安庆市', '246000', '安庆市', '246000', '安庆市', '化工', '安庆市街道', 'admin企业', 'admin规模', '0000', '0000', 'omnilab', '2014-01-08', '2014-01-08', '张斌', '13800000000', '0000', '张斌', '18800000000', '54740000', 'admin@admin', '0', '0');
+INSERT INTO `reception_unit` VALUES ('1', '8', '接受单位', 'reception', '0000', '13900000000', '安徽省安庆市', '246000', '安庆市', '246000', '安庆市', '化工', '安庆市街道', 'admin企业', 'admin规模', '0000', '0000', 'omnilab', '2014-01-08', '2014-01-08', '张斌', '13800000000', '0000', '张斌', '18800000000', '54740000', 'admin@admin', '0', '0');
+INSERT INTO `reception_unit` VALUES ('2', '16', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', '', '', '', '', 'this this for test', 'this this for test', 'this this for test', '0000-00-00', '0000-00-00', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', '', '', '23333333', '23333333');
 
 -- ----------------------------
--- Table structure for `receiving_unit_1`
+-- Table structure for `reception_unit_1`
 -- ----------------------------
-DROP TABLE IF EXISTS `receiving_unit_1`;
-CREATE TABLE `receiving_unit_1` (
+DROP TABLE IF EXISTS `reception_unit_1`;
+CREATE TABLE `reception_unit_1` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `rfid_id` varchar(255) DEFAULT NULL,
   `waste_id` int(11) DEFAULT NULL,
@@ -5306,22 +5318,24 @@ CREATE TABLE `receiving_unit_1` (
   `total_num` int(11) DEFAULT NULL,
   `android_num` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_waste_id_receiving` (`waste_id`),
-  CONSTRAINT `fk_waste_id_receiving` FOREIGN KEY (`waste_id`) REFERENCES `waste` (`waste_id`)
+  KEY `fk_waste_id_reception` (`waste_id`) USING BTREE,
+  CONSTRAINT `fk_waste_id_reception` FOREIGN KEY (`waste_id`) REFERENCES `waste` (`waste_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of receiving_unit_1
+-- Records of reception_unit_1
 -- ----------------------------
-INSERT INTO `receiving_unit_1` VALUES ('5', '14398279', '799', '290', '2014-01-15 17:49:42', null, '359857011003951');
-INSERT INTO `receiving_unit_1` VALUES ('6', '2384028409', '803', '8', '2014-01-15 17:49:42', null, '359857011003951');
+INSERT INTO `reception_unit_1` VALUES ('5', '14398279', '799', '290', '2014-01-15 17:49:42', null, '359857011003951');
+INSERT INTO `reception_unit_1` VALUES ('6', '2384028409', '803', '8', '2014-01-15 17:49:42', null, '359857011003951');
 
 -- ----------------------------
 -- Table structure for `record`
 -- ----------------------------
 DROP TABLE IF EXISTS `record`;
 CREATE TABLE `record` (
-  `record_id` int(11) NOT NULL,
+  `record_id` int(11) NOT NULL AUTO_INCREMENT,
+  `record_add_time` datetime DEFAULT NULL,
+  `record_modify_time` datetime DEFAULT NULL,
   `production_unit_name` varchar(255) DEFAULT NULL,
   `record_code` varchar(255) DEFAULT NULL,
   `record_type` varchar(255) DEFAULT NULL,
@@ -5338,6 +5352,7 @@ CREATE TABLE `record` (
   `technology_method` varchar(255) DEFAULT NULL,
   `relational_production` varchar(255) DEFAULT NULL,
   `waste_code` varchar(255) DEFAULT NULL,
+  `waste_form` varchar(255) DEFAULT NULL,
   `predict_output_weight` double DEFAULT NULL,
   `predict_output_quantity` int(11) DEFAULT NULL,
   `storage_place` varchar(255) DEFAULT NULL,
@@ -5354,11 +5369,18 @@ CREATE TABLE `record` (
   `transport_unit_contacts_phone` varchar(255) DEFAULT NULL,
   `record_status` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`record_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of record
 -- ----------------------------
+INSERT INTO `record` VALUES ('1', null, null, '上海市', '222', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '0', '0', '', '0', '0', '', '', '', '', '', '', '', '', '', '0');
+INSERT INTO `record` VALUES ('2', null, null, '安庆市', '333', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '0', '0', '', '0', '0', '', '', '', '', '', '', '', '', '', '1');
+INSERT INTO `record` VALUES ('3', null, null, '宁波市', '222', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '0', '0', '', '0', '0', '', '', '', '', '', '', '', '', '', '1');
+INSERT INTO `record` VALUES ('4', null, null, '宁波市', '222', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '0', '0', '', '0', '0', '', '', '', '', '', '', '', '', '', '1');
+INSERT INTO `record` VALUES ('5', '2014-01-17 16:58:51', '2014-01-17 16:58:51', '安庆市', '111', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '0', '0', '', '0', '0', '', '', '', '', '', '', '', '', '', '0');
+INSERT INTO `record` VALUES ('6', '2014-01-17 17:03:47', '2014-01-17 17:03:47', '安庆市', '333', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '0', '0', '', '0', '0', '', '', '', '', '', '', '', '', '', '0');
+INSERT INTO `record` VALUES ('7', '2014-01-17 17:04:20', '2014-01-17 17:04:20', '安庆市', '333', '', '0000-00-00', '', '', '', '', '', '', '', '', '', '', '', '', '', '0', '0', '', '0', '0', '', '', '', '', '', '', '', '', '', '0');
 
 -- ----------------------------
 -- Table structure for `rfid`
@@ -5380,7 +5402,7 @@ CREATE TABLE `rfid` (
   KEY `fk_user_id_rfid` (`user_id`),
   CONSTRAINT `fk_user_id_rfid` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`),
   CONSTRAINT `fk_waste_id_rfid` FOREIGN KEY (`waste_id`) REFERENCES `waste` (`waste_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of rfid
@@ -5388,6 +5410,9 @@ CREATE TABLE `rfid` (
 INSERT INTO `rfid` VALUES ('19', '14398279', '799', '2014-01-14 21:08:30', '2014-01-15 17:49:42', null, '2', '0', '6', '290');
 INSERT INTO `rfid` VALUES ('20', '2384028409', '803', '2014-01-14 21:08:30', '2014-01-15 17:49:42', null, '2', '1', '6', '8');
 INSERT INTO `rfid` VALUES ('21', '39797492', '810', '2014-01-14 21:08:30', null, null, '0', '1', null, null);
+INSERT INTO `rfid` VALUES ('24', 'E004010070DB66C8', '803', '2014-01-17 17:42:19', null, null, '0', '0', '6', '0');
+INSERT INTO `rfid` VALUES ('25', 'E00401005D746EBC', '799', '2014-01-17 17:42:19', '2014-01-17 17:47:45', null, '3', '0', '6', '102');
+INSERT INTO `rfid` VALUES ('26', 'E00401007FDC33F0', '803', '2014-01-17 18:01:08', null, null, '0', '0', '6', '0');
 
 -- ----------------------------
 -- Table structure for `route_308033501795`
@@ -5600,12 +5625,13 @@ CREATE TABLE `transport_unit` (
   PRIMARY KEY (`transport_unit_id`),
   KEY `fk_user_id_transport` (`user_id`),
   CONSTRAINT `fk_user_id_transport` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of transport_unit
 -- ----------------------------
 INSERT INTO `transport_unit` VALUES ('1', '7', 'xxx运输单位', 'XX运输', '0001', '13912345678', '安徽省安庆市', '200240', '大观区', '1111', '安庆市', '物流业', '大观区小观街', '企业', '小规模', '22', '333', '安庆市运输管理局', '2014-01-14', '2014-01-30', '张斌', '18812345678', '2', '大哥', '18887654321', '54740000', 'anqing@transport', '0', '0');
+INSERT INTO `transport_unit` VALUES ('2', '12', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', '', '', '', '', 'this this for test', 'this this for test', 'this this for test', '0000-00-00', '0000-00-00', 'this this for test', 'this this for test', 'this this for test', 'this this for test', 'this this for test', '', '', '23333333', '23333333');
 
 -- ----------------------------
 -- Table structure for `user`
@@ -5619,7 +5645,7 @@ CREATE TABLE `user` (
   `email` varchar(255) DEFAULT NULL,
   `phone_num` varchar(255) DEFAULT NULL,
   `add_time` datetime DEFAULT NULL,
-  `change_time` datetime DEFAULT NULL,
+  `modify_time` datetime DEFAULT NULL,
   `last_login_time` datetime DEFAULT NULL,
   `current_login_time` datetime DEFAULT NULL,
   `last_login_ip` varchar(255) DEFAULT NULL,
@@ -5627,19 +5653,27 @@ CREATE TABLE `user` (
   `is_verify` tinyint(1) DEFAULT NULL,
   `lock` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
 INSERT INTO `user` VALUES ('1', '0', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@admin', '', '2014-01-05 13:54:12', '2014-01-05 13:54:42', '2014-01-05 15:30:17', '2014-01-08 13:43:39', '127.0.0.1', '127.0.0.1', '1', '0');
-INSERT INTO `user` VALUES ('2', '1', 'country', 'e909c2d7067ea37437cf97fe11d91bd0', 'country@country', '', '2014-01-07 20:57:18', '2014-01-07 20:57:18', '2014-01-16 21:10:20', '2014-01-16 22:01:23', '127.0.0.1', '127.0.0.1', '1', '0');
+INSERT INTO `user` VALUES ('2', '1', 'country', 'e909c2d7067ea37437cf97fe11d91bd0', 'country@country', '', '2014-01-07 20:57:18', '2014-01-07 20:57:18', '2014-01-16 22:01:23', '2014-01-17 17:10:44', '127.0.0.1', '127.0.0.1', '1', '0');
 INSERT INTO `user` VALUES ('3', '2', 'province', '53aad639aca4b5c010927cf610c3ff9c', 'province@province', '', '2014-01-07 20:58:51', '2014-01-07 20:58:51', '2014-01-07 20:58:51', '2014-01-09 13:40:14', '127.0.0.1', '127.0.0.1', '1', '0');
 INSERT INTO `user` VALUES ('4', '3', 'city', '4ed5d2eaed1a1fadcc41ad1d58ed603e', 'city@city', '', '2014-01-05 13:54:21', '2014-01-05 13:54:46', '2014-01-12 16:29:21', '2014-01-16 21:12:10', '219.228.106.234', '127.0.0.1', '1', '0');
 INSERT INTO `user` VALUES ('5', '4', 'district', '6b77ef4b602800a89d88e6e3f93a322c', 'district@district', '', '2014-01-05 13:54:25', '2014-01-05 13:54:49', '2014-01-05 15:09:50', '2014-01-07 13:44:25', '127.0.0.1', '127.0.0.1', '1', '0');
-INSERT INTO `user` VALUES ('6', '5', 'production', 'fd89784e59c72499525556f80289b2c7', 'production@production', '', '2014-01-05 13:54:29', '2014-01-05 13:54:53', '2014-01-15 14:38:37', '2014-01-17 13:55:32', '127.0.0.1', '127.0.0.1', '1', '0');
+INSERT INTO `user` VALUES ('6', '5', 'production', 'fd89784e59c72499525556f80289b2c7', 'production@production', '', '2014-01-05 13:54:29', '2014-01-05 13:54:53', '2014-01-15 14:38:37', '2014-01-17 16:24:26', '127.0.0.1', '127.0.0.1', '1', '0');
 INSERT INTO `user` VALUES ('7', '6', 'transport', '7b334b7260361141659fa9862e803476', 'transport@transport', '', '2014-01-05 13:54:33', '2014-01-05 13:54:57', '2014-01-05 15:11:56', '2014-01-07 13:44:32', '127.0.0.1', '127.0.0.1', '1', '0');
 INSERT INTO `user` VALUES ('8', '7', 'reception', '1da95b279fc0d21024cece2c68a4c200', 'reception@reception', '', '2014-01-05 13:54:38', '2014-01-05 13:55:01', '2014-01-05 15:12:28', '2014-01-07 13:44:35', '127.0.0.1', '127.0.0.1', '1', '0');
+INSERT INTO `user` VALUES ('9', '5', 'this this for test', 'this this for test', '', '', '2014-01-17 17:41:36', null, null, null, null, null, '0', '1');
+INSERT INTO `user` VALUES ('10', '5', 'this this for test', 'this this for test', '', '', '2014-01-17 17:46:24', '2014-01-17 17:46:24', null, null, null, null, '0', '0');
+INSERT INTO `user` VALUES ('11', '5', 'this this for test', 'this this for test', '', '', '2014-01-17 17:54:59', '2014-01-17 17:54:59', null, null, null, null, '0', '0');
+INSERT INTO `user` VALUES ('12', '6', 'this this for test', 'this this for test', '', '', '2014-01-17 17:55:16', '2014-01-17 17:55:16', null, null, null, null, '0', '0');
+INSERT INTO `user` VALUES ('13', '7', 'this this for test', 'this this for test', '', '', '2014-01-17 17:55:33', '2014-01-17 17:55:33', null, null, null, null, '0', '0');
+INSERT INTO `user` VALUES ('14', '7', 'this this for test', 'this this for test', '', '', '2014-01-17 17:55:53', '2014-01-17 17:55:53', null, null, null, null, '0', '0');
+INSERT INTO `user` VALUES ('15', '7', 'this this for test', 'this this for test', '312312', '3123', '2014-01-17 17:57:07', '2014-01-17 17:57:07', null, null, null, null, '0', '0');
+INSERT INTO `user` VALUES ('16', '7', 'this this for test', 'this this for test', '', '', '2014-01-17 17:59:26', '2014-01-17 17:59:26', null, null, null, null, '0', '0');
 
 -- ----------------------------
 -- Table structure for `vehicle`

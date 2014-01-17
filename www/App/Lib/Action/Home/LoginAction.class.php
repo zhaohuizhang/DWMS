@@ -286,6 +286,7 @@ class LoginAction extends CommonAction{
 			case 'bmap_ajax':
 				$GIS_data = M( 'gps_308033501795' )->field( 'bmap_longitude, bmap_latitude' )->where( 'longitude > 0' )->select();
 				$this->ajaxReturn( $GIS_data, 'JSON' );
+				break;
 				/*	// 转移地图展示
 			case 'transfer_display':
 				$tmp_content=$this->fetch( './Public/html/Content/City/GIS/transfer_display.html' );
@@ -587,7 +588,20 @@ class LoginAction extends CommonAction{
 				break;
 			// 转移备案->转移备案申请->表单提交
 			case 'form_record_request':
-
+				$record = M( "record" );	//实例化record对象
+				$record->create();	// 根据表单提交的POST数据创建数据对象
+				$record->record_status = 0;
+				$time = date( 'Y-m-d H:i:s', time() );
+				$record->record_add_time = $time;
+				$record->record_modify_time = $time;
+				$result = $record->add();	// 根据条件保存修改的数据
+				// p($record);
+				if ($result) {
+					$this->success('转移备案申请成功！',"",5);
+				} else {
+					$this->error('转移备案申请失败！',"",5);
+				}
+				break;
 			// 转移备案->转移备案查询
 			case 'transfer_record_query':
 				$tmp_content=$this->fetch( './Public/html/Content/Production/record/transfer_record_query.html' );
