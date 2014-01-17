@@ -585,6 +585,9 @@ class LoginAction extends CommonAction{
 				$tmp_content=$this->fetch( './Public/html/Content/Production/record/transfer_record_request.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
+			// 转移备案->转移备案申请->表单提交
+			case 'form_record_request':
+
 			// 转移备案->转移备案查询
 			case 'transfer_record_query':
 				$tmp_content=$this->fetch( './Public/html/Content/Production/record/transfer_record_query.html' );
