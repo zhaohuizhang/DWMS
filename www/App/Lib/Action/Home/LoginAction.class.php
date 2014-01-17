@@ -583,17 +583,20 @@ class LoginAction extends CommonAction{
 				break;
 			// 转移备案->转移备案申请
 			case 'transfer_record_request':
+				$production_unit = M( 'production_unit' )->where( array( 'user_id' => session( 'user_id' ) ) )->find();
+				$this->unit = $production_unit;
 				$tmp_content=$this->fetch( './Public/html/Content/Production/record/transfer_record_request.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
 			// 转移备案->转移备案申请->表单提交
 			case 'form_record_request':
-				$record = M( "record" );	//实例化record对象
+				$record = M( 'record' );	//实例化record对象
 				$record->create();	// 根据表单提交的POST数据创建数据对象
-				$record->record_status = 0;
 				$time = date( 'Y-m-d H:i:s', time() );
 				$record->record_add_time = $time;
 				$record->record_modify_time = $time;
+				$record->production_unit_id = Think.session.production_unit_id;
+				$record->record_status = 0;
 				$result = $record->add();	// 根据条件保存修改的数据
 				// p($record);
 				if ($result) {

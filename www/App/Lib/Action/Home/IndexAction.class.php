@@ -88,9 +88,8 @@ class IndexAction extends Action{
 		Image::buildImageVerify( 1, 1, 'png' );
 	}
 
-	public function register()
-	{
-		
+	public function register() {
+
 	}
 
 }
