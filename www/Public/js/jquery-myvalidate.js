@@ -26,7 +26,7 @@ $.validator.addMethod("cnPwdEqual", function (value, element) {
 					$(element).valid();
 				});
 			}*/
-			return value === target.val();
-		}, "<span class=\"label label-danger\">两次密码必须一致</span>");
+			return (value === target.val()) && (value.length > 5);
+		}, "<span class=\"label label-danger\">两次密码必须一致且长度至少6位</span>");
 
 $.validator.addClassRules("pwdEqual", { cnPwdEqual: true });
