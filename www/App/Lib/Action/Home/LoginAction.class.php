@@ -268,7 +268,7 @@ class LoginAction extends CommonAction{
 		}
 	}
 
-	public function city($id='city_index') {
+	public function city($id='city_index',$param="") {
 		if ( session( 'user_type' ) == 3 ) {
 			switch ( $id ) {
 				// -------- 国家首页 --------
@@ -365,7 +365,7 @@ class LoginAction extends CommonAction{
 			case 'transfer_record':
 				$tmp_content=$this->fetch( './Public/html/Content/City/transfer/transfer_record.html' );
 				$this->ajaxReturn( $tmp_content );
-				break;
+				break;		
 				// 危废转移->转移联单管理->生产单位转移联单
 			case 'production_transfer_manifest':
 				$tmp_content=$this->fetch( './Public/html/Content/City/transfer/production_transfer_manifest.html' );
@@ -406,6 +406,10 @@ class LoginAction extends CommonAction{
 			case 'transfer_record_management':
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/transfer_record_management.html' );
 				$this->ajaxReturn( $tmp_content );
+				break;
+			case 'transfer_record_management_page':
+				$tmp_content=$this->fetch( './Public/html/Content/City/business/transfer_record_management_page.html' );
+				$this->ajaxReturn( $tmp_content);
 				break;
 			// 业务办理->待办业务->转移联单管理
 			case 'transfer_manifest_management':
