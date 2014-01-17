@@ -48,7 +48,7 @@ function addWaste(){
 	  }
 	$result1 = mysql_query("SELECT production_unit_id FROM production_unit WHERE user_id='".$userId."'");
 
-	if(!mysql_num_rows($result)){
+	if(!mysql_num_rows($result1)){
 				$error->code = 2;
 				$error->des = urlencode('该用户没有企业');
 				$resdata->error = $error;
