@@ -38,7 +38,7 @@ switch ($id) {
 	
 				$AccountData["user_type"]=5;
 				$AccountData["username"]=$postData["username"];
-				$AccountData["password"]=$postData["password"];
+				$AccountData["password"]=md5($postData["password"]);
 				$AccountData["email"]=$postData["email"];
 				$AccountData["phone_num"]=$postData["phone_num"];
 				$AccountData["add_time"]=date( 'Y-m-d H:i:s', time() );
@@ -57,6 +57,7 @@ switch ($id) {
 					}
 					else
 					{
+						$user->where('user_id=$user_id')->delete();
 						$this->error( '账户创建失败:企业信息写入失败',"../../../../../",5);
 					}
 					
@@ -77,7 +78,7 @@ switch ($id) {
 	
 				$AccountData["user_type"]=6;
 				$AccountData["username"]=$postData["username"];
-				$AccountData["password"]=$postData["password"];
+				$AccountData["password"]=md5($postData["password"]);
 				$AccountData["email"]=$postData["email"];
 				$AccountData["phone_num"]=$postData["phone_num"];
 				$AccountData["add_time"]=date( 'Y-m-d H:i:s', time() );
@@ -95,7 +96,8 @@ switch ($id) {
 						$this->success( '运输企业注册成功!',"../../../../../",5);
 					}
 					else
-					{
+					{	
+						$user->where('user_id=$user_id')->delete();
 						$this->error( '账户创建失败:企业信息写入失败',"../../../../../",5);
 					}
 					
@@ -116,7 +118,7 @@ switch ($id) {
 	
 				$AccountData["user_type"]=7;
 				$AccountData["username"]=$postData["username"];
-				$AccountData["password"]=$postData["password"];
+				$AccountData["password"]=md5($postData["password"]);
 				$AccountData["email"]=$postData["email"];
 				$AccountData["phone_num"]=$postData["phone_num"];
 				$AccountData["add_time"]=date( 'Y-m-d H:i:s', time() );
@@ -135,6 +137,7 @@ switch ($id) {
 					}
 					else
 					{
+						$user->where('user_id=$user_id')->delete();
 						$this->error( '账户创建失败:企业信息写入失败',"../../../../../",5);
 					}
 					
