@@ -1,1 +1,66 @@
-<h1>业务办理->待办业务->转移备案管理</h1>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+    </div>
+    <div class="panel-body">
+           <table id="table-container">
+
+
+           </table>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+  <div class="modal-dialog" style="width:70%">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">管理备案</h4>
+      </div>
+      <div class="modal-body" id="model-content">
+      
+      </div>
+      <div class="modal-footer"></div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<script type="text/javascript">
+
+ $('#table-container').dataTable( {
+        "aaData": [
+            /* Reduced data set */
+            [ "Trident", "Internet Explorer 4.0", "Win 95+", '<a href="#" onclick="fetch_model_page(\'./city?id=transfer_record_management_page&param=hghgh\')"><span class="label label-warning"><span class="glyphicon glyphicon-paperclip"></span> 管理</span><a>'],
+           
+                ],
+        "aoColumns": [
+            { "sTitle": "Engine" },
+            { "sTitle": "Browser" },
+            { "sTitle": "Platform" },         
+            { "sTitle": "Grade"}
+        ],
+    } );  
+function fetch_model_page(ajaxURL)
+{
+$('#myModal').modal();
+$("#model-content").html('<center style="margin-top:20px"><h4>努力地加载中...</h4><div class="progress progress-striped active" style="width: 50%"><div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div></div></center>');
+
+
+    $.ajax({
+        type: "get",
+        url: ajaxURL,
+        dataType: "json",
+        success: function(data) {          
+            $("#model-content").html(data);
+            
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log("Error:Ajax_Content_Load" + errorThrown);
+            console.log("XMLHttpRequest.status:" + XMLHttpRequest.status);
+            console.log("XMLHttpRequest.readyState:" + XMLHttpRequest.readyState);
+            console.log("textStatus:" + textStatus);
+        }
+    });
+
+}
+</script>
