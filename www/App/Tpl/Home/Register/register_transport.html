@@ -113,7 +113,7 @@ console.log(newHtml);
             </div>
             <div class="panel-body">
 
-                <form role="form" method="post" id="transportForm"> 
+                <form role="form" method="post" id="transportForm" action="{:U('Home/Register/do_reg',array('id'=>'transport'))}" > 
                     <div class="table-responsive">
                         <big>
                            
@@ -133,11 +133,11 @@ console.log(newHtml);
                     </tr> 
                     <tr>   
                                 <td> 电子邮件</td>
-                                <td> <input type="password" class="form-control" name="email" id="email" placeholder="电子邮件"></td>
+                                <td> <input type="email" class="form-control" name="email" id="email" placeholder="电子邮件"></td>
                     </tr> 
                     <tr>   
                                 <td> 手机号码</td>
-                                <td> <input type="password" class="form-control" name="phone_num" id="phone_num" placeholder="手机号码"></td>
+                                <td> <input type="text" class="form-control" name="phone_num" id="phone_num" placeholder="手机号码"></td>
                     </tr> 
                     </table>
      <div class="alert alert-info">企业信息</div>
