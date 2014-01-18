@@ -1,5 +1,4 @@
-﻿<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<?php
+﻿<?php
 date_default_timezone_set("PRC");
 function bindRfid(){
 		$con = mysql_connect("10.50.6.70","root","root1234");
@@ -50,7 +49,7 @@ function bindRfid(){
 		  
 		
 		$result1 = mysql_query("SELECT production_unit_id FROM production_unit WHERE user_id='".$userId."'") or die(mysql_error());
-		if(!mysql_num_rows($result)){
+		if(!mysql_num_rows($result1)){
 			$error->code = 2;
 			$error->des = urlencode('该用户没有企业');
 			$resdata->error = $error;
@@ -68,24 +67,28 @@ function bindRfid(){
 			$rfid = $wasteRfid->rfid;
 			$wasteId = $wasteRfid->wasteid;
 			$addWay = $wasteRfid->addway;
+			echo $rfid."  ".$wasteId."  ".$addWay;
 			$time = date("Y-m-d H:i:s");
 			if(isNotExist($rfid)){
-				$sql1 = "INSERT INTO rfid (rfid_id, waste_id, add_date_time,status,add_way,user_id,total) VALUES ('$rfid','$wasteId','$time','0','$addWay','$userId','0')";
-				$sql2 = "INSERT INTO $productionUnit (rfid_id, waste_id, add_date_time,android_num) VALUES ('$rfid', '$wasteId', '$time','$imei')";
+				$sql1 = "INSERT INTO rfid (rfid_id, waste_id, add_date_time,status,add_way,user_id,waste_total) VALUES ('$rfid','$wasteId','$time','0','$addWay','$userId','0')";
 				if (!mysql_query($sql1,$con))
 				  {
+					//die(mysql_error());
 					$error[$key]->code = 3;
 					$error[$key]->des = urlencode('写入RFID数据库失败');
 					$error[$key]->rfid = $rfid;
 					$key++;
+				  }else{
+				  $sql2 = "INSERT INTO $productionUnit (rfid_id, waste_id, add_date_time,android_num) VALUES ('$rfid', '$wasteId', '$time','$imei')";
+				  if (!mysql_query($sql2,$con))
+					 {
+						$error[$key]->code = 4;
+						$error[$key]->des = urlencode('写入企业库存数据失败');
+						$error[$key]->rfid = $rfid;
+						$key++;
+					 }
 				  }
-				if (!mysql_query($sql2,$con))
-				 {
-					$error[$key]->code = 4;
-					$error[$key]->des = urlencode('写入企业库存数据失败');
-					$error[$key]->rfid = $rfid;
-					$key++;
-				 }
+				
 			}else{
 				$error[$key]->code = 5;
 				$error[$key]->des = urlencode('RFID标签已经绑定');

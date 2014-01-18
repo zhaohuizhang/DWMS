@@ -1,5 +1,4 @@
-﻿<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<?php
+﻿<?php
 date_default_timezone_set("PRC");
 function addWaste(){
 	$con = mysql_connect("10.50.6.70","root","root1234");
@@ -23,9 +22,14 @@ function addWaste(){
 	$imei = $json_data->imei;
 	$addway = $json_data->addway;
 	$addnum = $json_data->addnum;
-
+	
 	$column = null;
-
+	if($addnum<=0){
+		$error->code = 16;
+		$error->des = urlencode('输入的数值必须为正数');
+		$resdata->error = $error;
+		return $resdata;
+	}
 	if($addway==0){
 		$column = 'add_weight';
 	}else{
@@ -48,7 +52,7 @@ function addWaste(){
 	  }
 	$result1 = mysql_query("SELECT production_unit_id FROM production_unit WHERE user_id='".$userId."'");
 
-	if(!mysql_num_rows($result)){
+	if(!mysql_num_rows($result1)){
 				$error->code = 2;
 				$error->des = urlencode('该用户没有企业');
 				$resdata->error = $error;
@@ -88,7 +92,7 @@ function addWaste(){
 	//echo $wasteTotal;
 	$wasteTotal = $wasteTotal + $addnum;
 	$sql1 = "UPDATE rfid SET update_date_time = '$time',status = 3, waste_total = '$wasteTotal' WHERE rfid_id = '$rfid' AND waste_id = '$wasteid'";
-	$sql2 = "INSERT INTO $productionUnit (rfid_id, waste_id, add_date_time,android_num,$column) VALUES ('$rfid', '$wasteid', '$time','$imei','$addnum')";
+	
 	$key = 0;
 	if (!mysql_query($sql1,$con))
 	{
@@ -96,13 +100,16 @@ function addWaste(){
 		$error[$key]->des = urlencode('更新RFID数据库失败');
 		$error[$key]->rfid = $rfid;
 		$key++;
+	}else{
+		$sql2 = "INSERT INTO $productionUnit (rfid_id, waste_id, add_date_time,android_num,$column) VALUES ('$rfid', '$wasteid', '$time','$imei','$addnum')";
+		if (!mysql_query($sql2,$con))
+		{
+			$error[$key]->code = 4;
+			$error[$key]->des = urlencode('写入企业库存数据失败');
+			$error[$key]->rfid = $rfid;
+		}
 	}
-	if (!mysql_query($sql2,$con))
-	{
-		$error[$key]->code = 4;
-		$error[$key]->des = urlencode('写入企业库存数据失败');
-		$error[$key]->rfid = $rfid;
-	}
+	
 
 	mysql_close($con);
 	if(isset($error)){
