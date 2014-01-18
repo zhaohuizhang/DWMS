@@ -531,7 +531,7 @@ class LoginAction extends CommonAction{
 		}
 	}
 
-	public function production( $id="production_index" ) {
+	public function production( $id="production_index", $parameter="" ) {
 		if ( session( 'user_type' ) == 5 ) {
 			switch ( $id ) {
 				// -------- 生产企业->首页 --------
@@ -588,8 +588,8 @@ class LoginAction extends CommonAction{
 				break;
 				// 转移备案->转移备案申请
 			case 'transfer_record_request':
-				$production_unit = M( 'production_unit' )->where( array( 'user_id' => session( 'user_id' ) ) )->find();
-				$this->unit = $production_unit;
+				$unit = M( 'production_unit' )->where( array( 'user_id' => session( 'user_id' ) ) )->find();
+				$this->unit = $unit;
 				$tmp_content=$this->fetch( './Public/html/Content/Production/record/transfer_record_request.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
@@ -616,11 +616,13 @@ class LoginAction extends CommonAction{
 				break;
 				// 转移备案->转移备案查询
 			case 'transfer_record_query':
-				$record = M( 'record' )->getField( 'record_id,record_code,record_date,production_unit_id,record_status' );
-				$query_json = json_encode( $record );
+				$record = M( 'record' )->getField( 'record_id,record_code,record_date,record_status' );
+				$record_json = json_encode( $record );
 
+				$unit = M( 'production_unit' )->where( array( 'user_id' => session( 'user_id' ) ) )->gitField( 'production_unit_name' );
+				$unit_json = json_encode($unit);
 				$tmp_content=$this->fetch( './Public/html/Content/Production/record/transfer_record_query.html' );
-				$tmp_content = "<script>page_json = $query_json</script> $tmp_content";
+				$tmp_content = "<script>record_json = $record_json; unit_json = $unit_json</script> $tmp_content";
 				$this->ajaxReturn( $tmp_content );
 				break;
 				// 转移备案->转移备案查询->详细信息页
