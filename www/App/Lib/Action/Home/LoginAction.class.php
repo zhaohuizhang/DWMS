@@ -616,12 +616,15 @@ class LoginAction extends CommonAction{
 				break;
 				// 转移备案->转移备案查询
 			case 'transfer_record_query':
+				$record = M( 'record' )->getField( 'record_id,record_code,record_date,production_unit_id,record_status' );
+				$query_json = json_encode( $record );
+
 				$tmp_content=$this->fetch( './Public/html/Content/Production/record/transfer_record_query.html' );
+				$tmp_content = "<script>page_json = $query_json</script> $tmp_content";
 				$this->ajaxReturn( $tmp_content );
 				break;
 				// 转移备案->转移备案查询->详细信息页
 			case 'transfer_record_query_page':
-
 				$tmp_content=$this->fetch( './Public/html/Content/Production/record/transfer_record_query_page.html' );
 				$this->ajaxReturn( $tmp_content );
 
