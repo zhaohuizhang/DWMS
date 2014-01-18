@@ -139,113 +139,113 @@ class LoginAction extends CommonAction{
 				$this->ajaxReturn( $tmp_content );
 				break;
 
-			// -------- 业务办理->侧边栏 --------
+				// -------- 业务办理->侧边栏 --------
 			case 'business_sidebar':
 				layout( './Common/frame' );
 				$this->display( './Public/html/Content/Government/business/business_sidebar.html' );
 				break;
-			// 业务办理->待办业务->转移备案管理
+				// 业务办理->待办业务->转移备案管理
 			case 'transfer_record_management':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/business/transfer_record_management.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 业务办理->待办业务->转移联单管理
+				// 业务办理->待办业务->转移联单管理
 			case 'transfer_manifest_management':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/business/transfer_manifest_management.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 业务办理->待办业务->企业用户管理
+				// 业务办理->待办业务->企业用户管理
 			case 'enterprise_user_management':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/business/enterprise_user_management.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 业务办理->待办业务->企业信息管理
+				// 业务办理->待办业务->企业信息管理
 			case 'enterprise_information_management':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/business/enterprise_information_management.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 业务办理->业务查询->转移备案查询
+				// 业务办理->业务查询->转移备案查询
 			case 'transfer_record_query':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/business/transfer_record_query.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 业务办理->业务查询->转移联单查询
+				// 业务办理->业务查询->转移联单查询
 			case 'transfer_manifest_query':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/business/transfer_manifest_query.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 业务办理->业务查询->企业信息查询
+				// 业务办理->业务查询->企业信息查询
 			case 'enterprise_information_query':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/business/enterprise_information_query.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 业务办理->业务查询->用户信息查询
+				// 业务办理->业务查询->用户信息查询
 			case 'user_information_query':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/business/user_information_query.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
 
-			// -------- 系统管理->侧边栏 --------
+				// -------- 系统管理->侧边栏 --------
 			case 'system_sidebar':
 				layout( './Common/frame' );
 				$this->display( './Public/html/Content/Government/system/system_sidebar.html' );
 				break;
-			// 系统管理->系统信息设置->管辖权限
+				// 系统管理->系统信息设置->管辖权限
 			case 'jurisdiction':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/system/jurisdiction.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->区县代码
+				// 系统管理->系统信息设置->区县代码
 			case 'district_code':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/system/district_code.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->行业代码
+				// 系统管理->系统信息设置->行业代码
 			case 'trade_code':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/system/trade_code.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->企业规模
+				// 系统管理->系统信息设置->企业规模
 			case 'enterprise_scale':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/system/enterprise_scale.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->注册类型
+				// 系统管理->系统信息设置->注册类型
 			case 'register_type':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/system/register_type.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->废物代码
+				// 系统管理->系统信息设置->废物代码
 			case 'waste_code':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/system/waste_code.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->废物类别
+				// 系统管理->系统信息设置->废物类别
 			case 'waste_category':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/system/waste_category.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->废物形态
+				// 系统管理->系统信息设置->废物形态
 			case 'waste_form':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/system/waste_form.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->包装方式
+				// 系统管理->系统信息设置->包装方式
 			case 'package_method':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/system/package_method.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->危废处理方式
+				// 系统管理->系统信息设置->危废处理方式
 			case 'waste_disposal_method':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/system/waste_disposal_method.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->危废去向
+				// 系统管理->系统信息设置->危废去向
 			case 'waste_direction':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/system/waste_direction.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->运输方式
+				// 系统管理->系统信息设置->运输方式
 			case 'transport_method':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/system/transport_method.html' );
 				$this->ajaxReturn( $tmp_content );
@@ -268,7 +268,7 @@ class LoginAction extends CommonAction{
 		}
 	}
 
-	public function city($id='city_index',$param="") {
+	public function city( $id='city_index', $param="" ) {
 		if ( session( 'user_type' ) == 3 ) {
 			switch ( $id ) {
 				// -------- 国家首页 --------
@@ -365,7 +365,7 @@ class LoginAction extends CommonAction{
 			case 'transfer_record':
 				$tmp_content=$this->fetch( './Public/html/Content/City/transfer/transfer_record.html' );
 				$this->ajaxReturn( $tmp_content );
-				break;		
+				break;
 				// 危废转移->转移联单管理->生产单位转移联单
 			case 'production_transfer_manifest':
 				$tmp_content=$this->fetch( './Public/html/Content/City/transfer/production_transfer_manifest.html' );
@@ -397,117 +397,118 @@ class LoginAction extends CommonAction{
 				$this->ajaxReturn( $tmp_content );
 				break;
 
-			// -------- 业务办理->侧边栏 --------
+				// -------- 业务办理->侧边栏 --------
 			case 'business_sidebar':
 				layout( './Common/frame' );
 				$this->display( './Public/html/Content/City/business/business_sidebar.html' );
 				break;
-			// 业务办理->待办业务->转移备案管理
+				// 业务办理->待办业务->转移备案管理
 			case 'transfer_record_management':
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/transfer_record_management.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
+				// 业务办理->待办业务->转移备案管理->详细信息页
 			case 'transfer_record_management_page':
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/transfer_record_management_page.html' );
-				$this->ajaxReturn( $tmp_content);
+				$this->ajaxReturn( $tmp_content );
 				break;
-			// 业务办理->待办业务->转移联单管理
+				// 业务办理->待办业务->转移联单管理
 			case 'transfer_manifest_management':
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/transfer_manifest_management.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 业务办理->待办业务->企业用户管理
+				// 业务办理->待办业务->企业用户管理
 			case 'enterprise_user_management':
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_user_management.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 业务办理->待办业务->企业信息管理
+				// 业务办理->待办业务->企业信息管理
 			case 'enterprise_information_management':
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_information_management.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 业务办理->业务查询->转移备案查询
+				// 业务办理->业务查询->转移备案查询
 			case 'transfer_record_query':
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/transfer_record_query.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 业务办理->业务查询->转移联单查询
+				// 业务办理->业务查询->转移联单查询
 			case 'transfer_manifest_query':
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/transfer_manifest_query.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 业务办理->业务查询->企业信息查询
+				// 业务办理->业务查询->企业信息查询
 			case 'enterprise_information_query':
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_information_query.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 业务办理->业务查询->用户信息查询
+				// 业务办理->业务查询->用户信息查询
 			case 'user_information_query':
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/user_information_query.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
 
-			// -------- 系统管理->侧边栏 --------
+				// -------- 系统管理->侧边栏 --------
 			case 'system_sidebar':
 				layout( './Common/frame' );
 				$this->display( './Public/html/Content/City/system/system_sidebar.html' );
 				break;
-			// 系统管理->系统信息设置->管辖权限
+				// 系统管理->系统信息设置->管辖权限
 			case 'jurisdiction':
 				$tmp_content=$this->fetch( './Public/html/Content/City/system/jurisdiction.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->区县代码
+				// 系统管理->系统信息设置->区县代码
 			case 'district_code':
 				$tmp_content=$this->fetch( './Public/html/Content/City/system/district_code.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->行业代码
+				// 系统管理->系统信息设置->行业代码
 			case 'trade_code':
 				$tmp_content=$this->fetch( './Public/html/Content/City/system/trade_code.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->企业规模
+				// 系统管理->系统信息设置->企业规模
 			case 'enterprise_scale':
 				$tmp_content=$this->fetch( './Public/html/Content/City/system/enterprise_scale.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->注册类型
+				// 系统管理->系统信息设置->注册类型
 			case 'register_type':
 				$tmp_content=$this->fetch( './Public/html/Content/City/system/register_type.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->废物代码
+				// 系统管理->系统信息设置->废物代码
 			case 'waste_code':
 				$tmp_content=$this->fetch( './Public/html/Content/City/system/waste_code.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->废物类别
+				// 系统管理->系统信息设置->废物类别
 			case 'waste_category':
 				$tmp_content=$this->fetch( './Public/html/Content/City/system/waste_category.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->废物形态
+				// 系统管理->系统信息设置->废物形态
 			case 'waste_form':
 				$tmp_content=$this->fetch( './Public/html/Content/City/system/waste_form.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->包装方式
+				// 系统管理->系统信息设置->包装方式
 			case 'package_method':
 				$tmp_content=$this->fetch( './Public/html/Content/City/system/package_method.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->危废处理方式
+				// 系统管理->系统信息设置->危废处理方式
 			case 'waste_disposal_method':
 				$tmp_content=$this->fetch( './Public/html/Content/City/system/waste_disposal_method.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->危废去向
+				// 系统管理->系统信息设置->危废去向
 			case 'waste_direction':
 				$tmp_content=$this->fetch( './Public/html/Content/City/system/waste_direction.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 系统管理->系统信息设置->运输方式
+				// 系统管理->系统信息设置->运输方式
 			case 'transport_method':
 				$tmp_content=$this->fetch( './Public/html/Content/City/system/transport_method.html' );
 				$this->ajaxReturn( $tmp_content );
@@ -580,52 +581,61 @@ class LoginAction extends CommonAction{
 				$this->ajaxReturn( $tmp_content );
 				break;
 
-			// -------- 转移备案->侧边栏 --------
+				// -------- 转移备案->侧边栏 --------
 			case 'record_sidebar':
 				layout( './Common/frame' );
 				$this->display( './Public/html/Content/Production/record/record_sidebar.html' );
 				break;
-			// 转移备案->转移备案申请
+				// 转移备案->转移备案申请
 			case 'transfer_record_request':
 				$production_unit = M( 'production_unit' )->where( array( 'user_id' => session( 'user_id' ) ) )->find();
 				$this->unit = $production_unit;
 				$tmp_content=$this->fetch( './Public/html/Content/Production/record/transfer_record_request.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 转移备案->转移备案申请->表单提交
+				// 转移备案->转移备案申请->表单提交
 			case 'form_record_request':
-				$record = M( 'record' );	//实例化record对象
-				$record->create();	// 根据表单提交的POST数据创建数据对象
+				$record = M( 'record' ); //实例化record对象
+				$record->create(); // 根据表单提交的POST数据创建数据对象
 				$time = date( 'Y-m-d H:i:s', time() );
 				$record->record_add_time = $time;
 				$record->record_modify_time = $time;
-				$record->production_unit_id = Think.session.production_unit_id;
+
+				$unit = M( 'production_unit' )->where( array( 'user_id' => session( 'user_id' ) ) )->find();
+
+				$record->production_unit_id = $unit['production_unit_id'] ;
+				$record->record_code = $unit['production_unit_id'] . '-' . date( 'Y-m' ) . '-' . (M( 'record' )->max( 'record_id' )+1);
 				$record->record_status = 0;
-				$result = $record->add();	// 根据条件保存修改的数据
-				// p($record);
+				$result = $record->add(); // 根据条件保存修改的数据
+
 				if ($result) {
 					$this->success('转移备案申请成功！',"",5);
 				} else {
 					$this->error('转移备案申请失败！',"",5);
 				}
 				break;
-			// 转移备案->转移备案查询
+				// 转移备案->转移备案查询
 			case 'transfer_record_query':
 				$tmp_content=$this->fetch( './Public/html/Content/Production/record/transfer_record_query.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
+				// 转移备案->转移备案查询->详细信息页
+			case 'transfer_record_query_page':
 
-			// -------- 转移联单->侧边栏 --------
+				$tmp_content=$this->fetch( './Public/html/Content/Production/record/transfer_record_query_page.html' );
+				$this->ajaxReturn( $tmp_content );
+
+				// -------- 转移联单->侧边栏 --------
 			case 'manifest_sidebar':
 				layout( './Common/frame' );
 				$this->display( './Public/html/Content/Production/manifest/manifest_sidebar.html' );
 				break;
-			// 转移联单->转移联单申请
+				// 转移联单->转移联单申请
 			case 'transfer_manifest_request':
 				$tmp_content=$this->fetch( './Public/html/Content/Production/manifest/transfer_manifest_request.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 转移联单->转移联单查询
+				// 转移联单->转移联单查询
 			case 'transfer_manifest_query':
 				$tmp_content=$this->fetch( './Public/html/Content/Production/manifest/transfer_manifest_query.html' );
 				$this->ajaxReturn( $tmp_content );
