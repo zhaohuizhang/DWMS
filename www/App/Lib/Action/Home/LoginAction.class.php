@@ -625,6 +625,7 @@ class LoginAction extends CommonAction{
 				break;
 				// 转移备案->转移备案查询->详细信息页
 			case 'transfer_record_query_page':
+
 				$tmp_content=$this->fetch( './Public/html/Content/Production/record/transfer_record_query_page.html' );
 				$this->ajaxReturn( $tmp_content );
 
