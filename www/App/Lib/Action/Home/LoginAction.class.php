@@ -158,7 +158,7 @@ class LoginAction extends CommonAction{
 			case 'enterprise_user_management':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/business/enterprise_user_management.html' );
 				$this->ajaxReturn( $tmp_content );
-				break;
+				break;		
 				// 业务办理->待办业务->企业信息管理
 			case 'enterprise_information_management':
 				$tmp_content=$this->fetch( './Public/html/Content/Government/business/enterprise_information_management.html' );
@@ -446,6 +446,20 @@ class LoginAction extends CommonAction{
 				// 业务办理->待办业务->企业用户管理
 			case 'enterprise_user_management':
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_user_management.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;//wanglei
+			case 'enterprise_user_management_page_production':
+				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_user_management_page_production.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+			case 'enterprise_user_management_page_transport':
+				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_user_management_page_transport.html' );
+				
+				$this->ajaxReturn( $tmp_content );
+				break;
+			case 'enterprise_user_management_page_reception':
+				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_user_management_page_reception.html' );
+				
 				$this->ajaxReturn( $tmp_content );
 				break;
 				// 业务办理->待办业务->企业信息管理
