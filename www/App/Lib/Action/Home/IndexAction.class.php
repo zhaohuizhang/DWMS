@@ -68,6 +68,7 @@ class IndexAction extends Action{
 		case 5:
 			$unit = M('production_unit')->where( array( 'user_id' => session( 'user_id' ) ) )->find();
 			session('production_unit_id', $unit['production_unit_id']);
+
 			$this->redirect( 'Home/Login/production' );
 			break;
 		case 6:

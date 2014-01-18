@@ -1,4 +1,4 @@
-<div class="panel panel-primary">
+<!-- <div class="panel panel-primary">
     <div class="panel-heading">
     </div>
     <div class="panel-body">
@@ -26,7 +26,7 @@
             <button type="submit" class="btn btn-default" id="">查询</button>
         </form>
     </div>
-</div>
+</div> -->
 
 <div class="panel panel-primary">
     <div class="panel-heading">
@@ -56,89 +56,78 @@
 <!-- /.modal -->
 
 <script type="text/javascript">
-/*
-Object {1: Object, 31: Object}
-1: Object
-production_unit_id: "1"
-record_code: "0-0-1"
-record_date: "0000-00-00"
-record_id: "1"
-record_status: "0" 0yibeian 1beiant
-__proto__: Object
-31: Object
-production_unit_id: "1"
-record_code: "1-2014-01-2"
-record_date: "2014-01-18"
-record_id: "31"
-record_status: "0"
-__proto__: Object
-__proto__: Object
-*/
+function setTable() {
+    var tableData = new Array();
+    for (var idx in record_json) {
+        var itemData = new Array();
+        itemData[0] = "" + record_json[idx].record_code;
+        itemData[1] = "" + record_json[idx].record_date;
+        itemData[2] = "" + unit_json;
+        switch (record_json[idx].record_status) {
+            case '0':
+                itemData[3] = "已备案待审核";
+                break;
+            case '1':
+                itemData[3] = "已备案已审核";
+                break;
+            case '2':
+                itemData[3] = "未通过待修改";
+                break;
+            case '3':
+                itemData[3] = "已修改待审核";
+                break;
+            default:
+                itemData[3] = "备案状态错误";
+                break;
+        }
 
-function setTable()
-{
-var tableData=new Array();
-for(var idx in page_json)
-{
-var itemData=new Array();
-itemData[0]=""+page_json[idx].record_code;
-itemData[1]=""+page_json[idx].record_date;
-itemData[2]=""+page_json[idx].production_unit_id;
-if(page_json[idx].record_status=='1')
-    itemData[3]="备案通过";
-else if(page_json[idx].record_status=='0')
-    itemData[3]="已备案待通过";
-else
-    itemData[3]="老胡你又胖了";
-
-itemData[4]='<a href="#" onclick="fetch_model_page(\'./production?id=transfer_record_query_page&parameter='+page_json[idx].record_id+'\')"><span class="label label-warning"><span class="glyphicon glyphicon-paperclip"></span> 管理</span><a>';
-tableData.push(itemData);
-}
-
-
-$('#table-container').dataTable({
-    //"bProcessing": true,    //是用ajax源
-    //"bServerSide": true,    //在服务器端整理数据
-    "aaData": tableData
-    ,
-    "aoColumns": [{
-        "sTitle": "备案编号"
-    }, {
-        "sTitle": "备案日期"
-    }, {
-        "sTitle": "单位名称"
-    }, {
-        "sTitle": "状态"
-    }, {
-        "sTitle": "操作"
-    }],
-    "bPaginate": true, //翻页功能
-    "bLengthChange": true, //改变每页显示数据数量
-    "bFilter": true, //过滤功能
-    "bSort": false, //排序功能
-    "bInfo": true, //页脚信息
-    "bAutoWidth": true, //自动宽度
-    "bStateSave": true, //状态保存，使用了翻页或者改变了每页显示数据数量，会保存在cookie中，下回访问时会显示上一次关闭页面时的内容。
-    "sPaginationType": "full_numbers", //显示数字的翻页样式
-
-    "oLanguage": {
-        "sLengthMenu": "每页显示 _MENU_ 条记录",
-        "sZeroRecords": "抱歉， 没有找到",
-        "sInfo": "从 _START_ 到 _END_ /共 _TOTAL_ 条数据",
-        "sInfoEmpty": "没有数据",
-        "sInfoFiltered": "(从 _MAX_ 条数据中检索)",
-        "oPaginate": {
-            "sFirst": "首页",
-            "sPrevious": "前一页",
-            "sNext": "后一页",
-            "sLast": "尾页"
-        },
-        "sZeroRecords": "没有检索到数据"
-        /*"sProcessing": "<img src='./loading.gif' />"*/
+        itemData[4] = '<a href="#" onclick="fetch_model_page(\'./production?id=transfer_record_query_page&record_id=' + record_json[idx].record_id + '\')"><span class="label label-warning"><span class="glyphicon glyphicon-paperclip"></span> 查询</span><a>';
+        tableData.push(itemData);
     }
-});
+
+    $('#table-container').dataTable({
+        //"bProcessing": true,    //是用ajax源
+        //"bServerSide": true,    //在服务器端整理数据
+        "aaData": tableData,
+        "aoColumns": [{
+            "sTitle": "备案编号"
+        }, {
+            "sTitle": "备案日期"
+        }, {
+            "sTitle": "单位名称"
+        }, {
+            "sTitle": "状态"
+        }, {
+            "sTitle": "操作"
+        }],
+        "bPaginate": true, //翻页功能
+        "bLengthChange": true, //改变每页显示数据数量
+        "bFilter": true, //过滤功能
+        "bSort": false, //排序功能
+        "bInfo": true, //页脚信息
+        "bAutoWidth": true, //自动宽度
+        "bStateSave": true, //状态保存，使用了翻页或者改变了每页显示数据数量，会保存在cookie中，下回访问时会显示上一次关闭页面时的内容。
+        "sPaginationType": "full_numbers", //显示数字的翻页样式
+
+        "oLanguage": {
+            "sLengthMenu": "每页显示 _MENU_ 条记录",
+            "sZeroRecords": "抱歉， 没有找到",
+            "sInfo": "从 _START_ 到 _END_ /共 _TOTAL_ 条数据",
+            "sInfoEmpty": "没有数据",
+            "sInfoFiltered": "(从 _MAX_ 条数据中检索)",
+            "oPaginate": {
+                "sFirst": "首页",
+                "sPrevious": "前一页",
+                "sNext": "后一页",
+                "sLast": "尾页"
+            },
+            "sZeroRecords": "没有检索到数据"
+            /*"sProcessing": "<img src='./loading.gif' />"*/
+        }
+    });
 }
 setTable();
+
 function fetch_model_page(ajaxURL) {
     $('#myModal').modal('show');
     $("#model-content").html('<center style="margin-top:20px"><h4>努力地加载中...</h4><div class="progress progress-striped active" style="width: 50%"><div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div></div></center>');

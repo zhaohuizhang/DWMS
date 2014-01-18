@@ -4,18 +4,17 @@
  */
 class RegisterAction extends Action{
 	public function index( $id=0 ) {
-
 		switch ( $id ) {
-		case 'production':
 
+		case 'production':
 			$this->display( './Register/register_production' );
 			break;
-		case 'transport':
 
+		case 'transport':
 			$this->display( './Register/register_transport' );
 			break;
-		case 'reception':
 
+		case 'reception':
 			$this->display( './Register/register_reception' );
 			break;
 
@@ -23,13 +22,9 @@ class RegisterAction extends Action{
 			$this->error( '页面不存在' );
 			break;
 		}
-
-
 	}
 
-
 	public function do_reg( $id=0 ) {
-
 		switch ( $id ) {
 		case 'production':
 			$postData=( I( 'post.' ) );
@@ -57,14 +52,12 @@ class RegisterAction extends Action{
 					$user->where( 'user_id=$user_id' )->delete();
 					$this->error( '账户创建失败:企业信息写入失败', "../../../../../", 5 );
 				}
-
 			}
-
 			else {
 				$this->error( '账户创建失败:账户信息写入失败', "../../../../../", 5 );
 			}
-
 			break;
+
 		case 'transport':
 
 			//$this->success( '运输企业注册成功!',"../../../../",5);
@@ -93,7 +86,6 @@ class RegisterAction extends Action{
 					$user->where( 'user_id=$user_id' )->delete();
 					$this->error( '账户创建失败:企业信息写入失败', "../../../../../", 5 );
 				}
-
 			}
 
 			else {
@@ -101,6 +93,7 @@ class RegisterAction extends Action{
 			}
 
 			break;
+
 		case 'reception':
 
 			//$this->success( '接受企业注册成功!',"../../../../../",5);
@@ -129,21 +122,17 @@ class RegisterAction extends Action{
 					$user->where( 'user_id=$user_id' )->delete();
 					$this->error( '账户创建失败:企业信息写入失败', "../../../../../", 5 );
 				}
-
 			}
 
 			else {
 				$this->error( '账户创建失败:账户信息写入失败', "../../../../../", 5 );
 			}
-
 			break;
 
 		default:
 			$this->error( '页面不存在' );
 			break;
 		}
-
-
 	}
 }
 ?>
