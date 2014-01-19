@@ -1,33 +1,15 @@
-﻿<div id="myBody">
-<!--<script type="text/javascript" 
-src="http://api.map.baidu.com/api?v=2.0&ak=COQzjeiY7wEEt5LtYOGP0pUt">
-</script>-->
-<div style="width:440px;height:340px;border:1px solid gray" id="container"></div>
-<style>
-#controlWrapper { 
-  left: 450px;
-  top: 0;
-  position: absolute;
-  margin-left: 35px;
-  width: 280px;
-}
+<div class="panel panel-primary">
+            <div class="panel panel-heading" style="margin-bottom:1px">
+                <h3 class="panel-title">路线管理</h3>
+            </div>
+            <div class="panel panel-body" style="margin-bottom:1px">
 
-#control {
-  position: absolute;
-  top: 0;
-  /* just used to show how to include the margin in the effect */
-  margin-top: 20px;
-  padding-top: 19px;
-}
+   	<div style="width:auto" id="container"></div>  
 
-#control.fixed {
-  position: fixed;
-  top: 0;
-}
-</style>
-<div id="controlWrapper"> <div id="control"> <div class="panel panel-default"><div class="panel-heading">路线选择</div> <div class="panel-body">
-	<div id="noSelectionAlert"></div>
-	
+   
+<div style="position:absolute;left:0px;top:0px;width:100%">
+      <div class="panel panel-default" style="float:right;margin-top:50px;margin-right:30px"><div class="panel-heading">路线选择</div> <div class="panel-body">
+	<div id="noSelectionAlert"></div>	
 	<div class="btn-group">
 		<button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown">
 			<span class="glyphicon glyphicon-road"></span> 选择 GPS 设备
@@ -46,8 +28,15 @@ src="http://api.map.baidu.com/api?v=2.0&ak=COQzjeiY7wEEt5LtYOGP0pUt">
 	<input class="btn btn-default navbar-btn" type="button" onclick="map.clearOverlays();document.getElementById('info').innerHTML = '';points=[];mypoints=[];" value="清除" />
 	<input class="btn btn-default navbar-btn" type="button" onclick="submit();" value="提交" />
 </p>
-<div id="info"></div>
+<div id="info"></div></div></div>
+    </div>
+</div>
+</div>
+
 <script type="text/javascript">
+
+ var windowHeight = $(window).height();
+ $("#container").css("height", "" + windowHeight - 300 + "px");
 map = new BMap.Map("container");                        // 创建Map实例
 map.centerAndZoom("安庆市", 13);     // 初始化地图,设置中心点坐标和地图级别
 
@@ -100,6 +89,7 @@ function myAlertSucc(msg)
 	$("#noSelectionAlert").html('<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><strong>错误: </strong> ' + msg + ' </div>');
 }
 
+
 function submit()
 {
 	if(window.mySelection == "") {
@@ -150,5 +140,3 @@ $(document).ready(function() {
 });
 
 </script>
-</div></div></div></div>
-</div>
