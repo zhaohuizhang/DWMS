@@ -70,7 +70,7 @@ function bindRfid($json_string){
 			$addWay = $wasteRfid->addway;
 			$time = date("Y-m-d H:i:s");
 			if(isNotExist($rfid)){
-				$sql1 = "INSERT INTO rfid (rfid_id, waste_id, add_date_time,status,add_way,ownership_id,waste_total) VALUES ('$rfid','$wasteId','$time','0','$addWay','$userId','0')";
+				$sql1 = "INSERT INTO rfid (rfid_id, waste_id, add_date_time,rfid_status,add_method,ownership_id,waste_total) VALUES ('$rfid','$wasteId','$time','0','$addWay','$userId','0')";
 				if (!mysql_query($sql1,$con))
 				  {
 					//die(mysql_error());
@@ -188,7 +188,7 @@ function addWaste($json_string){
 	while($row = mysql_fetch_array($result2))
 		  {
 			  $wasteTotal = $row['waste_total'];
-			  $wasteStatus = $row['status'];
+			  $wasteStatus = $row['rfid_status'];
 		  }
 	if($wasteStatus==1 or $wasteStatus==2){
 		$error->code = 12;
@@ -200,7 +200,7 @@ function addWaste($json_string){
 		  
 	//echo $wasteTotal;
 	$wasteTotal = $wasteTotal + $addnum;
-	$sql1 = "UPDATE rfid SET update_date_time = '$time',status = 3, waste_total = '$wasteTotal' WHERE rfid_id = '$rfid' AND waste_id = '$wasteid'";
+	$sql1 = "UPDATE rfid SET modify_date_time = '$time',rfid_status = 3, waste_total = '$wasteTotal' WHERE rfid_id = '$rfid' AND waste_id = '$wasteid'";
 	
 	$key = 0;
 	if (!mysql_query($sql1,$con))
@@ -268,7 +268,7 @@ function getRfidWasteName($rfid,$imei){
 		while($row = mysql_fetch_array($result1))
 		  {
 			  $wasteId = $row['waste_id'];
-			  $wasteWay = $row['add_way'];
+			  $wasteWay = $row['add_method'];
 			  $wasteTotal = $row['waste_total'];
 		  }
 		$result2 = mysql_query("SELECT waste_name FROM waste WHERE waste_id='".$wasteId."'");
@@ -411,9 +411,9 @@ function wasteIn($json_string){
 		}else{
 			while($row = mysql_fetch_array($result2))
 			{
-				$stat = $row['status'];
+				$stat = $row['rfid_status'];
 				$wasteId = $row['waste_id'];
-				$addWay = $row['add_way'];
+				$addWay = $row['add_method'];
 				$total = $row['waste_total'];
 			}
 			if($stat==2){
@@ -434,7 +434,7 @@ function wasteIn($json_string){
 					$column = 'total_num';
 				}
 				$time = date("Y-m-d H:i:s");
-				$sql3 = "UPDATE rfid SET update_date_time = '$time',status = 2,ownership_id = '$userId' WHERE rfid_id = '$rfid'";
+				$sql3 = "UPDATE rfid SET modify_date_time = '$time',status = 2,ownership_id = '$userId' WHERE rfid_id = '$rfid'";
 				if (!mysql_query($sql3,$con))
 				{
 					$error[$key]->code = 3;
@@ -519,7 +519,7 @@ function wasteOut($json_string){
 		}else{
 			while($row = mysql_fetch_array($result2))
 			{
-				$stat = $row['status'];
+				$stat = $row['rfid_status'];
 			}
 			if($stat==1 or $stat ==2){
 				$error[$key]->code = 12;
@@ -533,7 +533,7 @@ function wasteOut($json_string){
 				$key++;
 			}else{
 				$time = date("Y-m-d H:i:s");
-				$sql1 = "UPDATE rfid SET update_date_time = '$time',status = 1 WHERE rfid_id = '$rfid'";
+				$sql1 = "UPDATE rfid SET modify_date_time = '$time',rfid_status = 1 WHERE rfid_id = '$rfid'";
 				if (!mysql_query($sql1,$con))
 				{
 					$error[$key]->code = 3;
