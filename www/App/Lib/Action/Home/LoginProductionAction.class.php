@@ -75,10 +75,15 @@ class LoginProductionAction extends CommonAction{
 
 				$record->production_unit_id = session( 'production_unit_id' );
 				$record->record_code = session( 'production_unit_id' ) . '-' . date( 'Y-m' ) . '-' . ( M( 'record' )->max( 'record_id' )+1 );
+
 				$record->record_status = I('post.record_status');
 				$result = $record->add(); // 根据条件保存修改的数据
 
-				$this->ajaxReturn();
+				if ($result) {
+					$this->ajaxReturn(1, '保存成功！', 1);
+				} else {
+					$this->ajaxReturn(0, '保存失败！', 0);
+				}
 
 				break;
 				// 转移备案->转移备案查询
