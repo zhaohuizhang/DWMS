@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?><h1>系统管理->系统信息设置->废物代码</h1>
