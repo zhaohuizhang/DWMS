@@ -25,7 +25,7 @@ class LoginCityAction extends CommonAction{
 			case 'GIS_map_receiver':
 
 				break;
-			case 'GIS_gps_getter':\
+			case 'GIS_gps_getter':
 				$record = M( 'record' )->select();
 				$record_json = json_encode( $record );
 
@@ -173,9 +173,10 @@ class LoginCityAction extends CommonAction{
 				$this->unit = $production_unit;
 
 				$record_id_json = json_encode( $record_id );
+				$record_status_json = json_encode( $record['record_status'] );
 
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/transfer_record_management_page.html' );
-				$tmp_content = "<script>record_id_json = $record_id_json; </script> $tmp_content";
+				$tmp_content = "<script>record_id_json = $record_id_json; record_status_json = $record_status_json; </script> $tmp_content";
 				$this->ajaxReturn( $tmp_content );
 				break;
 				// 业务办理->待办业务->转移备案管理->审核
