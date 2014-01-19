@@ -1,4 +1,4 @@
-<div class="panel panel-primary">
+<?php if (!defined('THINK_PATH')) exit();?><div class="panel panel-primary">
             <div class="panel panel-heading" style="margin-bottom:1px">
                 <h3 class="panel-title">路线管理</h3>
             </div>
@@ -36,7 +36,7 @@
 <script type="text/javascript">
 
  var windowHeight = $(window).height();
- $("#container").css("height", "" + windowHeight - 200 + "px");
+ $("#container").css("height", "" + windowHeight - 300 + "px");
 map = new BMap.Map("container");                        // 创建Map实例
 map.centerAndZoom("安庆市", 13);     // 初始化地图,设置中心点坐标和地图级别
 
@@ -102,11 +102,7 @@ function submit()
 		timeout: 2000,
 		data: { "gps_id":$("#mySelect").val(), "route_detail": JSON.stringify(mypoints)},
 		success: function(data) {
-			if(data=="succ") {
-				myAlertSucc("提交成功");
-			} else {
-				myAlert("服务器返回失败");
-			}
+			myAlertSucc("提交成功");
 		},
 		error: function (XMLHttpRequest, textStatus, errorThrown) {
 			myAlert("提交失败");
