@@ -18,6 +18,16 @@ class LoginCityAction extends CommonAction{
 				layout( './Common/frame' );
 				$this->display( './Public/html/Content/City/GIS/GIS_sidebar.html' );
 				break;
+			case 'GIS_set_route':
+				$tmp_content=$this->fetch( './Public/html/Content/City/GIS/set_route.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;				
+			case 'GIS_map_receiver':
+
+				break;
+			case 'GIS_gps_getter':
+
+				break;
 				// 百度地图AJAX请求传GPS数据
 			case 'bmap_ajax':
 				$GIS_data = M( 'gps_308033501795' )->field( 'bmap_longitude, bmap_latitude' )->where( 'longitude > 0' )->select();
@@ -28,7 +38,7 @@ class LoginCityAction extends CommonAction{
 				$tmp_content=$this->fetch( './Public/html/Content/City/GIS/transfer_display.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;*/
-
+			
 				// -------- 危废产生单位->侧边栏 --------
 			case 'production_sidebar':
 				layout( './Common/frame' );
