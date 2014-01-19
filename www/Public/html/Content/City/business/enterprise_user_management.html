@@ -26,19 +26,8 @@
 <!-- /.modal -->
 
 <script type="text/javascript">
-function setTable() {
-    /*
-company_code: "0000"
-company_jurisdiction: ""
-company_name: "生产单位"
-company_username: "production"
-is_verify: "1"
-location_county: "安庆市"
-lock: "0"
-user_id: "6"
-user_type: "5"
-username: "production"
-    */
+ function setTable() {
+
     var tmp_page_name;
     var tableData = new Array();   
     for (var idx in record_json) {
@@ -60,26 +49,42 @@ username: "production"
                 itemData[0] = "老胡你胖了";
                 break;
         }
-       
+
+      
         itemData[1]=record_json[idx].company_name;
         itemData[2]=record_json[idx].company_username;
-        if(record_json[idx].is_verify=="0")
-           itemData[3]="未验证";
-        else
-           itemData[3]="已验证"
-        if(record_json[idx].lock=="0")
-            itemData[3]+="未锁定";
-        else
-            itemData[3]+="已锁定";
-        
-
-        itemData[4] = '<a href="#" onclick="fetch_model_page(\'./city?id='
+        itemData[4]= '<a href="#" onclick="fetch_model_page(\'./city?id='
             +tmp_page_name
             +'&record_id=' 
             + record_json[idx].user_id 
-            + '\','
-            +idx
-            +')"><span class="label label-warning"><span class="glyphicon glyphicon-paperclip"></span> 管理</span><a>';
+            + '\')"><span class="label label-info"><span class="glyphicon glyphicon-paperclip"></span> 查看</span><a>';
+
+        if(record_json[idx].is_verify=="0")
+            {
+               itemData[3]="未验证";
+               itemData[6]='<a href="#" onclick="ajaxAction(0,'+record_json[idx].user_id+',1)"><span class="label label-primary"><span class="glyphicon glyphicon-paperclip"></span> 通过</span><a>';
+
+
+            }
+        else
+            {
+                itemData[3]="已验证";
+                itemData[6]="";
+
+            }
+   
+    
+       if(record_json[idx].lock=="0")
+            {
+            //ajaxAction(actionID,itemIdx,actionValue)
+                itemData[3]+="未锁定";
+                itemData[5]='<a href="#" onclick="ajaxAction(1,'+record_json[idx].user_id+',1)"><span class="label label-danger"><span class="glyphicon glyphicon-paperclip"></span> 锁定</span><a>';
+            }
+        else
+            {
+               itemData[3]+="已锁定";
+               itemData[5]='<a href="#" onclick="ajaxAction(1,'+record_json[idx].user_id+',0)"><span class="label label-success"><span class="glyphicon glyphicon-paperclip"></span> 解锁</span><a>';
+            }     
 
         tableData.push(itemData);
     }
@@ -99,7 +104,13 @@ username: "production"
             "sTitle": "当前账户状态"
         },         
         {
-            "sTitle": "操作"
+            "sTitle": "查看详情"
+        },
+         {
+            "sTitle": "锁定操作"
+        },
+         {
+            "sTitle": "验证操作"
         }
         ],
         "bPaginate": true, //翻页功能
@@ -130,7 +141,38 @@ username: "production"
 }
 setTable();
 
-function fetch_model_page(ajaxURL,itemIdx) {
+function ajaxAction(actionID,userIdx,actionValue)
+{
+
+postdata={};
+if(actionID==0)//is_verify
+{
+postdata.action="verify";
+}
+else if(actionID==1)//lock
+{
+postdata.action="lock";
+}
+postdata.value=""+actionValue;
+postdata.user_id=userIdx;
+
+  $.ajax({
+        type: "post",
+        url: "./city?id=enterprise_user_management_ajaxpost",
+        data:postdata,
+        success: function(data) {  
+           console.log(data);          
+           refresh_page();
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log("Error:Ajax_Content_Load" + errorThrown);
+            console.log("XMLHttpRequest.status:" + XMLHttpRequest.status);
+            console.log("XMLHttpRequest.readyState:" + XMLHttpRequest.readyState);
+            console.log("textStatus:" + textStatus);
+        }
+    });
+}
+function fetch_model_page(ajaxURL) {
 
     $('#myModal').modal("show");
     $("#model-content").html('<center style="margin-top:20px"><h4>努力地加载中...</h4><div class="progress progress-striped active" style="width: 50%"><div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div></div></center>');
@@ -139,8 +181,7 @@ function fetch_model_page(ajaxURL,itemIdx) {
         type: "get",
         url: ajaxURL,
         dataType: "json",
-        success: function(data) {
-            currentItemIdx=itemIdx;
+        success: function(data) {            
             $("#model-content").html(data);
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
