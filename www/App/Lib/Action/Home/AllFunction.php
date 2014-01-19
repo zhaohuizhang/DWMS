@@ -499,7 +499,7 @@ function wasteOut($json_string){
 		  }
 		  
 		
-	$result1 = mysql_query("SELECT production_unit_id FROM production_unit WHERE production_unit_id='".$userId."'") or die(mysql_error());
+	$result1 = mysql_query("SELECT production_unit_id FROM production_unit WHERE production_unit_id='".$userId."'");
 	if(!mysql_num_rows($result1)){
 		$error->code = 2;
 		$error->des = urlencode('该用户没有企业');

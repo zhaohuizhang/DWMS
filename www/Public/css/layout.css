@@ -1,3 +1,6 @@
+body {
+    font-family: 微软雅黑;
+}
 #webpage_title {
     /*float:left;margin-top: 10px;*/
     text-shadow: 1px 1px 4px #777777;
