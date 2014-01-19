@@ -1,4 +1,4 @@
-<div class="panel panel-primary">
+<?php if (!defined('THINK_PATH')) exit();?><div class="panel panel-primary">
             <div class="panel panel-heading" style="margin-bottom:1px">
                 <h3 class="panel-title">路线管理</h3>
             </div>
