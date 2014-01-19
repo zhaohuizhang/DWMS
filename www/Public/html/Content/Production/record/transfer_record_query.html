@@ -65,15 +65,18 @@ function setTable() {
         itemData[2] = "" + unit_json;
         switch (record_json[idx].record_status) {
             case '0':
-                itemData[3] = "已备案待审核";
+                itemData[3] = "已保存未提交";
                 break;
             case '1':
-                itemData[3] = "已备案已审核";
+                itemData[3] = "已备案待审核";
                 break;
             case '2':
-                itemData[3] = "未通过待修改";
+                itemData[3] = "已备案已审核";
                 break;
             case '3':
+                itemData[3] = "未通过待修改";
+                break;
+            case '4':
                 itemData[3] = "已修改待审核";
                 break;
             default:

@@ -620,7 +620,7 @@ class LoginAction extends CommonAction{
 				$this->ajaxReturn( $tmp_content );
 				break;
 				// 转移备案->转移备案申请->表单提交
-			case 'form_record_request':
+			case 'transfer_record_request_form':
 				$record = M( 'record' ); //实例化record对象
 				$record->create(); // 根据表单提交的POST数据创建数据对象
 				$time = date( 'Y-m-d H:i:s', time() );
@@ -629,14 +629,11 @@ class LoginAction extends CommonAction{
 
 				$record->production_unit_id = session( 'production_unit_id' );
 				$record->record_code = session( 'production_unit_id' ) . '-' . date( 'Y-m' ) . '-' . ( M( 'record' )->max( 'record_id' )+1 );
-				$record->record_status = 0;
+				$record->record_status = I('post.record_status');
 				$result = $record->add(); // 根据条件保存修改的数据
 
-				if ( $result ) {
-					$this->success( '转移备案申请成功！', "", 5 );
-				} else {
-					$this->error( '转移备案申请失败！', "", 5 );
-				}
+				$this->ajaxReturn();
+
 				break;
 				// 转移备案->转移备案查询
 			case 'transfer_record_query':
