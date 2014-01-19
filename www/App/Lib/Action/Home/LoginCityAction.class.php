@@ -181,9 +181,12 @@ class LoginCityAction extends CommonAction{
 				break;
 				// 业务办理->待办业务->企业用户管理
 			case 'enterprise_user_management':
+				$record = M( 'alluser' )->select();
+				$record_json = json_encode( $record );
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_user_management.html' );
-				$this->ajaxReturn( $tmp_content );
-				break;//wanglei
+				$tmp_content="<script>record_json=$record_json;</script>$tmp_content";
+				$this->ajaxReturn( "$tmp_content");
+				break;
 			case 'enterprise_user_management_page_production':
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_user_management_page_production.html' );
 				$this->ajaxReturn( $tmp_content );
