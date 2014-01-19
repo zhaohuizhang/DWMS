@@ -49,7 +49,7 @@ function bindRfid(){
 		  }
 		  
 		
-		$result1 = mysql_query("SELECT production_unit_id FROM production_unit WHERE user_id='".$userId."'") or die(mysql_error());
+		$result1 = mysql_query("SELECT production_unit_id FROM production_unit WHERE production_unit_id='".$userId."'");
 		if(!mysql_num_rows($result1)){
 			$error->code = 2;
 			$error->des = urlencode('该用户没有企业');
@@ -70,7 +70,7 @@ function bindRfid(){
 			$addWay = $wasteRfid->addway;
 			$time = date("Y-m-d H:i:s");
 			if(isNotExist($rfid)){
-				$sql1 = "INSERT INTO rfid (rfid_id, waste_id, add_date_time,status,add_way,user_id,waste_total) VALUES ('$rfid','$wasteId','$time','0','$addWay','$userId','0')";
+				$sql1 = "INSERT INTO rfid (rfid_id, waste_id, add_date_time,status,add_way,ownership_id,waste_total) VALUES ('$rfid','$wasteId','$time','0','$addWay','$userId','0')";
 				if (!mysql_query($sql1,$con))
 				  {
 					//die(mysql_error());
@@ -159,7 +159,7 @@ function addWaste(){
 	  {
 	  $userId = $row['ownership_id'];
 	  }
-	$result1 = mysql_query("SELECT production_unit_id FROM production_unit WHERE user_id='".$userId."'");
+	$result1 = mysql_query("SELECT production_unit_id FROM production_unit WHERE production_unit_id='".$userId."'");
 
 	if(!mysql_num_rows($result1)){
 				$error->code = 2;
@@ -322,7 +322,7 @@ function getWasteName(){
 	  $userId = $row['ownership_id'];
 	  //echo $userId;
 	  }
-	$result1 = mysql_query("SELECT production_unit_waste FROM production_unit WHERE user_id='".$userId."'") or die(mysql_error());
+	$result1 = mysql_query("SELECT production_unit_waste FROM production_unit WHERE production_unit_id='".$userId."'");
 
 	if(!mysql_num_rows($result1)){
 		$error->code = 1;
@@ -383,7 +383,7 @@ function wasteIn(){
 		  $userId = $row['ownership_id'];
 		  }
 	
-	$result1 = mysql_query("SELECT reception_unit_id FROM reception_unit WHERE user_id='".$userId."'");
+	$result1 = mysql_query("SELECT reception_unit_id FROM reception_unit WHERE reception_unit_id='".$userId."'");
 
 	if(!mysql_num_rows($result1)){
 				$error->code = 2;
@@ -434,7 +434,7 @@ function wasteIn(){
 					$column = 'total_num';
 				}
 				$time = date("Y-m-d H:i:s");
-				$sql3 = "UPDATE rfid SET update_date_time = '$time',status = 2 WHERE rfid_id = '$rfid'";
+				$sql3 = "UPDATE rfid SET update_date_time = '$time',status = 2,ownership_id = '$userId' WHERE rfid_id = '$rfid'";
 				if (!mysql_query($sql3,$con))
 				{
 					$error[$key]->code = 3;
@@ -499,7 +499,7 @@ function wasteOut(){
 		  }
 		  
 		
-	$result1 = mysql_query("SELECT production_unit_id FROM production_unit WHERE user_id='".$userId."'") or die(mysql_error());
+	$result1 = mysql_query("SELECT production_unit_id FROM production_unit WHERE production_unit_id='".$userId."'") or die(mysql_error());
 	if(!mysql_num_rows($result1)){
 		$error->code = 2;
 		$error->des = urlencode('该用户没有企业');
