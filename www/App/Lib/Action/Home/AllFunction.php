@@ -1,7 +1,7 @@
 ﻿<?php
 date_default_timezone_set("PRC");
 
-function bindRfid(){
+function bindRfid($json_string){
 		$con = mysql_connect("10.50.6.70","root","root1234");
 	if (!$con)
 	  {
@@ -12,7 +12,7 @@ function bindRfid(){
 	  }
 		mysql_query("set names 'utf8'");
 		mysql_select_db("dwms", $con);
-		$json_string = $_POST['txt_json'];
+		//$json_string = $_POST['txt_json'];
 		//$json_string = file_get_contents("php://input");
 		 if(ini_get("magic_quotes_gpc")=="1")
 		 {
@@ -49,7 +49,7 @@ function bindRfid(){
 		  }
 		  
 		
-		$result1 = mysql_query("SELECT production_unit_id FROM production_unit WHERE user_id='".$userId."'") or die(mysql_error());
+		$result1 = mysql_query("SELECT production_unit_id FROM production_unit WHERE production_unit_id='".$userId."'");
 		if(!mysql_num_rows($result1)){
 			$error->code = 2;
 			$error->des = urlencode('该用户没有企业');
@@ -70,7 +70,7 @@ function bindRfid(){
 			$addWay = $wasteRfid->addway;
 			$time = date("Y-m-d H:i:s");
 			if(isNotExist($rfid)){
-				$sql1 = "INSERT INTO rfid (rfid_id, waste_id, add_date_time,status,add_way,user_id,waste_total) VALUES ('$rfid','$wasteId','$time','0','$addWay','$userId','0')";
+				$sql1 = "INSERT INTO rfid (rfid_id, waste_id, add_date_time,status,add_way,ownership_id,waste_total) VALUES ('$rfid','$wasteId','$time','0','$addWay','$userId','0')";
 				if (!mysql_query($sql1,$con))
 				  {
 					//die(mysql_error());
@@ -108,7 +108,7 @@ function bindRfid(){
 
 }
 
-function addWaste(){
+function addWaste($json_string){
 	$con = mysql_connect("10.50.6.70","root","root1234");
 	if (!$con)
 	  {
@@ -119,7 +119,7 @@ function addWaste(){
 	  }
 	mysql_query("set names 'utf8'");
 	mysql_select_db("dwms", $con);
-	$json_string = $_POST['txt_json'];
+	//$json_string = $_POST['txt_json'];
 	 if(ini_get("magic_quotes_gpc")=="1")
 	{
 	  $json_string=stripslashes($json_string);
@@ -159,7 +159,7 @@ function addWaste(){
 	  {
 	  $userId = $row['ownership_id'];
 	  }
-	$result1 = mysql_query("SELECT production_unit_id FROM production_unit WHERE user_id='".$userId."'");
+	$result1 = mysql_query("SELECT production_unit_id FROM production_unit WHERE production_unit_id='".$userId."'");
 
 	if(!mysql_num_rows($result1)){
 				$error->code = 2;
@@ -230,7 +230,7 @@ function addWaste(){
 	}
 }
 
-function getRfidWasteName(){
+function getRfidWasteName($rfid,$imei){
 	$con = mysql_connect("10.50.6.70","root","root1234");
 	if (!$con)
 	  {
@@ -241,8 +241,8 @@ function getRfidWasteName(){
 	  }
 	mysql_query("set names 'utf8'");
 	mysql_select_db("dwms", $con);
-	$rfid = $_GET["rfid"];
-	$imei = $_GET["imei"];
+	// $rfid = $_GET["rfid"];
+	// $imei = $_GET["imei"];
 	
 	$result = mysql_query("SELECT ownership_id FROM device WHERE device_serial_num='".$imei."'") or die(mysql_error());
 	$userId = null;
@@ -293,7 +293,7 @@ function getRfidWasteName(){
 
 }
 
-function getWasteName(){
+function getWasteName($imei){
 
 	$con = mysql_connect("10.50.6.70","root","root1234");
 	if (!$con)
@@ -305,7 +305,7 @@ function getWasteName(){
 	  }
 	mysql_query("set names 'utf8'");
 	mysql_select_db("dwms", $con);
-	$imei = $_GET["imei"];
+	//$imei = $_GET["imei"];
 
 	$result = mysql_query("SELECT ownership_id FROM device WHERE device_serial_num='".$imei."'");
 	$userId = null;
@@ -322,7 +322,7 @@ function getWasteName(){
 	  $userId = $row['ownership_id'];
 	  //echo $userId;
 	  }
-	$result1 = mysql_query("SELECT production_unit_waste FROM production_unit WHERE user_id='".$userId."'") or die(mysql_error());
+	$result1 = mysql_query("SELECT production_unit_waste FROM production_unit WHERE production_unit_id='".$userId."'");
 
 	if(!mysql_num_rows($result1)){
 		$error->code = 1;
@@ -351,7 +351,7 @@ function getWasteName(){
 	return $resultData;
 }
 
-function wasteIn(){
+function wasteIn($json_string){
 	$con = mysql_connect("10.50.6.70","root","root1234");
 	if (!$con)
 	  {
@@ -362,7 +362,7 @@ function wasteIn(){
 	  }
 	mysql_query("set names 'utf8'");
 	mysql_select_db("dwms", $con);
-	$json_string = $_POST['txt_json'];
+	//$json_string = $_POST['txt_json'];
 	if(ini_get("magic_quotes_gpc")=="1")
 	{
 		$json_string=stripslashes($json_string);
@@ -383,7 +383,7 @@ function wasteIn(){
 		  $userId = $row['ownership_id'];
 		  }
 	
-	$result1 = mysql_query("SELECT reception_unit_id FROM reception_unit WHERE user_id='".$userId."'");
+	$result1 = mysql_query("SELECT reception_unit_id FROM reception_unit WHERE reception_unit_id='".$userId."'");
 
 	if(!mysql_num_rows($result1)){
 				$error->code = 2;
@@ -434,7 +434,7 @@ function wasteIn(){
 					$column = 'total_num';
 				}
 				$time = date("Y-m-d H:i:s");
-				$sql3 = "UPDATE rfid SET update_date_time = '$time',status = 2 WHERE rfid_id = '$rfid'";
+				$sql3 = "UPDATE rfid SET update_date_time = '$time',status = 2,ownership_id = '$userId' WHERE rfid_id = '$rfid'";
 				if (!mysql_query($sql3,$con))
 				{
 					$error[$key]->code = 3;
@@ -465,7 +465,7 @@ function wasteIn(){
 	}
 }
 
-function wasteOut(){
+function wasteOut($json_string){
 	$con = mysql_connect("10.50.6.70","root","root1234");
 	if (!$con)
 	  {
@@ -476,7 +476,7 @@ function wasteOut(){
 	  }
 	mysql_query("set names 'utf8'");
 	mysql_select_db("dwms", $con);
-	$json_string = $_POST['txt_json'];
+	//$json_string = $_POST['txt_json'];
 	if(ini_get("magic_quotes_gpc")=="1")
 	{
 		$json_string=stripslashes($json_string);
@@ -499,7 +499,7 @@ function wasteOut(){
 		  }
 		  
 		
-	$result1 = mysql_query("SELECT production_unit_id FROM production_unit WHERE user_id='".$userId."'") or die(mysql_error());
+	$result1 = mysql_query("SELECT production_unit_id FROM production_unit WHERE production_unit_id='".$userId."'") or die(mysql_error());
 	if(!mysql_num_rows($result1)){
 		$error->code = 2;
 		$error->des = urlencode('该用户没有企业');
