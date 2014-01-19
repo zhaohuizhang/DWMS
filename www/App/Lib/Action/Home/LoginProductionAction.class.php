@@ -128,11 +128,10 @@ class LoginProductionAction extends CommonAction{
 				// 转移备案->转移备案查询->修改提交
 			case 'transfer_record_query_modified':
 				$record = M( 'record' ); // 实例化record对象
-				// $record->create(); // 根据表单提交的POST数据创建数据对象
-				$data = I('post.', '', 'htmlspecialchars');
-				$data['record_id'] = $record_id;
+				$record->create(); // 根据表单提交的POST数据创建数据对象
+				$record->record_id = $record_id;
 				$time = date( 'Y-m-d H:i:s', time() );
-				$data['record_modify_time'] = $time;
+				$record->record_modify_time = $time;
 				$record_status_old = I('post.record_status_old');
 				switch ($record_status_old){
 					case '0':
@@ -148,8 +147,8 @@ class LoginProductionAction extends CommonAction{
 						$record_status = -1;
 						break;
 				}
-				$data['record_status'] = $record_status;
-				$result = $record->save($data); // 根据条件保存修改的数据
+				$record->record_status = $record_status;
+				$result = $record->save(); // 根据条件保存修改的数据
 
 				if ($result) {
 					$this->ajaxReturn(1, '修改成功！', 1);
@@ -157,7 +156,7 @@ class LoginProductionAction extends CommonAction{
 					$this->ajaxReturn(0, '修改失败！', 0);
 				}
 				break;
-				// 转移备案->转移备案查询->修改提交
+				// 转移备案->转移备案查询->提交备案
 			case 'transfer_record_query_submit':
 				$record = M( 'record' )->where( array('record_id' =>$record_id))->find();
 				$production_unit = M( 'production_unit' )->where( array('production_unit_id' => session('production_unit_id')))->find();
@@ -171,7 +170,7 @@ class LoginProductionAction extends CommonAction{
 				$tmp_content = "<script>record_id_json = $record_id_json; record_status_json = $record_status_json; </script> $tmp_content";
 				$this->ajaxReturn( $tmp_content );
 				break;
-
+				// 转移备案->转移备案查询->提交备案
 			case 'transfer_record_query_submited':
 				$record_status_old = I('post.record_status_old');
 				switch ($record_status_old){
