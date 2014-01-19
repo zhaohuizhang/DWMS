@@ -36,7 +36,7 @@
 <script type="text/javascript">
 
  var windowHeight = $(window).height();
- $("#container").css("height", "" + windowHeight - 300 + "px");
+ $("#container").css("height", "" + windowHeight - 200 + "px");
 map = new BMap.Map("container");                        // 创建Map实例
 map.centerAndZoom("安庆市", 13);     // 初始化地图,设置中心点坐标和地图级别
 
@@ -102,7 +102,11 @@ function submit()
 		timeout: 2000,
 		data: { "gps_id":$("#mySelect").val(), "route_detail": JSON.stringify(mypoints)},
 		success: function(data) {
-			myAlertSucc("提交成功");
+			if(data=="succ") {
+				myAlertSucc("提交成功");
+			} else {
+				myAlert("服务器返回失败");
+			}
 		},
 		error: function (XMLHttpRequest, textStatus, errorThrown) {
 			myAlert("提交失败");

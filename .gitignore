@@ -1,1 +1,2 @@
-www/App/Runtime/*\n.gitignore
+www/App/Runtime/*
+.gitignore
