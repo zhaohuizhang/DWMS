@@ -208,9 +208,7 @@ class LoginCityAction extends CommonAction{
 				break;
 			case 'enterprise_user_management_ajaxpost':
 			
-				$munit=M( 'user' );					
-				
-				//$this->show(json_encode($line));
+				$munit=M( 'user' );		
 				if(I( 'post.action' )=="lock")
 				{	
 					if(I( 'post.value' )=='0')
