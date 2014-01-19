@@ -3,7 +3,7 @@
  *
  */
 class RegisterAction extends Action{
-	public function index( $id=0 ) {
+	public function index( $id="" ) {
 		switch ( $id ) {
 
 		case 'production':
