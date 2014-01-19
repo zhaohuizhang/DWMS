@@ -132,9 +132,9 @@
     regOpt = -1;
 
     function do_reg() {
-        var reglist = ["./index.php/Home/Register/index?id=production", "./index.php/Home/Register/index?id=transport", "./index.php/Home/Register/index?id=reception"];
+        var reglist = ["/index.php/Home/Register/index?id=production", "/index.php/Home/Register/index?id=transport", "/index.php/Home/Register/index?id=reception"];
         if (regOpt < 0) {
-            alert("请选择角色");;
+            alert("请选择角色");
         }
 
         location.href = reglist[regOpt];

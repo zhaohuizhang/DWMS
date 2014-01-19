@@ -1,4 +1,4 @@
-<form role="form" id="record_request">
+<form role="form" id="record_submit">
     <div class="panel panel-primary">
         <div class="panel-heading">基本信息</div>
         <div class="panel-body">
@@ -17,11 +17,11 @@
                     <tr>
                         <td>备案类型</td>
                         <td>
-                            <input type="text" name="record_type" class="form-control input-sm" placeholder="备案类型">
+                            {$record.record_type}
                         </td>
                         <td>备案日期</td>
                         <td>
-                            <input type="date" name="record_date" class="form-control input-sm" placeholder="备案日期">
+                            {$record.record_date}
                         </td>
                     </tr>
                     <tr>
@@ -77,21 +77,21 @@
                     <tr>
                         <td>工艺序号</td>
                         <td>
-                            <input type="text" name="technology_code" class="form-control input-sm" placeholder="工艺序号">
+                            {$record.technology_code}
                         </td>
                         <td>工艺方法</td>
                         <td>
-                            <input type="text" name="technology_method" class="form-control input-sm" placeholder="工艺方法">
+                            {$record.technology_method}
                         </td>
                     </tr>
                     <tr>
                         <td>危废代码</td>
                         <td>
-                            <input type="text" name="waste_code" class="form-control input-sm" placeholder="危废代码">
+                            {$record.waste_code}
                         </td>
                         <td>相关产品</td>
                         <td>
-                            <input type="text" name="relational_production" class="form-control input-sm" placeholder="相关产品">
+                            {$record.relational_production}
                         </td>
                     </tr>
                 </table>
@@ -107,21 +107,21 @@
                     <tr>
                         <td>废物名称</td>
                         <td>
-                            <input type="text" name="waste_name" class="form-control input-sm" placeholder="废物代码">
+                            {$record.waste_name}
                         </td>
                         <td>废物形态</td>
                         <td>
-                            <input type="text" name="waste_form" class="form-control input-sm" placeholder="废物形态">
+                            {$record.waste_form}
                         </td>
                     </tr>
                     <tr>
                         <td>预计危废重量（吨）</td>
                         <td>
-                            <input type="text" name="predict_output_weight" class="form-control input-sm" placeholder="预计危废重量（吨）">
+                            {$record.predict_output_weight}
                         </td>
                         <td>预计危废数量（桶）</td>
                         <td>
-                            <input type="text" name="predict_output_quantity" class="form-control input-sm" placeholder="预计危废数量（桶）">
+                            {$record.predict_output_quantity}
                         </td>
                     </tr>
                 </table>
@@ -137,21 +137,21 @@
                     <tr>
                         <td>贮存场所</td>
                         <td>
-                            <input type="text" name="storage_place" class="form-control input-sm" placeholder="贮存场所">
+                            {$record.storage_place}
                         </td>
                         <td>贮存面积（平方米）</td>
                         <td>
-                            <input type="text" name="storage_area" class="form-control input-sm" placeholder="贮存面积（平方米）">
+                            {$record.storage_area}
                         </td>
                     </tr>
                     <tr>
                         <td>危废容积（立方米）</td>
                         <td>
-                            <input type="text" name="waste_volume" class="form-control input-sm" placeholder="危废容积（立方米）">
+                            {$record.waste_volume}
                         </td>
                         <td>贮存用途</td>
                         <td>
-                            <input type="text" name="storage_purpose" class="form-control input-sm" placeholder="贮存用途">
+                            {$record.storage_purpose}
                         </td>
                     </tr>
                 </table>
@@ -167,32 +167,31 @@
                     <tr>
                         <td>运输单位名称</td>
                         <td>
-                            <input type="text" name="transport_unit_name" class="form-control input-sm" placeholder="运输单位名称">
+                            {$record.transport_unit_name}
                         </td>
                         <td>所在区县</td>
                         <td>
-                            <input type="text" name="transport_unit_county" class="form-control input-sm" placeholder="所在区县">
+                            {$record.transport_unit_county}
                         </td>
                     </tr>
                     <tr>
                         <td>运输单位地址</td>
                         <td>
-                            <input type="text" name="transport_unit_address" class="form-control input-sm" placeholder="运输单位地址">
+                            {$record.transport_unit_address}
                         </td>
                         <td>运输单位邮编</td>
                         <td>
-                            <input type="text" name="transport_unit_postcode" class="form-control input-sm" placeholder="运输单位邮编">
+                            {$record.transport_unit_postcode}
                         </td>
-
                     </tr>
                     <tr>
                         <td>运输单位联系人姓名</td>
                         <td>
-                            <input type="text" name="transport_unit_contacts_name" class="form-control input-sm" placeholder="运输单位联系人姓名">
+                            {$record.transport_unit_contacts_name}
                         </td>
                         <td>运输单位联系电话</td>
                         <td>
-                            <input type="text" name="transport_unit_contacts_phone" class="form-control input-sm" placeholder="运输单位联系电话">
+                            {$record.transport_unit_contacts_phone}
                         </td>
                     </tr>
                 </table>
@@ -208,32 +207,32 @@
                     <tr>
                         <td>接受单位名称</td>
                         <td>
-                            <input type="text" name="reception_unit_name" class="form-control input-sm" placeholder="接受单位名称">
+                            {$record.reception_unit_name}
                         </td>
                         <td>所在区县</td>
                         <td>
-                            <input type="text" name="reception_unit_county" class="form-control input-sm" placeholder="所在区县">
+                            {$record.reception_unit_county}
                         </td>
                     </tr>
                     <tr>
                         <td>接受单位地址</td>
                         <td>
-                            <input type="text" name="reception_unit_address" class="form-control input-sm" placeholder="接受单位地址">
+                            {$record.reception_unit_address}
                         </td>
                         <td>接受单位邮编</td>
                         <td>
-                            <input type="text" name="reception_unit_postcode" class="form-control input-sm" placeholder="接受单位邮编">
+                            {$record.reception_unit_postcode}
                         </td>
 
                     </tr>
                     <tr>
                         <td>接受单位联系人姓名</td>
                         <td>
-                            <input type="text" name="reception_unit_contacts_name" class="form-control input-sm" placeholder="接受单位联系人姓名">
+                            {$record.reception_unit_contacts_name}
                         </td>
                         <td>接受单位联系电话</td>
                         <td>
-                            <input type="text" name="reception_unit_contacts_phone" class="form-control input-sm" placeholder="接受单位联系电话">
+                            {$record.reception_unit_contacts_phone}
                         </td>
                     </tr>
                 </table>
@@ -243,53 +242,27 @@
 </form>
 
 <center>
-    <button class="btn btn-info btn-lg" id="button_save" data-loading-text="正在保存..." data-complete-text="保存成功！" onclick="ajaxAction(0)">保存</button>
-    <button class="btn btn-warning btn-lg" id="button_submit" data-loading-text="正在提交..." data-complete-text="提交成功！" onclick="ajaxAction(1)">提交</button>
+    <button class="btn btn-warning btn-lg" onclick="ajaxAction()">提交备案</button>
+    <button class="btn btn-info btn-lg" onclick="$('#myModal').modal('hide');">关闭页面</button>
 </center>
 
 <script type="text/javascript">
-function ajaxAction(actionID) {
-    switch (actionID) {
-        case 0:
-            $('#button_save').button('loading');
-            $('#button_submit').addClass('disabled');
-            break;
-        case 1:
-            $('#button_save').addClass('disabled');
-            $('#button_submit').button('loading');
-            break;
-        default:
-            break;
-    }
-
+function ajaxAction() {
+    $("#model-content").html('<center style="margin:50px"><h4>提交中...</h4><div class="progress progress-striped active" style="width: 50%"><div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div></div></center>');
     $.ajax({
         type: "post",
-        url: "production?id=transfer_record_request_form",
+        url: "production?id=transfer_record_query_submited&record_id=" + record_id_json,
         timeout: 2000,
-        data: $('#record_request').serialize() + '&record_status=' + actionID,
-        /*data: {
-            record_status: actionID
-        },*/
-
+        data: {
+            record_status_old: record_status_json
+        },
         success: function(data) {
-            switch (actionID) {
-                case 0:
-                    $('#button_save').button('complete');
-                    $('#button_submit').removeClass('disabled');
-                    setTimeout("$('#button_save').button('reset')", 3000);
-                    break;
-                case 1:
-                    $('#button_save').removeClass('disabled');
-                    $('#button_submit').button('complete');
-                    setTimeout("$('#button_submit').button('reset')", 3000);
-                    break;
-                default:
-                    break;
-            }
-            $('input').val('');
+            $('#myModal').modal('hide');
+            $('#myModal').on('hidden.bs.modal', function(e) {
+                refresh_page();
+            });
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
-            alert('保存失败，请重新保存。');
             console.log("Error: Ajax_Content_Load " + errorThrown);
             console.log("XMLHttpRequest.status: " + XMLHttpRequest.status);
             console.log("XMLHttpRequest.readyState: " + XMLHttpRequest.readyState);
