@@ -128,10 +128,11 @@ class LoginProductionAction extends CommonAction{
 				// 转移备案->转移备案查询->修改提交
 			case 'transfer_record_query_modified':
 				$record = M( 'record' ); // 实例化record对象
-				$record->create(); // 根据表单提交的POST数据创建数据对象
-				$record->record_id = $record_id;
+				// $record->create(); // 根据表单提交的POST数据创建数据对象
+				$data = I('post.', '', 'htmlspecialchars');
+				$data['record_id'] = $record_id;
 				$time = date( 'Y-m-d H:i:s', time() );
-				$record->record_modify_time = $time;
+				$data['record_modify_time'] = $time;
 				$record_status_old = I('post.record_status_old');
 				switch ($record_status_old){
 					case '0':
@@ -147,8 +148,8 @@ class LoginProductionAction extends CommonAction{
 						$record_status = -1;
 						break;
 				}
-				$record->record_status = $record_status;
-				$result = $record->save(); // 根据条件保存修改的数据
+				$data['record_status'] = $record_status;
+				$result = $record->save($data); // 根据条件保存修改的数据
 
 				if ($result) {
 					$this->ajaxReturn(1, '修改成功！', 1);
