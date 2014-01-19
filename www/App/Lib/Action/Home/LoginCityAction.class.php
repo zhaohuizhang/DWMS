@@ -19,20 +19,31 @@ class LoginCityAction extends CommonAction{
 				$this->display( './Public/html/Content/City/GIS/GIS_sidebar.html' );
 				break;
 			case 'GIS_set_route':
-				$tmp_content=$this->fetch( './Public/html/Content/City/GIS/set_route.html' );
-				$this->ajaxReturn( $tmp_content );
-				break;
-			case 'GIS_map_receiver':
-
-				break;
-			case 'GIS_gps_getter':
-				$record = M( 'record' )->select();
+				$record = M( 'vehicle_gps_transport' )->where("vehicle_status=0")->select();
 				$record_json = json_encode( $record );
 
+				$tmp_content=$this->fetch( './Public/html/Content/City/GIS/set_route.html' );
 
-				$this->ajaxReturn( $tmp_content );
+				$this->ajaxReturn( "<script>page_json=$record_json</script>$tmp_content" );
+				break;
+
+			case 'GIS_map_receiver':
+			 	if($table=M("route_".I( 'post.gps_id' )))
+			 	{
+				 	$data["gps_id"]=I( 'post.gps_id' );
+				 	$data["task_status"]=0;
+				 	$data["route_status"]=0;
+				 	$data["route_detail"]=I( 'post.route_detail' );
+				 	$table->add($data);
+				 	$this->show("succ");
+				}
+				else
+				{
+					$this->show("fail");
+				}
 
 				break;
+
 				// 百度地图AJAX请求传GPS数据
 			case 'bmap_ajax':
 				$GIS_data = M( 'gps_308033501795' )->field( 'bmap_longitude, bmap_latitude' )->where( 'longitude > 0' )->select();

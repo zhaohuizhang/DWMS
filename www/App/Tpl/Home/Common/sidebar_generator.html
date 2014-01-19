@@ -64,6 +64,10 @@ function refresh_sidebar(itemID) {
     $(".DWMS-sidebar-content").children().removeClass('active');
     $("#" + itemID).addClass('active');
 }
+
+
+
+
 last_ajaxURL = 0;
 
 function refresh_page() {
@@ -74,4 +78,5 @@ function refresh_page() {
     fetch_page(last_ajaxURL);
     return 0;
 }
+$("#sidebarItem_0_0 a").click();
 </script>
