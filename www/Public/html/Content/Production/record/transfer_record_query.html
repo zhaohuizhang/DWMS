@@ -69,25 +69,25 @@ function setTable() {
         itemData[4] = "" + itemDetail;
         switch (record_json[idx].record_status) {
             case '0':
-                itemData[3] = "已保存未提交";
+                itemData[3] = "<span class='label label-primary'>已保存未提交</span>";
                 itemData[4] += itemModify + itemSubmit;
                 break;
             case '1':
-                itemData[3] = "已提交待审核";
+                itemData[3] = "<span class='label label-warning'>已提交待审核</span>";
                 break;
             case '2':
-                itemData[3] = "已提交已审核";
+                itemData[3] = "<span class='label label-success'>已提交已审核</span>";
                 break;
             case '3':
-                itemData[3] = "未通过待修改";
+                itemData[3] = "<span class='label label-danger'>未通过待修改</span>";
                 itemData[4] += itemModify;
                 break;
             case '4':
-                itemData[3] = "已修改未提交";
+                itemData[3] = "<span class='label label-primary'>已修改未提交</span>";
                 itemData[4] += itemModify + itemSubmit;
                 break;
             default:
-                itemData[3] = "备案状态错误";
+                itemData[3] = "<span class='label label-danger'>备案状态错误</span>";
                 break;
         }
 
