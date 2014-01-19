@@ -116,17 +116,17 @@ function setData(data)
 {
 	$("#mySelect").html("");
 	$("#dropdown-button").html("");
-	myjson = JSON.parse(data);
-	myarr = myjson["GPS"];
+	// myjson = JSON.parse(data);
+	myarr = data; // myjson["GPS"];
 	for(var i = 0; i < myarr.length; i++) {
-		$("#mySelect").append('<option value="' + myarr[i]["value"] + '">' + myarr[i]["name"] + "</option>");
-		$("#dropdown-button").append('<li><a onclick="window.mySelection=\'' + myarr[i]["value"] + '\';">' + myarr[i]["name"] + "</a></li>");
+		//$("#mySelect").append('<option value="' + myarr[i]["value"] + '">' + myarr[i]["name"] + "</option>");
+		$("#dropdown-button").append('<li><a onclick="window.mySelection=\'' + myarr[i]["device_serial_num"] + '\';">' + myarr[i]["transport_unit_name"] + myarr[i]["vehicle_type"] + "</a></li>");
 		
 	}
 }
 
 $(document).ready(function() {
-	$.ajax({
+	/*$.ajax({
 		type: "GET",
 		url: "city?id=GIS_gps_getter",
 		timeout: 2000,
@@ -136,7 +136,8 @@ $(document).ready(function() {
 		error: function (XMLHttpRequest, textStatus, errorThrown) {
 			myAlert("获取 GPS 失败");
 		}
-	});
+	});*/
+	setData(page_json);
 });
 
 </script>
