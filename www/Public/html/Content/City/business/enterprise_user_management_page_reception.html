@@ -145,36 +145,6 @@
                   
 
 <center>
-    <button class="btn btn-success btn-lg" onclick="ajaxAction(1)">通过备案</button>
-    <button class="btn btn-danger btn-lg" onclick="ajaxAction(2)">退回备案</button>
+    
     <button class="btn btn-warning btn-lg" onclick="$('#myModal').modal('hide');">关闭页面</button>
 </center>
-
-<script type="text/javascript">
-function ajaxAction(actionID) {
-    $("#model-content").html('<center style="margin:50px"><h4>提交中...</h4><div class="progress progress-striped active" style="width: 50%"><div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div></div></center>');
-    $.ajax({
-        type: "post",
-        url: "city?id=transfer_record_management_audit&record_id=" + record_id_json,
-        timeout: 2000,
-        data: {record_status:actionID},
-        success: function(data) {
-            $('#myModal').modal('hide');
-            $('#myModal').on('hidden.bs.modal', function(e) {
-                refresh_page();
-            });
-        },
-        error: function(XMLHttpRequest, textStatus, errorThrown) {
-            console.log("Error: Ajax_Content_Load " + errorThrown);
-            console.log("XMLHttpRequest.status: " + XMLHttpRequest.status);
-            console.log("XMLHttpRequest.readyState: " + XMLHttpRequest.readyState);
-            console.log("textStatus: " + textStatus);
-        }
-    });
-
-    $('#myModal').modal('hide');
-    $('#myModal').on('hidden.bs.modal', function(e) {
-        refresh_page();
-    });
-}
-</script>
