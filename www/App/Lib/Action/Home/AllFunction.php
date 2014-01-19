@@ -434,7 +434,7 @@ function wasteIn($json_string){
 					$column = 'total_num';
 				}
 				$time = date("Y-m-d H:i:s");
-				$sql3 = "UPDATE rfid SET modify_date_time = '$time',status = 2,ownership_id = '$userId' WHERE rfid_id = '$rfid'";
+				$sql3 = "UPDATE rfid SET modify_date_time = '$time',rfid_status = 2,ownership_id = '$userId' WHERE rfid_id = '$rfid'";
 				if (!mysql_query($sql3,$con))
 				{
 					$error[$key]->code = 3;
