@@ -19,7 +19,7 @@ class LoginCityAction extends CommonAction{
 				$this->display( './Public/html/Content/City/GIS/GIS_sidebar.html' );
 				break;
 			case 'GIS_set_route':
-				$record = M( 'vehicle_gps_transport' )->select();
+				$record = M( 'vehicle_gps_transport' )->where("vehicle_status=0")->select();
 				$record_json = json_encode( $record );
 		
 				$tmp_content=$this->fetch( './Public/html/Content/City/GIS/set_route.html' );
