@@ -26,6 +26,11 @@ class LoginCityAction extends CommonAction{
 
 				break;
 			case 'GIS_gps_getter':
+				$record = M( 'record' )->select();
+				$record_json = json_encode( $record );
+
+		
+				$this->ajaxReturn( $tmp_content );
 
 				break;
 				// 百度地图AJAX请求传GPS数据
