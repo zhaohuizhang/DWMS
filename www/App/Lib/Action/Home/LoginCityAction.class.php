@@ -25,7 +25,7 @@ class LoginCityAction extends CommonAction{
 			case 'GIS_map_receiver':
 
 				break;
-			case 'GIS_gps_getter':\
+			case 'GIS_gps_getter':
 				$record = M( 'record' )->select();
 				$record_json = json_encode( $record );
 
