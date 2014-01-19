@@ -35,26 +35,26 @@ function setTable() {
         itemData[2] = "" + unit_json;
         switch (record_json[idx].record_status) {
             case '0':
-                itemData[3] = "已保存未提交";
+                itemData[3] = "<span class='label label-primary'>已保存未提交</span>";
                 break;
             case '1':
-                itemData[3] = "已提交待审核";
+                itemData[3] = "<span class='label label-warning'>已提交待审核</span>";
                 break;
             case '2':
-                itemData[3] = "已提交已审核";
+                itemData[3] = "<span class='label label-success'>已提交已审核</span>";
                 break;
             case '3':
-                itemData[3] = "未通过待修改";
+                itemData[3] = "<span class='label label-danger'>未通过待修改</span>";
                 break;
             case '4':
-                itemData[3] = "已修改未提交";
+                itemData[3] = "<span class='label label-primary'>已修改未提交</span>";
                 break;
             default:
-                itemData[3] = "备案状态错误";
+                itemData[3] = "<span class='label label-danger'>备案状态错误</span>";
                 break;
         }
 
-        itemData[4] = '<a href="#" onclick="fetch_model_page(\'./city?id=transfer_record_management_page&record_id=' + record_json[idx].record_id + '\')"><span class="label label-warning"><span class="glyphicon glyphicon-paperclip"></span> 审核</span><a>';
+        itemData[4] = '<a href="#" onclick="fetch_model_page(\'./city?id=transfer_record_management_page&record_id=' + record_json[idx].record_id + '\')"><span class="label label-info"><span class="glyphicon glyphicon-wrench"></span> 操作</span><a>';
         tableData.push(itemData);
     }
 

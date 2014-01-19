@@ -19,23 +19,31 @@ class LoginCityAction extends CommonAction{
 				$this->display( './Public/html/Content/City/GIS/GIS_sidebar.html' );
 				break;
 			case 'GIS_set_route':
-				$record = M( 'vehicle_gps_transport' )->select();
+				$record = M( 'vehicle_gps_transport' )->where("vehicle_status=0")->select();
 				$record_json = json_encode( $record );
-		
+
 				$tmp_content=$this->fetch( './Public/html/Content/City/GIS/set_route.html' );
+
 				$this->ajaxReturn( "<script>page_json=$record_json</script>$tmp_content" );
-				break;				
+				break;
+
 			case 'GIS_map_receiver':
+			 	if($table=M("route_".I( 'post.gps_id' )))
+			 	{
+				 	$data["gps_id"]=I( 'post.gps_id' );
+				 	$data["task_status"]=0;
+				 	$data["route_status"]=0;
+				 	$data["route_detail"]=I( 'post.route_detail' );
+				 	$table->add($data);
+				 	$this->show("succ");
+				}
+				else
+				{
+					$this->show("fail");
+				}
 
 				break;
-			case 'GIS_gps_getter':
-				$record = M( 'record' )->select();
-				$record_json = json_encode( $record );
 
-		
-				$this->ajaxReturn( $tmp_content );
-
-				break;
 				// 百度地图AJAX请求传GPS数据
 			case 'bmap_ajax':
 				$GIS_data = M( 'gps_308033501795' )->field( 'bmap_longitude, bmap_latitude' )->where( 'longitude > 0' )->select();
@@ -46,7 +54,7 @@ class LoginCityAction extends CommonAction{
 				$tmp_content=$this->fetch( './Public/html/Content/City/GIS/transfer_display.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;*/
-			
+
 				// -------- 危废产生单位->侧边栏 --------
 			case 'production_sidebar':
 				layout( './Common/frame' );
@@ -158,7 +166,7 @@ class LoginCityAction extends CommonAction{
 				break;
 				// 业务办理->待办业务->转移备案管理
 			case 'transfer_record_management':
-				$record = M( 'record' )->getField( 'record_id,record_code,record_date,record_status' );
+				$record = M( 'record' )->where('record_status>0')->getField( 'record_id,record_code,record_date,record_status' );
 				$record_json = json_encode( $record );
 
 				$unit_name = M( 'production_unit' )->getField( 'production_unit_name' );
@@ -176,9 +184,10 @@ class LoginCityAction extends CommonAction{
 				$this->unit = $production_unit;
 
 				$record_id_json = json_encode( $record_id );
+				$record_status_json = json_encode( $record['record_status'] );
 
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/transfer_record_management_page.html' );
-				$tmp_content = "<script>record_id_json = $record_id_json; </script> $tmp_content";
+				$tmp_content = "<script>record_id_json = $record_id_json; record_status_json = $record_status_json; </script> $tmp_content";
 				$this->ajaxReturn( $tmp_content );
 				break;
 				// 业务办理->待办业务->转移备案管理->审核
@@ -188,7 +197,12 @@ class LoginCityAction extends CommonAction{
 					'record_id' => $record_id,
 					'record_status' => $record_status,
 				);
-				M( 'record' )->save( $current_record_status );
+				$result = M( 'record' )->save( $current_record_status );
+				if ($result) {
+					$this->ajaxReturn(1, '审核成功！', 1);
+				} else {
+					$this->ajaxReturn(0, '审核失败！', 0);
+				}
 				break;
 				// 业务办理->待办业务->转移联单管理
 			case 'transfer_manifest_management':
@@ -204,29 +218,30 @@ class LoginCityAction extends CommonAction{
 				$this->ajaxReturn( "$tmp_content");
 				break;
 			case 'enterprise_user_management_page_production':
-				$production_unit = M( 'production_unit' )->where(array('user_id' => $record_id ))->find();				
+				$production_unit = M( 'production_unit' )->where(array('user_id' => $record_id ))->find();
 				$this->formData = $production_unit;
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_user_management_page_production.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
 			case 'enterprise_user_management_page_transport':
-				$transport_unit = M( 'transport_unit' )->where(array('user_id' => $record_id ))->find();				
+				$transport_unit = M( 'transport_unit' )->where(array('user_id' => $record_id ))->find();
 				$this->formData = $transport_unit;
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_user_management_page_transport.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
 			case 'enterprise_user_management_page_reception':
-				$reception_unit = M( 'reception_unit' )->where(array('user_id' => $record_id ))->find();				
+				$reception_unit = M( 'reception_unit' )->where(array('user_id' => $record_id ))->find();
 				$this->formData = $reception_unit;
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_user_management_page_reception.html' );
 
 				$this->ajaxReturn( $tmp_content );
 				break;
 			case 'enterprise_user_management_ajaxpost':
-			
-				$munit=M( 'user' );		
+
+				$munit=M( 'user' );
+
 				if(I( 'post.action' )=="lock")
-				{	
+				{
 					if(I( 'post.value' )=='0')
 						$data['lock'] = '0';
 					else
@@ -240,18 +255,18 @@ class LoginCityAction extends CommonAction{
 						$data['is_verify'] = '0';
 					else
 						$data['is_verify'] = '1';
-					
+
 					$munit->where(array('user_id' =>I('post.user_id')))->save($data);
 					$this->show("verify_ok".I('post.user_id'));
-				}	
-				
+				}
+
 				else
 				{
 					$this->error("action_error");
 				}
-		
+
 				break;
-			
+
 				// 业务办理->待办业务->企业信息管理
 			case 'enterprise_information_management':
 
