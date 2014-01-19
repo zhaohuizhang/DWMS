@@ -54,28 +54,28 @@ class IndexAction extends Action{
 			$this->redirect( 'Home/Login/index' );
 			break;
 		case 1:
-			$this->redirect( 'Home/Login/country' );
+			$this->redirect( 'Home/LoginCountry/country' );
 			break;
 		case 2:
-			$this->redirect( 'Home/Login/province' );
+			$this->redirect( 'Home/LoginProvince/province' );
 			break;
 		case 3:
-			$this->redirect( 'Home/Login/city' );
+			$this->redirect( 'Home/LoginCity/city' );
 			break;
 		case 4:
-			$this->redirect( 'Home/Login/district' );
+			$this->redirect( 'Home/LoginDistrict/district' );
 			break;
 		case 5:
 			$unit = M('production_unit')->where( array( 'user_id' => session( 'user_id' ) ) )->find();
 			session('production_unit_id', $unit['production_unit_id']);
 
-			$this->redirect( 'Home/Login/production' );
+			$this->redirect( 'Home/LoginProduction/production' );
 			break;
 		case 6:
-			$this->redirect( 'Home/Login/transport' );
+			$this->redirect( 'Home/LoginTransport/transport' );
 			break;
 		case 7:
-			$this->redirect( 'Home/Login/reception' );
+			$this->redirect( 'Home/LoginReception/reception' );
 			break;
 		default:
 			$this->redirect( 'Home/Index/index' );
