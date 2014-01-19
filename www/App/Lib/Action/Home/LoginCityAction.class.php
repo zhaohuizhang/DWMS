@@ -26,9 +26,20 @@ class LoginCityAction extends CommonAction{
 				$this->ajaxReturn( "<script>page_json=$record_json</script>$tmp_content" );
 				break;				
 			case 'GIS_map_receiver':
-			 	I( 'post.record_status' );
-				$record = M( 'record' );
-				$data[]=
+			 	if($table=M("route_".I( 'post.gps_id' )))
+			 	{
+				 	$data["gps_id"]=I( 'post.gps_id' );
+				 	$data["task_status"]=0;
+				 	$data["route_status"]=0;
+				 	$data["route_detail"]=I( 'post.route_detail' );
+				 	$table->add($data);
+				 	$this->show("succ");			 	
+				}
+				else
+				{
+					$this->show("fail");			
+				}
+				
 
 				break;			
 				// 百度地图AJAX请求传GPS数据
