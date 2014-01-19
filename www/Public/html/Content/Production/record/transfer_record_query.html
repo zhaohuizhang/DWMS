@@ -43,7 +43,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">查询备案</h4>
+                <h4 class="modal-title" id="myModalLabel">转移备案管理</h4>
             </div>
             <div class="modal-body" id="model-content">
             </div>
@@ -59,32 +59,38 @@
 function setTable() {
     var tableData = new Array();
     for (var idx in record_json) {
+        var itemDetail = '<a href="#" onclick="fetch_model_page(\'./production?id=transfer_record_query_detail&record_id=' + record_json[idx].record_id + '\')"><span class="label label-info"><span class="glyphicon glyphicon-paperclip"></span> 详情</span><a>';
+        var itemModify = ' <a href="#" onclick="fetch_model_page(\'./production?id=transfer_record_query_modify&record_id=' + record_json[idx].record_id + '\')"><span class="label label-warning"><span class="glyphicon glyphicon-paperclip"></span> 修改</span><a>';
+        var itemSubmit = ' <a href="#" onclick="fetch_model_page(\'./production?id=transfer_record_query_submit&record_id=' + record_json[idx].record_id + '\')"><span class="label label-primary"><span class="glyphicon glyphicon-paperclip"></span> 提交</span><a>';
         var itemData = new Array();
         itemData[0] = "" + record_json[idx].record_code;
         itemData[1] = "" + record_json[idx].record_date;
         itemData[2] = "" + unit_json;
+        itemData[4] = "" + itemDetail;
         switch (record_json[idx].record_status) {
             case '0':
                 itemData[3] = "已保存未提交";
+                itemData[4] += itemModify + itemSubmit;
                 break;
             case '1':
-                itemData[3] = "已备案待审核";
+                itemData[3] = "已提交待审核";
                 break;
             case '2':
-                itemData[3] = "已备案已审核";
+                itemData[3] = "已提交已审核";
                 break;
             case '3':
                 itemData[3] = "未通过待修改";
+                itemData[4] += itemModify;
                 break;
             case '4':
-                itemData[3] = "已修改待审核";
+                itemData[3] = "已修改未提交";
+                itemData[4] += itemModify + itemSubmit;
                 break;
             default:
                 itemData[3] = "备案状态错误";
                 break;
         }
 
-        itemData[4] = '<a href="#" onclick="fetch_model_page(\'./production?id=transfer_record_query_page&record_id=' + record_json[idx].record_id + '\')"><span class="label label-warning"><span class="glyphicon glyphicon-paperclip"></span> 查询</span><a>';
         tableData.push(itemData);
     }
 
@@ -99,7 +105,7 @@ function setTable() {
         }, {
             "sTitle": "单位名称"
         }, {
-            "sTitle": "状态"
+            "sTitle": "备案状态"
         }, {
             "sTitle": "操作"
         }],

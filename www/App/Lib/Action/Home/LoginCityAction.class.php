@@ -140,7 +140,6 @@ class LoginCityAction extends CommonAction{
 				break;
 				// 业务办理->待办业务->转移备案管理
 			case 'transfer_record_management':
-
 				$record = M( 'record' )->getField( 'record_id,record_code,record_date,record_status' );
 				$record_json = json_encode( $record );
 
@@ -153,7 +152,6 @@ class LoginCityAction extends CommonAction{
 				break;
 				// 业务办理->待办业务->转移备案管理->详细信息页
 			case 'transfer_record_management_page':
-
 				$record = M( 'record' )->where( array( 'record_id' =>$record_id ) )->find();
 				$production_unit = M( 'production_unit' )->where( array( 'production_unit_id' => $record['production_unit_id'] ) )->find();
 				$this->record = $record;
