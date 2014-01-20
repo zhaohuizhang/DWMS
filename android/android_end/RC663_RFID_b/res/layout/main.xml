@@ -9,7 +9,7 @@
         android:layout_height="50dp"
         android:layout_x="184dp"
         android:layout_y="5dp"
-        android:src="@drawable/sjtu" />
+        android:src="@drawable/header_logo" />
     
     <TextView
         android:id="@+id/textView1"

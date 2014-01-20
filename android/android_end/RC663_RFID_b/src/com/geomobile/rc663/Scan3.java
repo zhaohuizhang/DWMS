@@ -7,6 +7,9 @@ import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.media.Ringtone;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
 import android.text.method.ScrollingMovementMethod;
@@ -204,6 +207,9 @@ public class Scan3 extends ScanActivity implements OnClickListener {
     	}
     	String key = sn;
     	items.add(key);
+    	Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+    	Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
+    	r.play();
     	
 		adapter.notifyDataSetChanged();
     }
