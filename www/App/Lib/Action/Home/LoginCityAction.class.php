@@ -13,53 +13,59 @@ class LoginCityAction extends CommonAction{
 				$this->display( './Public/html/Content/City/homepage/city_index.html' );
 				break;
 
-				// -------- 转移地图展示 侧边栏 --------
-			case 'GIS_sidebar':
+				// -------- 转移地图 侧边栏 --------
+			case 'map_sidebar':
 				layout( './Common/frame' );
-				$this->display( './Public/html/Content/City/GIS/GIS_sidebar.html' );
+				$this->display( './Public/html/Content/City/map/map_sidebar.html' );
 				break;
-			case 'GIS_set_route':
-				$record = M( 'vehicle_gps_transport' )->where("vehicle_status=0")->select();
+				// 转移地图->地图展示->转移地图展示
+			case 'transfer_map_display':
+				$tmp_content=$this->fetch( './Public/html/Content/City/map/transfer_map_display.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+				// 转移地图->地图展示->转移地图展示：ajax请求GPS路线数据
+			case 'ajax_map_display':
+				$map_data = M( 'gps_308033501795' )->field( 'bmap_longitude, bmap_latitude' )->where( 'longitude > 0' )->select();
+				$this->ajaxReturn( $map_data, 'JSON' );
+				break;
+			case 'warehouse_map_display':
+				$tmp_content=$this->fetch( './Public/html/Content/City/map/warehouse_map_display.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+				// 转移地图->路线规划->运输路线规划
+			case 'transfer_route_plan':
+				$record = M( 'vehicle_gps_transport' )->where( "vehicle_status=0" )->select();
 				$record_json = json_encode( $record );
 
-				$tmp_content=$this->fetch( './Public/html/Content/City/GIS/set_route.html' );
-
-				$this->ajaxReturn( "<script>page_json=$record_json</script>$tmp_content" );
-
+				$tmp_content=$this->fetch( './Public/html/Content/City/map/transfer_route_plan.html' );
+				$this->ajaxReturn( "<script>page_json=$record_json; </script> $tmp_content" );
 				break;
-			case 'GIS_show_route':
-				$tmp_content=$this->fetch( './Public/html/Content/City/GIS/show_route.html' );
+				// 转移地图->路线规划->运输路线规划：ajax传回路线数据
+			case 'ajax_map_plan_receiver':
+				$table=M( "route_".I( 'post.gps_serial' ) );
+				if ( $table ) {
+					$data["gps_id"]=I( 'post.gps_id' );
+					$data["task_status"]=0;
+					$data["route_status"]=0;
+					$data["route_detail"]=I( 'post.route_detail' );
+					$table->add( $data );
+					$this->show( "succ" );
+				}else {
+					$this->show( "fail" );
+				}
+				break;
+				// 转移地图->路线查询->运输路线查询
+			case 'transfer_route_query':
+				$tmp_content=$this->fetch( './Public/html/Content/City/map/transfer_route_query.html' );
 				$this->ajaxReturn( "$tmp_content" );
 				break;
 
-			case 'GIS_map_receiver':
-				$table=M("route_".I( 'post.gps_serial' ));
-			 	if($table)
-			 	{
-				 	$data["gps_id"]=I( 'post.gps_id' );
-				 	$data["task_status"]=0;
-				 	$data["route_status"]=0;
-				 	$data["route_detail"]=I( 'post.route_detail' );
-				 	$table->add($data);
-				 	$this->show("succ");
-				}
-				else
-				{
-					$this->show("fail");
-				}
-
-				break;
-
-				// 百度地图AJAX请求传GPS数据
-			case 'bmap_ajax':
-				$GIS_data = M( 'gps_308033501795' )->field( 'bmap_longitude, bmap_latitude' )->where( 'longitude > 0' )->select();
-				$this->ajaxReturn( $GIS_data, 'JSON' );
-				break;
 				/*	// 转移地图展示
 			case 'transfer_display':
 				$tmp_content=$this->fetch( './Public/html/Content/City/GIS/transfer_display.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;*/
+
 
 				// -------- 危废产生单位->侧边栏 --------
 			case 'production_sidebar':
@@ -172,7 +178,7 @@ class LoginCityAction extends CommonAction{
 				break;
 				// 业务办理->待办业务->转移备案管理
 			case 'transfer_record_management':
-				$record = M( 'record' )->where('record_status>0')->getField( 'record_id,record_code,record_date,record_status' );
+				$record = M( 'record' )->where( 'record_status>0' )->getField( 'record_id,record_code,record_date,record_status' );
 				$record_json = json_encode( $record );
 
 				$unit_name = M( 'production_unit' )->getField( 'production_unit_name' );
@@ -204,10 +210,10 @@ class LoginCityAction extends CommonAction{
 					'record_status' => $record_status,
 				);
 				$result = M( 'record' )->save( $current_record_status );
-				if ($result) {
-					$this->ajaxReturn(1, '审核成功！', 1);
+				if ( $result ) {
+					$this->ajaxReturn( 1, '审核成功！', 1 );
 				} else {
-					$this->ajaxReturn(0, '审核失败！', 0);
+					$this->ajaxReturn( 0, '审核失败！', 0 );
 				}
 				break;
 				// 业务办理->待办业务->转移联单管理
@@ -221,22 +227,22 @@ class LoginCityAction extends CommonAction{
 				$record_json = json_encode( $record );
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_user_management.html' );
 				$tmp_content="<script>record_json=$record_json;</script>$tmp_content";
-				$this->ajaxReturn( "$tmp_content");
+				$this->ajaxReturn( "$tmp_content" );
 				break;
 			case 'enterprise_user_management_page_production':
-				$production_unit = M( 'production_unit' )->where(array('user_id' => $record_id ))->find();
+				$production_unit = M( 'production_unit' )->where( array( 'user_id' => $record_id ) )->find();
 				$this->formData = $production_unit;
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_user_management_page_production.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
 			case 'enterprise_user_management_page_transport':
-				$transport_unit = M( 'transport_unit' )->where(array('user_id' => $record_id ))->find();
+				$transport_unit = M( 'transport_unit' )->where( array( 'user_id' => $record_id ) )->find();
 				$this->formData = $transport_unit;
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_user_management_page_transport.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
 			case 'enterprise_user_management_page_reception':
-				$reception_unit = M( 'reception_unit' )->where(array('user_id' => $record_id ))->find();
+				$reception_unit = M( 'reception_unit' )->where( array( 'user_id' => $record_id ) )->find();
 				$this->formData = $reception_unit;
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_user_management_page_reception.html' );
 
@@ -246,29 +252,26 @@ class LoginCityAction extends CommonAction{
 
 				$munit=M( 'user' );
 
-				if(I( 'post.action' )=="lock")
-				{
-					if(I( 'post.value' )=='0')
+				if ( I( 'post.action' )=="lock" ) {
+					if ( I( 'post.value' )=='0' )
 						$data['lock'] = '0';
 					else
 						$data['lock'] = '1';
-					$munit->where(array('user_id' =>I('post.user_id')))->save($data);
-					$this->show("lock_ok".I('post.user_id'));
+					$munit->where( array( 'user_id' =>I( 'post.user_id' ) ) )->save( $data );
+					$this->show( "lock_ok".I( 'post.user_id' ) );
 				}
-				else if(I( 'post.action' )=="verify")
-				{
-					if(I( 'post.value' )=='0')
-						$data['is_verify'] = '0';
-					else
-						$data['is_verify'] = '1';
+				else if ( I( 'post.action' )=="verify" ) {
+						if ( I( 'post.value' )=='0' )
+							$data['is_verify'] = '0';
+						else
+							$data['is_verify'] = '1';
 
-					$munit->where(array('user_id' =>I('post.user_id')))->save($data);
-					$this->show("verify_ok".I('post.user_id'));
-				}
+						$munit->where( array( 'user_id' =>I( 'post.user_id' ) ) )->save( $data );
+						$this->show( "verify_ok".I( 'post.user_id' ) );
+					}
 
-				else
-				{
-					$this->error("action_error");
+				else {
+					$this->error( "action_error" );
 				}
 
 				break;

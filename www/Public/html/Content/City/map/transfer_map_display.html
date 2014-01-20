@@ -1,11 +1,5 @@
-
-<include file="./Public/html/Content/City/city_config.html" />
-
 <script type="text/javascript">
-DWMS_page_config.pageid = 1;
-
-
-function switchControllor() {
+/*function switchControllor() {
     if ($("#map-col").hasClass("col-md-9")) {
         //$("#switch-icon").removeClass("glyphicon-chevron-left").addClass("glyphicon-chevron-right");
         $("#map-controllor").fadeOut("normal", function() {
@@ -16,10 +10,10 @@ function switchControllor() {
         $("#map-col").removeClass("col-md-12").addClass("col-md-9");
         $("#map-controllor").fadeIn("normal");
     }
-}
+}*/
 </script>
 
-<div class="row">
+<!-- <div class="row">
     <div class="col-md-3" id="map-controllor">
         <div class="panel panel-primary sidebar_div">
             <div class="panel panel-heading" style="margin-bottom:1px">
@@ -135,30 +129,29 @@ function switchControllor() {
                 </ul>
             </div>
         </div>
-    </div>
-    <div class="col-md-9" id="map-col">
+    </div> -->
+<!-- <div class="col-md-9" id="map-col"> -->
 
-        <div class="panel panel-primary">
-            <div class="panel panel-heading" style="margin-bottom:1px" onclick="switchControllor()">
-                <h3 class="panel-title">地 图</h3>
-            </div>
-            <div id="map_container" style="width:auto">Map Loading...</div>
-        </div>
+<div class="panel panel-primary">
+    <div class="panel panel-heading" style="margin-bottom:1px" onclick="switchControllor()">
+        <h3 class="panel-title">地 图</h3>
     </div>
+    <div id="map_container" style="width:auto">地图加载中...</div>
 </div>
+<!-- </div>
+    </div> -->
 <script type="text/javascript">
-
-$('.sidebar_list').children().click(
-function() {
+/*$('.sidebar_list').children().click(
+    function() {
         $(this).addClass("active");
     }
-  ).hover(
-     function() {
+).hover(
+    function() {
 
     },
     function() {
         $(this).removeClass("active");
-    });
+    });*/
 
 function setmap() {
     var windowHeight = $(window).height();
@@ -201,7 +194,7 @@ function setmap() {
 
     $.ajax({
         type: "get",
-        url: "city?id=bmap_ajax",
+        url: "city?id=ajax_map_display",
         dataType: "json",
         success: function(data) {
 
