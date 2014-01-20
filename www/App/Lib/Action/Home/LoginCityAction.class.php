@@ -25,10 +25,16 @@ class LoginCityAction extends CommonAction{
 				$tmp_content=$this->fetch( './Public/html/Content/City/GIS/set_route.html' );
 
 				$this->ajaxReturn( "<script>page_json=$record_json</script>$tmp_content" );
+
+				break;
+			case 'GIS_show_route':
+				$tmp_content=$this->fetch( './Public/html/Content/City/GIS/show_route.html' );
+				$this->ajaxReturn( "$tmp_content" );
 				break;
 
 			case 'GIS_map_receiver':
-			 	if($table=M("route_".I( 'post.gps_id' )))
+				$table=M("route_".I( 'post.gps_serial' ));
+			 	if($table)
 			 	{
 				 	$data["gps_id"]=I( 'post.gps_id' );
 				 	$data["task_status"]=0;
