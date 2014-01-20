@@ -4,7 +4,7 @@
             </div>
             <div class="panel panel-body" style="margin-bottom:1px">
 
-   	<div style="width:auto" id="container"></div>     
+   	<div style="width:auto" id="mycontainer"></div>     
 
      <div class="panel panel-info" style="position:absolute;left:100%;top:60px;margin-left:-260px"><div class="panel-heading">路线选择</div> <div class="panel-body">
 	<div id="noSelectionAlert"></div>	
@@ -34,10 +34,12 @@
 <script type="text/javascript">
 
  var windowHeight = $(window).height();
- $("#container").css("height", "" + windowHeight - 200 + "px");
+ $("#mycontainer").css("height", "" + windowHeight - 200 + "px");
 
-map = new BMap.Map("container");                        // 创建Map实例
-map.centerAndZoom("安庆市", 13);     // 初始化地图,设置中心点坐标和地图级别
+
+	map = new BMap.Map("mycontainer");                        // 创建Map实例
+	map.centerAndZoom("安庆市", 13);     // 初始化地图,设置中心点坐标和地图级别
+
 
 var key = 1;    //开关
 var newpoint;   //一个经纬度
@@ -134,6 +136,20 @@ function setData(data)
 	}
 }
 
+function showRoute(data)
+{
+	var mydata = unescape(data);
+	var myobj = JSON.parse(mydata);
+
+	for(var i = 0; i < myobj.length; i++) {
+		thisobj = myobj[i];
+		newpoint = new BMap.Point(thisobj["longitude"],thisobj["latitude"]);
+		points.push(newpoint);
+		polyline.setPath(points);   //设置折线的点数组
+        map.addOverlay(polyline);
+	}
+}
+
 $(document).ready(function() {
 	/*$.ajax({
 		type: "GET",
@@ -146,7 +162,9 @@ $(document).ready(function() {
 			myAlert("获取 GPS 失败");
 		}
 	});*/
-	setData(page_json);
+	// setData(page_json);
+
+
 });
 
 </script>
