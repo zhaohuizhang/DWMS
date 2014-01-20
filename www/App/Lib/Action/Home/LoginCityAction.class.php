@@ -48,6 +48,9 @@ class LoginCityAction extends CommonAction{
 					$data["task_status"]=0;
 					$data["route_status"]=0;
 					$data["route_detail"]=I( 'post.route_detail' );
+					$time = date( 'Y-m-d H:i:s', time() );
+					$data["route_add_time"]=$time;
+					$data["route_modify_time"]=$time;
 					$table->add( $data );
 					$this->show( "succ" );
 				}else {
