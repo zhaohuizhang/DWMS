@@ -21,9 +21,7 @@ function sidebar_generator() {
 
         for (itm_idx in DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_content) {
             tmpid = "sidebarItem_" + grp_idx + "_" + itm_idx;
-            newHtml += '<li id="'
-
-            + tmpid + '"><a href="#" onclick="refresh_sidebar(\'' + tmpid + '\'); fetch_page(\'' + DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_content[itm_idx].url + '\')"><span class="glyphicon glyphicon-book"></span> ' + DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_content[itm_idx].name + '</a></li>'
+            newHtml += '<li id="' + tmpid + '"><a href="#" onclick="refresh_sidebar(\'' + tmpid + '\'); fetch_page(\'' + DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_content[itm_idx].url + '\')"><span class="glyphicon glyphicon-book"></span> ' + DWMS_sidebar_config.sidebar_groups[grp_idx].sidebar_group_content[itm_idx].name + '</a></li>'
         }
 
         newHtml += "</ul></div></div></div>";
@@ -64,8 +62,6 @@ function refresh_sidebar(itemID) {
     $(".DWMS-sidebar-content").children().removeClass('active');
     $("#" + itemID).addClass('active');
 }
-
-
 
 
 last_ajaxURL = 0;

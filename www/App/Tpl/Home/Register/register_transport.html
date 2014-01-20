@@ -20,7 +20,7 @@
     <script type="text/javascript" src="__PUBLIC__/js/jquery-2.0.3.min.js"></script>
     <script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="__PUBLIC__/js/jquery-validate.min.js" ></script>
-    
+
 </head>
 <script type="text/javascript">
 /*
@@ -64,35 +64,7 @@ newHtml+="<tr><td>"
 +' name="'+mydata[a+1]+'" '
 +' id="'+mydata[a+1]+'" '
 +" ></td>"
-+"<td>"0
-5
-10
-15
-20
-25
-30
-Wang Lei
-
-nihiue@gmail.com42 commits / 20291 ++ / 14617 --
-Thu 09
-Fri 10
-Tue 07
-Wed 08
-Sat 11
-Jan 12
-Mon 13
-Tue 14
-0
-5
-10
-15
-20
-25
-30
-Bin Zhang
-
-zhangbinsjtu@qq.com33 commits / 157679 ++ / 14367 --
-
++"<td>"
 +mydata[a+2]
 +'</td><td><input type="text" class="form-control input-md"'
 +'name="'+mydata[a+3]+'" '
@@ -106,43 +78,43 @@ console.log(newHtml);
 
 <body style="background:url(__PUBLIC__/image/bg_3.jpg) no-repeat;  background-color:#3D80AD;">
     <div class="container">
-   
+
         <div class="panel panel-primary" id="login-panel" style="margin-top:20px">
             <div class="panel-heading">
                 <h4>注册运输单位</h4>
             </div>
             <div class="panel-body">
 
-                <form role="form" method="post" id="transportForm" action="{:U('Home/Register/do_reg',array('id'=>'transport'))}" > 
+                <form role="form" method="post" id="transportForm" action="{:U('Home/Register/do_reg',array('id'=>'transport'))}" >
                     <div class="table-responsive">
                         <big>
-                           
+
       <div class="alert alert-info">账户信息</div>
-                    <table class="table table-striped table-bordered table-hover table-condensed">                         
-                     <tr>   
+                    <table class="table table-striped table-bordered table-hover table-condensed">
+                     <tr>
                                 <td> 用户名</td>
                                 <td> <input type="text" class="form-control required-cn" name="username" id="username" placeholder="用户名"></td>
-                    </tr> 
-                    <tr>   
+                    </tr>
+                    <tr>
                                 <td> 密码</td>
                                 <td> <input type="password" class="form-control required-cn" name="password" id="password" placeholder="密码"></td>
-                    </tr> 
-                     <tr>   
+                    </tr>
+                     <tr>
                                 <td> 确认密码</td>
                                 <td> <input type="password" class="form-control required-cn pwdEqual" id="re-password" placeholder="确认密码"></td>
-                    </tr> 
-                    <tr>   
+                    </tr>
+                    <tr>
                                 <td> 电子邮件</td>
                                 <td> <input type="email" class="form-control" name="email" id="email" placeholder="电子邮件"></td>
-                    </tr> 
-                    <tr>   
+                    </tr>
+                    <tr>
                                 <td> 手机号码</td>
                                 <td> <input type="text" class="form-control" name="phone_num" id="phone_num" placeholder="手机号码"></td>
-                    </tr> 
+                    </tr>
                     </table>
      <div class="alert alert-info">企业信息</div>
      <table class="table table-striped table-bordered table-hover table-condensed">
-    
+
                                 <tr>
                                     <td>运输单位名称</td>
                                     <td>
@@ -287,7 +259,7 @@ console.log(newHtml);
                         <button type="submit" class="btn btn-warning btn-lg">提交</button>
                     </center>
                 </form>
-                
+
 				<script type="text/javascript" src="__PUBLIC__/js/jquery-myvalidate.js"></script>
 				<script>
 				$("#transportForm").validate();
