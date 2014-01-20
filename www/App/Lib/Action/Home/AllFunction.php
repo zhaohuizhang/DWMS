@@ -32,10 +32,11 @@ function bindRfid($json_string){
 					return false;
 				}
 		}
-
-		$result = mysql_query("SELECT ownership_id FROM device WHERE device_serial_num='".$imei."'");
+		
+		$result = mysql_query("SELECT ownership_type, ownership_id FROM device WHERE device_serial_num='".$imei."'");
 		$userId = null;
 		$productionId = null;
+		$ownershipType = null;
 		if(!mysql_num_rows($result)){
 			$error->code = 0;
 			$error->des = urlencode('企业没有绑定手持设备');
@@ -46,8 +47,15 @@ function bindRfid($json_string){
 		while($row = mysql_fetch_array($result))
 		  {
 		  $userId = $row['ownership_id'];
+		  $ownershipType = $row['ownership_type'];
 		  }
-		  
+		
+		if($ownershipType != 5){
+			$error->code = 17;
+			$error->des = urlencode('该企业不是产生单位');
+			$resdata->error = $error;
+			return $resdata;
+		}
 		
 		$result1 = mysql_query("SELECT production_unit_id FROM production_unit WHERE production_unit_id='".$userId."'");
 		if(!mysql_num_rows($result1)){
@@ -145,20 +153,29 @@ function addWaste($json_string){
 		$addnum = ceil($addnum);
 	}
 
-	$result = mysql_query("SELECT ownership_id FROM device WHERE device_serial_num='".$imei."'");
-	$userId = null;
-	$productionId = null;
-	if(!mysql_num_rows($result)){
-				$error->code = 0;
-				$error->des = urlencode('企业没有绑定手持设备');
-				$resdata->error = $error;
-				return $resdata;
-	}
-
-	while($row = mysql_fetch_array($result))
-	  {
-	  $userId = $row['ownership_id'];
-	  }
+		$result = mysql_query("SELECT ownership_type, ownership_id FROM device WHERE device_serial_num='".$imei."'");
+		$userId = null;
+		$productionId = null;
+		$ownershipType = null;
+		if(!mysql_num_rows($result)){
+			$error->code = 0;
+			$error->des = urlencode('企业没有绑定手持设备');
+			$resdata->error = $error;
+			return $resdata;
+		}
+		
+		while($row = mysql_fetch_array($result))
+		  {
+		  $userId = $row['ownership_id'];
+		  $ownershipType = $row['ownership_type'];
+		  }
+		
+		if($ownershipType != 5){
+			$error->code = 17;
+			$error->des = urlencode('该企业不是产生单位');
+			$resdata->error = $error;
+			return $resdata;
+		}
 	$result1 = mysql_query("SELECT production_unit_id FROM production_unit WHERE production_unit_id='".$userId."'");
 
 	if(!mysql_num_rows($result1)){
@@ -307,10 +324,11 @@ function getWasteName($imei){
 	mysql_select_db("dwms", $con);
 	//$imei = $_GET["imei"];
 
-	$result = mysql_query("SELECT ownership_id FROM device WHERE device_serial_num='".$imei."'");
+	$result = mysql_query("SELECT ownership_type, ownership_id FROM device WHERE device_serial_num='".$imei."'");
 	$userId = null;
 	$wasteArray = array();
 	$wasteName = null;
+	$ownershipType = null;
 	if(!mysql_num_rows($result)){
 		$error->code = 0;
 		$error->des = urlencode('企业没有绑定手持设备');
@@ -320,8 +338,16 @@ function getWasteName($imei){
 	while($row = mysql_fetch_array($result))
 	  {
 	  $userId = $row['ownership_id'];
+	  $ownershipType = $row['ownership_type'];
 	  //echo $userId;
 	  }
+	  
+	if($ownershipType != 5){
+		$error->code = 17;
+		$error->des = urlencode('该企业不是产生单位');
+		$resdata->error = $error;
+		return $resdata;
+	}
 	$result1 = mysql_query("SELECT production_unit_waste FROM production_unit WHERE production_unit_id='".$userId."'");
 
 	if(!mysql_num_rows($result1)){
@@ -370,18 +396,29 @@ function wasteIn($json_string){
 	$json_data = json_decode($json_string);
 	$rfidList = $json_data->rfidlist;
 	$imei = $json_data->imei;
-	$result = mysql_query("SELECT ownership_id FROM device WHERE device_serial_num='".$imei."'");
-	$userId = null;
-	if(!mysql_num_rows($result)){
-				$error->code = 0;
-				$error->des = urlencode('企业没有绑定手持设备');
-				$resdata->error = $error;
-				return $resdata;
-	}
-	while($row = mysql_fetch_array($result))
+	$result = mysql_query("SELECT ownership_type, ownership_id FROM device WHERE device_serial_num='".$imei."'");
+		$userId = null;
+		$receivingId = null;
+		$ownershipType = null;
+		if(!mysql_num_rows($result)){
+			$error->code = 0;
+			$error->des = urlencode('企业没有绑定手持设备');
+			$resdata->error = $error;
+			return $resdata;
+		}
+		
+		while($row = mysql_fetch_array($result))
 		  {
 		  $userId = $row['ownership_id'];
+		  $ownershipType = $row['ownership_type'];
 		  }
+		
+		if($ownershipType != 7){
+			$error->code = 18;
+			$error->des = urlencode('该企业不是接收单位');
+			$resdata->error = $error;
+			return $resdata;
+		}
 	
 	$result1 = mysql_query("SELECT reception_unit_id FROM reception_unit WHERE reception_unit_id='".$userId."'");
 
@@ -434,7 +471,7 @@ function wasteIn($json_string){
 					$column = 'total_num';
 				}
 				$time = date("Y-m-d H:i:s");
-				$sql3 = "UPDATE rfid SET modify_date_time = '$time',status = 2,ownership_id = '$userId' WHERE rfid_id = '$rfid'";
+				$sql3 = "UPDATE rfid SET modify_date_time = '$time',rfid_status = 2,ownership_id = '$userId' WHERE rfid_id = '$rfid'";
 				if (!mysql_query($sql3,$con))
 				{
 					$error[$key]->code = 3;
@@ -484,19 +521,29 @@ function wasteOut($json_string){
 	$json_data = json_decode($json_string);
 	$rfidList = $json_data->rfidlist;
 	$imei = $json_data->imei;
-	$result = mysql_query("SELECT ownership_id FROM device WHERE device_serial_num='".$imei."'");
-	
-	if(!mysql_num_rows($result)){
-				$error->code = 0;
-				$error->des = urlencode('企业没有绑定手持设备');
-				$resdata->error = $error;
-				return $resdata;
-	}
-	$userId = null;
-	while($row = mysql_fetch_array($result))
+	$result = mysql_query("SELECT ownership_type, ownership_id FROM device WHERE device_serial_num='".$imei."'");
+		$userId = null;
+		$productionId = null;
+		$ownershipType = null;
+		if(!mysql_num_rows($result)){
+			$error->code = 0;
+			$error->des = urlencode('企业没有绑定手持设备');
+			$resdata->error = $error;
+			return $resdata;
+		}
+		
+		while($row = mysql_fetch_array($result))
 		  {
 		  $userId = $row['ownership_id'];
+		  $ownershipType = $row['ownership_type'];
 		  }
+		
+		if($ownershipType != 5){
+			$error->code = 17;
+			$error->des = urlencode('该企业不是产生单位');
+			$resdata->error = $error;
+			return $resdata;
+		}
 		  
 		
 	$result1 = mysql_query("SELECT production_unit_id FROM production_unit WHERE production_unit_id='".$userId."'");
