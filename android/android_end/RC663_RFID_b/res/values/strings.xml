@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, RC663_RFIDActivity!</string>
+    <string name="app_name">废物管理</string>
+    <string name="btn_in_14443a">ISO14443A</string>
+    <string name="btn_in_15693">ISO15693</string>
+    <string name="btn_in_2ndGID">Read China Second Generation ID card\'s UID</string>
+    <string name="btn_in_ultralight">ISO14443A Ultralight C</string>
+    <string name="text_main">Please choose a protocol</string>
+    <string name="text_null"></string>
+    <string name="btn_set">DEMO</string>
+    <string name="msg_error_input">Input is error</string>
+    <string name="msg_error_dev">Open device error!</string>
+    <string name="msg_error_power">Open power error!</string>
+    <string name="msg_start">Work start, please wait</string>
+    <string name="text_serial">Serial</string>
+    <string name="text_power">Power</string>
+    <string name="btn_confirm">OK</string>
+ 
+    
+    
+    
+    <string name="text_mifare_prompt">Please input a block number to demo</string>
+    <string name="msg_mifare_error_dev">Open device error!</string>
+    <string name="msg_mifare_error_block">Input number is out of Mifare Classic block range</string>
+    <string name="msg_mifare_error_nocard">No card found</string>
+    <string name="msg_mifare_error_auth">Authentication block failed</string>
+    <string name="msg_mifare_error_readvalue">Read value failed</string>
+    <string name="msg_mifare_error_writevalue">Write value failed</string>
+    <string name="msg_mifare_error_readblock">Read block data failed</string>
+    <string name="msg_mifare_error_writeblock">Write block data failed</string>
+    <string name="msg_mifare_error_incvalue">Increment value failed</string>
+    <string name="msg_mifare_error_decvalue">Decrement value failed</string>
+    <string name="msg_mifare_error_haltcard">Halt card failed</string>
+    <string name="msg_mifare_error_compatibility_read">write repeat data from block err, </string>
+    <string name="msg_mifare_ok_findcard">Find a card, ID is </string>
+    <string name="msg_mifare_ok_auth">Authentication block ok</string>
+    <string name="msg_mifare_ok_writeblock">Write data to block ok, data is</string>
+    <string name="msg_mifare_ok_readblock">Read data from block ok, result is</string>
+    <string name="msg_mifare_ok_writevalue">Write value to block ok, value is</string>
+    <string name="msg_mifare_ok_readvalue">Read value from block ok, result is</string>
+    <string name="msg_mifare_ok_incvalue">Successfully increment block\'s value of</string>
+    <string name="msg_mifare_ok_decvalue">Successfully decrement block\'s value of</string>
+    <string name="msg_mifare_ok_haltcard">Halt current card ok</string>
+    <string name="msg_mifare_ok_allok">Test over</string>
+	<string name="msg_mifare_ok_compatibility_read">compatibility write data block ok, date is</string>
+    
+    <string name="ckb_15693_lockblock">Lock Block</string>
+    <string name="ckb_15693_lockafi">Lock AFI</string>
+    <string name="ckb_15693_lockdsfid">Lock DSFID</string>
+    <string name="text_15693_selectitem">Select Test Item</string>
+    <string name="text_15693_prompt">Input a block number to demo</string>
+    <string name="btn_15693_getinfo">Search</string>
+    
+    <string name="btn_2ndGID_info">Read China Second Generation ID card\'s UID</string>
+    <string name="btn_in_scan">Scan 1</string>
+    <string name="url_prefix">http://stacky.takau.net/think/DWMS/www/index.php/Home/AndroidApi/</string>
+</resources>
