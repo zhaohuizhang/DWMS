@@ -2,11 +2,8 @@
     <div class="panel panel-heading" style="margin-bottom:1px">
         <h3 class="panel-title">路线管理</h3>
     </div>
-
     <div class="panel panel-body" style="margin-bottom:1px">
-
         <div style="width:auto" id="container"></div>
-
         <div class="panel panel-info" style="position:absolute;left:100%;top:60px;margin-left:-260px">
             <div class="panel-heading">路线选择</div>
             <div class="panel-body">
@@ -15,7 +12,6 @@
                     <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown">
                         <span class="glyphicon glyphicon-road"></span>
                         <span id="gps_name">选择 GPS 设备</span>
-
                     </button>
                     <ul class="dropdown-menu" role="menu" id="dropdown-button">
                         <!--<li><a href="#">Action</a></li>-->
@@ -24,7 +20,6 @@
                 <select id="mySelect" style="visibility: hidden">
                     正在获取 GPS 设备信息... 请稍候...
                 </select>
-
                 <p>
                     <input class="btn btn-default navbar-btn" id="startBtn" type="button" onclick="startTool();" value="开始取点" />
                     <input id="myclear" class="btn btn-default navbar-btn" type="button" onclick="map.clearOverlays();document.getElementById('info').innerHTML = '';points=[];mypoints=[];" value="清除" />
