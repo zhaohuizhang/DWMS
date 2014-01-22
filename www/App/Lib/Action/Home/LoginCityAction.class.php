@@ -28,17 +28,26 @@ class LoginCityAction extends CommonAction{
 				$map_data = M( 'gps_308033501795' )->field( 'bmap_longitude, bmap_latitude' )->where( 'longitude > 0' )->select();
 				$this->ajaxReturn( $map_data, 'JSON' );
 				break;
+				// 转移地图->地图展示->仓库地图展示
 			case 'warehouse_map_display':
 				$tmp_content=$this->fetch( './Public/html/Content/City/map/warehouse_map_display.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-				// 转移地图->路线规划->运输路线规划
-			case 'transfer_route_plan':
+				// 转移地图->路线规划->运输路线规划，按照鼠标点规划路线
+			case 'transfer_route_plan_1':
 				$record = M( 'vehicle_gps_transport' )->where( "vehicle_status=0" )->select();
 				$record_json = json_encode( $record );
 
-				$tmp_content=$this->fetch( './Public/html/Content/City/map/transfer_route_plan.html' );
-				$this->ajaxReturn( "<script>page_json=$record_json; </script> $tmp_content" );
+				$tmp_content=$this->fetch( './Public/html/Content/City/map/transfer_route_plan_1.html' );
+				$this->ajaxReturn( "<script>record_json=$record_json; </script> $tmp_content" );
+				break;
+				// 转移地图->路线规划->运输路线规划，按照百度API自助规划路线
+			case 'transfer_route_plan_2':
+				$record = M( 'vehicle_gps_transport' )->where( "vehicle_status=0" )->select();
+				$record_json = json_encode( $record );
+
+				$tmp_content=$this->fetch( './Public/html/Content/City/map/transfer_route_plan_2.html' );
+				$this->ajaxReturn( "<script>record_json=$record_json; </script> $tmp_content" );
 				break;
 				// 转移地图->路线规划->运输路线规划：ajax传回路线数据
 			case 'ajax_map_plan_receiver':
