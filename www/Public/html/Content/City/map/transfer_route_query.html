@@ -26,7 +26,7 @@
 
                 <p>
                     <input class="btn btn-default navbar-btn" id="startBtn" type="button" onclick="startTool();" value="开始取点" />
-                    <input id="myclear" class="btn btn-default navbar-btn" type="button" onclick="map.clearOverlays();document.getElementById('info').innerHTML = '';points=[];mypoints=[];" value="清除" />
+                    <input id="myclear" class="btn btn-default navbar-btn" type="button" onclick="map_query.clearOverlays();document.getElementById('info').innerHTML = '';points=[];mypoints=[];" value="清除" />
                     <input class="btn btn-default navbar-btn" type="button" onclick="submit();" value="提交" />
                 </p>
                 <div id="info"></div>
@@ -41,8 +41,8 @@ var windowHeight = $(window).height();
 $("#mycontainer").css("height", "" + windowHeight - 200 + "px");
 
 
-map = new BMap.Map("mycontainer"); // 创建Map实例
-map.centerAndZoom("安庆市", 13); // 初始化地图,设置中心点坐标和地图级别
+map_query = new BMap.Map("mycontainer"); // 创建Map实例
+map_query.centerAndZoom("安庆市", 13); // 初始化地图,设置中心点坐标和地图级别
 
 
 var key = 1; //开关
@@ -68,7 +68,7 @@ function startTool() { //开关函数
         key = 1;
     }
 }
-map.addEventListener("click", function(e) { //单击地图，形成折线覆盖物
+map_query.addEventListener("click", function(e) { //单击地图，形成折线覆盖物
     newpoint = new BMap.Point(e.point.lng, e.point.lat);
     mynewpoint = {
         "latitude": e.point.lat,
@@ -83,7 +83,7 @@ map.addEventListener("click", function(e) { //单击地图，形成折线覆盖�
         //document.getElementById("info").innerHTML += "new BMap.Point(" + e.point.lng + "," + e.point.lat + "),</br>";    //输出数组里的经纬度
     }
 });
-map.addEventListener("dblclick", function(e) { //双击地图，形成多边形覆盖物
+map_query.addEventListener("dblclick", function(e) { //双击地图，形成多边形覆盖物
     if (key == 0) {
         map.disableDoubleClickZoom(); //关闭双击放大
         var polygon = new BMap.Polygon(points);
@@ -155,8 +155,8 @@ function showRoute(data) {
     }
 }
 
-$(document).ready(function() {
-    /*$.ajax({
+/*$(document).ready(function() {
+    $.ajax({
 		type: "GET",
 		url: "city?id=GIS_gps_getter",
 		timeout: 2000,
@@ -166,9 +166,9 @@ $(document).ready(function() {
 		error: function (XMLHttpRequest, textStatus, errorThrown) {
 			myAlert("获取 GPS 失败");
 		}
-	});*/
+	});
     // setData(page_json);
 
 
-});
+});*/
 </script>
