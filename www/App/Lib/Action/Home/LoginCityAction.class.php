@@ -86,7 +86,17 @@ class LoginCityAction extends CommonAction{
 				break;
 				// 危废产生单位->企业基本信息->企业基本信息
 			case 'production_basic_information':
-				$tmp_content=$this->fetch( './Public/html/Content/City/production/production_basic_information.html' );
+				$production_unit = M( 'production_unit' )->getField('production_unit_id,production_unit_name,production_unit_address,waste_location_county,production_unit_jurisdiction');
+				$production_unit_table = json_encode( $production_unit );
+				$tmp_content = $this->fetch('./Public/html/Content/City/production/production_basic_information.html');
+				$tmp_content = "<script>production_table_json = $production_unit_table;</script> $tmp_content";
+				$this->ajaxReturn($tmp_content);
+				break;
+				//危废产生单位->企业基本信息->企业基本信息->企业详细信息
+			case 'production_basic_information_page':
+				$production_unit = M( 'production_unit' )->where( array( 'production_unit_id' => $record_id ) )->find();
+				$this->unit = $production_unit;
+				$tmp_content=$this->fetch( './Public/html/Content/City/production/production_basic_information_page.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
 				// 危废产生单位->危险废物台账->危废产生月报统计
@@ -107,9 +117,21 @@ class LoginCityAction extends CommonAction{
 				break;
 				// 危废运输单位->企业基本信息->企业基本信息
 			case 'transport_basic_information':
+				$transport_unit = M( 'transport_unit' )->getField('transport_unit_id,transport_unit_name,transport_unit_address,transport_unit_county,transport_unit_jurisdiction');
+				$transport_unit_table = json_encode( $transport_unit );
 				$tmp_content=$this->fetch( './Public/html/Content/City/transport/transport_basic_information.html' );
+				$tmp_content = "<script>transport_table_json = $transport_unit_table;</script> $tmp_content";
 				$this->ajaxReturn( $tmp_content );
 				break;
+
+				// 危废运输单位->企业基本信息->企业基本信息->详情
+			case 'transport_basic_information_page':
+				$transport_unit = M( 'transport_unit' )->where( array( 'transport_unit_id' => $record_id ) )->find();
+				$this->unit = $transport_unit;
+				$tmp_content=$this->fetch( './Public/html/Content/City/transport/transport_basic_information_page.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+
 				// 危废运输单位->运输车辆管理->运输车辆管理
 			case 'transport_vehicle_management':
 				$tmp_content=$this->fetch( './Public/html/Content/City/transport/transport_vehicle_management.html' );
@@ -128,9 +150,21 @@ class LoginCityAction extends CommonAction{
 				break;
 				// 危废处置单位->企业基本信息->企业基本信息
 			case 'disposal_basic_information':
+				$reception_unit = M( 'reception_unit' )->getField('reception_unit_id,reception_unit_name,reception_unit_address,reception_unit_county,reception_unit_jurisdiction');
+				$reception_unit_table = json_encode( $reception_unit );
 				$tmp_content=$this->fetch( './Public/html/Content/City/disposal/disposal_basic_information.html' );
+				$tmp_content = "<script>reception_table_json = $reception_unit_table;</script> $tmp_content";
 				$this->ajaxReturn( $tmp_content );
 				break;
+				// 危废处置单位->企业基本信息->企业基本信息->详情
+			case 'disposal_basic_information_page':
+				$reception_unit = M( 'reception_unit' )->where( array( 'reception_unit_id' => $record_id ) )->find();
+				$this->unit = $reception_unit;
+				$tmp_content=$this->fetch( './Public/html/Content/City/disposal/disposal_basic_information_page.html' );
+				$this->ajaxReturn( $tmp_content );
+				break;
+
+
 				// 危废处置单位->危废接受台账->危废接受月报统计
 			case 'waste_reception_account_monthly_statistics':
 				$tmp_content=$this->fetch( './Public/html/Content/City/disposal/waste_reception_account_monthly_statistics.html' );
@@ -149,7 +183,14 @@ class LoginCityAction extends CommonAction{
 				break;
 				// 危废转移->转移备案管理->转移备案
 			case 'transfer_record':
+				$record = M( 'record' )->where( 'record_status>0' )->getField( 'record_id,record_code,record_date,record_status' );
+				$record_json = json_encode( $record );
+
+				$unit_name = M( 'production_unit' )->getField( 'production_unit_name' );
+				$unit_json = json_encode( $unit_name );
+
 				$tmp_content=$this->fetch( './Public/html/Content/City/transfer/transfer_record.html' );
+				$tmp_content = "<script>record_json = $record_json; unit_json = $unit_json; </script> $tmp_content";
 				$this->ajaxReturn( $tmp_content );
 				break;
 				// 危废转移->转移联单管理->生产单位转移联单
@@ -239,7 +280,7 @@ class LoginCityAction extends CommonAction{
 				$record_json = json_encode( $record );
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_user_management.html' );
 				$tmp_content="<script>record_json=$record_json;</script>$tmp_content";
-				$this->ajaxReturn( "$tmp_content" );
+				$this->ajaxReturn( $tmp_content);
 				break;
 			case 'enterprise_user_management_page_production':
 				$production_unit = M( 'production_unit' )->where( array( 'user_id' => $record_id ) )->find();
@@ -347,7 +388,10 @@ class LoginCityAction extends CommonAction{
 				break;
 				// 系统管理->系统信息设置->废物代码
 			case 'waste_code':
+				$waste = M( 'waste' )->order('waste_id DESC')->select();
+				$waste_json = json_encode($waste);
 				$tmp_content=$this->fetch( './Public/html/Content/City/system/waste_code.html' );
+				$tmp_content="<script> record_json=$waste_json; </script> $tmp_content";
 				$this->ajaxReturn( $tmp_content );
 				break;
 				// 系统管理->系统信息设置->废物类别

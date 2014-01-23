@@ -241,15 +241,12 @@
 </div>
 
 <center>
-    <button class='btn btn-success btn-lg' id='button_pass' style='visibility:hidden' onclick='ajaxAction(2)'>通过备案</button>
-    <button class='btn btn-danger btn-lg' id='button_reject' style='visibility:hidden' onclick='ajaxAction(3)'>退回备案</button>
     <button class="btn btn-warning btn-lg" id="button_close" onclick="$('#myModal').modal('hide');">关闭页面</button>
 </center>
 
 <script type="text/javascript">
 if (record_status_json == '1') {
-    $('#button_pass').css('visibility','visible');
-    $('#button_reject').css('visibility','visible');
+    $('#button_close').before("<button class='btn btn-success btn-lg' id='button_pass' onclick='ajaxAction(2)'>通过备案</button>&nbsp;<button class='btn btn-danger btn-lg' id='button_reject' onclick='ajaxAction(3)'>退回备案</button>&nbsp;");
 }
 
 function ajaxAction(actionID) {
