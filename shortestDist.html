@@ -23,7 +23,7 @@ function distToSegment(p, v, w) {
     return Math.sqrt(distToSegmentSquared(p, v, w));
 }
 
-function pointFromLatLng(lat, lng) {
+function pointFromLatLng(lng, lat) {
     pi = 3.1415926535;
     return {
         x: (lng / 180.0 * pi * 5490),
@@ -45,15 +45,15 @@ function distToPath(p, arr) {
 }
 
 function shortestDist(p_json, arr_json) {
-    p = pointFromLatLng(p_json["latitude"], p_json["longitude"]);
+    p = pointFromLatLng(p_json["lng"], p_json["lat"]);
     newarr = []
     for (var i = 0; i < arr_json.length; i++) {
-        newarr[i] = pointFromLatLng(arr_json[i]["latitude"], arr_json[i]["longitude"]);
+        newarr[i] = pointFromLatLng(arr_json[i]["lng"], arr_json[i]["lat"]);
     }
     return distToPath(p, newarr);
 }
 
-shortestDist({"latitude": 30, "longitude": 150}, JSON.parse(unescape(json_string)));
+shortestDist({"lng": 150, "lat": 30}, JSON.parse(unescape(json_string)));
 
 </script>
 

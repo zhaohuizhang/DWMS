@@ -15,18 +15,53 @@ class LoginCityAction extends CommonAction{
 
 				// -------- 转移地图 侧边栏 --------
 			case 'map_sidebar':
-				layout( './Common/frame' );
-				$this->display( './Public/html/Content/City/map/map_sidebar.html' );
+				/*layout( './Common/frame' );
+				$this->display( './Public/html/Content/City/map/map_sidebar.html' );*/
+
 				break;
 				// 转移地图->地图展示->转移地图展示
 			case 'transfer_map_display':
-				$tmp_content=$this->fetch( './Public/html/Content/City/map/transfer_map_display.html' );
-				$this->ajaxReturn( $tmp_content );
+				$vehicle = M( 'vehicle' )->where('vehicle_status=1')->select();
+				foreach ($vehicle as $vehicle_idx) {
+
+				}
+
+				$production_unit = M( 'production_unit' )->getField('production_unit_id, production_unit_name');
+				$reception_unit = M( 'reception_unit' )->getField('reception_unit_id, reception_unit_name');
+				$production_unit_json = json_encode( $production_unit );
+				$reception_unit_json = json_encode( $reception_unit );
+				if ($production_unit_json && $reception_unit_json)
+				{
+					$tmp_content=$this->fetch( './Public/html/Content/City/map/transfer_map_display.html' );
+					$tmp_content = "<script>production_unit_json=$production_unit_json; reception_unit_json=$reception_unit_json; </script> $tmp_content";
+					$this->ajaxReturn( $tmp_content );
+				} else {
+					$this->show('fail');
+				}
+				break;
+			case 'ajax_gps_data':
+				$vehicle = M( 'vehicle' )->where('vehicle_status=1')->select();
+				p($vehicle);
+				foreach ($vehicle as $idx) {
+					$idx->vehicle_gps_id
+				}
+				break;
+			case 'ajax_search_route':
+				$route = M( 'route' )->where( array( 'production_unit_id' => I('post.production_unit_id'), 'reception_unit_id' => I('post.reception_unit_id') ) )->select();
+				// $route = htmlspecialchars_decode($route);
+				// $route = stripslashes($route);
+
+				$route_json = json_encode( $route );
+				//$route_json = htmlspecialchars_decode( $route_json );
+				//$route_json = json_encode( $route_json );
+
+				//$route_json = stripslashes($route_json);
+				$this->ajaxReturn( $route_json, 'JSON' );
 				break;
 				// 转移地图->地图展示->转移地图展示：ajax请求GPS路线数据
-			case 'ajax_map_display':
-				$map_data = M( 'gps_308033501795' )->field( 'bmap_longitude, bmap_latitude' )->where( 'longitude > 0' )->select();
-				$this->ajaxReturn( $map_data, 'JSON' );
+			case 'ajax_route_display':
+				$gps_data = M( 'gps_308033501795' )->field( 'bmap_longitude, bmap_latitude' )->where( 'longitude > 0' )->select();
+				$this->ajaxReturn( $gps_data, 'JSON' );
 				break;
 				// 转移地图->地图展示->仓库地图展示
 			case 'warehouse_map_display':
@@ -47,19 +82,49 @@ class LoginCityAction extends CommonAction{
 				$record_json = json_encode( $record );
 
 				$tmp_content=$this->fetch( './Public/html/Content/City/map/transfer_route_plan_2.html' );
-				$this->ajaxReturn( "<script>record_json=$record_json; </script> $tmp_content" );
+				$tmp_content="<script>record_json=$record_json; </script> $tmp_content";
+				$this->ajaxReturn( $tmp_content );
 				break;
-				// 转移地图->路线规划->运输路线规划：ajax传回路线数据
+			// 转移地图->路线规划->运输路线规划：ajax传回路线数据
 			case 'ajax_map_plan_receiver':
-				$table=M( "route_".I( 'post.gps_serial' ) );
+				$table=M( "route" );
 				if ( $table ) {
-					$data["gps_id"]=I( 'post.gps_id' );
-					$data["task_status"]=0;
-					$data["route_status"]=0;
-					$data["route_detail"]=I( 'post.route_detail' );
+					$data["route_lng_lat"]=I( 'post.route_lng_lat' );
 					$time = date( 'Y-m-d H:i:s', time() );
 					$data["route_add_time"]=$time;
 					$data["route_modify_time"]=$time;
+					$data["route_status"]=0;
+					$table->add( $data );
+					$this->show( "succ" );
+				}else {
+					$this->show( "fail" );
+				}
+				break;
+				// 转移地图->路线规划->运输路线规划，百度API规划路线：生产单位->接受单位
+			case 'transfer_route_plan_3':
+				// $record = M( 'vehicle_gps_transport' )->where( "vehicle_status=0" )->select();
+				// $record_json = json_encode( $record );
+
+				$production_unit = M( 'production_unit' )->select();
+				$production_unit_json = json_encode($production_unit);
+				$reception_unit = M( 'reception_unit' )->select();
+				$reception_unit_json = json_encode($reception_unit);
+
+				$tmp_content=$this->fetch( './Public/html/Content/City/map/transfer_route_plan_3.html' );
+				$tmp_content="<script> production_unit_json=$production_unit_json; reception_unit_json=$reception_unit_json; </script> $tmp_content";
+				$this->ajaxReturn( $tmp_content );
+				break;
+			// 转移地图->路线规划->运输路线规划：ajax传回路线数据
+			case 'ajax_transfer_route_receiver':
+				$table=M( "route" );
+				if ( $table ) {
+					$data["production_unit_id"] = I('post.production_unit_id');
+					$data["reception_unit_id"] = I('post.reception_unit_id');
+					$data["route_lng_lat"]=I( 'post.route_lng_lat' );
+					$time = date( 'Y-m-d H:i:s', time() );
+					$data["route_add_time"]=$time;
+					$data["route_modify_time"]=$time;
+					$data["route_status"]=0;
 					$table->add( $data );
 					$this->show( "succ" );
 				}else {
@@ -68,8 +133,18 @@ class LoginCityAction extends CommonAction{
 				break;
 				// 转移地图->路线查询->运输路线查询
 			case 'transfer_route_query':
-				$tmp_content=$this->fetch( './Public/html/Content/City/map/transfer_route_query.html' );
-				$this->ajaxReturn( "$tmp_content" );
+				$production_unit = M( 'production_unit' )->getField('production_unit_id, production_unit_name');
+				$reception_unit = M( 'reception_unit' )->getField('reception_unit_id, reception_unit_name');
+				$production_unit_json = json_encode( $production_unit );
+				$reception_unit_json = json_encode( $reception_unit );
+				if ($production_unit_json && $reception_unit_json)
+				{
+					$tmp_content=$this->fetch( './Public/html/Content/City/map/transfer_route_query.html' );
+					$tmp_content = "<script>production_unit_json=$production_unit_json; reception_unit_json=$reception_unit_json; </script> $tmp_content";
+					$this->ajaxReturn( $tmp_content );
+				} else {
+					$this->show('fail');
+				}
 				break;
 
 				/*	// 转移地图展示
@@ -238,7 +313,7 @@ class LoginCityAction extends CommonAction{
 				$record = M( 'alluser' )->select();
 				$record_json = json_encode( $record );
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_user_management.html' );
-				$tmp_content="<script>record_json=$record_json;</script>$tmp_content";
+				$tmp_content="<script>record_json=$record_json; </script> $tmp_content";
 				$this->ajaxReturn( "$tmp_content" );
 				break;
 			case 'enterprise_user_management_page_production':

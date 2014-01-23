@@ -5,7 +5,7 @@
     <div class="panel panel-body" style="margin-bottom:1px">
         <!-- <div class="panel panel-info" style="position:absolute;left:100%;top:50px;margin-left:-250px"> -->
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-2">
                 <div id="noSelectionAlert"></div>
                 <div class="btn-group">
@@ -14,15 +14,15 @@
                         <span id="selectVehicle">点击选择车辆</span>
                     </button>
                     <ul class="dropdown-menu" role="menu" id="dropdown-button">
-                        <!--<li><a href="#">Action</a></li>-->
+                        <li><a href="#">Action</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="col-md-7">
-                <!-- <select id="mySelect" style="visibility: hidden">
+                <select id="mySelect" style="visibility: hidden">
                             正在获取 车辆 信息...
-                        </select> -->
+                        </select>
                 <div class="input-group">
                     <span class="input-group-addon">起点</span>
                     <input type="text" class="form-control" id="startPoint" placeholder="">
@@ -33,12 +33,31 @@
 
             <div class="col-md-3">
                 <button type="button" class="btn btn-default btn-sm" onclick="search();">查询</button>
-                <!-- <input class="btn btn-default navbar-btn" id="startButton" type="button" onclick="startTool();" value="开始取点" /> -->
+                <input class="btn btn-default navbar-btn" id="startButton" type="button" onclick="startTool();" value="开始取点" />
                 <button type="button" class="btn btn-default btn-sm navbar-btn" id="clearButton" onclick="map_plan.clearOverlays();document.getElementById('info').innerHTML = '';points=[];myPoints=[];">清除</button>
                 <button type="button" class="btn btn-default btn-sm navbar-btn" onclick="submit();">提交</button>
                 <div id="info"></div>
             </div>
-
+        </div> -->
+        <div id="noSelectionAlert"></div>
+        <div class="row">
+            <div class="col-md-4">
+                <label class="sr-only" for="selectProductionUnit">产生单位：</label>
+                <select class="form-control" id="selectProductionUnit">
+                    <option>请选择生产单位</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label class="sr-only" for="selectReceptionUnit">接受单位：</label>
+                <select class="form-control" id="selectReceptionUnit">
+                    <option>请选择接受单位</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-default btn-sm" onclick="search();">查询</button>
+                <button type="button" class="btn btn-default btn-sm navbar-btn" id="clearButton" onclick="map_plan.clearOverlays();">清除</button>
+                <button type="button" class="btn btn-default btn-sm navbar-btn" onclick="submit();">提交</button>
+            </div>
         </div>
 
         <div id="map_container" style="width:auto"></div>
@@ -46,7 +65,7 @@
 </div>
 
 <script type="text/javascript">
-window.mySelection = "";
+// window.mySelection = "";
 // var key = 1; //开关
 // var newPoint; // 地图上一个新点的经纬度
 // var points = []; //数组，放经纬度信息
@@ -66,7 +85,23 @@ var searchComplete = function(results) {
 };
 
 function search() {
-    transit.search($('#startPoint').val(), $('#endPoint').val());
+    var p1_lng,p1_lat;
+    var p2_lng,p2_lat;
+    for (var idx in production_unit_json) {
+        if (production_unit_json[idx].production_unit_id == $('#selectProductionUnit').val()) {
+            p1_lng = production_unit_json[idx].production_unit_longitude;
+            p1_lat = production_unit_json[idx].production_unit_latitude;
+        }
+    }
+    for (var idx in reception_unit_json) {
+        if (reception_unit_json[idx].reception_unit_id == $('#selectReceptionUnit').val()) {
+            p2_lng = reception_unit_json[idx].reception_unit_longitude;
+            p2_lat = reception_unit_json[idx].reception_unit_latitude;
+        }
+    }
+    var p1 = new BMap.Point(p1_lng, p1_lat);
+    var p2 = new BMap.Point(p2_lng, p2_lat);
+    transit.search(p1, p2);
 }
 
 function setBMap() {
@@ -81,6 +116,14 @@ function setBMap() {
     map_plan.enableScrollWheelZoom(); //启用滚轮放大缩小
     map_plan.addControl(new BMap.MapTypeControl()); // 添加默认地图控件
     map_plan.setCurrentCity("上海"); // 设置地图显示的城市 此项是必须设置的
+
+    console.log(production_unit_json);
+    for (var idx in production_unit_json) {
+        $('#selectProductionUnit').append('<option id="" value="' + production_unit_json[idx].production_unit_id + '">' + production_unit_json[idx].production_unit_name + '</option>');
+    }
+    for (var idx in reception_unit_json) {
+        $('#selectReceptionUnit').append('<option id="" value="' + reception_unit_json[idx].reception_unit_id + '">' + reception_unit_json[idx].reception_unit_name + '</option>');
+    }
 
     transit = new BMap.DrivingRoute(map_plan, {
         renderOptions: {
@@ -103,12 +146,16 @@ function myAlertSucc(msg) {
 }
 
 function submit() {
-    if (window.mySelection == "") {
+    /*if (window.mySelection == "") {
         myAlert('请先选择“车辆”。');
         return;
-    }
+    }*/
 
-    $('#startButton').click();
+    /*$('#startButton').click();*/
+    if (path == ''){
+        myAlert("数据为空，不能提交");
+        return;
+    }
     var BMapPointArray = new Array();
     for (point_idx in path) {
         var BMapPoint = {
@@ -121,11 +168,11 @@ function submit() {
 
     $.ajax({
         type: "post",
-        url: "city?id=ajax_map_plan_receiver",
+        url: "city?id=ajax_transfer_route_receiver",
         timeout: 2000,
         data: {
-            //"gps_id": window.mySelection,
-            //"gps_serial": window.mySerial,
+            "production_unit_id": $('#selectProductionUnit').val(),
+            "reception_unit_id": $('#selectReceptionUnit').val(),
             "route_lng_lat": JSON.stringify(BMapPointArray)
         },
         success: function(data) {
@@ -135,6 +182,7 @@ function submit() {
             } else {
                 myAlert("提交失败");
             }
+            path = '';
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
             myAlert("提交失败");
@@ -147,7 +195,7 @@ function submit() {
 }
 
 
-function setData(data) {
+/*function setData(data) {
     $("#mySelect").html("");
     $("#dropdown-button").html("");
     // myjson = JSON.parse(data);
@@ -160,7 +208,7 @@ function setData(data) {
 
 $(document).ready(function() {
     setData(record_json);
-});
+});*/
 
 function loadScript() {
     var script = document.createElement("script");
