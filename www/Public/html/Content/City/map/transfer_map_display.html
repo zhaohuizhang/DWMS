@@ -5,10 +5,10 @@
     <div class="panel-body">
         <div class="input-group">
             <span class="input-group-addon">当偏移距离大于</span>
-            <input type="text" class="form-control" id="warningDistance" value="0.3" placeholder="0.3">
+            <input type="text" class="form-control" id="warningDistance" value="0.3" placeholder="">
             <span class="input-group-addon">千米时提醒，</span>
             <span class="input-group-addon">大于</span>
-            <input type="text" class="form-control" id="dangerDistance" value="0.6" placeholder="0.6">
+            <input type="text" class="form-control" id="dangerDistance" value="0.6" placeholder="">
             <span class="input-group-addon">千米时报警</span>
             <button type="button" class="btn btn-success" id="setting">设置</button>
         </div>
@@ -77,10 +77,14 @@ loadScript();
 var warningDistance = 0.3;
 var dangerDistance = 0.6;
 $('#setting').click(function() {
-    if ($('#warningDistance').val() != null) {
+    if ($('#warningDistance').val() == null) {
+        warningDistance = 0.3;
+    } else {
         warningDistance = $('#warningDistance').val();
     }
-    if ($('#dangerDistance').val() != null) {
+    if ($('#dangerDistance').val() == null) {
+        dangerDistance = 0.6;
+    } else {
         dangerDistance = $('#dangerDistance').val();
     }
 })
@@ -199,5 +203,4 @@ function transferWarning() {
 
 transferWarning();
 var intervalWarning = setInterval("transferWarning()", 15000);
-
 </script>

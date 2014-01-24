@@ -102,7 +102,7 @@ class LoginCityAction extends CommonAction{
 				break;
 				// 转移地图->路线规划->运输路线规划，按照百度API自助规划路线
 			case 'transfer_route_plan_2':
-				$record = M( 'vehicle_gps_transport' )->where( "vehicle_status=0" )->select();
+				$record = M( 'vehicle_gps_transport' )->where( "vehicle_status<2" )->select();
 				$record_json = json_encode( $record );
 
 				$tmp_content=$this->fetch( './Public/html/Content/City/map/transfer_route_plan_2.html' );
@@ -330,15 +330,21 @@ class LoginCityAction extends CommonAction{
 				break;
 				// 业务办理->待办业务->转移备案管理
 			case 'transfer_record_management':
-				$record = M( 'record' )->where( 'record_status>0' )->getField( 'record_id,record_code,record_date,record_status' );
+				$record = M( 'record' )->where( 'record_status>0' )->getField( 'record_id,production_unit_id,record_code,record_date,record_status' );
 				$record_json = json_encode( $record );
 
-				$unit_name = M( 'production_unit' )->getField( 'production_unit_name' );
-				$unit_json = json_encode( $unit_name );
+				$unit_name = M( 'production_unit' )->getField( 'production_unit_id, production_unit_name' );
+				$unit_name_json = json_encode( $unit_name );
 
-				$tmp_content=$this->fetch( './Public/html/Content/City/business/transfer_record_management.html' );
-				$tmp_content = "<script>record_json = $record_json; unit_json = $unit_json; </script> $tmp_content";
-				$this->ajaxReturn( $tmp_content );
+				if ($record_json == null) {
+					$this->ajaxReturn( "备案表没有找到：" .  $record_json );
+				} else if ($unit_name_json == null) {
+					$this->ajaxReturn( "生产单位表没有找到：" .  $record_json );
+				} else {
+					$tmp_content=$this->fetch( './Public/html/Content/City/business/transfer_record_management.html' );
+					$tmp_content = "<script>record_json = $record_json; unit_name_json = $unit_name_json; </script> $tmp_content";
+					$this->ajaxReturn( $tmp_content );
+				}
 				break;
 				// 业务办理->待办业务->转移备案管理->详细信息页
 			case 'transfer_record_management_page':
