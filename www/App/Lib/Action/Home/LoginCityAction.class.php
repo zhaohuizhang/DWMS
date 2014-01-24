@@ -20,7 +20,16 @@ class LoginCityAction extends CommonAction{
 				break;
 				// 转移地图->地图展示->转移地图展示
 			case 'transfer_map_display':
-				$vehicle_id = M( 'vehicle' )->where( 'vehicle_status=2' )->getField('vehicle_id');
+				$vehicle = M( 'vehicle' );
+				$vehicle_operating = $vehicle->where( 'vehicle_status=2' );
+				$vehicle_info = $vehicle_operating->find();
+				$vehicle_info_json = json_encode($vehicle_info);
+
+				$vehicle_id = $vehicle_operating->getField( 'vehicle_id' );
+				$ownership_id = $vehicle_operating->getField( 'ownership_id' );
+				$transport_unit = M( 'transport_unit' )->where( array( 'transport_unit_id' => $ownership_id ) )->find();
+				$transport_unit_json = json_encode($transport_unit);
+
 				if (!$vehicle_id) {
 					$this->ajaxReturn( "没找到车辆表ID:" . $vehicle_id );
 				}
@@ -39,9 +48,10 @@ class LoginCityAction extends CommonAction{
 				$route_json = json_encode($route);
 
 				$tmp_content=$this->fetch( './Public/html/Content/City/map/transfer_map_display.html' );
-				$tmp_content = "<script>route_json=$route_json; </script> $tmp_content";
+				$tmp_content = "<script>transport_unit_json=$transport_unit_json; vehicle_info_json=$vehicle_info_json; route_json=$route_json; </script> $tmp_content";
 				$this->ajaxReturn( $tmp_content );
 				break;
+				// 转移地图->地图展示->转移地图展示：获取实时GPS数据
 			case 'ajax_gps_data':
 				$vehicle_gps_id = M( 'vehicle' )->where('vehicle_status=2')->getField('vehicle_gps_id');
 				if (!$vehicle_gps_id) {
@@ -51,13 +61,14 @@ class LoginCityAction extends CommonAction{
 				if (!$device_serial_num) {
 					$this->ajaxReturn( "没找到设备表GPS的序列号:" . $device_serial_num );
 				}
-				// $gps_table_name = 'gps_' . $device_serial_num;
-				$gps_table_name = 'gps_308033501795';
+				$gps_table_name = 'gps_' . $device_serial_num;
+				// $gps_table_name = 'gps_308033501795';
 				$gps = M( $gps_table_name );
 				$gps_max_id = $gps->where( 'status=0' )->max('id');
 				$gps_data = $gps->where( array( 'id' => $gps_max_id ) )->find();
 				$this->ajaxReturn($gps_data, 'JSON');
 				break;
+				// 转移地图->地图展示->转移地图展示：查找路线
 			case 'ajax_search_route':
 				$route = M( 'route' )->where( array( 'production_unit_id' => I('post.production_unit_id'), 'reception_unit_id' => I('post.reception_unit_id') ) )->select();
 				// $route = htmlspecialchars_decode($route);
