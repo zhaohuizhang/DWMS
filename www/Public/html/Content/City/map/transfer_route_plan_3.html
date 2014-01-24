@@ -65,6 +65,11 @@
 </div>
 
 <script type="text/javascript">
+
+if (typeof(intervalWarning) != 'undefined') {
+    clearInterval(intervalWarning);
+}
+
 // window.mySelection = "";
 // var key = 1; //开关
 // var newPoint; // 地图上一个新点的经纬度
@@ -80,8 +85,8 @@ var searchComplete = function(results) {
     var plan = results.getPlan(0);
     var route = plan.getRoute(0);
     path = route.getPath();
-    console.log(path[0].lng);
-    console.log(path[0].lat);
+    //console.log(path[0].lng);
+    //console.log(path[0].lat);
 };
 
 function search() {
@@ -117,7 +122,7 @@ function setBMap() {
     map_plan.addControl(new BMap.MapTypeControl()); // 添加默认地图控件
     map_plan.setCurrentCity("上海"); // 设置地图显示的城市 此项是必须设置的
 
-    console.log(production_unit_json);
+    //console.log(production_unit_json);
     for (var idx in production_unit_json) {
         $('#selectProductionUnit').append('<option id="" value="' + production_unit_json[idx].production_unit_id + '">' + production_unit_json[idx].production_unit_name + '</option>');
     }
@@ -164,7 +169,7 @@ function submit() {
         };
         BMapPointArray.push(BMapPoint);
     }
-    console.log(BMapPointArray);
+    //console.log(BMapPointArray);
 
     $.ajax({
         type: "POST",

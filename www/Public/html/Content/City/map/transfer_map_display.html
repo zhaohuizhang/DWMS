@@ -3,6 +3,16 @@
         <h3 class="panel-title">地 图</h3>
     </div>
     <div class="panel-body">
+        <div class="input-group">
+            <span class="input-group-addon">当偏移距离大于</span>
+            <input type="text" class="form-control" id="warningDistance" value="0.3" placeholder="0.3">
+            <span class="input-group-addon">千米时提醒，</span>
+            <span class="input-group-addon">大于</span>
+            <input type="text" class="form-control" id="dangerDistance" value="0.6" placeholder="0.6">
+            <span class="input-group-addon">千米时报警</span>
+            <button type="button" class="btn btn-success" id="setting">设置</button>
+        </div>
+
         <div id="map_container" style="width:auto">地图加载中...</div>
     </div>
 </div>
@@ -16,7 +26,7 @@ function setBMap() {
     $("#map_container").css("height", "" + windowHeight - 350 + "px");
 
     map_display = new BMap.Map("map_container"); // 创建Map实例
-    map_display.centerAndZoom("上海", 13); // 初始化地图,设置中心点坐标和地图级别
+    map_display.centerAndZoom("上海", 11); // 初始化地图,设置中心点坐标和地图级别
     map_display.addControl(new BMap.NavigationControl()); // 添加默认缩放平移控件
     map_display.addControl(new BMap.ScaleControl()); // 添加默认比例尺控件
     map_display.addControl(new BMap.OverviewMapControl()); //添加默认缩略地图控件
@@ -34,7 +44,7 @@ function setBMap() {
     // console.log( route_decode );
     // console.log("route_decode" + route_decode);
     route_decode_json = JSON.parse(route_decode);
-    console.log(route_decode_json);
+    // console.log(route_decode_json);
     // console.log("route_decode_json" + route_decode_json);
     var pointArray = new Array();
     var lng, lat;
@@ -51,31 +61,8 @@ function setBMap() {
     map_display.addOverlay(polyline);
     $(".anchorBL").hide();
 
-    /*var myIcon = new BMap.Icon("http://stacky.takau.net/think/DWMS/www/Public/image/header_logo.jpg", new BMap.Size(90, 90), {
-        // 指定定位位置。
-        // 当标注显示在地图上时，其所指向的地理位置距离图标左上
-        // 角各偏移10像素和25像素。您可以看到在本例中该位置即是
-        // 图标中央下端的尖角位置。
-        offset: new BMap.Size(45, 45),
-        // 设置图片偏移。
-        // 当您需要从一幅较大的图片中截取某部分作为标注图标时，您
-        // 需要指定大图的偏移位置，此做法与css sprites技术类似。
-        imageOffset: new BMap.Size(0, 0) // 设置图片偏移
-    });
-    // 创建标注对象并添加到地图
-    var marker = new BMap.Marker(point, {
-        icon: myIcon
-    });
-    map.addOverlay(marker);
-    marker.addEventListener("click", function() {
-        var opts = {
-            width: 250, // 信息窗口宽度
-            height: 100, // 信息窗口高度
-            title: "药药且可闹" // 信息窗口标题
-        }
-        var infoWindow = new BMap.InfoWindow("煎饼果子来一套", opts); // 创建信息窗口对象
-        map.openInfoWindow(infoWindow, marker.getPosition()); // 打开信息窗口
-    });*/
+    // console.log(vehicle_info_json);
+    // console.log(transport_unit_json);
 
 }
 
@@ -87,11 +74,22 @@ function loadScript() {
 
 loadScript();
 
+var warningDistance = 0.3;
+var dangerDistance = 0.6;
+$('#setting').click(function() {
+    if ($('#warningDistance').val() != null) {
+        warningDistance = $('#warningDistance').val();
+    }
+    if ($('#dangerDistance').val() != null) {
+        dangerDistance = $('#dangerDistance').val();
+    }
+})
+
 function transferWarning() {
     $.ajax({
         type: "GET",
         url: "city?id=ajax_gps_data",
-        timeout: 2000,
+        timeout: 5000,
         success: function(gps_data) {
             console.log(gps_data);
 
@@ -112,20 +110,7 @@ function transferWarning() {
             distance = Math.round(distance * 1000) / 1000;
 
             var iconPoint = new BMap.Point(lng, lat);
-            if (distance > 0.4) {
-                var lorryIcon = new BMap.Icon("__PUBLIC__/image/lorry_red.png", new BMap.Size(40, 40), {
-                    // 指定定位位置。
-                    // 当标注显示在地图上时，其所指向的地理位置距离图标左上
-                    // 角各偏移10像素和25像素。您可以看到在本例中该位置即是
-                    // 图标中央下端的尖角位置。
-                    offset: new BMap.Size(20, 20),
-                    // 设置图片偏移。
-                    // 当您需要从一幅较大的图片中截取某部分作为标注图标时，您
-                    // 需要指定大图的偏移位置，此做法与css sprites技术类似。
-                    imageOffset: new BMap.Size(0, 0) // 设置图片偏移
-                });
-                var warningText = "距离指定路线" + distance + "千米！！！";
-            } else {
+            if (distance < warningDistance) {
                 var lorryIcon = new BMap.Icon("__PUBLIC__/image/lorry_green.png", new BMap.Size(40, 40), {
                     // 指定定位位置。
                     // 当标注显示在地图上时，其所指向的地理位置距离图标左上
@@ -137,7 +122,34 @@ function transferWarning() {
                     // 需要指定大图的偏移位置，此做法与css sprites技术类似。
                     imageOffset: new BMap.Size(0, 0) // 设置图片偏移
                 });
-                var warningText = "距离指定路线" + distance + "千米";
+                var warningText = "偏离" + distance + "千米，安全。";
+
+            } else if (distance > warningDistance && distance < dangerDistance) {
+                var lorryIcon = new BMap.Icon("__PUBLIC__/image/lorry_yellow.png", new BMap.Size(40, 40), {
+                    // 指定定位位置。
+                    // 当标注显示在地图上时，其所指向的地理位置距离图标左上
+                    // 角各偏移10像素和25像素。您可以看到在本例中该位置即是
+                    // 图标中央下端的尖角位置。
+                    offset: new BMap.Size(20, 20),
+                    // 设置图片偏移。
+                    // 当您需要从一幅较大的图片中截取某部分作为标注图标时，您
+                    // 需要指定大图的偏移位置，此做法与css sprites技术类似。
+                    imageOffset: new BMap.Size(0, 0) // 设置图片偏移
+                });
+                var warningText = "偏离" + distance + "千米，注意！";
+            } else {
+                var lorryIcon = new BMap.Icon("__PUBLIC__/image/lorry_red.png", new BMap.Size(40, 40), {
+                    // 指定定位位置。
+                    // 当标注显示在地图上时，其所指向的地理位置距离图标左上
+                    // 角各偏移10像素和25像素。您可以看到在本例中该位置即是
+                    // 图标中央下端的尖角位置。
+                    offset: new BMap.Size(20, 20),
+                    // 设置图片偏移。
+                    // 当您需要从一幅较大的图片中截取某部分作为标注图标时，您
+                    // 需要指定大图的偏移位置，此做法与css sprites技术类似。
+                    imageOffset: new BMap.Size(0, 0) // 设置图片偏移
+                });
+                var warningText = "偏离" + distance + "千米，报警!";
             }
 
             // 创建标注对象并添加到地图
@@ -146,6 +158,27 @@ function transferWarning() {
                 title: "危废运输车辆"
             });
             map_display.addOverlay(marker);
+
+            var geoCoder = new BMap.Geocoder();
+            var pointLocation = "";
+            geoCoder.getLocation(iconPoint, function(rs) {
+                var addComp = rs.addressComponents;
+                pointLocation = "" + addComp.province + addComp.city + addComp.district + addComp.street + addComp.streetNumber;
+            });
+
+            marker.addEventListener("click", function() {
+                var messageContent = "车辆牌照为：" + vehicle_info_json.vehicle_num + "的" + vehicle_info_json.vehicle_type + "，大致位置为：" + pointLocation;
+                var infoWindowOption = {
+                    width: 0, // 信息窗口宽度
+                    height: 0, // 信息窗口高度
+                    title: "运输车辆牌照：" + vehicle_info_json.vehicle_num, // 信息窗口标题
+                    message: messageContent
+                }
+                var infoWindowContent = "<p>运输车辆类型：" + vehicle_info_json.vehicle_type + "</p><p>运输单位名称：" + transport_unit_json.transport_unit_name + "</p><p>运输单位地址：" + transport_unit_json.transport_unit_address + "</p><p>运输单位电话：" + transport_unit_json.transport_unit_phone + "</p><p>运输单位环保联系人姓名：" + transport_unit_json.transport_unit_contacts_name + "</p><p>运输单位环保联系人电话：" + transport_unit_json.transport_unit_contacts_phone;
+
+                var infoWindow = new BMap.InfoWindow(infoWindowContent, infoWindowOption); // 创建信息窗口对象
+                map_display.openInfoWindow(infoWindow, marker.getPosition()); // 打开信息窗口
+            });
 
             var labelPoint = new BMap.Point(lng, lat);
 
@@ -165,6 +198,6 @@ function transferWarning() {
 }
 
 transferWarning();
-var intervalWarning = setInterval("transferWarning()", 10000);
+var intervalWarning = setInterval("transferWarning()", 15000);
 
 </script>
