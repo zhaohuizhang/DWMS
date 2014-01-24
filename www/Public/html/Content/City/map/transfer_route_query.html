@@ -95,8 +95,8 @@ loadScript();
 
 function searchRoute() {
     $.ajax({
-        url: 'city?id=ajax_search_route',
         type: 'post',
+        url: 'city?id=ajax_search_route',
         dataType: 'json',
         data: {
             "production_unit_id": $('#selectProductionUnit').val(),

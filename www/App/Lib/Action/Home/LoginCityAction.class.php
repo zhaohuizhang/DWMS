@@ -15,36 +15,48 @@ class LoginCityAction extends CommonAction{
 
 				// -------- 转移地图 侧边栏 --------
 			case 'map_sidebar':
-				/*layout( './Common/frame' );
-				$this->display( './Public/html/Content/City/map/map_sidebar.html' );*/
-
+				layout( './Common/frame' );
+				$this->display( './Public/html/Content/City/map/map_sidebar.html' );
 				break;
 				// 转移地图->地图展示->转移地图展示
 			case 'transfer_map_display':
-				$vehicle = M( 'vehicle' )->where('vehicle_status=1')->select();
-				foreach ($vehicle as $vehicle_idx) {
-
+				$vehicle_id = M( 'vehicle' )->where( 'vehicle_status=2' )->getField('vehicle_id');
+				if (!$vehicle_id) {
+					$this->ajaxReturn( "没找到车辆表ID:" . $vehicle_id );
 				}
-
-				$production_unit = M( 'production_unit' )->getField('production_unit_id, production_unit_name');
-				$reception_unit = M( 'reception_unit' )->getField('reception_unit_id, reception_unit_name');
-				$production_unit_json = json_encode( $production_unit );
-				$reception_unit_json = json_encode( $reception_unit );
-				if ($production_unit_json && $reception_unit_json)
-				{
-					$tmp_content=$this->fetch( './Public/html/Content/City/map/transfer_map_display.html' );
-					$tmp_content = "<script>production_unit_json=$production_unit_json; reception_unit_json=$reception_unit_json; </script> $tmp_content";
-					$this->ajaxReturn( $tmp_content );
-				} else {
-					$this->show('fail');
+				/*foreach ($vehicle as $vehicle_idx) {
+					$route_id = M( 'route_vehicle' )->where( 'vehicle_id=$vehicle_idx->vehicle_id' )->getField('route_id');
+					$route = M( 'route' )->where( 'route_id=$route_id' )->find();
+				}*/
+				$route_id = M( 'route_vehicle' )->where( array( 'vehicle_id' => $vehicle_id ) )->getField('route_id');
+				if (!$route_id) {
+					$this->ajaxReturn( "没找到路线ID:" . $route_id );
 				}
+				$route = M( 'route' )->where( array( 'route_id' => $route_id ) )->find();
+				if (!$route) {
+					$this->ajaxReturn( "没找到路线:" . $route);
+				}
+				$route_json = json_encode($route);
+
+				$tmp_content=$this->fetch( './Public/html/Content/City/map/transfer_map_display.html' );
+				$tmp_content = "<script>route_json=$route_json; </script> $tmp_content";
+				$this->ajaxReturn( $tmp_content );
 				break;
 			case 'ajax_gps_data':
-				$vehicle = M( 'vehicle' )->where('vehicle_status=1')->select();
-				p($vehicle);
-				foreach ($vehicle as $idx) {
-					$idx->vehicle_gps_id
+				$vehicle_gps_id = M( 'vehicle' )->where('vehicle_status=2')->getField('vehicle_gps_id');
+				if (!$vehicle_gps_id) {
+					$this->ajaxReturn( "没找到车辆表GPS的ID:" . $vehicle_gps_id );
 				}
+				$device_serial_num = M( 'device' )->where( array('device_id' => $vehicle_gps_id) )->getField('device_serial_num');
+				if (!$device_serial_num) {
+					$this->ajaxReturn( "没找到设备表GPS的序列号:" . $device_serial_num );
+				}
+				// $gps_table_name = 'gps_' . $device_serial_num;
+				$gps_table_name = 'gps_308033501795';
+				$gps = M( $gps_table_name );
+				$gps_max_id = $gps->where( 'status=0' )->max('id');
+				$gps_data = $gps->where( array( 'id' => $gps_max_id ) )->find();
+				$this->ajaxReturn($gps_data, 'JSON');
 				break;
 			case 'ajax_search_route':
 				$route = M( 'route' )->where( array( 'production_unit_id' => I('post.production_unit_id'), 'reception_unit_id' => I('post.reception_unit_id') ) )->select();
@@ -70,7 +82,7 @@ class LoginCityAction extends CommonAction{
 				break;
 				// 转移地图->路线规划->运输路线规划，按照鼠标点规划路线
 			case 'transfer_route_plan_1':
-				$record = M( 'vehicle_gps_transport' )->where( "vehicle_status=0" )->select();
+				$record = M( 'vehicle_gps_transport' )->where( "vehicle_status<2" )->select();
 				$record_json = json_encode( $record );
 
 				$tmp_content=$this->fetch( './Public/html/Content/City/map/transfer_route_plan_1.html' );
@@ -354,13 +366,8 @@ class LoginCityAction extends CommonAction{
 				$record = M( 'alluser' )->select();
 				$record_json = json_encode( $record );
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_user_management.html' );
-<<<<<<< HEAD
 				$tmp_content="<script>record_json=$record_json; </script> $tmp_content";
 				$this->ajaxReturn( "$tmp_content" );
-=======
-				$tmp_content="<script>record_json=$record_json;</script>$tmp_content";
-				$this->ajaxReturn( $tmp_content);
->>>>>>> 33c449a509a49ab15e785f9763a597d6969471cf
 				break;
 			case 'enterprise_user_management_page_production':
 				$production_unit = M( 'production_unit' )->where( array( 'user_id' => $record_id ) )->find();
