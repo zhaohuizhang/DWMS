@@ -46,7 +46,6 @@
 </div>
 
 <script type="text/javascript">
-
 if (typeof(intervalWarning) != 'undefined') {
     clearInterval(intervalWarning);
 }
@@ -66,8 +65,8 @@ var searchComplete = function(results) {
     var plan = results.getPlan(0);
     var route = plan.getRoute(0);
     path = route.getPath();
-    console.log(path[0].lng);
-    console.log(path[0].lat);
+    // console.log(path[0].lng);
+    // console.log(path[0].lat);
 };
 
 function search() {
@@ -90,8 +89,8 @@ function setBMap() {
     transit = new BMap.DrivingRoute(map_plan, {
         renderOptions: {
             map: map_plan,
-            autoViewport: true,
-            enableDragging: true //起终点可进行拖拽
+            autoViewport: true, // 视图跟随
+            enableDragging: true // 起终点可进行拖拽
         },
         onSearchComplete: searchComplete,
     });
@@ -152,20 +151,23 @@ function submit() {
 }
 
 
-function setData(data) {
+function setData() {
     $("#mySelect").html("");
     $("#dropdown-button").html("");
-    // myjson = JSON.parse(data);
-    var myArray = data; // myjson["GPS"];
-    for (var i = 0; i < myArray.length; i++) {
-        //$("#mySelect").append('<option value="' + myArray[i]["value"] + '">' + myArray[i]["name"] + "</option>");
-        $("#dropdown-button").append('<li><a onclick="$(\'#selectVehicle\').html(\'' + myArray[i]["transport_unit_name"] + myArray[i]["vehicle_type"] + '\'); window.mySelection=\'' + myArray[i]["device_id"] + '\'; window.mySerial=\'' + myArray[i]["device_serial_num"] + '\';">' + myArray[i]["transport_unit_name"] + myArray[i]["vehicle_type"] + "</a></li>");
+    // myjson = JSON.parse(record_json);
+    if (record_json == null) {
+
+    } else {
+        var myArray = record_json; // myjson["GPS"];
+        for (var i in myArray) {
+            //$("#mySelect").append('<option value="' + myArray[i]["value"] + '">' + myArray[i]["name"] + "</option>");
+            $("#dropdown-button").append('<li><a onclick="$(\'#selectVehicle\').html(\'' + myArray[i]["transport_unit_name"] + myArray[i]["vehicle_type"] + '\'); window.mySelection=\'' + myArray[i]["device_id"] + '\'; window.mySerial=\'' + myArray[i]["device_serial_num"] + '\';">' + myArray[i]["transport_unit_name"] + myArray[i]["vehicle_type"] + "</a></li>");
+        }
     }
+
 }
 
-$(document).ready(function() {
-    setData(record_json);
-});
+setData();
 
 function loadScript() {
     var script = document.createElement("script");

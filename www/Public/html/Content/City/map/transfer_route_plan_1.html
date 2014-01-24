@@ -32,7 +32,6 @@
 </div>
 
 <script type="text/javascript">
-
 if (typeof(intervalWarning) != 'undefined') {
     clearInterval(intervalWarning);
 }
@@ -143,32 +142,21 @@ function submit() {
 }
 
 
-function setData(data) {
+function setData() {
     $("#mySelect").html("");
     $("#dropdown-button").html("");
-    // myjson = JSON.parse(data);
-    // console.log(data);
-    var myArray = data; // myjson["GPS"];
-    for (var i = 0; i < myArray.length; i++) {
-        //$("#mySelect").append('<option value="' + myArray[i]["value"] + '">' + myArray[i]["name"] + "</option>");
-        $("#dropdown-button").append('<li><a onclick="$(\'#selectVehicle\').html(\'' + myArray[i]["transport_unit_name"] + myArray[i]["vehicle_type"] + '\'); window.mySelection=\'' + myArray[i]["device_id"] + '\'; window.mySerial=\'' + myArray[i]["device_serial_num"] + '\';">' + myArray[i]["transport_unit_name"] + myArray[i]["vehicle_type"] + "</a></li>");
+    // myjson = JSON.parse(record_json);
+    // console.log(record_json);
+    if (record_json == null) {} else {
+        var myArray = record_json; // myjson["GPS"];
+        for (var i = 0; i < myArray.length; i++) {
+            //$("#mySelect").append('<option value="' + myArray[i]["value"] + '">' + myArray[i]["name"] + "</option>");
+            $("#dropdown-button").append('<li><a onclick="$(\'#selectVehicle\').html(\'' + myArray[i]["transport_unit_name"] + myArray[i]["vehicle_type"] + '\'); window.mySelection=\'' + myArray[i]["device_id"] + '\'; window.mySerial=\'' + myArray[i]["device_serial_num"] + '\';">' + myArray[i]["transport_unit_name"] + myArray[i]["vehicle_type"] + "</a></li>");
+        }
     }
 }
 
-$(document).ready(function() {
-    /*$.ajax({
-        type: "GET",
-        url: "city?id=GIS_gps_getter",
-        timeout: 2000,
-        success: function(data) {
-            setData(data);
-        },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            myAlert("获取 GPS 失败");
-        }
-    });*/
-    setData(record_json);
-});
+setData();
 
 function loadScript() {
     var script = document.createElement("script");

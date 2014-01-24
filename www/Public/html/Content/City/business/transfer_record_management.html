@@ -28,11 +28,13 @@
 <script type="text/javascript">
 function setTable() {
     var tableData = new Array();
+    console.log(record_json);
+    console.log(unit_name_json);
     for (var idx in record_json) {
         var itemData = new Array();
         itemData[0] = "" + record_json[idx].record_code;
         itemData[1] = "" + record_json[idx].record_date;
-        itemData[2] = "" + unit_json;
+        itemData[2] = "" + unit_name_json[record_json[idx].production_unit_id];
         switch (record_json[idx].record_status) {
             case '0':
                 itemData[3] = "<span class='label label-primary'>已保存未提交</span>";
@@ -65,7 +67,7 @@ function setTable() {
         }, {
             "sTitle": "备案日期"
         }, {
-            "sTitle": "单位名称"
+            "sTitle": "产生单位名称"
         }, {
             "sTitle": "备案状态"
         }, {
@@ -97,6 +99,7 @@ function setTable() {
         }
     });
 }
+
 setTable();
 
 function fetch_model_page(ajaxURL) {
