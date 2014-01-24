@@ -12,30 +12,37 @@ class SelectSocketServer
 	private static $timeout = 60;
 	private static $maxconns = 1024;
 	private static $connections = array();
-	
+	function trans($st)
+	{
+	    $num= (float)($st);
+	    $i= floor($num/100);
+	    $num=$num-$i*100;
+
+	    return($num/60+$i);
+	} 
 	function getMap($long,$lat){
+
 		$url = 'http://api.map.baidu.com/ag/coord/convert';
 		$method = 'get';
 		//echo $long.'  '.$lat;
 		$arrayList = array('from'=>'0','to'=>'4');
-		$arrayList['x'] = $long;
-		$arrayList['y'] = $lat;
-		$json_string = httpRequest($url,$method,$arrayList);
-			// if(ini_get("magic_quotes_gpc")=="1")
-			 // {
-			  // $json_string=stripslashes($json_string);
-			  // }
-			$json_data = json_decode($json_string);
-			$blong = 0.0;
-			$blat = 0.0;
-			if(($json_data->error)==0){
-				$blong = base64_decode($json_data->x);
-				$blat = base64_decode($json_data->y);
-			}
-			//echo $blong.','.$blat;
-			return $blong.','.$blat;
+		$arrayList['x'] = $this->trans($long);
+		$arrayList['y'] = $this->trans($lat);
+		$json_string = $this->httpRequest($url,$method,$arrayList);
+		$json_data = json_decode($json_string);
+		$blong = 0.0;
+		$blat = 0.0;
+		if(($json_data->error)==0){
+			$blong = base64_decode($json_data->x);
+			$blat = base64_decode($json_data->y);
 		}
+			//echo $blong.','.$blat;
+			return $blong.','.$blat;	
+	}
+
+
 	function httpRequest($url,$method,$params=array()){
+
 			if(trim($url)==''||!in_array($method,array('get','post'))||!is_array($params)){
 				//echo 'false';
 				return false;
@@ -70,12 +77,12 @@ class SelectSocketServer
 			}
 			curl_close($curl);
 			//echo $result;
-			return $res;
-			
-		} 
+			return $res;	
+	} 
 	
 	
 	function InsertDB($line){
+
 		if(strpos($line,"#")>3){
 			$con = mysql_connect('10.50.6.70', 'root', 'root1234');
 			if (!$con)
@@ -98,7 +105,7 @@ class SelectSocketServer
 				$speed = substr($line,strpos($line,"V")+2,strpos($line,"H")-strpos($line,"V")-3);
 				$heigh = substr($line,strpos($line,"H")+2,strlen($line)-strpos($line,"H")-5);
 				$status = 0;
-				$rest = getMap($longitude,$latitude);
+				$rest = $this->getMap($longitude,$latitude);
 				list($blong,$blat)= split(',',$rest);
 			}
 			$tableName = trim("gps_".$id);
@@ -110,6 +117,7 @@ class SelectSocketServer
 			}
 		}
 	}
+
 	function SelectSocketServer($port) 
 	{
 		global $errno, $errstr;

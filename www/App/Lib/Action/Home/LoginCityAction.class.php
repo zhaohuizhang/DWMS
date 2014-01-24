@@ -15,8 +15,8 @@ class LoginCityAction extends CommonAction{
 
 				// -------- 转移地图 侧边栏 --------
 			case 'map_sidebar':
-				/*layout( './Common/frame' );
-				$this->display( './Public/html/Content/City/map/map_sidebar.html' );*/
+				layout( './Common/frame' );
+				$this->display( './Public/html/Content/City/map/map_sidebar.html' );
 
 				break;
 				// 转移地图->地图展示->转移地图展示
@@ -43,7 +43,7 @@ class LoginCityAction extends CommonAction{
 				$vehicle = M( 'vehicle' )->where('vehicle_status=1')->select();
 				p($vehicle);
 				foreach ($vehicle as $idx) {
-					$idx->vehicle_gps_id
+					$idx->vehicle_gps_id;
 				}
 				break;
 			case 'ajax_search_route':
@@ -354,13 +354,8 @@ class LoginCityAction extends CommonAction{
 				$record = M( 'alluser' )->select();
 				$record_json = json_encode( $record );
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_user_management.html' );
-<<<<<<< HEAD
-				$tmp_content="<script>record_json=$record_json; </script> $tmp_content";
-				$this->ajaxReturn( "$tmp_content" );
-=======
 				$tmp_content="<script>record_json=$record_json;</script>$tmp_content";
 				$this->ajaxReturn( $tmp_content);
->>>>>>> 33c449a509a49ab15e785f9763a597d6969471cf
 				break;
 			case 'enterprise_user_management_page_production':
 				$production_unit = M( 'production_unit' )->where( array( 'user_id' => $record_id ) )->find();
