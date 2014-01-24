@@ -209,8 +209,8 @@ function setmap() {
             var lat, lng;
 
             for (idx in data) {
-                lat = data[idx].bmap_latitude;
                 lng = data[idx].bmap_longitude;
+                lat = data[idx].bmap_latitude;
 
                 pointArray.push(new BMap.Point(lng, lat));
                 // console.log("lat:"+lat+" lng:"+lng);
