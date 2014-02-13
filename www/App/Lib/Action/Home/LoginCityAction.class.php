@@ -23,29 +23,29 @@ class LoginCityAction extends CommonAction{
 				$vehicle = M( 'vehicle' );
 				$vehicle_operating = $vehicle->where( 'vehicle_status=2' );
 				$vehicle_info = $vehicle_operating->find();
-				$vehicle_info_json = json_encode($vehicle_info);
+				$vehicle_info_json = json_encode( $vehicle_info );
 
 				$vehicle_id = $vehicle_operating->getField( 'vehicle_id' );
 				$ownership_id = $vehicle_operating->getField( 'ownership_id' );
 				$transport_unit = M( 'transport_unit' )->where( array( 'transport_unit_id' => $ownership_id ) )->find();
-				$transport_unit_json = json_encode($transport_unit);
+				$transport_unit_json = json_encode( $transport_unit );
 
-				if (!$vehicle_id) {
+				if ( !$vehicle_id ) {
 					$this->ajaxReturn( "没找到车辆表ID:" . $vehicle_id );
 				}
 				/*foreach ($vehicle as $vehicle_idx) {
 					$route_id = M( 'route_vehicle' )->where( 'vehicle_id=$vehicle_idx->vehicle_id' )->getField('route_id');
 					$route = M( 'route' )->where( 'route_id=$route_id' )->find();
 				}*/
-				$route_id = M( 'route_vehicle' )->where( array( 'vehicle_id' => $vehicle_id ) )->getField('route_id');
-				if (!$route_id) {
+				$route_id = M( 'route_vehicle' )->where( array( 'vehicle_id' => $vehicle_id ) )->getField( 'route_id' );
+				if ( !$route_id ) {
 					$this->ajaxReturn( "没找到路线ID:" . $route_id );
 				}
 				$route = M( 'route' )->where( array( 'route_id' => $route_id ) )->find();
-				if (!$route) {
-					$this->ajaxReturn( "没找到路线:" . $route);
+				if ( !$route ) {
+					$this->ajaxReturn( "没找到路线:" . $route );
 				}
-				$route_json = json_encode($route);
+				$route_json = json_encode( $route );
 
 				$tmp_content=$this->fetch( './Public/html/Content/City/map/transfer_map_display.html' );
 				$tmp_content = "<script>transport_unit_json=$transport_unit_json; vehicle_info_json=$vehicle_info_json; route_json=$route_json; </script> $tmp_content";
@@ -54,24 +54,24 @@ class LoginCityAction extends CommonAction{
 				// 转移地图->地图展示->转移地图展示：获取实时GPS数据
 			case 'ajax_gps_data':
 
-				$vehicle_gps_id = M( 'vehicle' )->where('vehicle_status=2')->getField('vehicle_gps_id');
-				if (!$vehicle_gps_id) {
+				$vehicle_gps_id = M( 'vehicle' )->where( 'vehicle_status=2' )->getField( 'vehicle_gps_id' );
+				if ( !$vehicle_gps_id ) {
 					$this->ajaxReturn( "没找到车辆表GPS的ID:" . $vehicle_gps_id );
 				}
-				$device_serial_num = M( 'device' )->where( array('device_id' => $vehicle_gps_id) )->getField('device_serial_num');
-				if (!$device_serial_num) {
+				$device_serial_num = M( 'device' )->where( array( 'device_id' => $vehicle_gps_id ) )->getField( 'device_serial_num' );
+				if ( !$device_serial_num ) {
 					$this->ajaxReturn( "没找到设备表GPS的序列号:" . $device_serial_num );
 				}
 				$gps_table_name = 'gps_' . $device_serial_num;
 				// $gps_table_name = 'gps_308033501795';
 				$gps = M( $gps_table_name );
-				$gps_max_id = $gps->where( 'status=0' )->max('id');
+				$gps_max_id = $gps->where( 'status=0' )->max( 'id' );
 				$gps_data = $gps->where( array( 'id' => $gps_max_id ) )->find();
-				$this->ajaxReturn($gps_data, 'JSON');
+				$this->ajaxReturn( $gps_data, 'JSON' );
 				break;
 				// 转移地图->地图展示->转移地图展示：查找路线
 			case 'ajax_search_route':
-				$route = M( 'route' )->where( array( 'production_unit_id' => I('post.production_unit_id'), 'reception_unit_id' => I('post.reception_unit_id') ) )->select();
+				$route = M( 'route' )->where( array( 'production_unit_id' => I( 'post.production_unit_id' ), 'reception_unit_id' => I( 'post.reception_unit_id' ) ) )->select();
 				// $route = htmlspecialchars_decode($route);
 				// $route = stripslashes($route);
 
@@ -109,7 +109,7 @@ class LoginCityAction extends CommonAction{
 				$tmp_content="<script>record_json=$record_json; </script> $tmp_content";
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 转移地图->路线规划->运输路线规划：ajax传回路线数据
+				// 转移地图->路线规划->运输路线规划：ajax传回路线数据
 			case 'ajax_map_plan_receiver':
 				$table=M( "route" );
 				if ( $table ) {
@@ -130,20 +130,20 @@ class LoginCityAction extends CommonAction{
 				// $record_json = json_encode( $record );
 
 				$production_unit = M( 'production_unit' )->select();
-				$production_unit_json = json_encode($production_unit);
+				$production_unit_json = json_encode( $production_unit );
 				$reception_unit = M( 'reception_unit' )->select();
-				$reception_unit_json = json_encode($reception_unit);
+				$reception_unit_json = json_encode( $reception_unit );
 
 				$tmp_content=$this->fetch( './Public/html/Content/City/map/transfer_route_plan_3.html' );
 				$tmp_content="<script> production_unit_json=$production_unit_json; reception_unit_json=$reception_unit_json; </script> $tmp_content";
 				$this->ajaxReturn( $tmp_content );
 				break;
-			// 转移地图->路线规划->运输路线规划：ajax传回路线数据
+				// 转移地图->路线规划->运输路线规划：ajax传回路线数据
 			case 'ajax_transfer_route_receiver':
 				$table=M( "route" );
 				if ( $table ) {
-					$data["production_unit_id"] = I('post.production_unit_id');
-					$data["reception_unit_id"] = I('post.reception_unit_id');
+					$data["production_unit_id"] = I( 'post.production_unit_id' );
+					$data["reception_unit_id"] = I( 'post.reception_unit_id' );
 					$data["route_lng_lat"]=I( 'post.route_lng_lat' );
 					$time = date( 'Y-m-d H:i:s', time() );
 					$data["route_add_time"]=$time;
@@ -157,17 +157,16 @@ class LoginCityAction extends CommonAction{
 				break;
 				// 转移地图->路线查询->运输路线查询
 			case 'transfer_route_query':
-				$production_unit = M( 'production_unit' )->getField('production_unit_id, production_unit_name');
-				$reception_unit = M( 'reception_unit' )->getField('reception_unit_id, reception_unit_name');
+				$production_unit = M( 'production_unit' )->getField( 'production_unit_id, production_unit_name' );
+				$reception_unit = M( 'reception_unit' )->getField( 'reception_unit_id, reception_unit_name' );
 				$production_unit_json = json_encode( $production_unit );
 				$reception_unit_json = json_encode( $reception_unit );
-				if ($production_unit_json && $reception_unit_json)
-				{
+				if ( $production_unit_json && $reception_unit_json ) {
 					$tmp_content=$this->fetch( './Public/html/Content/City/map/transfer_route_query.html' );
 					$tmp_content = "<script>production_unit_json=$production_unit_json; reception_unit_json=$reception_unit_json; </script> $tmp_content";
 					$this->ajaxReturn( $tmp_content );
 				} else {
-					$this->show('fail');
+					$this->show( 'fail' );
 				}
 				break;
 
@@ -185,11 +184,11 @@ class LoginCityAction extends CommonAction{
 				break;
 				// 危废产生单位->企业基本信息->企业基本信息
 			case 'production_basic_information':
-				$production_unit = M( 'production_unit' )->getField('production_unit_id,production_unit_name,production_unit_address,waste_location_county,production_unit_jurisdiction');
+				$production_unit = M( 'production_unit' )->getField( 'production_unit_id,production_unit_name,production_unit_address,waste_location_county,production_unit_jurisdiction' );
 				$production_unit_table = json_encode( $production_unit );
-				$tmp_content = $this->fetch('./Public/html/Content/City/production/production_basic_information.html');
+				$tmp_content = $this->fetch( './Public/html/Content/City/production/production_basic_information.html' );
 				$tmp_content = "<script>production_table_json = $production_unit_table;</script> $tmp_content";
-				$this->ajaxReturn($tmp_content);
+				$this->ajaxReturn( $tmp_content );
 				break;
 				//危废产生单位->企业基本信息->企业基本信息->企业详细信息
 			case 'production_basic_information_page':
@@ -216,7 +215,7 @@ class LoginCityAction extends CommonAction{
 				break;
 				// 危废运输单位->企业基本信息->企业基本信息
 			case 'transport_basic_information':
-				$transport_unit = M( 'transport_unit' )->getField('transport_unit_id,transport_unit_name,transport_unit_address,transport_unit_county,transport_unit_jurisdiction');
+				$transport_unit = M( 'transport_unit' )->getField( 'transport_unit_id,transport_unit_name,transport_unit_address,transport_unit_county,transport_unit_jurisdiction' );
 				$transport_unit_table = json_encode( $transport_unit );
 				$tmp_content=$this->fetch( './Public/html/Content/City/transport/transport_basic_information.html' );
 				$tmp_content = "<script>transport_table_json = $transport_unit_table;</script> $tmp_content";
@@ -249,7 +248,7 @@ class LoginCityAction extends CommonAction{
 				break;
 				// 危废处置单位->企业基本信息->企业基本信息
 			case 'disposal_basic_information':
-				$reception_unit = M( 'reception_unit' )->getField('reception_unit_id,reception_unit_name,reception_unit_address,reception_unit_county,reception_unit_jurisdiction');
+				$reception_unit = M( 'reception_unit' )->getField( 'reception_unit_id,reception_unit_name,reception_unit_address,reception_unit_county,reception_unit_jurisdiction' );
 				$reception_unit_table = json_encode( $reception_unit );
 				$tmp_content=$this->fetch( './Public/html/Content/City/disposal/disposal_basic_information.html' );
 				$tmp_content = "<script>reception_table_json = $reception_unit_table;</script> $tmp_content";
@@ -262,8 +261,6 @@ class LoginCityAction extends CommonAction{
 				$tmp_content=$this->fetch( './Public/html/Content/City/disposal/disposal_basic_information_page.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
-
-
 				// 危废处置单位->危废接受台账->危废接受月报统计
 			case 'waste_reception_account_monthly_statistics':
 				$tmp_content=$this->fetch( './Public/html/Content/City/disposal/waste_reception_account_monthly_statistics.html' );
@@ -336,11 +333,11 @@ class LoginCityAction extends CommonAction{
 				$unit_name = M( 'production_unit' )->getField( 'production_unit_id, production_unit_name' );
 				$unit_name_json = json_encode( $unit_name );
 
-				if ($record_json == null) {
+				if ( $record_json == null ) {
 					$this->ajaxReturn( "备案表没有找到：" .  $record_json );
-				} else if ($unit_name_json == null) {
-					$this->ajaxReturn( "生产单位表没有找到：" .  $record_json );
-				} else {
+				} else if ( $unit_name_json == null ) {
+						$this->ajaxReturn( "生产单位表没有找到：" .  $record_json );
+					} else {
 					$tmp_content=$this->fetch( './Public/html/Content/City/business/transfer_record_management.html' );
 					$tmp_content = "<script>record_json = $record_json; unit_name_json = $unit_name_json; </script> $tmp_content";
 					$this->ajaxReturn( $tmp_content );
@@ -388,18 +385,21 @@ class LoginCityAction extends CommonAction{
 				$tmp_content="<script>record_json=$record_json; </script> $tmp_content";
 				$this->ajaxReturn( "$tmp_content" );
 				break;
+				// 业务办理->待办业务->企业用户管理：生产企业
 			case 'enterprise_user_management_page_production':
 				$production_unit = M( 'production_unit' )->where( array( 'user_id' => $record_id ) )->find();
 				$this->formData = $production_unit;
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_user_management_page_production.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
+				// 业务办理->待办业务->企业用户管理：运输企业
 			case 'enterprise_user_management_page_transport':
 				$transport_unit = M( 'transport_unit' )->where( array( 'user_id' => $record_id ) )->find();
 				$this->formData = $transport_unit;
 				$tmp_content=$this->fetch( './Public/html/Content/City/business/enterprise_user_management_page_transport.html' );
 				$this->ajaxReturn( $tmp_content );
 				break;
+				// 业务办理->待办业务->企业用户管理：接受企业
 			case 'enterprise_user_management_page_reception':
 				$reception_unit = M( 'reception_unit' )->where( array( 'user_id' => $record_id ) )->find();
 				$this->formData = $reception_unit;
@@ -407,6 +407,7 @@ class LoginCityAction extends CommonAction{
 
 				$this->ajaxReturn( $tmp_content );
 				break;
+				//
 			case 'enterprise_user_management_ajaxpost':
 
 				$munit=M( 'user' );
@@ -494,8 +495,8 @@ class LoginCityAction extends CommonAction{
 				break;
 				// 系统管理->系统信息设置->废物代码
 			case 'waste_code':
-				$waste = M( 'waste' )->order('waste_id DESC')->select();
-				$waste_json = json_encode($waste);
+				$waste = M( 'waste' )->order( 'waste_id DESC' )->select();
+				$waste_json = json_encode( $waste );
 				$tmp_content=$this->fetch( './Public/html/Content/City/system/waste_code.html' );
 				$tmp_content="<script> record_json=$waste_json; </script> $tmp_content";
 				$this->ajaxReturn( $tmp_content );

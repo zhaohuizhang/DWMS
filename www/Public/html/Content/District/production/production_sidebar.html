@@ -1,4 +1,4 @@
-<include file="./Public/html/Content/City/city_config.html" />
+<include file="./Public/html/Content/District/district_config.html" />
 <script type="text/javascript">
 DWMS_page_config.pageid = 2;
 DWMS_sidebar_config = {
@@ -8,7 +8,7 @@ DWMS_sidebar_config = {
         "sidebar_group_content": [{
             "id": 0,
             "name": "企业基本信息",
-            "url": "city?id=production_basic_information"
+            "url": "{:U('Home/DistrictProduction/production_basic_information')}"
         }]
     }, {
         "sidebar_group_id": 1,
@@ -16,7 +16,7 @@ DWMS_sidebar_config = {
         "sidebar_group_content": [{
             "id": 0,
             "name": "危废产生月报统计",
-            "url": "city?id=waste_account_monthly_statistics"
+            "url": "{:U('Home/DistrictProduction/waste_account_monthly_statistics')}"
         }]
     }, {
         "sidebar_group_id": 2,
@@ -24,7 +24,7 @@ DWMS_sidebar_config = {
         "sidebar_group_content": [{
             "id": 0,
             "name": "RFID手持端绑定",
-            "url": "city?id=production_rfid_hand_equipment"
+            "url": "{:U('Home/DistrictProduction/production_rfid_hand_equipment')}"
         }]
     }]
 }

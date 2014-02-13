@@ -34,7 +34,7 @@ function setTable() {
         itemData[1] = "" + reception_table_json[idx].reception_unit_address;
         itemData[2] = "" + reception_table_json[idx].reception_unit_county;
         itemData[3] = "" + reception_table_json[idx].reception_unit_jurisdiction;
-        itemData[4] = '<a href="#" onclick="fetch_model_page(\'./city?id=disposal_basic_information_page&record_id=' + reception_table_json[idx].reception_unit_id + '\')"><span class="label label-info"><span class="glyphicon glyphicon-wrench"></span> 详情</span><a>';
+        itemData[4] = '<a href="#" onclick="fetch_model_page(\'./reception_basic_information_page?record_id=' + reception_table_json[idx].reception_unit_id + '\')"><span class="label label-info"><span class="glyphicon glyphicon-wrench"></span> 详情</span><a>';
         tableData.push(itemData);
     }
 

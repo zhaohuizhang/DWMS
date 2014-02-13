@@ -34,7 +34,7 @@ function setTable() {
         itemData[1] = "" + transport_table_json[idx].transport_unit_address;
         itemData[2] = "" + transport_table_json[idx].transport_unit_county;
         itemData[3] = "" + transport_table_json[idx].transport_unit_jurisdiction;
-        itemData[4] = '<a href="#" onclick="fetch_model_page(\'./city?id=transport_basic_information_page&record_id=' + transport_table_json[idx].transport_unit_id + '\')"><span class="label label-info"><span class="glyphicon glyphicon-wrench"></span> 详情</span><a>';
+        itemData[4] = '<a href="#" onclick="fetch_model_page(\'./transport_basic_information_page?record_id=' + transport_table_json[idx].transport_unit_id + '\')"><span class="label label-info"><span class="glyphicon glyphicon-wrench"></span> 详情</span><a>';
         tableData.push(itemData);
     }
 
