@@ -1,0 +1,276 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">基本信息</div>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+                <tr>
+                    <td>单位名称</td>
+                    <td>
+                        {$unit.production_unit_name}
+                    </td>
+                    <td>单位用户名称</td>
+                    <td>
+                        {$unit.production_unit_username}
+                    </td>
+                </tr>
+                <tr>
+                    <td>备案类型</td>
+                    <td>
+                        {$record.record_type}
+                    </td>
+                    <td>备案日期</td>
+                    <td>
+                        {$record.record_date}
+                    </td>
+                </tr>
+                <tr>
+                    <td>法人代码</td>
+                    <td>
+                        {$unit.production_unit_legal_person_code}
+                    </td>
+                    <td>单位地址</td>
+                    <td>
+                        {$unit.production_unit_address}
+                    </td>
+                </tr>
+                <tr>
+                    <td>邮政编码</td>
+                    <td>
+                        {$unit.production_unit_postcode}
+                    </td>
+                    <td>所在区县</td>
+                    <td>
+                        {$unit.waste_location_county}
+                    </td>
+                </tr>
+                <tr>
+                    <td>联系人姓名</td>
+                    <td>
+                        {$unit.production_unit_contacts_name}
+                    </td>
+                    <td>联系电话</td>
+                    <td>
+                        {$unit.production_unit_contacts_phone}
+                    </td>
+                </tr>
+                <tr>
+                    <td>单位传真</td>
+                    <td>
+                        {$unit.production_unit_fax}
+                    </td>
+                    <td>产废设施所在地</td>
+                    <td>
+                        {$unit.waste_location}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">工艺方法</div>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+                <tr>
+                    <td>工艺序号</td>
+                    <td>
+                        {$record.technology_code}
+                    </td>
+                    <td>工艺方法</td>
+                    <td>
+                        {$record.technology_method}
+                    </td>
+                </tr>
+                <tr>
+                    <td>危废代码</td>
+                    <td>
+                        {$record.waste_code}
+                    </td>
+                    <td>相关产品</td>
+                    <td>
+                        {$record.relational_production}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">危险废物产生情况</div>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+                <tr>
+                    <td>废物名称</td>
+                    <td>
+                        {$record.waste_name}
+                    </td>
+                    <td>废物形态</td>
+                    <td>
+                        {$record.waste_form}
+                    </td>
+                </tr>
+                <tr>
+                    <td>预计危废重量（吨）</td>
+                    <td>
+                        {$record.predict_output_weight}
+                    </td>
+                    <td>预计危废数量（桶）</td>
+                    <td>
+                        {$record.predict_output_quantity}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">危废仓库贮存情况</div>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+                <tr>
+                    <td>贮存场所</td>
+                    <td>
+                        {$record.storage_place}
+                    </td>
+                    <td>贮存面积（平方米）</td>
+                    <td>
+                        {$record.storage_area}
+                    </td>
+                </tr>
+                <tr>
+                    <td>危废容积（立方米）</td>
+                    <td>
+                        {$record.waste_volume}
+                    </td>
+                    <td>贮存用途</td>
+                    <td>
+                        {$record.storage_purpose}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">运输单位</div>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+                <tr>
+                    <td>运输单位名称</td>
+                    <td>
+                        {$record.transport_unit_name}
+                    </td>
+                    <td>所在区县</td>
+                    <td>
+                        {$record.transport_unit_county}
+                    </td>
+                </tr>
+                <tr>
+                    <td>运输单位地址</td>
+                    <td>
+                        {$record.transport_unit_address}
+                    </td>
+                    <td>运输单位邮编</td>
+                    <td>
+                        {$record.transport_unit_postcode}
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>运输单位联系人姓名</td>
+                    <td>
+                        {$record.transport_unit_contacts_name}
+                    </td>
+                    <td>运输单位联系电话</td>
+                    <td>
+                        {$record.transport_unit_contacts_phone}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">接受单位</div>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+                <tr>
+                    <td>接受单位名称</td>
+                    <td>
+                        {$record.reception_unit_name}
+                    </td>
+                    <td>所在区县</td>
+                    <td>
+                        {$record.reception_unit_county}
+                    </td>
+                </tr>
+                <tr>
+                    <td>接受单位地址</td>
+                    <td>
+                        {$record.reception_unit_address}
+                    </td>
+                    <td>接受单位邮编</td>
+                    <td>
+                        {$record.reception_unit_postcode}
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>接受单位联系人姓名</td>
+                    <td>
+                        {$record.reception_unit_contacts_name}
+                    </td>
+                    <td>接受单位联系电话</td>
+                    <td>
+                        {$record.reception_unit_contacts_phone}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<center>
+    <button class="btn btn-warning btn-lg" id="button_close" onclick="$('#myModal').modal('hide');">关闭页面</button>
+</center>
+
+<script type="text/javascript">
+if (record_status_json == '1') {
+    $('#button_close').before("<button class='btn btn-success btn-lg' id='button_pass' onclick='ajaxAction(2)'>通过备案</button>&nbsp;<button class='btn btn-danger btn-lg' id='button_reject' onclick='ajaxAction(3)'>退回备案</button>&nbsp;");
+}
+
+function ajaxAction(actionID) {
+    $("#model-content").html('<center style="margin:50px"><h4>提交中...</h4><div class="progress progress-striped active" style="width: 50%"><div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div></div></center>');
+    $.ajax({
+        type: "post",
+        url: "city?id=transfer_record_management_audit&record_id=" + record_id_json,
+        timeout: 2000,
+        data: {
+            record_status: actionID
+        },
+        success: function(data) {
+            $('#myModal').modal('hide');
+            $('#myModal').on('hidden.bs.modal', function(e) {
+                refresh_page();
+            });
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log("Error: Ajax_Content_Load " + errorThrown);
+            console.log("XMLHttpRequest.status: " + XMLHttpRequest.status);
+            console.log("XMLHttpRequest.readyState: " + XMLHttpRequest.readyState);
+            console.log("textStatus: " + textStatus);
+        }
+    });
+
+}
+</script>

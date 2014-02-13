@@ -3,9 +3,10 @@
  *
  */
 class LoginDistrictAction extends CommonAction{
-	public function district() {
+	public function homepage() {
 		if ( session( 'user_type' ) == 4 ) {
-			$this->display();
+			layout( './Common/frame' );
+			$this->display( './Public/html/Content/District/homepage/district_index.html' );
 		}else {
 			$this->redirect( 'Home/Index/index' );
 		}

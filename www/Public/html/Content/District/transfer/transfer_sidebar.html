@@ -1,0 +1,58 @@
+<include file="./Public/html/Content/City/city_config.html" />
+<script type="text/javascript">
+DWMS_page_config.pageid = 5;
+DWMS_sidebar_config = {
+    "sidebar_groups": [{
+        "sidebar_group_id": 0,
+        "sidebar_group_title": "转移备案管理",
+        "sidebar_group_content": [{
+            "id": 0,
+            "name": "转移备案",
+            "url": "city?id=transfer_record"
+        }]
+    }, {
+        "sidebar_group_id": 1,
+        "sidebar_group_title": "危废联单管理",
+        "sidebar_group_content": [{
+            "id": 0,
+            "name": "生产单位转移联单",
+            "url": "city?id=production_transfer_manifest"
+        }, {
+            "id": 1,
+            "name": "运输单位转移联单",
+            "url": "city?id=transport_transfer_manifest"
+        }, {
+            "id": 2,
+            "name": "接受单位转移联单",
+            "url": "city?id=reception_transfer_manifest"
+        }]
+    }, {
+        "sidebar_group_id": 2,
+        "sidebar_group_title": "统计分析",
+        "sidebar_group_content": [{
+            "id": 0,
+            "name": "转移去向统计",
+            "url": "city?id=transfer_direction_statistic"
+        },{
+            "id": 1,
+            "name": "转移联单统计",
+            "url": "city?id=transfer_manifest_statistic"
+        },{
+            "id": 2,
+            "name": "转移专题定制",
+            "url": "city?id=transfer_topic_customize"
+        }]
+    }]
+}
+</script>
+<div class="row">
+    <div class="col-md-3">
+        <div class="panel panel-primary" id="sidebar_div">
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div id="content_page">
+        </div>
+    </div>
+</div>
+<include file="Common/sidebar_generator" />

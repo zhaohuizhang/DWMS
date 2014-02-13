@@ -63,7 +63,7 @@ class IndexAction extends Action{
 			$this->redirect( 'Home/LoginCity/city' );
 			break;
 		case 4:
-			$this->redirect( 'Home/LoginDistrict/district' );
+			$this->redirect( 'Home/LoginDistrict/homepage' );
 			break;
 		case 5:
 			$unit = M('production_unit')->where( array( 'user_id' => session( 'user_id' ) ) )->find();
