@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0038)http://v3.bootcss.com/examples/signin/ -->
+
 <html lang="zh-cn">
 
 <head>
@@ -11,14 +11,15 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="__PUBLIC__/image/favicon.png">
 
-    <title>安庆市危废管理系统</title>
+    <title>危险废物管理信息系统</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="__PUBLIC__/css/bootstrap.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="__PUBLIC__/css/signin.css" rel="stylesheet">
-
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js"></script>
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -29,60 +30,117 @@
     <![endif]-->
 </head>
 
-<body>
-    <div class="container">
+<body style="background:url(__PUBLIC__/image/bg_3.jpg) no-repeat;  background-color:#3D80AD;">
+    <div class="container" style="width:65%;">
+        <div class="panel panel-primary" id="login-panel">
+            <div class="panel-heading"></div>
+            <div class="panel-body" style="">
+                <form class="form-signin" role="form" action="{:U('Home/Index/login/')}" method="post" id="login">
+                    <div class="blank-div"></div>
+                    <h2 class="form-signin-heading txt-shadow">危险废物管理信息系统</h2>
+                    <div class="blank-div"></div>
+                    <div class="blank-div"></div>
+                    <input id="username" type="username" name="username" class="form-control" placeholder="用户名" required="" autofocus="" />
 
-        <form class="form-signin" role="form" action="{:U('Home/Index/login/')}" method="post" id="login">
-
-            <h2 class="form-signin-heading">安庆市危废管理系统</h2>
-
-            <input type="username" name="username" class="form-control" placeholder="用户名" required="" autofocus="" />
-            <input type="password" name="password" class="form-control" placeholder="密码" required="" />
-            <input type="code" name="code" class="form-control" placeholder="验证码" required="" />
-
-            <img src="{:U('Home/Index/verify/')}" id="code" />
-            <a href="javascript:void(change_code());">看不清</a>
-
-            <!-- <label class="checkbox">
+                    <input type="password" name="password" class="form-control" placeholder="密码" required="" />
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <input type="code" name="code" class="form-control" placeholder="验证码" required="" />
+                        </div>
+                        <div class="col-xs-2">
+                            <img src="{:U('Home/Index/verify/')}" id="code" />
+                        </div>
+                        <div class="col-xs-3">
+                            <small><a href="javascript:void(change_code());">看不清</a>
+                            </small>
+                        </div>
+                    </div>
+                    <!-- <label class="checkbox">
                 <input type="checkbox" value="remember-me">记住密码
             </label> -->
 
-            <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
-            <button class="btn btn-lg btn-default btn-block" type="button" id="register">注册</button>
+                    <div class="blank-div"></div>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" id="login">登 录</button>
 
-        </form>
+                    <button type="button" class="btn btn-default btn-lg btn-block" id="register" data-toggle="modal" data-target="#myModal">注 册</button>
 
-        <footer class="bs-footer" role="contentinfo">
-            <div class="text-center padder clearfix">
-                <p>
-                    <small>&copy; 2014, 安庆市环境保护局&nbsp;&nbsp;&nbsp;&nbsp;版权所有.
-                    </small>
-                </p>
+                </form>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="padding-top:15%">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title" id="myModalLabel"><b>请选择要注册的角色:</b>
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <big>
+
+                                    <div class="radio" onclick="regOpt=0;">
+                                        <label>
+                                            <input type="radio" name="optionsRadios">生产单位
+                                        </label>
+                                    </div>
+                                    <div class="radio" onclick="regOpt=1;">
+                                        <label>
+                                            <input type="radio" name="optionsRadios">运输单位
+                                        </label>
+                                    </div>
+                                    <div class="radio" onclick="regOpt=2;">
+                                        <label>
+                                            <input type="radio" name="optionsRadios">接受单位
+                                        </label>
+                                    </div>
+                                </big>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                <button type="button" class="btn btn-primary" onclick="do_reg()">去注册</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+                <footer class="bs-footer" role="contentinfo">
+                    <div class="text-center padder clearfix txt-shadow">
+                        <div class="blank-div"></div>
+                        <div class="blank-div"></div>
+                        Copyright © 2014-2015
+                        <br/>
+                        <span class="glyphicon glyphicon-send"></span>
+                        <b>SJTU OMNILab</b>
+                    </div>
+
+                </footer>
             </div>
-
-        </footer>
-
+        </div>
     </div>
     <!-- /container -->
 
-
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- jQuery core JavaScript -->
-    <script type="text/javascript" src="__PUBLIC__/js/jquery-2.0.3.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
+
     <!-- My JavaScript-->
     <script type="text/javascript">
-    var verifyURL = "{:U('Admin/Index/verify/', '', '')}";
+    var verifyURL = "{:U('Home/Index/verify/', '', '')}";
     </script>
     <script type="text/javascript" src="__PUBLIC__/js/login.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/js/webpage.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/js/register.js"></script>
-    <script>
-    $(document).ready(function() {
-        $('#register').click(function() {
-            $.post("{:U('Home/Register/first/')}");
-        });
-    });
+
+    <script type="text/javascript">
+    regOpt = -1;
+
+    function do_reg() {
+        // var regList = ["/index.php/Home/Register/index?id=production", "/index.php/Home/Register/index?id=transport", "/index.php/Home/Register/index?id=reception"];
+        var regList = ["{:U('Home/Register/index?id=production')}", "{:U('Home/Register/index?id=transport')}", "{:U('Home/Register/index?id=reception')}"];
+        if (regOpt < 0) {
+            alert("请选择角色");
+        }
+
+        location.href = regList[regOpt];
+
+    }
     </script>
 </body>
 

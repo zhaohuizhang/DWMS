@@ -1,0 +1,52 @@
+<table id="waste-table-container">
+</table>
+<script type="text/javascript">
+var tableData = new Array();
+for (var idx in waste_data) {
+    var itemData = new Array();
+    itemData[0] = "" + waste_data[idx].waste_id;
+    itemData[1] = "" + waste_data[idx].add_date_time;
+    if (waste_data[idx].add_weight) {
+        itemData[2] = waste_data[idx].add_weight;
+    } else if (waste_data[idx].add_num) {
+        itemData[2] = waste_data[idx].add_num;
+    } else {
+        itemData[2] = 0;
+    }
+    tableData.push(itemData);
+}
+
+$('#waste-table-container').dataTable({
+    "aaData": tableData,
+    "aoColumns": [{
+        "sTitle": "废物编号"
+    }, {
+        "sTitle": "增加时间"
+    }, {
+        "sTitle": "增加量"
+    }],
+    "bPaginate": true,
+    "bLengthChange": true,
+    "bFilter": true,
+    "bSort": false,
+    "bInfo": true,
+    "bAutoWidth": true,
+    "bStateSave": true,
+    "sPaginationType": "full_numbers",
+
+    "oLanguage": {
+        "sLengthMenu": "每页显示 _MENU_ 条记录",
+        "sZeroRecords": "抱歉， 没有找到",
+        "sInfo": "从 _START_ 到 _END_ /共 _TOTAL_ 条数据",
+        "sInfoEmpty": "没有数据",
+        "sInfoFiltered": "(从 _MAX_ 条数据中检索)",
+        "oPaginate": {
+            "sFirst": "首页",
+            "sPrevious": "前一页",
+            "sNext": "后一页",
+            "sLast": "尾页"
+        },
+        "sZeroRecords": "没有检索到数据"
+    }
+});
+</script>

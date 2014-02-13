@@ -1,0 +1,201 @@
+<div class="panel panel-primary">
+    <div class="panel panel-heading" style="margin-bottom:1px">
+        <h3 class="panel-title">地 图</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-3">
+                <label class="sr-only" for="selectProductionUnit">产生单位：</label>
+                <select class="form-control" id="selectProductionUnit">
+                    <option>请选择生产单位</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label class="sr-only" for="selectReceptionUnit">接受单位：</label>
+                <select class="form-control" id="selectReceptionUnit">
+                    <option>请选择接受单位</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-info" id="searchRoute" onclick="searchRoute();">确认</button>
+            </div>
+            <div class="col-md-3">
+                <label class="sr-only" for="selectRoute">路线：</label>
+                <select class="form-control" id="selectRoute">
+                    <option>请选择路线</option>
+                </select>
+            </div>
+            <div class="col-md-1">
+                <button class="btn btn-success" id="seeRoute" onclick="seeRoute();">查看</button>
+            </div>
+        </div>
+    </div>
+    <div id="map_container" style="width:auto">地图加载中...</div>
+</div>
+
+<script type="text/javascript">
+
+if (typeof(intervalWarning) != 'undefined') {
+    clearInterval(intervalWarning);
+}
+
+function setBMap() {
+
+    var windowHeight = $(window).height();
+    $("#map_container").css("height", "" + windowHeight - 350 + "px");
+
+    map_display = new BMap.Map("map_container"); // 创建Map实例
+    map_display.centerAndZoom("上海", 13); // 初始化地图,设置中心点坐标和地图级别
+    map_display.addControl(new BMap.NavigationControl()); // 添加默认缩放平移控件
+    map_display.addControl(new BMap.ScaleControl()); // 添加默认比例尺控件
+    map_display.addControl(new BMap.OverviewMapControl()); //添加默认缩略地图控件
+    map_display.enableScrollWheelZoom(); //启用滚轮放大缩小
+    map_display.addControl(new BMap.MapTypeControl()); // 添加默认地图控件
+    map_display.setCurrentCity("上海"); // 设置地图显示的城市 此项是必须设置的
+
+    for (var idx in production_unit_json) {
+        $('#selectProductionUnit').append('<option id="" value="' + idx + '">' + production_unit_json[idx] + '</option>');
+    }
+    for (var idx in reception_unit_json) {
+        $('#selectReceptionUnit').append('<option id="" value="' + idx + '">' + reception_unit_json[idx] + '</option>');
+    }
+
+
+    /*var myIcon = new BMap.Icon("http://stacky.takau.net/think/DWMS/www/Public/image/header_logo.jpg", new BMap.Size(90, 90), {
+        // 指定定位位置。
+        // 当标注显示在地图上时，其所指向的地理位置距离图标左上
+        // 角各偏移10像素和25像素。您可以看到在本例中该位置即是
+        // 图标中央下端的尖角位置。
+        offset: new BMap.Size(45, 45),
+        // 设置图片偏移。
+        // 当您需要从一幅较大的图片中截取某部分作为标注图标时，您
+        // 需要指定大图的偏移位置，此做法与css sprites技术类似。
+        imageOffset: new BMap.Size(0, 0) // 设置图片偏移
+    });
+    // 创建标注对象并添加到地图
+    var marker = new BMap.Marker(point, {
+        icon: myIcon
+    });
+    map.addOverlay(marker);
+    marker.addEventListener("click", function() {
+        var opts = {
+            width: 250, // 信息窗口宽度
+            height: 100, // 信息窗口高度
+            title: "药药且可闹" // 信息窗口标题
+        }
+        var infoWindow = new BMap.InfoWindow("煎饼果子来一套", opts); // 创建信息窗口对象
+        map.openInfoWindow(infoWindow, marker.getPosition()); // 打开信息窗口
+    });*/
+
+}
+
+function loadScript() {
+    var script = document.createElement("script");
+    script.src = "http://api.map.baidu.com/api?v=2.0&ak=KDdzQZSRLv89h4yrti56L5Gy&callback=setBMap";
+    document.body.appendChild(script);
+}
+
+loadScript();
+
+
+function searchRoute() {
+    $.ajax({
+        type: 'post',
+        url: 'city?id=ajax_search_route',
+        dataType: 'json',
+        data: {
+            "production_unit_id": $('#selectProductionUnit').val(),
+            "reception_unit_id": $('#selectReceptionUnit').val()
+        },
+        success: function(route_json) {
+            // console.log(route_json);
+            // route_json_eval = eval("(" + route_json + ")");
+            // route_json_eval = eval("(" + route_json_eval + ")");
+            route_json_eval = JSON.parse(route_json);
+            // console.log(route_json_eval);
+            $('#selectRoute').html('<option>请选择路线</option>');
+            for (var idx in route_json_eval) {
+                $('#selectRoute').append('<option value="' + route_json_eval[idx].route_id + '">' + route_json_eval[idx].route_id + '</option>');
+            }
+            // js.lang.String.call(String.prototype);
+            $('#seeRoute').click(function() {
+                // console.log(route_json_eval[0].route_lng_lat);
+                // console.log(route_json_eval[0].route_lng_lat.replace(/&quot;/g, '"'));
+                // console.log(JSON.parse(route_json_eval[0].route_lng_lat.replace(/&quot;/g, '"')));
+                map_display.clearOverlays();
+                for (var idx in route_json_eval) {
+                    if (route_json_eval[idx].route_id == $('#selectRoute').val()) {
+                        route_decode = route_json_eval[idx].route_lng_lat.replace(/&quot;/g, '"');
+                        route_decode_json = JSON.parse(route_decode);
+
+                        var pointArray = new Array();
+                        var lng, lat;
+                        for (var pointIdx in route_decode_json) {
+                            lng = route_decode_json[pointIdx].lng;
+                            lat = route_decode_json[pointIdx].lat;
+                            pointArray.push(new BMap.Point(lng, lat));
+                        }
+                        var polyline = new BMap.Polyline(pointArray, {
+                            strokeColor: "blue",
+                            strokeWeight: 6,
+                            strokeOpacity: 0.8
+                        });
+                        map_display.addOverlay(polyline);
+                        $(".anchorBL").hide();
+                    }
+                }
+
+            })
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log("获取路线失败。");
+            console.log("Error:Ajax_Content_Load" + errorThrown);
+            console.log("XMLHttpRequest.status:" + XMLHttpRequest.status);
+            console.log("XMLHttpRequest.readyState:" + XMLHttpRequest.readyState);
+            console.log("textStatus:" + textStatus);
+        }
+    });
+}
+
+function seeRoute() {
+
+
+    /*$.ajax({
+        url: "city?id=ajax_route_display",
+        type: "post",
+        timeout: 2000,
+        dataType: "json",
+        data: {
+            "production_unit_id": production_unit_id,
+            "reception_unit_id": reception_unit_id
+        },
+        success: function(data) {
+
+            var pointArray = new Array();
+            var idx;
+            var lng, lat;
+
+            for (idx in data) {
+                lng = data[idx].bmap_longitude;
+                lat = data[idx].bmap_latitude;
+                pointArray.push(new BMap.Point(lng, lat));
+            }
+
+            map_display.centerAndZoom(pointArray[0], 12);
+            var polyline = new BMap.Polyline(pointArray, {
+                strokeColor: "blue",
+                strokeWeight: 6,
+                strokeOpacity: 0.8
+            });
+            map_display.addOverlay(polyline);
+            $(".anchorBL").hide()
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+            console.log("Error:Ajax_Content_Load" + errorThrown);
+            console.log("XMLHttpRequest.status:" + XMLHttpRequest.status);
+            console.log("XMLHttpRequest.readyState:" + XMLHttpRequest.readyState);
+            console.log("textStatus:" + textStatus);
+        }
+    });*/
+}
+</script>

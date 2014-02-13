@@ -1,0 +1,27 @@
+<script type="text/javascript">
+    function homepage_generator() {
+    newHtml='<div class="panel panel-primary"><div class="panel-heading">功能菜单</div><div class="panel-body" style="padding-left:50px;padding_right:50px">';
+        for(var idx in DWMS_index_menu_config.menu)
+        {
+            if(idx==0) //first row start
+                    {
+                        newHtml+='<div class="row" style="margin-bottom:20px;margin-top:20px">';
+                    }
+            else if(idx%4==0) //last row ending+next row start
+                    {
+                        newHtml+='</div><div class="row" style="margin-bottom:20px;margin-top:20px">';
+                    }
+                    newHtml +='<div class="col-md-3"><center><a href="'
+                             +DWMS_index_menu_config.menu[idx].url
+                             +' "><img src="__PUBLIC__/icons/'
+                             +DWMS_index_menu_config.menu[idx].icon
+                             +'"><h4>'
+                             +DWMS_index_menu_config.menu[idx].name
+                             +'</h4></a></center></div>';   
+        }
+        newHtml+="</div></div></div>";
+        $("#index_menu_container").html(newHtml);
+    }
+
+    homepage_generator();
+</script>

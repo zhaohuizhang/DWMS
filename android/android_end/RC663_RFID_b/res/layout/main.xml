@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="48dp"
+        android:layout_height="50dp"
+        android:layout_x="184dp"
+        android:layout_y="5dp"
+        android:src="@drawable/header_logo" />
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SJTU Omnilab\n废物管理系统"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/button_ScanAndUpload"
+        android:layout_width="95dp"
+        android:layout_height="64dp"
+        android:layout_x="14dp"
+        android:layout_y="92dp"
+        android:textSize="25dp"
+        android:text="绑定" />
+
+    <Button
+        android:id="@+id/button_scan3"
+        android:layout_width="95dp"
+        android:layout_height="64dp"
+        android:layout_x="16dp"
+        android:layout_y="190dp"
+        android:textSize="25dp"
+        android:text="转移" />
+
+    <Button
+        android:id="@+id/button_scan4"
+        android:layout_width="95dp"
+        android:layout_height="64dp"
+        android:layout_x="138dp"
+        android:layout_y="190dp"
+        android:textSize="25dp"
+        android:text="接收" />
+
+    <Button
+        android:id="@+id/button_scan2"
+        android:layout_width="95dp"
+        android:layout_height="64dp"
+        android:layout_x="136dp"
+        android:layout_y="92dp"
+        android:textSize="25dp"
+        android:text="新增" />
+
+
+</AbsoluteLayout>

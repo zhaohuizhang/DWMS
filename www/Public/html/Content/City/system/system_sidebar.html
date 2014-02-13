@@ -1,0 +1,72 @@
+<include file="./Public/html/Content/City/city_config.html" />
+<script type="text/javascript">
+DWMS_page_config.pageid = 7;
+DWMS_sidebar_config = {
+    "sidebar_groups": [{
+        "sidebar_group_id": 0,
+        "sidebar_group_title": "系统信息设置",
+        "sidebar_group_content": [{
+                "id": 0,
+                "name": "废物代码",
+                "url": "city?id=waste_code"
+            }, {
+                "id": 1,
+                "name": "区县代码",
+                "url": "city?id=district_code"
+            }, {
+                "id": 2,
+                "name": "行业代码",
+                "url": "city?id=trade_code"
+            }, {
+                "id": 3,
+                "name": "企业规模",
+                "url": "city?id=enterprise_scale"
+            }, {
+                "id": 4,
+                "name": "注册类型",
+                "url": "city?id=register_type"
+            }, {
+                "id": 5,
+                "name": "管辖权限",
+                "url": "city?id=jurisdiction"
+            }, {
+                "id": 6,
+                "name": "废物类别",
+                "url": "city?id=waste_category"
+            }, {
+                "id": 7,
+                "name": "废物形态",
+                "url": "city?id=waste_form"
+            }, {
+                "id": 8,
+                "name": "包装方式",
+                "url": "city?id=package_method"
+            }, {
+                "id": 9,
+                "name": "废物处理方式",
+                "url": "city?id=waste_disposal_method"
+            }, {
+                "id": 10,
+                "name": "废物去向",
+                "url": "city?id=waste_direction"
+            }, {
+                "id": 11,
+                "name": "运输方式",
+                "url": "city?id=transport_method"
+            }
+
+        ]
+    }]
+}
+</script>
+<div class="row">
+    <div class="col-md-3">
+        <div class="panel panel-primary" id="sidebar_div">
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div id="content_page">
+        </div>
+    </div>
+</div>
+<include file="Common/sidebar_generator" />

@@ -1,0 +1,58 @@
+<include file="./Public/html/Content/City/city_config.html" />
+<script type="text/javascript">
+
+DWMS_page_config.pageid = 1;
+
+DWMS_sidebar_config = {
+    "sidebar_groups": [{
+        "sidebar_group_id": 0,
+        "sidebar_group_title": "地图展示",
+        "sidebar_group_content": [{
+            "id": 0,
+            "name": "转移地图展示",
+            "url": "city?id=transfer_map_display"
+        },{
+            "id": 1,
+            "name": "仓库地图展示",
+            "url": "city?id=warehouse_map_display"
+        }]
+    }, {
+        "sidebar_group_id": 1,
+        "sidebar_group_title": "路线规划",
+        "sidebar_group_content": [{
+            "id": 0,
+            "name": "运输路线规划_1",
+            "url": "city?id=transfer_route_plan_1"
+        },{
+            "id": 1,
+            "name": "运输路线规划_2",
+            "url": "city?id=transfer_route_plan_2"
+        },{
+            "id": 2,
+            "name": "运输路线规划_3",
+            "url": "city?id=transfer_route_plan_3"
+        }]
+    }, {
+        "sidebar_group_id": 2,
+        "sidebar_group_title": "路线查询",
+        "sidebar_group_content": [{
+            "id": 0,
+            "name": "运输路线查询",
+            "url": "city?id=transfer_route_query"
+        }]
+    }]
+}
+
+</script>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="panel panel-primary" id="sidebar_div">
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div id="content_page">
+        </div>
+    </div>
+</div>
+<include file="Common/sidebar_generator" />

@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>企业注册</title>
+    <link type="text/css" href="__PUBLIC__/js/register_files/css.css" rel="stylesheet">
+    <script type="text/javascript" src="__PUBLIC__/js/register_files/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/register_files/provcity.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/register_files/sic.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/register_files/jquery.validate.min.js"></script>
+    <script type="text/javascript">
+    function keyChange(e) {
+        var Txtstr = document.getElementById("zuzhid");
+        var evt = window.event || e;
+        var nKeyCode = evt.keyCode || evt.which;
+        var sInput = Txtstr.value;
+        if (nKeyCode >= 65 && nKeyCode <= 90) {
+            Txtstr.value = sInput.toUpperCase();
+        }
+    }
+
+    function comapnyValidate() {
+        $("#company").validate({
+            rules: {
+
+                dlmc: {
+                    required: true,
+                    rangelength: [3, 20],
+                    english: true,
+                    remote: "/reg/regist/checkValidDLMC.do"
+                },
+
+                yhmm: {
+                    required: true,
+                    english: true,
+                    maxlength: 6
+                },
+                yhmmConfirm: {
+                    equalTo: "#yhmm"
+                },
+                dwmc: {
+                    required: true,
+                    maxlength: 26
+                },
+                zzjgdm: {
+                    required: true,
+                    rangelength: [9, 9],
+                    zuzhi: true
+                },
+                dwdz: {
+                    required: true
+                },
+                yzbm: {
+                    required: true,
+                    rangelength: [6, 6],
+                    digits: true
+                },
+                hyfl4: {
+                    required: true
+                },
+                fddbr: {
+                    required: true
+                },
+                lxr: {
+                    required: true
+                },
+                lxrdh: {
+                    required: true,
+                    telphoneZh: true
+                },
+                lxrsj: {
+                    required: true,
+                    telphoneValid: true
+                },
+                lxrcz: {
+                    required: true,
+                    telphoneZh: true
+                },
+                lxrdzyx: {
+                    required: true,
+                    email: true
+                },
+                validateCode: {
+                    required: true,
+                    remote: "/reg/regist/checkValidVcode.do"
+                },
+
+                userName: {
+                    required: true,
+                    english: true,
+                    rangelength: [3, 20],
+                    remote: "/reg/regist/checkValidUser.do"
+                },
+
+                passWord: {
+                    required: true,
+                    english: true,
+                    maxlength: 6
+                },
+                passWordConfirm: {
+                    equalTo: "#passWord"
+                },
+                sfjkly: {
+                    qylx: true
+                },
+                dwszqx: {
+                    //required: true,
+                    vaprov: true
+                }
+            },
+            messages: {
+
+                dlmc: {
+                    required: "请输入登录名称！",
+                    rangelength: "长度在3-20之间！",
+                    remote: "登录名称已经存在，请换一个登录名称！"
+                },
+
+                yhmm: {
+                    required: "请输入密码 ！",
+                    maxlength: "最多输入6个字符！"
+                },
+                yhmmConfirm: {
+                    equalTo: "两次输入不一致，请重新输入！"
+                },
+                dwmc: {
+                    required: "请输入单位名称！",
+                    maxlength: "单位名称过长"
+                },
+                zzjgdm: {
+                    required: "请输入组织机构代码！",
+                    rangelength: "组织机构代码长度不匹配",
+                    zuzhi: "组织机构代码格式有误！"
+                },
+                dwdz: {
+                    required: "请输入单位地址！"
+                },
+                yzbm: {
+                    required: "请输入邮政编码！",
+                    rangelength: "请输入正确的邮政编码！",
+                    digits: "请输入正确的邮政编码！"
+                },
+                hyfl4: {
+                    required: "请选择行业！"
+                },
+                fddbr: {
+                    required: "请输入法人代表！"
+                },
+                lxr: {
+                    required: "请输入联系人！"
+                },
+                lxrdh: {
+                    required: "请输入联系人电话！"
+                },
+                lxrsj: {
+                    required: "请输入联系人手机！"
+                },
+                lxrcz: {
+                    required: "请输入联系人传真！",
+                    telphoneZh: "请输入正确的传真！"
+                },
+                lxrdzyx: {
+                    required: "请输入联系人电子邮件！",
+                    email: "请输入正确的电子邮件！"
+                },
+                validateCode: {
+                    required: "请输入申请码！",
+                    remote: "申请码输入错误!"
+                },
+
+                userName: {
+                    required: "请输入门户登录名称！",
+                    rangelength: "3-20个字符！",
+                    remote: "门户登录名称已存在，请换一个门户登录名称!"
+                },
+
+                passWord: {
+                    required: "请输入密码!",
+                    maxlength: "最多输入6个字符！"
+                },
+                passWordConfirm: {
+                    equalTo: "两次输入不一致，请重新输入！"
+                },
+                //dwszcs: {
+                //  required: "请选择省市区县",
+                //   vaprov: "请选择省市区县"
+                //   }
+                dwszqx: {
+                    // required: "请选择省市区县",
+                    vaprov: "请选择省市区县"
+                }
+
+            },
+            submitHandler: function(form) {
+                if (!$("#dwszqx").val()) { //如果没有县
+                    $('<input>').attr({
+                        type: 'hidden',
+                        name: 'dwszqx',
+                        value: '0'
+                    }).appendTo('#company');
+                }
+                if ($("#company").valid()) {
+                    $("#submitInput").attr("disabled", true);
+                    $("#submitInput").val("提交中...");
+                    document.getElementById("company").submit();
+                }
+            }
+
+        });
+    }
+
+    $(document).ready(function() {
+        jQuery.validator.addMethod("telphoneValid", function(value, element) {
+            var tel = /\d{11}$/;
+            return this.optional(element) || tel.test(value);
+        }, "请正确填写手机号码");
+
+        jQuery.validator.addMethod("telphoneZh", function(value, element) {
+            //var tel = /^\d{3,4}-\d{7,9}$/;
+            var tel = /^((\d{3,4}-\d{7,8})|(\d{3,4}-\d{7,8}-\d{1,6}))$/;
+            return this.optional(element) || (tel.test(value));
+        }, "请正确填写电话号码");
+
+        jQuery.validator.addMethod("chinese", function(value, element) {
+            var chinese = /^[^x00-xff]+$/;
+            return this.optional(element) || (chinese.test(value));
+        }, "请输入中文");
+
+        jQuery.validator.addMethod("zuzhi", function(value, element) {
+            var zuzhidaima = /^[A-Za-z0-9]{1}\d{7}[A-Za-z0-9]{1}$/;
+            return this.optional(element) || (zuzhidaima.test(value));
+        }, "请输入正确的格式");
+
+        jQuery.validator.addMethod("english", function(value, element) {
+            var english = /^([a-zA-Z]|\d|_)+$/;
+            return this.optional(element) || (english.test(value));
+        }, "请输入字母、数字或下划线");
+
+        jQuery.validator.addMethod("qylx", function(value, element) {
+            if ($("input:checked").length < 1) {
+                return false;
+            } else {
+                return true;
+            }
+        }, "请选择企业类型!");
+        jQuery.validator.addMethod("vaprov", function(value, element) {
+            //      var obj = SR.CitySelector.getDataObj()[value];
+            //       if (obj.children && !$("#dwszqx").val()) {
+            //    alert($("#dwsqx").val());
+            //    alert(value);
+            //        return false;
+            //   }
+            //    alert($("#dwszqx").val());
+            //  return true;
+            var s = $("#dwszcs").val()
+            //alert(s+"333");
+
+            var obj = SR.CitySelector.getDataObj()[s];
+            //alert(obj+"444");
+            //alert(obj.children+"555");
+            // alert($("#dwszqx").val()+"666");
+            // alert((obj.children && !$("#dwszqx").val()));
+            if (obj.children && !$("#dwszqx").val()) {
+                //alert("222");
+                return false;
+            }
+            //alert("111");
+            return true;
+        });
+        //$("input:checkbox").bind('click', function() {
+        //  $("#company").valid();
+        //});
+
+        comapnyValidate();
+
+    });
+    </script>
+</head>
+
+<body>
+    <form id="company" action="#" method="post">
+        <input id="lsbh" name="lsbh" type="hidden" value="">
+        <table width="975" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+            <tbody>
+                <tr>
+                    <td width="853" height="30" align="right">
+                        <div>
+                            <span class="red">*</span>为必填项
+                        </div>
+                    </td>
+                    <td width="122">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td width="20%" height="36" align="right" bgcolor="#F4FFFF">
+                                        <span class="field">用户名</span>
+                                    </td>
+                                    <td width="3%" height="36" align="center" bgcolor="#F4FFFF">
+                                        <span class="red">*</span>
+                                    </td>
+                                    <td width="40%" align="left" bgcolor="#F4FFFF">
+                                        <input id="dlmc" name="dlmc" class="input" type="text" value="">
+                                        <span class="verror"></span>
+                                    </td>
+                                    <td width="37%" align="left" bgcolor="#F4FFFF">
+                                        <div class="tip">长度在3-20之间(可使用字母、数字、下划线),建议以所在省市的缩写做为前缀</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="36" align="right">
+                                        <span class="field">登录密码</span>
+                                    </td>
+                                    <td height="36" align="center">
+                                        <span class="red">*</span>
+                                    </td>
+                                    <td align="left">
+                                        <input id="yhmm" name="yhmm" class="input" type="password" value="">
+                                        <span class="verror"></span>
+                                    </td>
+                                    <td align="left">
+                                        <div class="tip">登录密码1-6个字符</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="36" align="right" bgcolor="#F4FFFF">
+                                        <span class="field">密码确认</span>
+                                    </td>
+                                    <td height="36" align="center" bgcolor="#F4FFFF">
+                                        <span class="red">*</span>
+                                    </td>
+                                    <td align="left" bgcolor="#F4FFFF">
+                                        <input id="yhmmConfirm" name="yhmmConfirm" class="input" type="password" value="">
+                                        <span class="verror"></span>
+                                    </td>
+                                    <td align="left" bgcolor="#F4FFFF">
+                                        <div class="tip">请再输入一遍您上面输入的密码</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="36" align="right">
+                                        <span class="field">单位名称</span>
+                                    </td>
+                                    <td height="36" align="center">
+                                        <span class="red">*</span>
+                                    </td>
+                                    <td align="left">
+                                        <input id="dwmc" name="dwmc" class="input" type="text" value="">
+                                        <span class="verror"></span>
+                                    </td>
+                                    <td align="left">
+                                        <div class="tip">请输入单位名称</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="36" align="right" bgcolor="#F4FFFF">
+                                        <span class="field">单位组织机构代码</span>
+                                    </td>
+                                    <td height="36" align="center" bgcolor="#F4FFFF">
+                                        <span class="red">*</span>
+                                    </td>
+                                    <td align="left" bgcolor="#F4FFFF">
+                                        <input id="zuzhid" name="zzjgdm" onkeyup="keyChange(event)" class="input" type="text" value="">
+                                        <span class="verror"></span>
+                                    </td>
+                                    <td align="left" bgcolor="#F4FFFF">
+                                        <span class="tip">请输入九位单位组织机构代码</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="36" align="right">
+                                        <span class="field">单位地址</span>
+                                    </td>
+                                    <td height="36" align="center">
+                                        <span class="red">*</span>
+                                    </td>
+                                    <td align="left">
+                                        <select id="dwszsf" name="dwszsf" class="input">
+                                            <option value="">--- 请选择 ---</option>
+                                            <option value="110000">北京市</option>
+                                            <option value="120000">天津市</option>
+                                            <option value="130000">河北省</option>
+                                            <option value="140000">山西省</option>
+                                            <option value="150000">内蒙古自治区</option>
+                                            <option value="210000">辽宁省</option>
+                                            <option value="220000">吉林省</option>
+                                            <option value="230000">黑龙江省</option>
+                                            <option value="310000">上海市</option>
+                                            <option value="320000">江苏省</option>
+                                            <option value="330000">浙江省</option>
+                                            <option value="340000">安徽省</option>
+                                            <option value="350000">福建省</option>
+                                            <option value="360000">江西省</option>
+                                            <option value="370000">山东省</option>
+                                            <option value="410000">河南省</option>
+                                            <option value="420000">湖北省</option>
+                                            <option value="430000">湖南省</option>
+                                            <option value="440000">广东省</option>
+                                            <option value="450000">广西壮族自治区</option>
+                                            <option value="460000">海南省</option>
+                                            <option value="500000">重庆市</option>
+                                            <option value="510000">四川省</option>
+                                            <option value="520000">贵州省</option>
+                                            <option value="530000">云南省</option>
+                                            <option value="540000">西藏自治区</option>
+                                            <option value="610000">陕西省</option>
+                                            <option value="620000">甘肃省</option>
+                                            <option value="630000">青海省</option>
+                                            <option value="640000">宁夏回族自治区</option>
+                                            <option value="650000">新疆维吾尔自治区</option>
+                                            <option value="710000">台湾省</option>
+                                            <option value="780000">测试省区划</option>
+                                            <option value="810000">香港特别行政区</option>
+                                            <option value="820000">澳门特别行政区</option>
+                                        </select>
+                                        <select id="dwszcs" name="dwszcs" class="input"></select>
+                                        <select id="dwszqx" name="dwszqx" class="input"></select>
+                                        <script type="text/javascript">
+                                        var provSel = document.getElementById("dwszsf");
+                                        var citySel = document.getElementById("dwszcs");
+                                        var distSel = document.getElementById("dwszqx");
+                                        var x = SR.CitySelector.attach(provSel, citySel, distSel);
+                                        x.initSelectedCodes();
+                                        </script>
+                                        <span class="verror"></span>
+                                        <br>
+                                        <input id="dwdz" name="dwdz" class="input" type="text" value="" size="50">
+                                        <span class="verror"></span>
+                                    </td>
+                                    <td align="left">
+                                        <span class="tip">请选择公司所在省市区县，并填写公司地址</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="36" align="right" bgcolor="#F4FFFF">
+                                        <span class="field">邮政编码</span>
+                                    </td>
+                                    <td height="36" align="center" bgcolor="#F4FFFF">
+                                        <span class="red">*</span>
+                                    </td>
+                                    <td align="left" bgcolor="#F4FFFF">
+                                        <input id="yzbm" name="yzbm" class="input" type="text" value="">
+                                        <span class="verror"></span>
+                                    </td>
+                                    <td align="left" bgcolor="#F4FFFF">
+                                        <span class="tip">请输入邮政编码</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="36" align="right">
+                                        <span class="field">行业分类</span>
+                                    </td>
+                                    <td height="36" align="center">
+                                        <span class="red">*</span>
+                                    </td>
+                                    <td align="left">
+                                        <select id="hyfl1" name="hyfl1" class="input">
+                                            <option value="">--- 请选择 ---</option>
+                                            <option value="A">农、林、牧、渔业</option>
+                                            <option value="B">采矿业</option>
+                                            <option value="C">制造业</option>
+                                            <option value="D">电力、燃气及水的生产和供应业</option>
+                                            <option value="E">建筑业</option>
+                                            <option value="F">交通运输、仓储和邮政业</option>
+                                            <option value="G">信息传输、计算机服务和软件业</option>
+                                            <option value="H">批发和零售业</option>
+                                            <option value="I">住宿和餐饮业</option>
+                                            <option value="J">金融业</option>
+                                            <option value="K">房地产业</option>
+                                            <option value="L">租赁和商务服务业</option>
+                                            <option value="M">科学研究、技术服务和地质勘查业</option>
+                                            <option value="N">水利、环境和公共设施管理业</option>
+                                            <option value="O">居民服务和其他服务业</option>
+                                            <option value="P">教育</option>
+                                            <option value="Q">卫生、社会保障和社会福利业</option>
+                                            <option value="R">文化、体育和娱乐业</option>
+                                            <option value="S">公共管理和社会组织</option>
+                                            <option value="T">国际组织</option>
+                                        </select>
+                                        <select id="hyfl2" name="hyfl2" class="input"></select>
+                                        <br>
+                                        <select id="hyfl3" name="hyfl3" class="input"></select>
+                                        <select id="hyfl4" name="hyfl4" class="input"></select>
+                                        <span class="verror"></span>
+                                    </td>
+                                    <td align="left">
+                                        <span class="tip">请选择行业分类</span>
+                                    </td>
+                                    <script type="text/javascript">
+                                    var hyfl1 = document.getElementById("hyfl1");
+                                    var hyfl2 = document.getElementById("hyfl2");
+                                    var hyfl3 = document.getElementById("hyfl3");
+                                    var hyfl4 = document.getElementById("hyfl4");
+                                    var x = SIC.Selector.attach(hyfl1, hyfl2, hyfl3, hyfl4);
+                                    x.initSelectedCodes("");
+                                    </script>
+                                </tr>
+                                <tr>
+                                    <td height="36" align="right" bgcolor="#F4FFFF">
+                                        <span class="field">企业规模</span>
+                                    </td>
+                                    <td height="36" align="center" bgcolor="#F4FFFF">
+                                        <span class="red">*</span>
+                                    </td>
+                                    <td align="left" bgcolor="#F4FFFF">
+                                        <select id="qygm" name="qygm" class="input">
+                                            <option value="0">大型</option>
+                                            <option value="1">中型</option>
+                                            <option value="2">小型</option>
+                                        </select>
+                                        <span class="verror"></span>
+                                    </td>
+                                    <td align="left" bgcolor="#F4FFFF">
+                                        <span class="tip">请选择企业规模</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="36" align="right">
+                                        <span class="field">法人代表</span>
+                                    </td>
+                                    <td height="36" align="center">
+                                        <span class="red">*</span>
+                                    </td>
+                                    <td align="left">
+                                        <input id="fddbr" name="fddbr" class="input" type="text" value="">
+                                        <span class="verror"></span>
+                                    </td>
+                                    <td align="left">
+                                        <span class="tip">请输入法人代表姓名</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="36" align="right" bgcolor="#F4FFFF">
+                                        <span class="field">联系人</span>
+                                    </td>
+                                    <td height="36" align="center" bgcolor="#F4FFFF">
+                                        <span class="red">*</span>
+                                    </td>
+                                    <td align="left" bgcolor="#F4FFFF">
+                                        <input id="lxr" name="lxr" class="input" type="text" value="">
+                                        <span class="verror"></span>
+                                    </td>
+                                    <td align="left" bgcolor="#F4FFFF">
+                                        <span class="tip">请输入联系人姓名</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="36" align="right">
+                                        <span class="field">联系人电话</span>
+                                    </td>
+                                    <td height="36" align="center">
+                                        <span class="red">*</span>
+                                    </td>
+                                    <td align="left">
+                                        <input id="lxrdh" name="lxrdh" class="input" type="text" value="">
+                                        <span class="verror"></span>
+                                    </td>
+                                    <td align="left">
+                                        <span class="tip">区号和号码之间使用“-”分隔
+                                            <br>如：010-84637723</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="36" align="right" bgcolor="#F4FFFF">
+                                        <span class="field">联系人手机</span>
+                                    </td>
+                                    <td height="36" align="center" bgcolor="#F4FFFF">
+                                        <span class="red">*</span>
+                                    </td>
+                                    <td align="left" bgcolor="#F4FFFF">
+                                        <input id="lxrsj" name="lxrsj" class="input" type="text" value="">
+                                        <span class="verror"></span>
+                                    </td>
+                                    <td align="left" bgcolor="#F4FFFF">
+                                        <span class="tip">格式如：13898988989</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="36" align="right">
+                                        <span class="field">联系人传真</span>
+                                    </td>
+                                    <td height="36" align="center">
+                                        <span class="red">*</span>
+                                    </td>
+                                    <td align="left">
+                                        <input id="lxrcz" name="lxrcz" class="input" type="text" value="">
+                                        <span class="verror"></span>
+                                    </td>
+                                    <td align="left">
+                                        <span class="tip">区号和号码之间使用“-”分隔
+                                            <br>如：010-84637723</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="36" align="right" bgcolor="#F4FFFF">
+                                        <span class="field">联系人电子邮件</span>
+                                    </td>
+                                    <td height="36" align="center" bgcolor="#F4FFFF">
+                                        <span class="red">*</span>
+                                    </td>
+                                    <td align="left" bgcolor="#F4FFFF">
+                                        <input id="lxrdzyx" name="lxrdzyx" class="input" type="text" value="">
+                                        <span class="verror"></span>
+                                    </td>
+                                    <td align="left" bgcolor="#F4FFFF">
+                                        <span class="tip">请输入联系人电子邮件地址</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="36" align="right">
+                                        <span class="field">注册验证码</span>
+                                    </td>
+                                    <td height="36" align="center">
+                                        <span class="red">*</span>
+                                    </td>
+                                    <td align="left">
+                                        <input id="validateCode" name="validateCode" class="input" type="text" value="">
+                                        <span class="verror"></span>
+                                    </td>
+                                    <td align="left">
+                                        <span class="tip">请输入您的注册验证码</span>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td height="36" align="right">
+                                        <span class="field">企业类型</span>
+                                    </td>
+                                    <td height="36" align="center">
+                                        <span class="red">*</span>
+                                    </td>
+                                    <td height="36" align="center" colspan="2">
+                                        <label class="aaabbb">
+                                            <input id="sfwfcsy1" name="sfwfcsy" type="checkbox" value="true">
+                                            <input type="hidden" name="_sfwfcsy" value="on">危险废物产生源单位</label>
+                                        <label class="aaabbb">
+                                            <input id="sfyfcsy1" name="sfyfcsy" type="checkbox" value="true">
+                                            <input type="hidden" name="_sfyfcsy" value="on">医疗废物产生源单位</label>
+                                        <label class="aaabbb">
+                                            <input id="sfybgycsy1" name="sfybgycsy" type="checkbox" value="true">
+                                            <input type="hidden" name="_sfybgycsy" value="on">一般工业固体废物产生源单位</label>
+                                        <label class="aaabbb">
+                                            <input id="sfwfys1" name="sfwfys" type="checkbox" value="true">
+                                            <input type="hidden" name="_sfwfys" value="on">危险废物运输单位</label>
+                                        <label class="aaabbb">
+                                            <input id="sfwswncsy1" name="sfwswncsy" type="checkbox" value="true">
+                                            <input type="hidden" name="_sfwswncsy" value="on">污水污泥产生源单位</label>
+                                        <label class="aaabbb">
+                                            <input id="sfwfjy1" name="sfwfjy" type="checkbox" value="true">
+                                            <input type="hidden" name="_sfwfjy" value="on">危险废物经营单位</label>
+                                        <label class="aaabbb">
+                                            <input id="sfwfck1" name="sfwfck" type="checkbox" value="true">
+                                            <input type="hidden" name="_sfwfck" value="on">危险废物出口企业</label>
+                                        <label class="aaabbb" style="width: 380px;">
+                                            <input id="sfjkly1" name="sfjkly" type="checkbox" value="true">
+                                            <input type="hidden" name="_sfjkly" value="on">进口固体废物加工利用企业</label>
+                                        <span class="verror"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="1" colspan="4" align="center" bgcolor="#CCCCCC"></td>
+                                </tr>
+                                <tr>
+                                    <td height="80" colspan="4" align="center">
+                                        <table width="151" border="0" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="100">
+                                                        <input type="submit" name="submit1" id="submitInput" value="提交" style="width: 60px; height: 24px">
+                                                    </td>
+
+                                                    <td width="127">&nbsp;&nbsp;<a href="#">取&nbsp;&nbsp;消</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+
+
+</body>
+
+</html>

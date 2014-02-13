@@ -1,0 +1,66 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+    </div>
+    <div class="panel-body">
+        <table id="table-container">
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript">
+function setTable() {
+    var tableData = new Array();
+    for (var idx in record_json) {
+        var itemData = new Array();
+        itemData[0] = "" + record_json[idx].waste_code;
+        itemData[1] = "" + record_json[idx].waste_category;
+        itemData[2] = "" + record_json[idx].waste_from;
+        itemData[3] = "" + record_json[idx].waste_name;
+        itemData[4] = "" + record_json[idx].waste_property;
+        itemData[5] = "" + record_json[idx].waste_category_code;
+        // itemData[5] = "" + record_json[idx].waste_from;
+        tableData.push(itemData);
+    }
+ 
+    $('#table-container').dataTable({
+        "aaData": tableData,
+        "aoColumns": [{
+            "sTitle": "废物代码"
+        }, {
+            "sTitle": "废物类型"
+        }, {
+            "sTitle": "行业来源"
+        },{
+            "sTitle": "废物描述"
+        },{
+            "sTitle": "危险特性"
+        },{
+            "sTitle": "类别编号"
+        }],
+        "bPaginate": true, 
+        "bLengthChange": true, 
+        "bFilter": true, 
+        "bSort": false, 
+        "bInfo": true, 
+        "bAutoWidth": true, 
+        "bStateSave": true, 
+        "sPaginationType": "full_numbers",
+
+        "oLanguage": {
+            "sLengthMenu": "每页显示 _MENU_ 条记录",
+            "sZeroRecords": "抱歉， 没有找到",
+            "sInfo": "从 _START_ 到 _END_ /共 _TOTAL_ 条数据",
+            "sInfoEmpty": "没有数据",
+            "sInfoFiltered": "(从 _MAX_ 条数据中检索)",
+            "oPaginate": {
+                "sFirst": "首页",
+                "sPrevious": "前一页",
+                "sNext": "后一页",
+                "sLast": "尾页"
+            },
+            "sZeroRecords": "没有检索到数据"
+        }
+    });
+}
+setTable();
+</script>

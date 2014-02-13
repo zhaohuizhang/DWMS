@@ -1,0 +1,24 @@
+<div class="panel panel-default" style="margin-top:15px">
+    <div class="panel-body" style="padding-top:0px">
+        <img id="logo" src="__PUBLIC__/image/header_logo.jpg" alt="logo"/>
+        <div id="webpage_title">
+            <div id="datetime"></div>
+            <h2 id="title">危险废物管理信息系统</h2>
+            <p id="welcome">
+                <span class="glyphicon glyphicon-user"></span> 欢迎您，{$Think.session.username|default="先生"}
+                <a id="password" href=#><span class="glyphicon glyphicon-edit"></span> 修改密码</a>
+                <a id="logout" href="{:U('Home/Login/logout')}"><span class="glyphicon glyphicon-log-out"></span> 退出登录</a>
+            </p>
+
+        </div>
+         <div id="header_button_container"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=KDdzQZSRLv89h4yrti56L5Gy">
+</script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/highcharts.js"></script>
+
