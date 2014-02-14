@@ -29,7 +29,7 @@ class DistrictBusinessAction extends CommonAction{
 	}
 
 	// 业务办理->待办业务->转移备案管理：详细信息页
-	public function transfer_record_management_page() {
+	public function transfer_record_management_page($record_id="") {
 		$record = M( 'record' )->where( array( 'record_id' =>$record_id ) )->find();
 		$production_unit = M( 'production_unit' )->where( array( 'production_unit_id' => $record['production_unit_id'] ) )->find();
 		$this->record = $record;
@@ -44,7 +44,7 @@ class DistrictBusinessAction extends CommonAction{
 	}
 
 	// 业务办理->待办业务->转移备案管理：审核
-	public function transfer_record_management_audit() {
+	public function transfer_record_management_audit($record_id="") {
 		$record_status = I( 'post.record_status' );
 		$current_record_status = array(
 			'record_id' => $record_id,
@@ -60,8 +60,58 @@ class DistrictBusinessAction extends CommonAction{
 
 	// 业务办理->待办业务->转移联单管理
 	public function transfer_manifest_management() {
-		$tmp_content=$this->fetch( './Public/html/Content/District/business/transfer_manifest_management.html' );
+		// $manifest = M( 'manifest' )->where( 'manifest_status=1' )->getField( 'manifest_id,production_unit_id,transport_unit_id,reception_unit_id,manifest_num,manifest_add_time.manifest_status' );
+		// $manifest_json = json_encode( $manifest );
+		$manifest = M( 'manifest' )->where( 'manifest_status>0' )->getField( 'manifest_id,production_unit_id,transport_unit_id,reception_unit_id,manifest_num,manifest_add_time,manifest_status' );
+		$manifest_json = json_encode( $manifest );
+		
+		$production_unit_name = M( 'production_unit' )->getField( 'production_unit_id,production_unit_name' );
+		$production_unit_name_json = json_encode( $production_unit_name );
+
+		$reception_unit_name = M( 'reception_unit' )->getField( 'reception_unit_id,reception_unit_name' );
+		$reception_unit_name_json = json_encode( $reception_unit_name );
+
+		if( $manifest_json == null ){
+			$this->ajaxReturn( "联单没有找到：" .  $manifest_json );
+		} else if ( $production_unit_name_json == null ) {
+				$this->ajaxReturn( "生产单位表没有找到：" .  $manifest_json );
+			} else if( $reception_unit_name_json == null ){
+					$this->ajaxReturn( "接受单位表没有找到：" .  $manifest_json );
+				} else{
+				$tmp_content=$this->fetch( './Public/html/Content/District/business/transfer_manifest_management.html' );
+				$tmp_content = "<script>manifest_json = $manifest_json; production_unit_name_json = $production_unit_name_json; reception_unit_name_json = $reception_unit_name_json; </script> $tmp_content";
+				$this->ajaxReturn( $tmp_content );
+		}
+	}
+
+	// 业务办理->待办业务->转移联单管理：详细信息页
+	public function transfer_manifest_management_page($manifest_id="") {
+		$manifest = M( 'manifest' )->where( array( 'manifest_id' =>$manifest_id ) )->find();
+		// $production_unit = M( 'production_unit' )->where( array( 'production_unit_id' => $manifest['production_unit_id'] ) )->find();
+		$this->manifest = $manifest;
+		// $this->unit = $production_unit;
+
+		$manifest_id_json = json_encode( $manifest_id );
+		$manifest_status_json = json_encode( $manifest['manifest_status'] );
+
+		$tmp_content=$this->fetch( './Public/html/Content/District/business/transfer_manifest_management_page.html' );
+		$tmp_content = "<script>manifest_id_json = $manifest_id_json; manifest_status_json = $manifest_status_json; </script> $tmp_content";
 		$this->ajaxReturn( $tmp_content );
+	}
+	
+	// 业务办理->待办业务->转移联单管理：审核
+	public function transfer_manifest_management_audit($manifest_id="") {
+		$manifest_status = I( 'post.manifest_status' );
+		$current_manifest_status = array(
+			'manifest_id' => $manifest_id,
+			'manifest_status' => $manifest_status,
+		);
+		$result = M( 'manifest' )->save( $current_manifest_status );
+		if ( $result ) {
+			$this->ajaxReturn( 1, '审核成功！', 1 );
+		} else {
+			$this->ajaxReturn( 0, '审核失败！', 0 );
+		}
 	}
 
 	// 业务办理->待办业务->企业用户管理
