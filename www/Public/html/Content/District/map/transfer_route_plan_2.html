@@ -75,7 +75,7 @@ function search() {
 
 function setBMap() {
     var windowHeight = $(window).height();
-    $("#map_container").css("height", "" + windowHeight - 200 + "px");
+    $("#map_container").css("height", "" + windowHeight - 350 + "px");
 
     map_plan = new BMap.Map("map_container"); // 创建Map实例
     map_plan.centerAndZoom("上海", 13); // 初始化地图,设置中心点坐标和地图级别
