@@ -59,9 +59,9 @@
 function setTable() {
     var tableData = new Array();
     for (var idx in record_json) {
-        var itemDetail = '<a href="#" onclick="fetch_model_page(\'./production?id=transfer_record_query_detail&record_id=' + record_json[idx].record_id + '\')"><span class="label label-info"><span class="glyphicon glyphicon-paperclip"></span> 详情</span><a>';
-        var itemModify = ' <a href="#" onclick="fetch_model_page(\'./production?id=transfer_record_query_modify&record_id=' + record_json[idx].record_id + '\')"><span class="label label-warning"><span class="glyphicon glyphicon-paperclip"></span> 修改</span><a>';
-        var itemSubmit = ' <a href="#" onclick="fetch_model_page(\'./production?id=transfer_record_query_submit&record_id=' + record_json[idx].record_id + '\')"><span class="label label-primary"><span class="glyphicon glyphicon-paperclip"></span> 提交</span><a>';
+        var itemDetail = '<a href="#" onclick="fetch_model_page(\'./transfer_record_query_detail?record_id=' + record_json[idx].record_id + '\')"><span class="label label-info"><span class="glyphicon glyphicon-paperclip"></span> 详情</span><a>';
+        var itemModify = ' <a href="#" onclick="fetch_model_page(\'./transfer_record_query_modify?record_id=' + record_json[idx].record_id + '\')"><span class="label label-warning"><span class="glyphicon glyphicon-paperclip"></span> 修改</span><a>';
+        var itemSubmit = ' <a href="#" onclick="fetch_model_page(\'./transfer_record_query_submit?record_id=' + record_json[idx].record_id + '\')"><span class="label label-primary"><span class="glyphicon glyphicon-paperclip"></span> 提交</span><a>';
         var itemData = new Array();
         itemData[0] = "" + record_json[idx].record_code;
         itemData[1] = "" + record_json[idx].record_date;

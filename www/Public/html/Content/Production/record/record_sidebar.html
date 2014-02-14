@@ -8,11 +8,11 @@ DWMS_sidebar_config = {
         "sidebar_group_content": [{
             "id": 0,
             "name": "转移备案申请",
-            "url": "production?id=transfer_record_request"
+            "url": "{:U('Home/ProductionRecord/transfer_record_request')}"
         }, {
             "id": 1,
             "name": "转移备案管理",
-            "url": "production?id=transfer_record_query"
+            "url": "{:U('Home/ProductionRecord/transfer_record_query')}"
         }]
     }, {
         "sidebar_group_id": 1,

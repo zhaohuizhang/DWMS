@@ -8,15 +8,15 @@ DWMS_sidebar_config = {
         "sidebar_group_content": [{
             "id": 0,
             "name": "危废入库管理",
-            "url": "production?id=storage_input_management"
+            "url": "{:U('Home/ProductionWarehouse/storage_input_management')}"
         }, {
             "id": 1,
             "name": "危废在库查询",
-            "url": "production?id=storage_query"
+            "url": "{:U('Home/ProductionWarehouse/storage_query')}"
         }, {
             "id": 2,
             "name": "危废出库管理",
-            "url": "production?id=storage_output_management"
+            "url": "{:U('Home/ProductionWarehouse/storage_output_management')}"
         }, {
             "id": 3,
             "name": "危废处置管理",

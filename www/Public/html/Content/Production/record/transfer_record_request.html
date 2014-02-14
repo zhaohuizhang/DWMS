@@ -264,7 +264,7 @@ function ajaxAction(actionID) {
 
     $.ajax({
         type: "post",
-        url: "production?id=transfer_record_request_form",
+        url: "transfer_record_request_form",
         timeout: 2000,
         data: $('#record_request').serialize() + '&record_status=' + actionID,
         /*data: {
