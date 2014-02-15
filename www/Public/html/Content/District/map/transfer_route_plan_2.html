@@ -1,0 +1,179 @@
+<div class="panel panel-primary">
+    <div class="panel panel-heading" style="margin-bottom:1px">
+        <h3 class="panel-title">运输路线规划</h3>
+    </div>
+    <div class="panel panel-body" style="margin-bottom:1px">
+        <!-- <div class="panel panel-info" style="position:absolute;left:100%;top:50px;margin-left:-250px"> -->
+
+        <div class="row">
+            <div class="col-md-2">
+                <div id="noSelectionAlert"></div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-road"></span>
+                        <span id="selectVehicle">点击选择车辆</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" id="dropdown-button">
+                        <!--<li><a href="#">Action</a></li>-->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <!-- <select id="mySelect" style="visibility: hidden">
+                            正在获取 车辆 信息...
+                        </select> -->
+                <div class="input-group">
+                    <span class="input-group-addon">起点</span>
+                    <input type="text" class="form-control" id="startPoint" placeholder="">
+                    <span class="input-group-addon">终点</span>
+                    <input type="text" class="form-control" id="endPoint" placeholder="">
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <button type="button" class="btn btn-default btn-sm" onclick="search();">查询</button>
+                <!-- <input class="btn btn-default navbar-btn" id="startButton" type="button" onclick="startTool();" value="开始取点" /> -->
+                <button type="button" class="btn btn-default btn-sm navbar-btn" id="clearButton" onclick="map_plan.clearOverlays();document.getElementById('info').innerHTML = '';points=[];myPoints=[];">清除</button>
+                <button type="button" class="btn btn-default btn-sm navbar-btn" onclick="submit();">提交</button>
+                <div id="info"></div>
+            </div>
+
+        </div>
+
+        <div id="map_container" style="width:auto"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+if (typeof(intervalWarning) != 'undefined') {
+    clearInterval(intervalWarning);
+}
+
+window.mySelection = "";
+// var key = 1; //开关
+// var newPoint; // 地图上一个新点的经纬度
+// var points = []; //数组，放经纬度信息
+// var myPoints = [];
+
+var path = '';
+var searchComplete = function(results) {
+    if (transit.getStatus() != BMAP_STATUS_SUCCESS) {
+        return;
+    }
+
+    var plan = results.getPlan(0);
+    var route = plan.getRoute(0);
+    path = route.getPath();
+    // console.log(path[0].lng);
+    // console.log(path[0].lat);
+};
+
+function search() {
+    transit.search($('#startPoint').val(), $('#endPoint').val());
+}
+
+function setBMap() {
+    var windowHeight = $(window).height();
+    $("#map_container").css("height", "" + windowHeight - 350 + "px");
+
+    map_plan = new BMap.Map("map_container"); // 创建Map实例
+    map_plan.centerAndZoom("上海", 13); // 初始化地图,设置中心点坐标和地图级别
+    map_plan.addControl(new BMap.NavigationControl()); // 添加默认缩放平移控件
+    map_plan.addControl(new BMap.ScaleControl()); // 添加默认比例尺控件
+    map_plan.addControl(new BMap.OverviewMapControl()); //添加默认缩略地图控件
+    map_plan.enableScrollWheelZoom(); //启用滚轮放大缩小
+    map_plan.addControl(new BMap.MapTypeControl()); // 添加默认地图控件
+    map_plan.setCurrentCity("上海"); // 设置地图显示的城市 此项是必须设置的
+
+    transit = new BMap.DrivingRoute(map_plan, {
+        renderOptions: {
+            map: map_plan,
+            autoViewport: true, // 视图跟随
+            enableDragging: true // 起终点可进行拖拽
+        },
+        onSearchComplete: searchComplete,
+    });
+    // transit.search($('#startPoint').val(), $('#endPoint').val());
+}
+
+
+function myAlert(msg) {
+    $("#noSelectionAlert").html('<div class="alert alert-warning alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><strong>错误: </strong> ' + msg + ' </div>');
+}
+
+function myAlertSucc(msg) {
+    $("#noSelectionAlert").html('<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><strong>状态: </strong> ' + msg + ' </div>');
+}
+
+function submit() {
+    if (window.mySelection == "") {
+        myAlert('请先选择“车辆”。');
+        return;
+    }
+
+    $('#startButton').click();
+    var BMapPointArray = new Array();
+    for (point_idx in path) {
+        var BMapPoint = {
+            "lng": path[point_idx].lng,
+            "lat": path[point_idx].lat
+        };
+        BMapPointArray.push(BMapPoint);
+    }
+    console.log(BMapPointArray);
+
+    $.ajax({
+        type: "POST",
+        url: "{:U('Home/DistrictMap/ajax_map_plan_receiver')}",
+        timeout: 2000,
+        data: {
+            //"gps_id": window.mySelection,
+            //"gps_serial": window.mySerial,
+            "route_lng_lat": JSON.stringify(BMapPointArray)
+        },
+        success: function(data) {
+            if (data == "succ") {
+                myAlertSucc("提交成功");
+                $("#clearButton").click();
+            } else {
+                myAlert("提交失败");
+            }
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+            myAlert("提交失败");
+            console.log("Error:Ajax_Content_Load" + errorThrown);
+            console.log("XMLHttpRequest.status:" + XMLHttpRequest.status);
+            console.log("XMLHttpRequest.readyState:" + XMLHttpRequest.readyState);
+            console.log("textStatus:" + textStatus);
+        }
+    });
+}
+
+
+function setData() {
+    $("#mySelect").html("");
+    $("#dropdown-button").html("");
+    // myjson = JSON.parse(record_json);
+    if (record_json == null) {
+
+    } else {
+        var myArray = record_json; // myjson["GPS"];
+        for (var i in myArray) {
+            //$("#mySelect").append('<option value="' + myArray[i]["value"] + '">' + myArray[i]["name"] + "</option>");
+            $("#dropdown-button").append('<li><a onclick="$(\'#selectVehicle\').html(\'' + myArray[i]["transport_unit_name"] + myArray[i]["vehicle_type"] + '\'); window.mySelection=\'' + myArray[i]["device_id"] + '\'; window.mySerial=\'' + myArray[i]["device_serial_num"] + '\';">' + myArray[i]["transport_unit_name"] + myArray[i]["vehicle_type"] + "</a></li>");
+        }
+    }
+
+}
+
+setData();
+
+function loadScript() {
+    var script = document.createElement("script");
+    script.src = "http://api.map.baidu.com/api?v=2.0&ak=KDdzQZSRLv89h4yrti56L5Gy&callback=setBMap";
+    document.body.appendChild(script);
+}
+
+loadScript();
+</script>

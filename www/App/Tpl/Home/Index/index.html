@@ -132,12 +132,13 @@
     regOpt = -1;
 
     function do_reg() {
-        var reglist = ["/index.php/Home/Register/index?id=production", "/index.php/Home/Register/index?id=transport", "/index.php/Home/Register/index?id=reception"];
+        // var regList = ["/index.php/Home/Register/index?id=production", "/index.php/Home/Register/index?id=transport", "/index.php/Home/Register/index?id=reception"];
+        var regList = ["{:U('Home/Register/index?id=production')}", "{:U('Home/Register/index?id=transport')}", "{:U('Home/Register/index?id=reception')}"];
         if (regOpt < 0) {
             alert("请选择角色");
         }
 
-        location.href = reglist[regOpt];
+        location.href = regList[regOpt];
 
     }
     </script>
