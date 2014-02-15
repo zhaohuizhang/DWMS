@@ -10,5 +10,4 @@ if(mysql_num_rows($query)>0)
 	echo "yes";
 else
 	echo "error";
-
 ?>
